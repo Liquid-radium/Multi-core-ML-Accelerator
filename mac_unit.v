@@ -28,7 +28,7 @@ always @ (posedge clk) begin
     stage2_op <= 32'sd0;
   end
   else begin
-    stage2_op <= [23:8]stage1_op;
+    stage2_op <= stage1_op[23:8];
   end
 end
 
