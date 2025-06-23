@@ -2,14 +2,14 @@ module pool_layer(
     input clk,
     input rst,
     input start,
-    output reg done
+    input signed [7:0] input_fm [0:35],
+    output reg done,
+    output reg signed [7:0] output_fm [0:8]
 );
 
 parameter fm_width = 6;
 parameter fm_height = 6;
 
-reg signed [7:0] input_fm [0:35];
-reg signed [7:0] output_fm [0:8];
 reg signed [7:0] line_buffer [0:1][0:5];
 
 localparam IDLE = 0,

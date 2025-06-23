@@ -2,11 +2,11 @@ module fc_layer(
     input clk,
     input enable,
     input rst,
+    input signed [7:0] fc_input [0:8],
     output reg done
     output reg signed [15:0] fc_layer_op
 );
 
-reg signed [7:0] fc_input [0:8];
 reg signed [7:0] fc_weights [0:8];
 reg signed [15:0] fc_output;
 reg signed [7:0] bias;
@@ -16,7 +16,7 @@ always @ (posedge clk or rst) begin
     fc_output <= 15'd0;
   end else if(enable) begin
     for (integer i =0; i < 9; i = i + 1) begin
-      fc_output = fc_outptu + fc_input[i] * fc_weights[i];
+      fc_output = fc_output + fc_input[i] * fc_weights[i];
     end
     fc_layer_op <= fc_output + bias;
     done <= 1;
