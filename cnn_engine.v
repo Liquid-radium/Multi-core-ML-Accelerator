@@ -9,7 +9,7 @@ parameter img_width = 8;
 parameter img_height = 8;
 
 reg [7:0] input_ram[0:63]; //stores the value of each pixel in the image
-reg signed [31:0] output_ram[0:63]; //stores the convoluted output of the image
+reg signed [31:0] output_ram[0:35]; //stores the convoluted output of the image
 reg [7:0] line_buffer[0:2][0:7]; //stores 3 rows of the image (image line, therefore 8 columns * 3 rows)
 reg [7:0] kernel[0:2][0:2]; //stores the kernel values
 
