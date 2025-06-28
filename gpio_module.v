@@ -1,13 +1,14 @@
 module gpio_module(
     input clk,
     input rst,
-    input [1:0] ctrl,
     output reg led1,
     output reg led2,
     output reg led3,
     output reg led4,
     output reg led_done
 );
+
+reg [1:0] ctrl;
 
 localparam IDLE = 0,
            START_CORES = 1,

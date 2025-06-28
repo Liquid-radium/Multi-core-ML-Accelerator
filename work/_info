@@ -31,8 +31,33 @@ r1
 !s90 avg_pool_unit.v|
 !i113 1
 Z4 tCvgOpt 0
-vcnn_engine
+vbus_decoder
 Z5 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+!s110 1751124670
+!i10b 1
+!s100 PJ`>Qb7TGR0<O9N49D<CL3
+R1
+IFB_X?858=EhEITegI7T5_1
+R2
+S1
+R0
+w1751124666
+8bus_decoder.v
+Fbus_decoder.v
+!i122 11
+L0 1 22
+R3
+r1
+!s85 0
+31
+!s108 1751124670.000000
+!s107 bus_decoder.v|
+!s90 -sv|bus_decoder.v|
+!i113 1
+o-sv
+R4
+vcnn_engine
+R5
 !s110 1751096071
 !i10b 1
 !s100 gSK`bzmf4@8dhdQ4]cJ>i2
@@ -81,6 +106,31 @@ r1
 !i113 1
 o-sv
 R4
+vdual_ram
+R5
+!s110 1751124439
+!i10b 1
+!s100 87eJO[3oQRnOk>HTU8A3S3
+R1
+I]9AARCj]DjNnnDAMT;<f20
+R2
+S1
+R0
+w1751123524
+8dual_ram.v
+Fdual_ram.v
+!i122 8
+L0 1 36
+R3
+r1
+!s85 0
+31
+!s108 1751124438.000000
+!s107 dual_ram.v|
+!s90 -sv|dual_ram.v|
+!i113 1
+o-sv
+R4
 vfc_layer
 !s110 1751095659
 !i10b 1
@@ -102,6 +152,31 @@ r1
 !s107 fc_layer.v|
 !s90 fc_layer.v|
 !i113 1
+R4
+vgpio_module
+R5
+!s110 1751124548
+!i10b 1
+!s100 JMRl;Ml1N[S`GbcI?>XcQ0
+R1
+I2:MeZJi4f8`VGfLc>2GVS0
+R2
+S1
+R0
+w1751124540
+8gpio_module.v
+Fgpio_module.v
+!i122 9
+L0 1 47
+R3
+r1
+!s85 0
+31
+!s108 1751124548.000000
+!s107 gpio_module.v|
+!s90 -sv|gpio_module.v|
+!i113 1
+o-sv
 R4
 vmac_unit
 R5
