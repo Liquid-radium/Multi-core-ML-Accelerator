@@ -26,6 +26,8 @@ reg [1:0] avg_pool_count; //stores the number of mac inputs multiplied and accum
 reg [2:0] row, col;
 reg [5:0] fm_address;
 reg [3:0] latency_counter;
+reg [2:0] state;
+integer i;
 
 //parameters for instantiation
 reg signed [7:0] avg_pool_ip;
@@ -80,11 +82,11 @@ always @ (posedge clk or rst) begin
     AVG_POOL_FEED: begin
       avg_pool_en <= 1;
       avg_pool_rst <= 0;
-      case(avg_pool_count) begin
-        0: begin avg_pool_ip <= line_buffer[0][col] end;
-        1: begin avg_pool_ip <= line_buffer[0][col+1] end;
-        2: begin avg_pool_ip <= line_buffer[1][col] end;
-        3: begin avg_pool_ip <= line_buffer[1][col+1] end;
+      case(avg_pool_count) 
+        0: avg_pool_ip <= line_buffer[0][col];
+        1: avg_pool_ip <= line_buffer[0][col+1];
+        2: avg_pool_ip <= line_buffer[1][col];
+        3: avg_pool_ip <= line_buffer[1][col+1];
       endcase
       avg_pool_count <= avg_pool_count + 1;
       if(avg_pool_count == 4) begin
@@ -108,16 +110,17 @@ always @ (posedge clk or rst) begin
     if (col < fm_width - 2) begin // if not last column
         col <= col + 2;
         state <= AVG_POOL_RESET;
-    end else if (row < fm_height - 2) begin // if not last row
+    end 
+    else if (row < fm_height - 2) begin // if not last row
         col <= 0;
-        integer i;
         row <= row + 2;
         line_buffer[0] <= line_buffer[1];
         for (i = 0; i < fm_width; i = i + 1) begin
         line_buffer[1][i] <= input_fm[(row + 2) * fm_width + i];
         end
         state <= AVG_POOL_RESET;
-    end else begin
+    end 
+    else begin
         state <= DONE;
     end
     end
@@ -127,7 +130,8 @@ always @ (posedge clk or rst) begin
         end else begin
           done <= 1;
         end
-    end
+      end
     endcase
+  end
 end
 endmodule

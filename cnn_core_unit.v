@@ -23,7 +23,7 @@ localparam IDLE = 0,
            POOL_START = 3,
            POOL_WAIT = 4,
            FC_START = 5,
-           FC_WAIT = 6
+           FC_WAIT = 6,
            DONE = 7;
 
 reg [2:0] state;
@@ -64,12 +64,11 @@ fc_layer fc_layer(
 //FSM controller
 always @ (posedge clk or rst) begin
   if (rst) begin
-    enable <= 0;
-    conv_output <= 0;
-    pool_output <= 0;
-    fc_output <= 0;
-  end else begin
-    case(state) begin
+    cnn_start <= 0;
+    pool_start <= 0;
+    fc_start <= 0;
+  end else if (enable) begin
+    case(state) 
       IDLE: begin
         cnn_start <= 1;
         state <= CNN_START;

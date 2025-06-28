@@ -1,14 +1,15 @@
 module cnn_engine(
     input clk,
     input rst, 
-    input [7:0] input_ram[0:63]; //stores the value of each pixel in the image
+    input [64*7:0] input_ram, //stores the value of each pixel in the image
     input start,
-    output reg done
-    output reg signed [31:0] output_ram [0:35]
+    output reg done,
+    output reg signed [36*31:0] output_ram
 );
 
 parameter img_width = 8;
 parameter img_height = 8;
+integer i;
 
 reg [7:0] line_buffer[0:2][0:7]; //stores 3 rows of the image (image line, therefore 8 columns * 3 rows)
 reg [7:0] kernel[0:2][0:2]; //stores the kernel values
@@ -140,10 +141,11 @@ always@(posedge clk or posedge rst)begin
       row <= row + 1;
       line_buffer[0] <= line_buffer[1];
       line_buffer[1] <= line_buffer[2];
-      for (integer i = 0; i < img_width; i = i +1)
-          line_buffer[2][i] <= input_ram[(row + 2)*img_width + i];
-      state <= MAC_RESET;
-      end else begin
+      for (i = 0; i < img_width; i = i +1)
+        line_buffer[2][i] <= input_ram[(row + 2)*img_width + i];
+        state <= MAC_RESET;
+      end 
+      else begin
         state <= DONE;
       end 
     end
@@ -151,5 +153,6 @@ always@(posedge clk or posedge rst)begin
         done <= 1;
     end
     endcase
+  end
 end
 endmodule

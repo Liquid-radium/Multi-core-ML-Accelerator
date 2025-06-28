@@ -1,0 +1,180 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator
+vavg_pool_unit
+!s110 1751095193
+!i10b 1
+!s100 5jTW2BR6PQbf]MT:08boA1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IoPOEi]bFGbaaza2C>OF5B1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1751095190
+8avg_pool_unit.v
+Favg_pool_unit.v
+!i122 0
+L0 1 58
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1751095193.000000
+!s107 avg_pool_unit.v|
+!s90 avg_pool_unit.v|
+!i113 1
+Z4 tCvgOpt 0
+vcnn_engine
+Z5 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+!s110 1751096071
+!i10b 1
+!s100 gSK`bzmf4@8dhdQ4]cJ>i2
+R1
+I]9^F@d3blgX5zeaG1Lkm33
+R2
+S1
+R0
+w1751095840
+8cnn_engine.v
+Fcnn_engine.v
+!i122 2
+L0 1 158
+R3
+r1
+!s85 0
+31
+!s108 1751096070.000000
+!s107 cnn_engine.v|
+!s90 -sv|cnn_engine.v|
+!i113 1
+o-sv
+R4
+vcnn_top
+R5
+!s110 1751098421
+!i10b 1
+!s100 cG7aaMGlNP5>mz9dD:mzl2
+R1
+I<5C;3zcaEH[8Mm=z?266l3
+R2
+S1
+R0
+w1751098418
+8cnn_core_unit.v
+Fcnn_core_unit.v
+!i122 6
+L0 1 112
+R3
+r1
+!s85 0
+31
+!s108 1751098421.000000
+!s107 cnn_core_unit.v|
+!s90 -sv|cnn_core_unit.v|
+!i113 1
+o-sv
+R4
+vfc_layer
+!s110 1751095659
+!i10b 1
+!s100 jT`5FeEB9dNeD9XgHC?QR3
+R1
+IgVo1V8]F@]AnoBZZVThCf2
+R2
+R0
+w1751095655
+8fc_layer.v
+Ffc_layer.v
+!i122 1
+L0 1 30
+R3
+r1
+!s85 0
+31
+!s108 1751095659.000000
+!s107 fc_layer.v|
+!s90 fc_layer.v|
+!i113 1
+R4
+vmac_unit
+R5
+!s110 1751096319
+!i10b 1
+!s100 o?onlRZ1Y?SHgZWj27]Vf1
+R1
+IlJT3=aEC`i@odaY8TEVEV2
+R2
+S1
+R0
+w1750610388
+8mac_unit.v
+Fmac_unit.v
+!i122 4
+L0 1 59
+R3
+r1
+!s85 0
+31
+!s108 1751096318.000000
+!s107 mac_unit.v|
+!s90 -sv|mac_unit.v|
+!i113 1
+o-sv
+R4
+vpool_layer
+R5
+!s110 1751096564
+!i10b 1
+!s100 EV`M3h2l<7AJ0?:JF552[1
+R1
+I_B=kN:k8dkX__b6052PjY3
+R2
+S1
+R0
+w1751096561
+8pool_layer.v
+Fpool_layer.v
+!i122 5
+L0 1 137
+R3
+r1
+!s85 0
+31
+!s108 1751096564.000000
+!s107 pool_layer.v|
+!s90 -sv|pool_layer.v|
+!i113 1
+o-sv
+R4
+vrelu_unit
+R5
+!s110 1751096308
+!i10b 1
+!s100 ?VUS_iG87zYleDWQcI;8V1
+R1
+I>R`VBC@:ba]jlF8InBK`S3
+R2
+S1
+R0
+w1750608535
+8relu_unit.v
+Frelu_unit.v
+!i122 3
+L0 1 7
+R3
+r1
+!s85 0
+31
+!s108 1751096308.000000
+!s107 relu_unit.v|
+!s90 -sv|relu_unit.v|
+!i113 1
+o-sv
+R4

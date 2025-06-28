@@ -1,9 +1,9 @@
 module avg_pool_unit(
-    input signed [7:0] layer2
-    input clk,
-    input rst,
-    input enable,
-    output reg signed [7:0] avg
+  input signed [7:0] layer2,
+  input clk,
+  input rst,
+  input enable,
+  output reg signed [7:0] avg
 );
 
 reg signed [7:0] stage1;
