@@ -8,6 +8,7 @@ module fc_layer(
 );
 
 reg signed [31:0] fc_weights [0:8];
+reg signed [31:0] fc_weights [0:8];
 reg signed [31:0] fc_output;
 reg signed [31:0] bias;
 integer i;
