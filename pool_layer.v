@@ -2,15 +2,15 @@ module pool_layer(
     input clk,
     input rst,
     input start,
-    input signed [7:0] input_fm [0:35],
+    input signed [31:0] input_fm [0:35],
     output reg done,
-    output reg signed [7:0] output_fm [0:8]
+    output reg signed [31:0] output_fm [0:8]
 );
 
 parameter fm_width = 6;
 parameter fm_height = 6;
 
-reg signed [7:0] line_buffer [0:1][0:5];
+reg signed [31:0] line_buffer [0:1][0:5];
 
 localparam IDLE = 0,
            LOAD = 1,
@@ -30,10 +30,10 @@ reg [2:0] state;
 integer i;
 
 //parameters for instantiation
-reg signed [7:0] avg_pool_ip;
+reg signed [31:0] avg_pool_ip;
 reg signed avg_pool_en;
 reg signed avg_pool_rst;
-reg signed [7:0] avg_pool_op;
+reg signed [31:0] avg_pool_op;
 
 avg_pool_unit avg_pool(
     .layer2(avg_pool_ip),

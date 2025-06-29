@@ -2,7 +2,7 @@
 // Wishbone Wrapper for dual_ram
 //===========================
 
-module dual_ram_wb #(parameter ADDR_WIDTH = 32, DATA_WIDTH = 8)(
+module dual_ram_wb #(parameter addr_width = 32, data_width = 32)(
     input clk,
     input rst,
 
@@ -10,24 +10,24 @@ module dual_ram_wb #(parameter ADDR_WIDTH = 32, DATA_WIDTH = 8)(
     input           wb_cyc_i,
     input           wb_stb_i,
     input           wb_we_i,
-    input [ADDR_WIDTH-1:0] wb_adr_i,
-    input [DATA_WIDTH-1:0] wb_dat_i,
-    output reg [DATA_WIDTH-1:0] wb_dat_o,
+    input [addr_width-1:0] wb_adr_i,
+    input [data_width-1:0] wb_dat_i,
+    output reg [data_width-1:0] wb_dat_o,
     output reg      wb_ack_o,
 
     // Dual port RAM connections (cnn is port b)
     input           cnn_we,
-    input [ADDR_WIDTH-1:0] cnn_addr,
-    input [DATA_WIDTH-1:0] cnn_data,
-    output [DATA_WIDTH-1:0] cnn_q
+    input [addr_width-1:0] cnn_addr,
+    input [data_width-1:0] cnn_data,
+    output [data_width-1:0] cnn_q
 );
 
     wire ram_we_a = wb_cyc_i & wb_stb_i & wb_we_i;
     wire ram_en_a = wb_cyc_i & wb_stb_i;
 
-    wire [DATA_WIDTH-1:0] ram_q_a;
+    wire [data_width-1:0] ram_q_a;
 
-    dual_ram #(ADDR_WIDTH, DATA_WIDTH) ram_inst (
+    dual_ram #(addr_width, data_width) ram_inst (
         .clk(clk),
         .we_a(ram_we_a),
         .addr_a(wb_adr_i),

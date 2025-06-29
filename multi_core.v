@@ -1,11 +1,11 @@
 module multi_core #(
     parameter N = 4,
     parameter img_size = 64,
-    parameter output_size = 16
+    parameter output_size = 32
 )(
     input clk,
     input rst, 
-    input [7:0] input_images [0:N-1][0:img_size-1],
+    input [31:0] input_images [0:N-1][0:img_size-1],
     output [output_size-1:0] predictions[0 : N-1],
     output reg all_done
 );

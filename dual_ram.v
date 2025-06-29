@@ -1,9 +1,9 @@
 module dual_ram #(
     parameter addr_width = 32,
-    data_width = 8
+    data_width = 32
 )(
     input clk,
-    
+
     //uart port (port a)
     input we_a,
     input [addr_width-1:0] addr_a,

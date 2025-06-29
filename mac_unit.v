@@ -1,6 +1,6 @@
 module mac_unit(
-    input signed [15:0] a,
-    input signed [15:0] b,
+    input signed [31:0] a,
+    input signed [31:0] b,
     input rst,
     input clk,
     input enable,
@@ -11,7 +11,7 @@ localparam signed [31:0] max_val = 32'sd2147483647;
 localparam signed [31:0] min_val = -32'sd2147483648;
 
 reg signed [31:0] stage1_op;
-reg signed [15:0] stage2_op;
+reg signed [31:0] stage2_op;
 reg signed [31:0] stage3_op;
 
 always @ (posedge clk) begin
@@ -28,7 +28,7 @@ always @ (posedge clk) begin
     stage2_op <= 32'sd0;
   end
   else begin
-    stage2_op <= stage1_op[23:8];
+    stage2_op <= stage1_op;
   end
 end
 

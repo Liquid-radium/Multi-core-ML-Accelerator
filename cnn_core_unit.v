@@ -2,8 +2,8 @@ module cnn_top(
     input clk,
     input rst,
     input enable,
-    input [7:0] input_img [0:63],
-    output reg [15:0] value,
+    input [31:0] input_img [0:63],
+    output reg [31:0] value,
     output reg done
 );
 
@@ -12,9 +12,9 @@ reg cnn_start, pool_start, fc_start;
 wire cnn_done, pool_done, fc_done;
 
 //output wires needed for inter-layer connection
-wire signed [7:0] conv_output [0:35];
-wire signed [7:0] pool_output [0:8];
-wire signed [15:0] fc_output;
+wire signed [31:0] conv_output [0:35];
+wire signed [31:0] pool_output [0:8];
+wire signed [31:0] fc_output;
 
 //FSM states
 localparam IDLE = 0,

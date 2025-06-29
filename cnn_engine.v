@@ -1,7 +1,7 @@
 module cnn_engine(
     input clk,
     input rst, 
-    input [64*7:0] input_ram, //stores the value of each pixel in the image
+    input [64*31:0] input_ram, //stores the value of each pixel in the image
     input start,
     output reg done,
     output reg signed [36*31:0] output_ram
@@ -11,8 +11,8 @@ parameter img_width = 8;
 parameter img_height = 8;
 integer i;
 
-reg [7:0] line_buffer[0:2][0:7]; //stores 3 rows of the image (image line, therefore 8 columns * 3 rows)
-reg [7:0] kernel[0:2][0:2]; //stores the kernel values
+reg [31:0] line_buffer[0:2][0:7]; //stores 3 rows of the image (image line, therefore 8 columns * 3 rows)
+reg [31:0] kernel[0:2][0:2]; //stores the kernel values
 
 localparam IDLE = 0,
            LOAD = 1,
@@ -31,8 +31,8 @@ reg [3:0] mac_count; //stores the number of mac inputs multiplied and accumulate
 reg [3:0] latency_counter; //counter for waiting for pipeline to flush (2 bits sufficient, 4 for deeper pipelines)
 
 // mac parameters for instantiation
-reg signed [15:0] mac_a;
-reg signed [15:0] mac_b;
+reg signed [31:0] mac_a;
+reg signed [31:0] mac_b;
 reg signed [31:0] mac_acc;
 reg [31:0] relu_acc;
 reg mac_en;

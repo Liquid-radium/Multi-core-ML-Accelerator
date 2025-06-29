@@ -131,6 +131,31 @@ r1
 !i113 1
 o-sv
 R4
+vdual_ram_wb
+R5
+Z6 !s110 1751177531
+!i10b 1
+!s100 iMU1[[lA5h8[GS0Z;R@O01
+R1
+Idn3kkajE4[4EDP?NOA8gm0
+R2
+S1
+R0
+Z7 w1751177196
+Z8 8wb_wrapper.v
+Z9 Fwb_wrapper.v
+!i122 12
+L0 5 51
+R3
+r1
+!s85 0
+31
+Z10 !s108 1751177531.000000
+Z11 !s107 wb_wrapper.v|
+Z12 !s90 -sv|wb_wrapper.v|
+!i113 1
+o-sv
+R4
 vfc_layer
 !s110 1751095659
 !i10b 1
@@ -175,6 +200,31 @@ r1
 !s108 1751124548.000000
 !s107 gpio_module.v|
 !s90 -sv|gpio_module.v|
+!i113 1
+o-sv
+R4
+vgpio_wb
+R5
+R6
+!i10b 1
+!s100 2_PE6Un6[DJX5IdTJ`_AB3
+R1
+IE^;^1W1:ilVNPml>jfI4R2
+R2
+S1
+R0
+R7
+R8
+R9
+!i122 12
+L0 61 40
+R3
+r1
+!s85 0
+31
+R10
+R11
+R12
 !i113 1
 o-sv
 R4
@@ -275,6 +325,106 @@ r1
 !s108 1751096308.000000
 !s107 relu_unit.v|
 !s90 -sv|relu_unit.v|
+!i113 1
+o-sv
+R4
+vrxuart
+R5
+!s110 1751178746
+!i10b 1
+!s100 FPi1TSHfCPRz3^8=8HWMS0
+R1
+IjhNW`ed25TY`;hhHNN=@=2
+R2
+S1
+R0
+w1751178678
+8rxuart.v
+Frxuart.v
+!i122 14
+L0 93 437
+R3
+r1
+!s85 0
+31
+!s108 1751178746.000000
+!s107 rxuart.v|
+!s90 -sv|rxuart.v|
+!i113 1
+o-sv
+R4
+vtxuart
+R5
+!s110 1751178753
+!i10b 1
+!s100 F9_1lc_AfAj3MOkO]1SlY1
+R1
+Ih_BlJzjCV9M6kELUz`jU<1
+R2
+S1
+R0
+w1751178689
+8txuart.v
+Ftxuart.v
+!i122 15
+L0 99 1128
+R3
+r1
+!s85 0
+31
+!s108 1751178753.000000
+!s107 txuart.v|
+!s90 -sv|txuart.v|
+!i113 1
+o-sv
+R4
+vwb_interconnect
+R5
+!s110 1751179613
+!i10b 1
+!s100 3>X>k18LNhL=PBl2`lR>g0
+R1
+If9hQ:n]XaLZWX`nEb0P^a3
+R2
+S1
+R0
+w1751179610
+8wb_interconnect.v
+Fwb_interconnect.v
+!i122 16
+L0 1 115
+R3
+r1
+!s85 0
+31
+!s108 1751179613.000000
+!s107 wb_interconnect.v|
+!s90 -sv|wb_interconnect.v|
+!i113 1
+o-sv
+R4
+vwbuart
+R5
+!s110 1751177543
+!i10b 1
+!s100 ^=>;OB6S<gSV_Oi[XVFVO3
+R1
+Il>RP22nMQRgF6lSQ^l_:d2
+R2
+S1
+R0
+w1751177460
+8wbuart.v
+Fwbuart.v
+!i122 13
+L0 45 493
+R3
+r1
+!s85 0
+31
+!s108 1751177543.000000
+!s107 wbuart.v|
+!s90 -sv|wbuart.v|
 !i113 1
 o-sv
 R4
