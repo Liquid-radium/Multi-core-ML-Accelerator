@@ -1,0 +1,21 @@
+vlog -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/avg_pool_unit.v 
+vlog -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/cnn_core_unit.v
+vlog -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/cnn_engine.v
+vlog -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/fc_layer.v
+vlog -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/mac_unit.v
+vlog -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/multi_core.v
+vlog -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/pool_layer.v
+vlog -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/relu_unit.v
+vlog -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/tb_cnn_multi.v
+vlog -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/tb_cnn_unit.v
+vlog -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/hardware_interfaces/bus_decoder.v
+vlog -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/hardware_interfaces/dual_ram.v
+vlog -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/hardware_interfaces/gpio_module.v
+vlog -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/hardware_interfaces/tb_gpio.v
+vlog -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/uart_modules/rxuart.v
+vlog -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/uart_modules/txuart.v
+vlog -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/uart_modules/wbuart.v
+vlog -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/tb_top.v
+vlog -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/wb_interconnect.v
+vlog -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/wb_wrapper.v
+vsim /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/tb_top.v

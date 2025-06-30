@@ -1,3 +1,5 @@
+`include "wb_wrapper.v"
+
 module wb_interconnect(
     input clk,
     input rst,
@@ -6,8 +8,10 @@ module wb_interconnect(
     input i_wb_stb,
     input [3:0] i_wb_sel,
     input [31:0] i_wb_addr,
-    input [7:0] i_wb_data,
-    output [15:0] o_wb_data,
+    input [31:0] i_wb_data,
+    input re,
+    input we,
+    output [31:0] o_wb_data,
     output o_wb_ack,
     output o_wb_stall,
 
@@ -21,7 +25,6 @@ parameter addr_width = 32;
 parameter data_width = 8;
 
 wire sel_ram, sel_uart, sel_gpio, sel_cnn;
-wire re, we;
 
 bus_decoder decoder(
     .data_addr(i_wb_addr),
@@ -44,7 +47,7 @@ bus_decoder decoder(
 wire [31:0] ram_data, uart_data, gpio_data, cnn_data;
 wire ram_ack, cnn_ack, gpio_ack, uart_ack;
 
-ram_wb ram_inst (
+dual_ram_wb ram_inst (
         .clk(clk), .rst(rst),
         .i_wb_cyc(i_wb_cyc & sel_ram),
         .i_wb_stb(i_wb_stb & sel_ram),
@@ -88,7 +91,7 @@ gpio_wb gpio_inst (
 );
 
 // CNN Core
-cnn_core cnn_inst (
+cnn_top cnn_inst (
         .clk(clk), .rst(rst),
         .i_wb_cyc(i_wb_cyc & sel_cnn),
         .i_wb_stb(i_wb_stb & sel_cnn),

@@ -1,0 +1,458 @@
+# do compile.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:01:24 on Jun 30,2025
+# vlog -reportprogress 300 -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/avg_pool_unit.v 
+# -- Compiling module avg_pool_unit
+# 
+# Top level modules:
+# 	avg_pool_unit
+# End time: 13:01:24 on Jun 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:01:24 on Jun 30,2025
+# vlog -reportprogress 300 -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/cnn_core_unit.v 
+# -- Compiling module cnn_top
+# 
+# Top level modules:
+# 	cnn_top
+# End time: 13:01:24 on Jun 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:01:24 on Jun 30,2025
+# vlog -reportprogress 300 -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/cnn_engine.v 
+# -- Compiling module cnn_engine
+# 
+# Top level modules:
+# 	cnn_engine
+# End time: 13:01:24 on Jun 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:01:24 on Jun 30,2025
+# vlog -reportprogress 300 -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/fc_layer.v 
+# -- Compiling module fc_layer
+# 
+# Top level modules:
+# 	fc_layer
+# End time: 13:01:24 on Jun 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:01:24 on Jun 30,2025
+# vlog -reportprogress 300 -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/mac_unit.v 
+# -- Compiling module mac_unit
+# 
+# Top level modules:
+# 	mac_unit
+# End time: 13:01:24 on Jun 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:01:24 on Jun 30,2025
+# vlog -reportprogress 300 -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/multi_core.v 
+# -- Compiling module multi_core
+# 
+# Top level modules:
+# 	multi_core
+# End time: 13:01:24 on Jun 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:01:24 on Jun 30,2025
+# vlog -reportprogress 300 -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/pool_layer.v 
+# -- Compiling module pool_layer
+# 
+# Top level modules:
+# 	pool_layer
+# End time: 13:01:24 on Jun 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:01:24 on Jun 30,2025
+# vlog -reportprogress 300 -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/relu_unit.v 
+# -- Compiling module relu_unit
+# 
+# Top level modules:
+# 	relu_unit
+# End time: 13:01:24 on Jun 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:01:24 on Jun 30,2025
+# vlog -reportprogress 300 -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/tb_cnn_multi.v 
+# -- Compiling module tb_cnn_multi
+# 
+# Top level modules:
+# 	tb_cnn_multi
+# End time: 13:01:24 on Jun 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:01:24 on Jun 30,2025
+# vlog -reportprogress 300 -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/tb_cnn_unit.v 
+# -- Compiling module tb_cnn_unit
+# 
+# Top level modules:
+# 	tb_cnn_unit
+# End time: 13:01:24 on Jun 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:01:24 on Jun 30,2025
+# vlog -reportprogress 300 -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/hardware_interfaces/bus_decoder.v 
+# -- Compiling module bus_decoder
+# 
+# Top level modules:
+# 	bus_decoder
+# End time: 13:01:25 on Jun 30,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:01:25 on Jun 30,2025
+# vlog -reportprogress 300 -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/hardware_interfaces/dual_ram.v 
+# -- Compiling module dual_ram
+# 
+# Top level modules:
+# 	dual_ram
+# End time: 13:01:25 on Jun 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:01:25 on Jun 30,2025
+# vlog -reportprogress 300 -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/hardware_interfaces/gpio_module.v 
+# -- Compiling module gpio_module
+# 
+# Top level modules:
+# 	gpio_module
+# End time: 13:01:25 on Jun 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:01:25 on Jun 30,2025
+# vlog -reportprogress 300 -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/hardware_interfaces/tb_gpio.v 
+# -- Compiling module tb_gpio
+# 
+# Top level modules:
+# 	tb_gpio
+# End time: 13:01:25 on Jun 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:01:25 on Jun 30,2025
+# vlog -reportprogress 300 -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/uart_modules/rxuart.v 
+# -- Compiling module rxuart
+# 
+# Top level modules:
+# 	rxuart
+# End time: 13:01:25 on Jun 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:01:25 on Jun 30,2025
+# vlog -reportprogress 300 -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/uart_modules/txuart.v 
+# -- Compiling module txuart
+# 
+# Top level modules:
+# 	txuart
+# End time: 13:01:25 on Jun 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:01:25 on Jun 30,2025
+# vlog -reportprogress 300 -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/uart_modules/wbuart.v 
+# -- Compiling module wbuart
+# 
+# Top level modules:
+# 	wbuart
+# End time: 13:01:25 on Jun 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:01:25 on Jun 30,2025
+# vlog -reportprogress 300 -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/tb_top.v 
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 13:01:25 on Jun 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:01:25 on Jun 30,2025
+# vlog -reportprogress 300 -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/wb_interconnect.v 
+# -- Compiling module dual_ram_wb
+# -- Compiling module gpio_wb
+# -- Compiling module wb_interconnect
+# 
+# Top level modules:
+# 	wb_interconnect
+# End time: 13:01:25 on Jun 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:01:25 on Jun 30,2025
+# vlog -reportprogress 300 -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/wb_wrapper.v 
+# -- Compiling module dual_ram_wb
+# -- Compiling module gpio_wb
+# 
+# Top level modules:
+# 	dual_ram_wb
+# 	gpio_wb
+# End time: 13:01:25 on Jun 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim tb_top
+# vsim tb_top 
+# Start time: 13:03:06 on Jun 30,2025
+# Loading sv_std.std
+# Loading work.tb_top
+# Loading work.wb_interconnect
+# Loading work.bus_decoder
+# Loading work.dual_ram_wb
+# Loading work.dual_ram
+# Loading work.wbuart
+# Loading work.rxuart
+# ** Error: (vsim-3033) Instantiation of 'ufifo' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/uart_inst File: /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/uart_modules/wbuart.v Line: 196
+#         Searched libraries:
+#             /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/work
+# ** Error: (vsim-3033) Instantiation of 'ufifo' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/uart_inst File: /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/uart_modules/wbuart.v Line: 349
+#         Searched libraries:
+#             /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/work
+# Loading work.txuart
+# Loading work.gpio_wb
+# ** Error: (vsim-3033) Instantiation of 'cnn_core' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut File: /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/wb_interconnect.v Line: 94
+#         Searched libraries:
+#             /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/work
+# Error loading design
+# End time: 13:03:06 on Jun 30,2025, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vsim tb_top
+# vsim tb_top 
+# Start time: 13:05:05 on Jun 30,2025
+# Loading sv_std.std
+# Loading work.tb_top
+# Loading work.wb_interconnect
+# Loading work.bus_decoder
+# Loading work.dual_ram_wb
+# Loading work.dual_ram
+# Loading work.wbuart
+# Loading work.rxuart
+# ** Error: (vsim-3033) Instantiation of 'ufifo' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/uart_inst File: /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/uart_modules/wbuart.v Line: 196
+#         Searched libraries:
+#             /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/work
+# ** Error: (vsim-3033) Instantiation of 'ufifo' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/uart_inst File: /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/uart_modules/wbuart.v Line: 349
+#         Searched libraries:
+#             /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/work
+# Loading work.txuart
+# Loading work.gpio_wb
+# ** Error: (vsim-3033) Instantiation of 'cnn_core' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut File: /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/wb_interconnect.v Line: 94
+#         Searched libraries:
+#             /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/work
+# Error loading design
+# End time: 13:05:05 on Jun 30,2025, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+do compile.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:05:09 on Jun 30,2025
+# vlog -reportprogress 300 -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/avg_pool_unit.v 
+# -- Compiling module avg_pool_unit
+# 
+# Top level modules:
+# 	avg_pool_unit
+# End time: 13:05:09 on Jun 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:05:09 on Jun 30,2025
+# vlog -reportprogress 300 -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/cnn_core_unit.v 
+# -- Compiling module cnn_top
+# 
+# Top level modules:
+# 	cnn_top
+# End time: 13:05:09 on Jun 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:05:09 on Jun 30,2025
+# vlog -reportprogress 300 -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/cnn_engine.v 
+# -- Compiling module cnn_engine
+# 
+# Top level modules:
+# 	cnn_engine
+# End time: 13:05:09 on Jun 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:05:09 on Jun 30,2025
+# vlog -reportprogress 300 -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/fc_layer.v 
+# -- Compiling module fc_layer
+# 
+# Top level modules:
+# 	fc_layer
+# End time: 13:05:09 on Jun 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:05:09 on Jun 30,2025
+# vlog -reportprogress 300 -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/mac_unit.v 
+# -- Compiling module mac_unit
+# 
+# Top level modules:
+# 	mac_unit
+# End time: 13:05:09 on Jun 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:05:09 on Jun 30,2025
+# vlog -reportprogress 300 -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/multi_core.v 
+# -- Compiling module multi_core
+# 
+# Top level modules:
+# 	multi_core
+# End time: 13:05:09 on Jun 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:05:09 on Jun 30,2025
+# vlog -reportprogress 300 -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/pool_layer.v 
+# -- Compiling module pool_layer
+# 
+# Top level modules:
+# 	pool_layer
+# End time: 13:05:09 on Jun 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:05:09 on Jun 30,2025
+# vlog -reportprogress 300 -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/relu_unit.v 
+# -- Compiling module relu_unit
+# 
+# Top level modules:
+# 	relu_unit
+# End time: 13:05:09 on Jun 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:05:09 on Jun 30,2025
+# vlog -reportprogress 300 -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/tb_cnn_multi.v 
+# -- Compiling module tb_cnn_multi
+# 
+# Top level modules:
+# 	tb_cnn_multi
+# End time: 13:05:09 on Jun 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:05:09 on Jun 30,2025
+# vlog -reportprogress 300 -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/tb_cnn_unit.v 
+# -- Compiling module tb_cnn_unit
+# 
+# Top level modules:
+# 	tb_cnn_unit
+# End time: 13:05:09 on Jun 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:05:09 on Jun 30,2025
+# vlog -reportprogress 300 -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/hardware_interfaces/bus_decoder.v 
+# -- Compiling module bus_decoder
+# 
+# Top level modules:
+# 	bus_decoder
+# End time: 13:05:09 on Jun 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:05:09 on Jun 30,2025
+# vlog -reportprogress 300 -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/hardware_interfaces/dual_ram.v 
+# -- Compiling module dual_ram
+# 
+# Top level modules:
+# 	dual_ram
+# End time: 13:05:09 on Jun 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:05:09 on Jun 30,2025
+# vlog -reportprogress 300 -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/hardware_interfaces/gpio_module.v 
+# -- Compiling module gpio_module
+# 
+# Top level modules:
+# 	gpio_module
+# End time: 13:05:09 on Jun 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:05:09 on Jun 30,2025
+# vlog -reportprogress 300 -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/hardware_interfaces/tb_gpio.v 
+# -- Compiling module tb_gpio
+# 
+# Top level modules:
+# 	tb_gpio
+# End time: 13:05:09 on Jun 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:05:09 on Jun 30,2025
+# vlog -reportprogress 300 -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/uart_modules/rxuart.v 
+# -- Compiling module rxuart
+# 
+# Top level modules:
+# 	rxuart
+# End time: 13:05:09 on Jun 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:05:09 on Jun 30,2025
+# vlog -reportprogress 300 -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/uart_modules/txuart.v 
+# -- Compiling module txuart
+# 
+# Top level modules:
+# 	txuart
+# End time: 13:05:09 on Jun 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:05:09 on Jun 30,2025
+# vlog -reportprogress 300 -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/uart_modules/wbuart.v 
+# -- Compiling module wbuart
+# 
+# Top level modules:
+# 	wbuart
+# End time: 13:05:09 on Jun 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:05:09 on Jun 30,2025
+# vlog -reportprogress 300 -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/tb_top.v 
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 13:05:09 on Jun 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:05:09 on Jun 30,2025
+# vlog -reportprogress 300 -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/wb_interconnect.v 
+# -- Compiling module dual_ram_wb
+# -- Compiling module gpio_wb
+# -- Compiling module wb_interconnect
+# 
+# Top level modules:
+# 	wb_interconnect
+# End time: 13:05:09 on Jun 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:05:09 on Jun 30,2025
+# vlog -reportprogress 300 -sv /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/wb_wrapper.v 
+# -- Compiling module dual_ram_wb
+# -- Compiling module gpio_wb
+# 
+# Top level modules:
+# 	dual_ram_wb
+# 	gpio_wb
+# End time: 13:05:09 on Jun 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# OpenFile /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/tb_top.v
+vsim tb_top
+# vsim tb_top 
+# Start time: 13:05:14 on Jun 30,2025
+# Loading sv_std.std
+# Loading work.tb_top
+# Loading work.wb_interconnect
+# Loading work.bus_decoder
+# Loading work.dual_ram_wb
+# Loading work.dual_ram
+# Loading work.wbuart
+# Loading work.rxuart
+# ** Error: (vsim-3033) Instantiation of 'ufifo' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/uart_inst File: /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/uart_modules/wbuart.v Line: 196
+#         Searched libraries:
+#             /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/work
+# ** Error: (vsim-3033) Instantiation of 'ufifo' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/uart_inst File: /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/uart_modules/wbuart.v Line: 349
+#         Searched libraries:
+#             /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/work
+# Loading work.txuart
+# Loading work.gpio_wb
+# Loading work.cnn_top
+# Loading work.cnn_engine
+# Loading work.mac_unit
+# Loading work.relu_unit
+# Loading work.pool_layer
+# Loading work.avg_pool_unit
+# Loading work.fc_layer
+# Error loading design
+# End time: 13:05:15 on Jun 30,2025, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 0
