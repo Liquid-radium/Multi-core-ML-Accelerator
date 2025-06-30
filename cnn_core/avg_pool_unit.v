@@ -3,7 +3,7 @@ module avg_pool_unit(
   input clk,
   input rst,
   input enable,
-  output reg signed [7:0] avg
+  output reg signed [31:0] avg
 );
 
 reg signed [31:0] stage1;

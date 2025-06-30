@@ -18,7 +18,7 @@ integer all_done_check;
 
 generate
 for(i = 0; i < N; i=i+1)begin
-  cnn_core_unit core(
+  cnn_top core(
     .clk(clk),
     .rst(rst),
     .enable(begin_core[i]),

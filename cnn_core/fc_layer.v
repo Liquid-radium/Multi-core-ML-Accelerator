@@ -2,12 +2,11 @@ module fc_layer(
     input clk,
     input enable,
     input rst,
-    input signed [32*8-1:0] fc_input,
+    input signed [31:0] fc_input [0:8],
     output reg done,
     output reg signed [31:0] fc_layer_op
 );
 
-reg signed [31:0] fc_weights [0:8];
 reg signed [31:0] fc_weights [0:8];
 reg signed [31:0] fc_output;
 reg signed [31:0] bias;

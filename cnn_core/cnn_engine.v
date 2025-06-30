@@ -1,10 +1,10 @@
 module cnn_engine(
     input clk,
     input rst, 
-    input [64*31:0] input_ram, //stores the value of each pixel in the image
+    input [31:0] input_ram [0:63], //stores the value of each pixel in the image
     input start,
     output reg done,
-    output reg signed [36*31:0] output_ram
+    output reg signed [31:0] output_ram [0:35]
 );
 
 parameter img_width = 8;

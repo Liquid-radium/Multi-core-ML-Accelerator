@@ -35,7 +35,7 @@ assign value = fc_output;
 cnn_engine conv_layer(
     .clk(clk),
     .rst(rst),
-    .enable(conv_start),
+    .start(conv_start),
     .input_ram(input_img),
     .done(cnn_done),
     .output_ram(conv_output)
@@ -45,7 +45,7 @@ cnn_engine conv_layer(
 pool_layer pool_layer(
     .clk(clk),
     .rst(rst),
-    .enable(pool_start),
+    .start(pool_start),
     .input_fm(conv_output),
     .done(pool_done),
     .output_fm(pool_output)
