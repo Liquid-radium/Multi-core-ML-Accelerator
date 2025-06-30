@@ -32,8 +32,6 @@ Each CNN core includes:
 - An **average pooling layer** to reduce spatial dimensions
 - A **fully connected layer** with **ReLU** activation for final classification
 
-Weights are **pre-trained and exported from Python** (NumPy `.npz` format) and are **loaded into the hardware module** to enable inference.
-
 ---
 
 ### Multi-Core Controller
