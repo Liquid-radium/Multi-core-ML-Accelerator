@@ -22,9 +22,11 @@ module wb_interconnect(
 );
 
 parameter addr_width = 32;
-parameter data_width = 8;
+parameter data_width = 32;
 
 wire sel_ram, sel_uart, sel_gpio, sel_cnn;
+wire re_cnn, re_gpio, re_ram, re_uart;
+wire we_cnn, we_gpio, we_ram, we_uart;
 
 bus_decoder decoder(
     .data_addr(i_wb_addr),
@@ -34,29 +36,35 @@ bus_decoder decoder(
     .sel_cnn(sel_cnn),
     .sel_gpio(sel_gpio),
     .sel_uart(sel_uart),
-    .re_cnn(re & sel_cnn),
-    .re_gpio(re & re_gpio),
-    .re_ram(re & re_ram),
-    .re_uart(re & re_uart),
-    .we_cnn(we & we_cnn),
-    .we_gpio(we & we_gpio),
-    .we_ram(we & we_ram),
-    .we_uart(we & we_uart)
+    .re_cnn(re_cnn),
+    .re_gpio(re_gpio),
+    .re_ram(re_ram),
+    .re_uart(re_uart),
+    .we_cnn(we_cnn),
+    .we_gpio(we_gpio),
+    .we_ram(we_ram),
+    .we_uart(we_uart)
 );
 
 wire [31:0] ram_data, uart_data, gpio_data, cnn_data;
+wire [31:0] cnn_addr, ram_addr, gpio_addr, uart_addr;
 wire ram_ack, cnn_ack, gpio_ack, uart_ack;
 
 dual_ram_wb ram_inst (
         .clk(clk), .rst(rst),
-        .i_wb_cyc(i_wb_cyc & sel_ram),
-        .i_wb_stb(i_wb_stb & sel_ram),
-        .i_wb_we(i_wb_we),
-        .i_wb_sel(i_wb_sel),
-        .i_wb_addr(i_wb_addr),
-        .i_wb_data(i_wb_data),
-        .o_wb_data(ram_data),
-        .o_wb_ack(ram_ack)
+        .wb_cyc_i(i_wb_cyc & sel_ram),
+        .wb_stb_i(i_wb_stb & sel_ram),
+        .wb_we_i(i_wb_we),
+        .wb_sel_i(i_wb_sel),
+        .wb_adr_i(i_wb_addr),
+        .wb_dat_i(i_wb_data),
+        .wb_dat_o(ram_data),
+        .wb_ack_o(ram_ack),
+        .cnn_we(we_cnn),
+        .cnn_data(cnn_data),
+        .cnn_addr(cnn_addr),
+        .cnn_q(cnn_data)
+
 );
 
 // UART
@@ -70,38 +78,39 @@ wbuart uart_inst (
         .o_wb_data(uart_data),
         .o_wb_ack(uart_ack),
         .o_wb_stall(uart_stall),
-        .i_rx(uart_rx),
-        .o_tx(uart_tx),
-        .o_int() // optional
+        .i_uart_rx(uart_rx),
+        .o_uart_tx(uart_tx)
 ); 
 
 // GPIO
 gpio_wb gpio_inst (
         .clk(clk), .rst(rst),
-        .i_wb_cyc(i_wb_cyc & sel_gpio),
-        .i_wb_stb(i_wb_stb & sel_gpio),
-        .i_wb_we(i_wb_we),
-        .i_wb_sel(i_wb_sel),
-        .i_wb_addr(i_wb_addr[4:0]),
-        .i_wb_data(i_wb_data),
-        .o_wb_data(gpio_data),
-        .o_wb_ack(gpio_ack),
-        .o_wb_stall(gpio_stall),
-        .io_pins(gpio_pins)    
+        .wb_cyc_i(i_wb_cyc & sel_gpio),
+        .wb_stb_i(i_wb_stb & sel_gpio),
+        .wb_we_i(i_wb_we),
+        .wb_sel_i(i_wb_sel),
+        .wb_adr_i(i_wb_addr[4:0]),
+        .wb_dat_i(wb_dat),
+        .wb_dat_o(gpio_data),
+        .wb_ack_o(gpio_ack),
+        .led1(gpio_pins[0]),
+        .led2(gpio_pins[1]),
+        .led3(gpio_pins[2]),
+        .led4(gpio_pins[3])    
 );
 
 // CNN Core
-cnn_top cnn_inst (
+multi_core_wb cnn_inst (
         .clk(clk), .rst(rst),
-        .i_wb_cyc(i_wb_cyc & sel_cnn),
-        .i_wb_stb(i_wb_stb & sel_cnn),
+        .i_wb_cyc(i_wb_cyc),
+        .i_wb_stb(i_wb_stb),
         .i_wb_we(i_wb_we),
         .i_wb_sel(i_wb_sel),
         .i_wb_addr(i_wb_addr),
         .i_wb_data(i_wb_data),
-        .o_wb_data(cnn_data),
-        .o_wb_ack(cnn_ack),
-        .o_wb_stall(cnn_stall)
+        .o_wb_data(o_wb_data),
+        .o_wb_ack(o_wb_ack),
+        .o_wb_stall(o_wb_stall)
 );    
 
 // output mux
