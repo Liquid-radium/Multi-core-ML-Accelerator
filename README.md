@@ -88,19 +88,19 @@ All modules were tested using **ModelSim** via:
 ## Directory Structure (Example)
 Multi-core-ML-Accelerator
 
-├── cnn_core/ # Convolutional, Pooling, FC, ReLU
+├── cnn_core: Convolutional, Pooling, FC, ReLU
 
-├── uart_modules/ # wbuart32 from ZipCPU
+├── uart_modules: wbuart32 from ZipCPU
 
-├── gpio_module/ # GPIO controller
+├── gpio_module: GPIO controller
 
-├── memory/ # Dual-port RAM
+├── memory: Dual-port RAM
 
-├── wishbone/ # Interconnect + decoder
+├── wishbone: Interconnect + decoder
 
-├── tb/ # Testbenches
+├── tb: Testbenches
 
-└── README.md # This file
+└── README.md 
 
 ---
 
