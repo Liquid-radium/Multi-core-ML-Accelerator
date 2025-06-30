@@ -79,12 +79,11 @@ The GPIO module is used to control and monitor 4 LEDs:
 
 ---
 
-## 🧪 Simulation & Testing
+## Simulation & Testing
 
 All modules were tested using **ModelSim** via:
 - Individual **unit testbenches** for CNN, RAM, UART, and GPIO
 - A **top-level testbench** that simulates the entire multi-core system
-- Functional testing using **pre-trained weight files** in `.npz` format
 
 ---
 
