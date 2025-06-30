@@ -96,7 +96,7 @@ initial begin
     wb_write(32'h0000_0000 + i, i);
   end
   wb_write(32'h4000_0000, 32'h1);
-  wait(dut.cnn_inst.cnn_ack);
+  wait(dut.cnn_inst.o_wb_ack);
   wb_read(32'h4000_0004);
   #100;
   $stop;
