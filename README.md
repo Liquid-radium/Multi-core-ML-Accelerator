@@ -8,10 +8,10 @@ This repository contains the complete simulation of a **multi-core machine learn
 
 This project implements a **multi-core CNN (Convolutional Neural Network) system**, where each **CNN core** is an independent hardware pipeline consisting of:
 
-- 🔹 Convolutional Engine  
-- 🔹 Average Pooling Layer  
-- 🔹 Fully Connected Layer  
-- 🔹 ReLU Activation Function
+- Convolutional Engine  
+- Average Pooling Layer  
+- Fully Connected Layer  
+- ReLU Activation Function
 
 These CNN cores operate concurrently and are instantiated **4 times** in the top-level module. The entire setup is connected through:
 
