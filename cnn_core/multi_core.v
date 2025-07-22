@@ -56,12 +56,13 @@ always @ (posedge clk) begin
           state <= WAIT_FOR_DONE;
         end
         WAIT_FOR_DONE: begin
-          for(j=0; j<N; j=j+1)begin
-            if(!done[j])begin
-              all_done_check = 0;
+          all_done_check = 1; // assume all cores are done
+          for(j = 0; j < N; j = j + 1) begin
+            if (!done[j]) begin
+              all_done_check = 0; // if any core is not done, set to 0
             end
           end
-          if(all_done_check)begin
+          if (all_done_check) begin
             all_done <= 1;
             state <= DONE_STATE;
           end
