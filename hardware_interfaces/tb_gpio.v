@@ -22,8 +22,10 @@ gpio_module dut(
     .led_done(led_done)
 );
 
-initial clk = 0;
-forever #5 clk = ~clk;
+initial begin 
+  clk = 0;
+  forever #5 clk = ~clk;
+end 
 
 reg [3:0] led_in;
 integer i;
