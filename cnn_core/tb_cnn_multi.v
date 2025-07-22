@@ -12,7 +12,7 @@ reg clk;
 reg rst;
 reg [31:0] input_images [0:n-1][0:img_size-1];
 wire [out_width-1:0] predictions[0 : n-1];
-wire all_done;
+reg all_done;
 
 //instantiation of module
 multi_core dut(
