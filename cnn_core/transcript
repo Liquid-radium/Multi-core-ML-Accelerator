@@ -1,0 +1,10 @@
+# do compile.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:38:52 on Jul 22,2025
+# vlog -reportprogress 300 -sv cnn_core_unit.v 
+# -- Compiling module cnn_top
+# 
+# Top level modules:
+# 	cnn_top
+# End time: 15:38:53 on Jul 22,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

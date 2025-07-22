@@ -31,6 +31,10 @@ reg [31:0] test_image [0:img_size-1];
 integer i;
 
 initial begin
+  clk = 0;
+  rst = 0;
+  enable = 0;
+  #10;
   for (i = 0; i < img_size; i = i + 1)begin
     test_image[i] = 32'd1;
   end
