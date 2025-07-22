@@ -49,7 +49,7 @@ always @ (posedge clk) begin
     row <= 0;
     col <= 0;
     latency_counter <= 0;
-  end else begin
+  end else if (~rst) begin
     case(state)
     IDLE: begin
       row <= 0;

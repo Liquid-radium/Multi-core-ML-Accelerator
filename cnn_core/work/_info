@@ -11,7 +11,7 @@ cModel Technology
 Z0 d/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core
 vavg_pool_unit
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1753211483
+Z2 !s110 1753211518
 !i10b 1
 !s100 ^7ECaDLc98=1GTj;=Z`VC3
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -22,18 +22,18 @@ R0
 w1751260953
 8avg_pool_unit.v
 Favg_pool_unit.v
-!i122 86
+!i122 92
 L0 1 58
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1753211483.000000
-!s107 tb_cnn_unit.v|tb_cnn_multi.v|relu_unit.v|pool_layer.v|multi_core.v|mac_unit.v|fc_layer.v|cnn_engine.v|cnn_core_unit.v|avg_pool_unit.v|
-Z7 !s90 -reportprogress|300|-sv|avg_pool_unit.v|cnn_core_unit.v|cnn_engine.v|fc_layer.v|mac_unit.v|multi_core.v|pool_layer.v|relu_unit.v|tb_cnn_multi.v|tb_cnn_unit.v|
+Z6 !s108 1753211518.000000
+!s107 avg_pool_unit.v|
+!s90 -reportprogress|300|-sv|avg_pool_unit.v|
 !i113 1
 o-sv
-Z8 tCvgOpt 0
+Z7 tCvgOpt 0
 vcnn_engine
 R1
 R2
@@ -47,18 +47,18 @@ R0
 w1753211236
 8cnn_engine.v
 Fcnn_engine.v
-!i122 86
+!i122 88
 L0 1 158
 R5
 r1
 !s85 0
 31
 R6
-Z9 !s107 tb_cnn_unit.v|tb_cnn_multi.v|relu_unit.v|pool_layer.v|multi_core.v|mac_unit.v|fc_layer.v|cnn_engine.v|cnn_core_unit.v|avg_pool_unit.v|
-R7
+!s107 cnn_engine.v|
+!s90 -reportprogress|300|-sv|cnn_engine.v|
 !i113 1
 o-sv
-R8
+R7
 vcnn_top
 R1
 R2
@@ -72,18 +72,18 @@ R0
 w1753211250
 8cnn_core_unit.v
 Fcnn_core_unit.v
-!i122 86
+!i122 87
 L0 1 112
 R5
 r1
 !s85 0
 31
 R6
-R9
-R7
+!s107 cnn_core_unit.v|
+!s90 -reportprogress|300|-sv|cnn_core_unit.v|
 !i113 1
 o-sv
-R8
+R7
 vfc_layer
 R1
 R2
@@ -97,18 +97,18 @@ R0
 w1753211259
 8fc_layer.v
 Ffc_layer.v
-!i122 86
+!i122 90
 L0 1 30
 R5
 r1
 !s85 0
 31
 R6
-R9
-R7
+!s107 fc_layer.v|
+!s90 -reportprogress|300|-sv|fc_layer.v|
 !i113 1
 o-sv
-R8
+R7
 vmac_unit
 R1
 R2
@@ -122,18 +122,18 @@ R0
 w1751179020
 8mac_unit.v
 Fmac_unit.v
-!i122 86
+!i122 94
 L0 1 59
 R5
 r1
 !s85 0
 31
 R6
-R9
-R7
+!s107 mac_unit.v|
+!s90 -reportprogress|300|-sv|mac_unit.v|
 !i113 1
 o-sv
-R8
+R7
 vmulti_core
 R1
 R2
@@ -147,18 +147,18 @@ R0
 w1753178379
 8multi_core.v
 Fmulti_core.v
-!i122 86
+!i122 95
 L0 1 76
 R5
 r1
 !s85 0
 31
 R6
-R9
-R7
+!s107 multi_core.v|
+!s90 -reportprogress|300|-sv|multi_core.v|
 !i113 1
 o-sv
-R8
+R7
 vpool_layer
 R1
 R2
@@ -172,18 +172,18 @@ R0
 w1753211278
 8pool_layer.v
 Fpool_layer.v
-!i122 86
+!i122 89
 L0 1 137
 R5
 r1
 !s85 0
 31
 R6
-R9
-R7
+!s107 pool_layer.v|
+!s90 -reportprogress|300|-sv|pool_layer.v|
 !i113 1
 o-sv
-R8
+R7
 vrelu_unit
 R1
 R2
@@ -197,18 +197,18 @@ R0
 w1750608535
 8relu_unit.v
 Frelu_unit.v
-!i122 86
+!i122 93
 L0 1 7
 R5
 r1
 !s85 0
 31
 R6
-R9
-R7
+!s107 relu_unit.v|
+!s90 -reportprogress|300|-sv|relu_unit.v|
 !i113 1
 o-sv
-R8
+R7
 vtb_cnn_multi
 R1
 R2
@@ -222,21 +222,21 @@ R0
 w1753179734
 8tb_cnn_multi.v
 Ftb_cnn_multi.v
-!i122 86
+!i122 91
 L0 3 55
 R5
 r1
 !s85 0
 31
 R6
-R9
-R7
+!s107 tb_cnn_multi.v|
+!s90 -reportprogress|300|-sv|tb_cnn_multi.v|
 !i113 1
 o-sv
-R8
+R7
 vtb_cnn_unit
 R1
-R2
+!s110 1753211528
 !i10b 1
 !s100 8MzTW@o[a:liA:ThiDLVH3
 R3
@@ -247,15 +247,15 @@ R0
 w1753211307
 8tb_cnn_unit.v
 Ftb_cnn_unit.v
-!i122 86
+!i122 96
 L0 3 57
 R5
 r1
 !s85 0
 31
-R6
-R9
-R7
+!s108 1753211528.000000
+!s107 tb_cnn_unit.v|
+!s90 -reportprogress|300|-sv|tb_cnn_unit.v|
 !i113 1
 o-sv
-R8
+R7

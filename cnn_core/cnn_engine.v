@@ -70,7 +70,7 @@ always@(posedge clk)begin
     latency_counter <= 4'b0;
     mac_en <= 0;
     mac_rst <= 0;
-  end else begin
+  end else if (~rst) begin
     case(state)
     IDLE: begin
       if (start) begin

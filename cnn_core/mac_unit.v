@@ -18,7 +18,7 @@ always @ (posedge clk) begin
   if (rst) begin
     stage1_op <= 32'sd0;
   end
-  else if (enable) begin
+  else if (enable & ~rst) begin
     stage1_op <= a * b;
   end
 end
@@ -27,7 +27,7 @@ always @ (posedge clk) begin
   if (rst) begin
     stage2_op <= 32'sd0;
   end
-  else begin
+  else if (~rst) begin
     stage2_op <= stage1_op;
   end
 end
@@ -36,7 +36,7 @@ always @ (posedge clk) begin
   if (rst) begin
     stage3_op <= 32'sd0;
   end
-  else begin
+  else if (~rst) begin
     stage3_op <= stage3_op + stage2_op;
     if (stage3_op > max_val) begin
       stage3_op <= max_val;
@@ -51,7 +51,7 @@ always @ (posedge clk) begin
   if (rst) begin
     acc <= 32'sd0;;
   end 
-  else begin
+  else if (~rst) begin
     acc <= stage3_op;
   end   
 end

@@ -67,7 +67,7 @@ always @ (posedge clk) begin
     cnn_start <= 0;
     pool_start <= 0;
     fc_start <= 0;
-  end else if (enable) begin
+  end else if (enable & ~rst) begin
     case(state) 
       IDLE: begin
         cnn_start <= 1;

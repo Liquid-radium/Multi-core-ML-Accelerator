@@ -41,7 +41,7 @@ always @ (posedge clk) begin
     for(j=0; j<N; j=j+1)begin
       begin_core[j] <= 0;
     end
-  end else begin
+  end else if (~rst) begin
     case(state)
         IDLE: begin
           for(j = 0; j<N; j=j+1)begin

@@ -16,7 +16,7 @@ always @ (posedge clk) begin
   if (rst) begin
     fc_output <= 32'd0;
   end 
-  else if(enable) begin
+  else if(enable & ~rst) begin
     for (i = 0; i < 9; i = i + 1) begin
       fc_output = fc_output + fc_input[i] * fc_weights[i];
     end
