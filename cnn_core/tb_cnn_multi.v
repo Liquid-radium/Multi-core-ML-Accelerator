@@ -23,9 +23,6 @@ multi_core dut(
     .all_done(all_done)
 );
 
-initial clk = 0;
-always #5 clk = ~clk;
-
 reg [31:0] test_images [0:n-1][0:img_size-1];
 integer i;
 integer j;
@@ -35,6 +32,7 @@ initial begin
   rst = 0;
   all_done = 0;
   #10;
+  always #5 clk = ~clk;
   for (j = 0; j < n; j = j + 1)begin
     for(i = 0; i < img_size; i = i + 1)begin
         test_images[j][i] = 32'd1;
