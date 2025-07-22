@@ -1,44 +1,75 @@
-# vsim tb_gpio 
-# Start time: 18:21:46 on Jul 22,2025
-# Loading sv_std.std
-# Loading work.tb_gpio
-# Loading work.gpio_module
-force -deposit /tb_gpio/clk 0
-run 5ns
-force -deposit /tb_gpio/clk 1
-run 5ns
-
-restart -f
-add wave sim:/tb_gpio/*
-run 100ns
-
-force -deposit /tb_gpio/clk 0
-run 5ns
-force -deposit /tb_gpio/clk 1
-run 5ns
-
-vlib work
-# ** Warning: (vlib-34) Library already exists at "work".
-vlog tb_gpio.v gpio_module.v
+# vsim tb_min 
+# Start time: 18:27:06 on Jul 22,2025
+# Loading work.tb_min
+add wave -position insertpoint sim:/tb_min/*
+run 100 ns
+# Time = 0 : clk = 0
+# Time = 5000 : clk = 1
+# Time = 10000 : clk = 0
+# Time = 15000 : clk = 1
+# Time = 20000 : clk = 0
+# Time = 25000 : clk = 1
+# Time = 30000 : clk = 0
+# Time = 35000 : clk = 1
+# Time = 40000 : clk = 0
+# Time = 45000 : clk = 1
+# ** Note: $finish    : tb_min.v(13)
+#    Time: 50 ns  Iteration: 0  Instance: /tb_min
+# 1
+# Break in Module tb_min at tb_min.v line 13
+run 50 ns
+# Time = 50000 : clk = 0
+# Time = 55000 : clk = 1
+# Time = 60000 : clk = 0
+# Time = 65000 : clk = 1
+# Time = 70000 : clk = 0
+# Time = 75000 : clk = 1
+# Time = 80000 : clk = 0
+# Time = 85000 : clk = 1
+# Time = 90000 : clk = 0
+# Time = 95000 : clk = 1
+vlog tb_min.v
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:25:25 on Jul 22,2025
-# vlog -reportprogress 300 tb_gpio.v gpio_module.v 
-# -- Compiling module tb_gpio
-# -- Compiling module gpio_module
+# Start time: 18:31:15 on Jul 22,2025
+# vlog -reportprogress 300 tb_min.v 
+# -- Compiling module tb_min
 # 
 # Top level modules:
-# 	tb_gpio
-# End time: 18:25:25 on Jul 22,2025, Elapsed time: 0:00:00
+# 	tb_min
+# End time: 18:31:15 on Jul 22,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+vsim tb_min
+# End time: 18:31:16 on Jul 22,2025, Elapsed time: 0:04:10
+# Errors: 0, Warnings: 0
+# vsim tb_min 
+# Start time: 18:31:16 on Jul 22,2025
+# Loading work.tb_min
+add wave sim:/tb_min/*
+run 50ns
+# Time = 0 : clk = 0
+# Time = 5000 : clk = 1
+# Time = 10000 : clk = 0
+# Time = 15000 : clk = 1
+# Time = 20000 : clk = 0
+# Time = 25000 : clk = 1
+# Time = 30000 : clk = 0
+# Time = 35000 : clk = 1
+# Time = 40000 : clk = 0
+# Time = 45000 : clk = 1
+# ** Note: $finish    : tb_min.v(13)
+#    Time: 50 ns  Iteration: 0  Instance: /tb_min
+# 1
+# Break in Module tb_min at tb_min.v line 13
+
 vsim tb_gpio
-# End time: 18:25:25 on Jul 22,2025, Elapsed time: 0:03:39
+# End time: 18:33:06 on Jul 22,2025, Elapsed time: 0:01:50
 # Errors: 0, Warnings: 0
 # vsim tb_gpio 
-# Start time: 18:25:25 on Jul 22,2025
+# Start time: 18:33:06 on Jul 22,2025
 # Loading work.tb_gpio
 # Loading work.gpio_module
-add wave sim:/tb_gpio/*
-run 100ns
-
-# End time: 18:25:55 on Jul 22,2025, Elapsed time: 0:00:30
+add wave -r *
+run 100 ns
+# Load canceled
+# End time: 18:36:27 on Jul 22,2025, Elapsed time: 0:03:21
 # Errors: 0, Warnings: 0

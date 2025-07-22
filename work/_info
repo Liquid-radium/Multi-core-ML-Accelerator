@@ -11,345 +11,345 @@ cModel Technology
 Z0 d/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator
 vavg_pool_unit
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-!s110 1753179611
+Z2 !s110 1753181011
 !i10b 1
 !s100 ^7ECaDLc98=1GTj;=Z`VC3
-Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
 ILMd:6iCj7=86<IWZ??_b32
-Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
 w1751260953
 8/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/avg_pool_unit.v
 F/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/avg_pool_unit.v
-!i122 63
+!i122 92
 L0 1 58
-Z4 OV;L;2020.1;71
+Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1753179611.000000
+Z6 !s108 1753181011.000000
 !s107 /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/avg_pool_unit.v|
 !s90 -reportprogress|300|-sv|/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/avg_pool_unit.v|
 !i113 1
 o-sv
-Z5 tCvgOpt 0
+Z7 tCvgOpt 0
 vbus_decoder
 R1
-Z6 !s110 1753178671
+Z8 !s110 1753181012
 !i10b 1
 !s100 PdkPoA4Pn[lZGL_U3bznU0
-R2
-I]=2YXW@8EgOl<6S4DGz5d0
 R3
+I]=2YXW@8EgOl<6S4DGz5d0
+R4
 S1
 R0
 w1751176124
 8/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/hardware_interfaces/bus_decoder.v
 F/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/hardware_interfaces/bus_decoder.v
-!i122 52
+!i122 102
 L0 1 25
-R4
+R5
 r1
 !s85 0
 31
-Z7 !s108 1753178671.000000
+Z9 !s108 1753181012.000000
 !s107 /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/hardware_interfaces/bus_decoder.v|
 !s90 -reportprogress|300|-sv|/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/hardware_interfaces/bus_decoder.v|
 !i113 1
 o-sv
-R5
+R7
 vcnn_engine
 R1
-Z8 !s110 1753179612
+R2
 !i10b 1
 !s100 IlHZCiJ<TffP=>P@<^d_B2
-R2
-IT]NXe[mHmLE^gk2<FWP4R0
 R3
+IT]NXe[mHmLE^gk2<FWP4R0
+R4
 S1
 R0
 w1751261317
 8/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/cnn_engine.v
 F/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/cnn_engine.v
-!i122 65
+!i122 94
 L0 1 158
-R4
+R5
 r1
 !s85 0
 31
-Z9 !s108 1753179612.000000
+R6
 !s107 /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/cnn_engine.v|
 !s90 -reportprogress|300|-sv|/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/cnn_engine.v|
 !i113 1
 o-sv
-R5
+R7
 vcnn_top
 R1
-R8
+R2
 !i10b 1
 !s100 JL?>ACPB3kaFM9kf>4kbG3
-R2
-IJ>Jgdj:870l`c>N:D4mm?1
 R3
+IJ>Jgdj:870l`c>N:D4mm?1
+R4
 S1
 R0
 w1751261335
 8/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/cnn_core_unit.v
 F/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/cnn_core_unit.v
-!i122 64
+!i122 93
 L0 1 112
-R4
+R5
 r1
 !s85 0
 31
-R9
+R6
 !s107 /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/cnn_core_unit.v|
 !s90 -reportprogress|300|-sv|/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/cnn_core_unit.v|
 !i113 1
 o-sv
-R5
+R7
 vdual_ram
 R1
-R6
+R8
 !i10b 1
 !s100 aKgie==[8m5E2[GG6G8]B3
-R2
-IF?9io1h8e2Ke[E4B4Kk=z2
 R3
+IF?9io1h8e2Ke[E4B4Kk=z2
+R4
 S1
 R0
 w1751178956
 8/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/hardware_interfaces/dual_ram.v
 F/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/hardware_interfaces/dual_ram.v
-!i122 53
+!i122 103
 L0 1 36
-R4
+R5
 r1
 !s85 0
 31
-R7
+R9
 !s107 /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/hardware_interfaces/dual_ram.v|
 !s90 -reportprogress|300|-sv|/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/hardware_interfaces/dual_ram.v|
 !i113 1
 o-sv
-R5
+R7
 vdual_ram_wb
 R1
-R6
+R8
 !i10b 1
 !s100 L^nilXD`Waf^NLKfj`<i?3
-R2
-I[]H`UL8Ezk8aPb=So<6z>1
 R3
+I[]H`UL8Ezk8aPb=So<6z>1
+R4
 S1
 R0
 Z10 w1751274751
 Z11 8/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/wb_wrapper.v
 Z12 F/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/wb_wrapper.v
-!i122 62
+!i122 112
 L0 5 52
-R4
+R5
 r1
 !s85 0
 31
-R7
-Z13 !s107 /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/wb_wrapper.v|
-Z14 !s90 -reportprogress|300|-sv|/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/wb_wrapper.v|
+R9
+!s107 /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/wb_wrapper.v|
+Z13 !s90 -reportprogress|300|-sv|/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/wb_wrapper.v|
 !i113 1
 o-sv
-R5
+R7
 vfc_layer
 R1
-R8
+R2
 !i10b 1
 !s100 jm[1Wzj^3iia=3QKE@FJS0
-R2
-Imzf:[PiDjMoZS7]9CnSVE1
 R3
+Imzf:[PiDjMoZS7]9CnSVE1
+R4
 S1
 R0
 w1751261315
 8/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/fc_layer.v
 F/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/fc_layer.v
-!i122 66
+!i122 95
 L0 1 30
-R4
+R5
 r1
 !s85 0
 31
-R9
+R6
 !s107 /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/fc_layer.v|
 !s90 -reportprogress|300|-sv|/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/fc_layer.v|
 !i113 1
 o-sv
-R5
+R7
 vgpio_module
 R1
-R6
+R8
 !i10b 1
 !s100 NB<`o^z?@_P4O7EY_n3IN0
-R2
-I_RE`9;^o?_YBj5[6b[@bm0
 R3
+I_RE`9;^o?_YBj5[6b[@bm0
+R4
 S1
 R0
-Z15 w1753178224
+w1753178224
 8/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/hardware_interfaces/gpio_module.v
 F/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/hardware_interfaces/gpio_module.v
-!i122 54
+!i122 104
 L0 1 48
-R4
+R5
 r1
 !s85 0
 31
-R7
+R9
 !s107 /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/hardware_interfaces/gpio_module.v|
 !s90 -reportprogress|300|-sv|/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/hardware_interfaces/gpio_module.v|
 !i113 1
 o-sv
-R5
+R7
 vgpio_wb
 R1
-R6
+R8
 !i10b 1
 !s100 >7G;0CRF:`Zm0cEJmAGjZ1
-R2
-IKfOATfiTPzC>RBf3[>:d[0
 R3
+IKfOATfiTPzC>RBf3[>:d[0
+R4
 S1
 R0
 R10
 R11
 R12
-!i122 62
+!i122 112
 L0 62 41
-R4
+R5
 r1
 !s85 0
 31
-R7
+R9
+Z14 !s107 /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/wb_wrapper.v|
 R13
-R14
 !i113 1
 o-sv
-R5
+R7
 vmac_unit
 R1
-R8
+R2
 !i10b 1
 !s100 Rh3Fa5X1_B:FUW]OF9gK>0
-R2
-I2^98bPZjhPcnE8O7nMZ450
 R3
+I2^98bPZjhPcnE8O7nMZ450
+R4
 S1
 R0
 w1751179020
 8/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/mac_unit.v
 F/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/mac_unit.v
-!i122 67
+!i122 96
 L0 1 59
-R4
+R5
 r1
 !s85 0
 31
-R9
+R6
 !s107 /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/mac_unit.v|
 !s90 -reportprogress|300|-sv|/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/mac_unit.v|
 !i113 1
 o-sv
-R5
+R7
 vmulti_core
 R1
-R8
+R2
 !i10b 1
 !s100 ^7ZS@Kf?i9N92@LUGiag02
-R2
-Id7O`ZlJILhWcQlGV_YD`c2
 R3
+Id7O`ZlJILhWcQlGV_YD`c2
+R4
 S1
 R0
 w1753178379
 8/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/multi_core.v
 F/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/multi_core.v
-!i122 68
+!i122 97
 L0 1 76
-R4
+R5
 r1
 !s85 0
 31
-R9
+R6
 !s107 /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/multi_core.v|
 !s90 -reportprogress|300|-sv|/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/multi_core.v|
 !i113 1
 o-sv
-R5
+R7
 vmulti_core_wb
 R1
-R6
+R8
 !i10b 1
 !s100 ^Fn@<HO;H7<EUO3oV5nDj2
-R2
-ICh:HzIaeLZMhXVKOJ6G=H2
 R3
+ICh:HzIaeLZMhXVKOJ6G=H2
+R4
 S1
 R0
 R10
 R11
 R12
-!i122 62
+!i122 112
 L0 110 86
-R4
+R5
 r1
 !s85 0
 31
-R7
-R13
+R9
 R14
+R13
 !i113 1
 o-sv
-R5
+R7
 vpool_layer
 R1
 R8
 !i10b 1
 !s100 =N?]2VAYPTiJH=5aEA3LJ1
-R2
-Ice<DC]1JWXV32g=aXfoV33
 R3
+Ice<DC]1JWXV32g=aXfoV33
+R4
 S1
 R0
 w1751179072
 8/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/pool_layer.v
 F/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/pool_layer.v
-!i122 69
+!i122 98
 L0 1 137
-R4
+R5
 r1
 !s85 0
 31
-R9
+R6
 !s107 /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/pool_layer.v|
 !s90 -reportprogress|300|-sv|/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/pool_layer.v|
 !i113 1
 o-sv
-R5
+R7
 vrelu_unit
 R1
 R8
 !i10b 1
 !s100 ?VUS_iG87zYleDWQcI;8V1
-R2
-IOB1`nMGL4=7529^5]VE=^2
 R3
+IOB1`nMGL4=7529^5]VE=^2
+R4
 S1
 R0
 w1750608535
 8/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/relu_unit.v
 F/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/relu_unit.v
-!i122 70
+!i122 99
 L0 1 7
-R4
+R5
 r1
 !s85 0
 31
@@ -358,229 +358,229 @@ R9
 !s90 -reportprogress|300|-sv|/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/relu_unit.v|
 !i113 1
 o-sv
-R5
+R7
 vrxuart
 R1
-R6
+R8
 !i10b 1
 !s100 FPi1TSHfCPRz3^8=8HWMS0
-R2
-IG;C68]][N9ie[[33PNn:a2
 R3
+IG;C68]][N9ie[[33PNn:a2
+R4
 S1
 R0
 w1751178678
 8/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/uart_modules/rxuart.v
 F/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/uart_modules/rxuart.v
-!i122 56
+!i122 106
 L0 93 437
-R4
+R5
 r1
 !s85 0
 31
-R7
+R9
 !s107 /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/uart_modules/rxuart.v|
 !s90 -reportprogress|300|-sv|/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/uart_modules/rxuart.v|
 !i113 1
 o-sv
-R5
+R7
 vtb_cnn_multi
 R1
-R6
+R8
 !i10b 1
-!s100 f56l3[LAbRd@4<5z^3[AS2
-R2
-Ih6_SV58od[]3d7Y6W1j5e1
+!s100 zjc[B^HfB<Y59GYlVgB4o3
 R3
+IEc@6nNkj>_aX5]fD5mY7L1
+R4
 S1
 R0
-R15
+w1753179734
 8/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/tb_cnn_multi.v
 F/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/tb_cnn_multi.v
-!i122 50
-Z16 L0 3 52
-R4
+!i122 100
+L0 3 55
+R5
 r1
 !s85 0
 31
-R7
+R9
 !s107 /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/tb_cnn_multi.v|
 !s90 -reportprogress|300|-sv|/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/tb_cnn_multi.v|
 !i113 1
 o-sv
-R5
+R7
 vtb_cnn_unit
 R1
-R6
+R8
 !i10b 1
-!s100 =?:05GI<ALYK9CkjFQ=kH2
-R2
-I9dd=L3`7:VXFP]H3?m2R32
+!s100 cmoH5=F32h@E8R5T^c=dO0
 R3
+ITZS6lHQcRFDWDN>?c18=i1
+R4
 S1
 R0
-R15
+w1753180976
 8/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/tb_cnn_unit.v
 F/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/tb_cnn_unit.v
-!i122 51
-R16
-R4
+!i122 101
+L0 3 56
+R5
 r1
 !s85 0
 31
-R7
+R9
 !s107 /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/tb_cnn_unit.v|
 !s90 -reportprogress|300|-sv|/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core/tb_cnn_unit.v|
 !i113 1
 o-sv
-R5
+R7
 vtb_gpio
 R1
-R6
+R8
 !i10b 1
 !s100 NRHhiUAk<]o1o>^AC4lbm0
-R2
-INMmKcB^Qo`g__QEOAWd1Z0
 R3
+INMmKcB^Qo`g__QEOAWd1Z0
+R4
 S1
 R0
 w1751264328
 8/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/hardware_interfaces/tb_gpio.v
 F/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/hardware_interfaces/tb_gpio.v
-!i122 55
+!i122 105
 L0 3 37
-R4
+R5
 r1
 !s85 0
 31
-R7
+R9
 !s107 /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/hardware_interfaces/tb_gpio.v|
 !s90 -reportprogress|300|-sv|/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/hardware_interfaces/tb_gpio.v|
 !i113 1
 o-sv
-R5
+R7
 vtb_top
 R1
-R6
+R8
 !i10b 1
 !s100 0?8Q1d>:C<:NZ@bHV`f[01
-R2
-IQ4;F;Cm[UAR>aN2eE^0ML2
 R3
+IQ4;F;Cm[UAR>aN2eE^0ML2
+R4
 S1
 R0
 w1753173676
 8/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/tb_top.v
 F/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/tb_top.v
-!i122 60
+!i122 110
 L0 3 102
-R4
+R5
 r1
 !s85 0
 31
-R7
+R9
 !s107 /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/tb_top.v|
 !s90 -reportprogress|300|-sv|/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/tb_top.v|
 !i113 1
 o-sv
-R5
+R7
 vtxuart
 R1
-R6
+R8
 !i10b 1
 !s100 F9_1lc_AfAj3MOkO]1SlY1
-R2
-I_UB7_2P?7nRbUSeOYK`Jo0
 R3
+I_UB7_2P?7nRbUSeOYK`Jo0
+R4
 S1
 R0
 w1751178689
 8/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/uart_modules/txuart.v
 F/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/uart_modules/txuart.v
-!i122 57
+!i122 107
 L0 99 1128
-R4
+R5
 r1
 !s85 0
 31
-R7
+R9
 !s107 /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/uart_modules/txuart.v|
 !s90 -reportprogress|300|-sv|/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/uart_modules/txuart.v|
 !i113 1
 o-sv
-R5
+R7
 vufifo
 R1
-R6
+R8
 !i10b 1
 !s100 U]AD@TOG>hFIXF?LnNZ;g2
-R2
-IWm<7?EI_UFNG^@8_i8lo83
 R3
+IWm<7?EI_UFNG^@8_i8lo83
+R4
 S1
 R0
 R10
 8/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/uart_modules/ufifo.v
 F/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/uart_modules/ufifo.v
-!i122 59
+!i122 109
 L0 47 431
-R4
+R5
 r1
 !s85 0
 31
-R7
+R9
 !s107 /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/uart_modules/ufifo.v|
 !s90 -reportprogress|300|-sv|/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/uart_modules/ufifo.v|
 !i113 1
 o-sv
-R5
+R7
 vwb_interconnect
 R1
-R6
+R8
 !i10b 1
 !s100 212lA9f7LTZ7;6^oXBT6Q0
-R2
-Igm7Q9PY^lS?]ATDNhHTAF3
 R3
+Igm7Q9PY^lS?]ATDNhHTAF3
+R4
 S1
 R0
 w1753173704
 8/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/wb_interconnect.v
 F/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/wb_interconnect.v
-!i122 61
+!i122 111
 L0 3 125
-R4
+R5
 r1
 !s85 0
 31
-R7
+R9
 !s107 wb_wrapper.v|/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/wb_interconnect.v|
 !s90 -reportprogress|300|-sv|/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/wb_interconnect.v|
 !i113 1
 o-sv
-R5
+R7
 vwbuart
 R1
-R6
+R8
 !i10b 1
 !s100 AnaR<g@m_Vg7ZN3ed?d[;2
-R2
-IeZ4ONVcEbL<CWdSo0`ZH33
 R3
+IeZ4ONVcEbL<CWdSo0`ZH33
+R4
 S1
 R0
 w1751178799
 8/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/uart_modules/wbuart.v
 F/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/uart_modules/wbuart.v
-!i122 58
+!i122 108
 L0 45 493
-R4
+R5
 r1
 !s85 0
 31
-R7
+R9
 !s107 /home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/uart_modules/wbuart.v|
 !s90 -reportprogress|300|-sv|/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/uart_modules/wbuart.v|
 !i113 1
 o-sv
-R5
+R7

@@ -77,8 +77,8 @@ r1
 !s85 0
 31
 Z9 !s108 1753188925.000000
-!s107 gpio_module.v|tb_gpio.v|
-Z10 !s90 -reportprogress|300|tb_gpio.v|gpio_module.v|
+Z10 !s107 gpio_module.v|tb_gpio.v|
+Z11 !s90 -reportprogress|300|tb_gpio.v|gpio_module.v|
 !i113 1
 R7
 vtb_gpio
@@ -99,7 +99,29 @@ r1
 !s85 0
 31
 R9
-Z11 !s107 gpio_module.v|tb_gpio.v|
 R10
+R11
+!i113 1
+R7
+vtb_min
+!s110 1753189275
+!i10b 1
+!s100 KiNVX<kJm4mUJimabjW8P2
+R3
+IlLgVO2n;kGzbC3K1_o[<11
+R4
+R0
+w1753188988
+8tb_min.v
+Ftb_min.v
+!i122 15
+L0 3 13
+R5
+r1
+!s85 0
+31
+!s108 1753189275.000000
+!s107 tb_min.v|
+!s90 -reportprogress|300|tb_min.v|
 !i113 1
 R7

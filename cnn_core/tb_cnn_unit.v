@@ -11,8 +11,8 @@ reg clk;
 reg rst;
 reg enable;
 reg [31:0] input_img [0:63];
-wire [out_width-1:0] value;
-wire done;
+reg [out_width-1:0] value;
+reg done;
 
 //instantiating the cnn core
 cnn_top dut(
