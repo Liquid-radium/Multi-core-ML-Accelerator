@@ -1,40 +1,34 @@
-# do compile.do
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:21:27 on Jul 22,2025
-# vlog -reportprogress 300 -sv bus_decoder.v 
-# -- Compiling module bus_decoder
-# 
-# Top level modules:
-# 	bus_decoder
-# End time: 16:21:27 on Jul 22,2025, Elapsed time: 0:00:00
+# vsim tb_gpio 
+# Start time: 16:26:13 on Jul 22,2025
+# Loading sv_std.std
+# Loading work.tb_gpio
+# Loading work.gpio_module
+add wave -position insertpoint sim:/tb_gpio/#INITIAL#33/*
+run 100ns
+# Expression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not logged# In the transcript window:
+add wave -position end sim:/tb_gpio/clk
+add wave -position end sim:/tb_gpio/rst
+add wave -position end sim:/tb_gpio/led1
+add wave -position end sim:/tb_gpio/led2
+add wave -position end sim:/tb_gpio/led3
+add wave -position end sim:/tb_gpio/led4
+add wave -position end sim:/tb_gpio/led_done
+
+run 100 ns
+delete wave -r *
+# In the transcript window:
+add wave -position end sim:/tb_gpio/clk
+add wave -position end sim:/tb_gpio/rst
+add wave -position end sim:/tb_gpio/led1
+add wave -position end sim:/tb_gpio/led2
+add wave -position end sim:/tb_gpio/led3
+add wave -position end sim:/tb_gpio/led4
+add wave -position end sim:/tb_gpio/led_done
+
+run 100 ns
+restart -f
+add wave sim:/tb_gpio/*
+run 100ns
+
+# End time: 18:20:49 on Jul 22,2025, Elapsed time: 1:54:36
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:21:27 on Jul 22,2025
-# vlog -reportprogress 300 -sv dual_ram.v 
-# -- Compiling module dual_ram
-# 
-# Top level modules:
-# 	dual_ram
-# End time: 16:21:27 on Jul 22,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:21:27 on Jul 22,2025
-# vlog -reportprogress 300 -sv gpio_module.v 
-# -- Compiling module gpio_module
-# 
-# Top level modules:
-# 	gpio_module
-# End time: 16:21:27 on Jul 22,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:21:27 on Jul 22,2025
-# vlog -reportprogress 300 -sv tb_gpio.v 
-# -- Compiling module tb_gpio
-# ** Error: (vlog-13069) tb_gpio.v(26): near "forever": syntax error, unexpected forever.
-# End time: 16:21:27 on Jul 22,2025, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: /home/shruti_hegde/intelFPGA/20.1/modelsim_ase/linuxaloem/vlog failed.
-# Error in macro ./compile.do line 4
-# /home/shruti_hegde/intelFPGA/20.1/modelsim_ase/linuxaloem/vlog failed.
-#     while executing
-# "vlog -sv tb_gpio.v "
