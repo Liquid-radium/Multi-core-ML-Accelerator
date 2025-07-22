@@ -63,20 +63,20 @@ end
 always@(posedge clk or posedge rst)begin
   if (rst) begin
     state <= IDLE;
-    row <= 0;
-    col <= 0;
+    row <= 3'b0;
+    col <= 3'b0;
     done <= 0;
-    mac_count <= 0;
-    latency_counter <= 0;
+    mac_count <= 4'b0;
+    latency_counter <= 4'b0;
     mac_en <= 0;
     mac_rst <= 0;
   end else begin
     case(state)
     IDLE: begin
       if (start) begin
-        row <= 0;
-        col <= 0;
-        img_address <= 0;
+        row <= 3'b0;
+        col <= 3'b0;
+        img_address <= 6'b0;
         state <= LOAD;
       end
     end
@@ -117,9 +117,9 @@ always@(posedge clk or posedge rst)begin
         8: begin mac_a <= line_buffer[2][col+1]; mac_b <= kernel[2][2]; end
       endcase
       mac_count <= mac_count + 1;
-      if(mac_count == 9) begin
+      if(mac_count == 4'b1001) begin
         mac_en <= 0;
-        latency_counter <= 0;
+        latency_counter <= 4'b0;
         state <= MAC_WAIT;
       end
     end
