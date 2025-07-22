@@ -12,9 +12,9 @@ reg cnn_start, pool_start, fc_start;
 wire cnn_done, pool_done, fc_done;
 
 //output wires needed for inter-layer connection
-wire signed [31:0] conv_output [0:35];
-wire signed [31:0] pool_output [0:8];
-wire signed [31:0] fc_output;
+reg signed [31:0] conv_output [0:35];
+reg signed [31:0] pool_output [0:8];
+reg signed [31:0] fc_output;
 
 //FSM states
 localparam IDLE = 0,
