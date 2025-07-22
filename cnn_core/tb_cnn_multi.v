@@ -31,6 +31,10 @@ integer i;
 integer j;
 
 initial begin
+  clk = 0;
+  rst = 0;
+  all_done = 0;
+  #10;
   for (j = 0; j < n; j = j + 1)begin
     for(i = 0; i < img_size; i = i + 1)begin
         test_images[j][i] = 32'd1;
