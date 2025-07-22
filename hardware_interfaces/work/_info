@@ -60,52 +60,46 @@ R6
 o-sv
 R7
 vgpio_module
-R1
-R2
+Z8 !s110 1753188925
 !i10b 1
-!s100 NB<`o^z?@_P4O7EY_n3IN0
+!s100 zg::de0CG^P[>ml[@Vd8W1
 R3
-IaEHNO5aC>W>hzkkmnzn<I3
+I_J4Q==V7L=dJkX?oNE_g>2
 R4
-S1
 R0
 w1753178224
 8gpio_module.v
 Fgpio_module.v
-!i122 9
+!i122 13
 L0 1 48
 R5
 r1
 !s85 0
 31
-R6
-!s107 gpio_module.v|
-!s90 -reportprogress|300|-sv|gpio_module.v|
+Z9 !s108 1753188925.000000
+!s107 gpio_module.v|tb_gpio.v|
+Z10 !s90 -reportprogress|300|tb_gpio.v|gpio_module.v|
 !i113 1
-o-sv
 R7
 vtb_gpio
-R1
-!s110 1753181758
+R8
 !i10b 1
-!s100 Co@VG59POjXaB;9dH0eJ^0
+!s100 2nCm?4W3737V0bUiHJ2De2
 R3
-I;fSW?_BKWzHMib8:L<YfR3
+I5I^Am<C^@[c>=:?6V^BPf2
 R4
-S1
 R0
-w1753181550
+w1753188675
 8tb_gpio.v
 Ftb_gpio.v
-!i122 11
+!i122 13
 L0 3 39
 R5
 r1
 !s85 0
 31
-!s108 1753181758.000000
-!s107 tb_gpio.v|
-!s90 -sv|tb_gpio.v|
+R9
+Z11 !s107 gpio_module.v|tb_gpio.v|
+R10
 !i113 1
-o-sv
 R7

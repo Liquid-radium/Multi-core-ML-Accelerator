@@ -1,34 +1,44 @@
 # vsim tb_gpio 
-# Start time: 16:26:13 on Jul 22,2025
+# Start time: 18:21:46 on Jul 22,2025
 # Loading sv_std.std
 # Loading work.tb_gpio
 # Loading work.gpio_module
-add wave -position insertpoint sim:/tb_gpio/#INITIAL#33/*
-run 100ns
-# Expression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not loggedExpression input symbol /tb_gpio/i is not logged# In the transcript window:
-add wave -position end sim:/tb_gpio/clk
-add wave -position end sim:/tb_gpio/rst
-add wave -position end sim:/tb_gpio/led1
-add wave -position end sim:/tb_gpio/led2
-add wave -position end sim:/tb_gpio/led3
-add wave -position end sim:/tb_gpio/led4
-add wave -position end sim:/tb_gpio/led_done
+force -deposit /tb_gpio/clk 0
+run 5ns
+force -deposit /tb_gpio/clk 1
+run 5ns
 
-run 100 ns
-delete wave -r *
-# In the transcript window:
-add wave -position end sim:/tb_gpio/clk
-add wave -position end sim:/tb_gpio/rst
-add wave -position end sim:/tb_gpio/led1
-add wave -position end sim:/tb_gpio/led2
-add wave -position end sim:/tb_gpio/led3
-add wave -position end sim:/tb_gpio/led4
-add wave -position end sim:/tb_gpio/led_done
-
-run 100 ns
 restart -f
 add wave sim:/tb_gpio/*
 run 100ns
 
-# End time: 18:20:49 on Jul 22,2025, Elapsed time: 1:54:36
+force -deposit /tb_gpio/clk 0
+run 5ns
+force -deposit /tb_gpio/clk 1
+run 5ns
+
+vlib work
+# ** Warning: (vlib-34) Library already exists at "work".
+vlog tb_gpio.v gpio_module.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:25:25 on Jul 22,2025
+# vlog -reportprogress 300 tb_gpio.v gpio_module.v 
+# -- Compiling module tb_gpio
+# -- Compiling module gpio_module
+# 
+# Top level modules:
+# 	tb_gpio
+# End time: 18:25:25 on Jul 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim tb_gpio
+# End time: 18:25:25 on Jul 22,2025, Elapsed time: 0:03:39
+# Errors: 0, Warnings: 0
+# vsim tb_gpio 
+# Start time: 18:25:25 on Jul 22,2025
+# Loading work.tb_gpio
+# Loading work.gpio_module
+add wave sim:/tb_gpio/*
+run 100ns
+
+# End time: 18:25:55 on Jul 22,2025, Elapsed time: 0:00:30
 # Errors: 0, Warnings: 0
