@@ -1,0 +1,111 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/hardware_interfaces
+vbus_decoder
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1753181400
+!i10b 1
+!s100 PdkPoA4Pn[lZGL_U3bznU0
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IbjIRzR=?B4@dHfjnRz74W3
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1751176124
+8bus_decoder.v
+Fbus_decoder.v
+!i122 0
+L0 1 25
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1753181400.000000
+!s107 bus_decoder.v|
+!s90 -reportprogress|300|-sv|bus_decoder.v|
+!i113 1
+o-sv
+Z7 tCvgOpt 0
+vdual_ram
+R1
+R2
+!i10b 1
+!s100 aKgie==[8m5E2[GG6G8]B3
+R3
+I>;NSj;N8I51?9;;54=^F12
+R4
+S1
+R0
+w1751178956
+8dual_ram.v
+Fdual_ram.v
+!i122 1
+L0 1 36
+R5
+r1
+!s85 0
+31
+R6
+!s107 dual_ram.v|
+!s90 -reportprogress|300|-sv|dual_ram.v|
+!i113 1
+o-sv
+R7
+vgpio_module
+R1
+R2
+!i10b 1
+!s100 NB<`o^z?@_P4O7EY_n3IN0
+R3
+IaEHNO5aC>W>hzkkmnzn<I3
+R4
+S1
+R0
+w1753178224
+8gpio_module.v
+Fgpio_module.v
+!i122 2
+L0 1 48
+R5
+r1
+!s85 0
+31
+R6
+!s107 gpio_module.v|
+!s90 -reportprogress|300|-sv|gpio_module.v|
+!i113 1
+o-sv
+R7
+vtb_gpio
+R1
+R2
+!i10b 1
+!s100 NRHhiUAk<]o1o>^AC4lbm0
+R3
+IMOW;kdEzzM?i7VS7>Kj4E2
+R4
+S1
+R0
+w1751264328
+8tb_gpio.v
+Ftb_gpio.v
+!i122 3
+L0 3 37
+R5
+r1
+!s85 0
+31
+R6
+!s107 tb_gpio.v|
+!s90 -reportprogress|300|-sv|tb_gpio.v|
+!i113 1
+o-sv
+R7
