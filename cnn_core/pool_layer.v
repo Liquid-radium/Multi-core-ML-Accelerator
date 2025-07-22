@@ -43,7 +43,7 @@ avg_pool_unit avg_pool(
     .avg(avg_pool_op)
 );
 
-always @ (posedge clk or rst) begin
+always @ (posedge clk) begin
   if(rst) begin
     state <= IDLE;
     row <= 0;

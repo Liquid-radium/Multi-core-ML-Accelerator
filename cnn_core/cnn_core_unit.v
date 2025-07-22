@@ -62,7 +62,7 @@ fc_layer fc_layer(
 );
 
 //FSM controller
-always @ (posedge clk or rst) begin
+always @ (posedge clk) begin
   if (rst) begin
     cnn_start <= 0;
     pool_start <= 0;

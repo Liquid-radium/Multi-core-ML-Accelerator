@@ -60,9 +60,9 @@ initial begin
   kernel[2][0] =  1; kernel[2][1] =  1; kernel[2][2] =  1;
 end
 
-always@(posedge clk or posedge rst)begin
+always@(posedge clk)begin
   if (rst) begin
-    state <= IDLE;
+    state <= 4'b0000;
     row <= 3'b0;
     col <= 3'b0;
     done <= 0;
@@ -77,7 +77,7 @@ always@(posedge clk or posedge rst)begin
         row <= 3'b0;
         col <= 3'b0;
         img_address <= 6'b0;
-        state <= LOAD;
+        state <= 4'b0001;
       end
     end
     LOAD: begin
@@ -86,21 +86,21 @@ always@(posedge clk or posedge rst)begin
         line_buffer[1] <= line_buffer[0]; //used for maintaining the order of convolution in the image
       end
       if((img_address + 1) == (img_width * 3)) begin //if end of line buffer block
-        state <= SHIFT;
+        state <= 4'b0010;
       end
       img_address <= img_address + 1;
     end
     SHIFT: begin
       col <= 1;
       row <= 1;
-      state <= MAC_RESET;
+      state <= 4'b0011;
     end
     MAC_RESET: begin
       mac_rst <= 1;
       mac_en <= 0;
       mac_count <= 0;
       latency_counter <= 0;
-      state <= MAC_FEED;
+      state <= 4'b0100;
     end
     MAC_FEED: begin
       mac_rst <= 0;
@@ -120,22 +120,22 @@ always@(posedge clk or posedge rst)begin
       if(mac_count == 4'b1001) begin
         mac_en <= 0;
         latency_counter <= 4'b0;
-        state <= MAC_WAIT;
+        state <= 4'b0101;
       end
     end
     MAC_WAIT: begin
       latency_counter <= latency_counter + 1;
       if (latency_counter == 3)
-      state <= WRITE;
+      state <= 4'b0110; //wait for 3 clock cycles for mac to finish
     end
     WRITE: begin
       output_ram[(row -1)*(img_width -2) + (col -1)] <= relu_acc;
-      state <= NEXT;
+      state <= 4'b0111;
     end
     NEXT: begin
       if (col < img_width - 2) begin //if last column not reached
         col <= col + 1;
-        state <= MAC_RESET;
+        state <= 4'b0100; //go back to MAC feed
     end else if (row < img_height - 2) begin //last column reached but not last row
       col <= 1;
       row <= row + 1;
@@ -143,10 +143,10 @@ always@(posedge clk or posedge rst)begin
       line_buffer[1] <= line_buffer[2];
       for (i = 0; i < img_width; i = i +1)
         line_buffer[2][i] <= input_ram[(row + 2)*img_width + i];
-        state <= MAC_RESET;
+        state <= 4'b0011; //go back to MAC reset
       end 
       else begin
-        state <= DONE;
+        state <= 4'b1000; //all rows and columns processed
       end 
     end
     DONE: begin

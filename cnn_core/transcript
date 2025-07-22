@@ -1,83 +1,246 @@
 # do compile.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:15:03 on Jul 23,2025
+# Start time: 00:15:47 on Jul 23,2025
 # vlog -reportprogress 300 -sv cnn_core_unit.v 
 # -- Compiling module cnn_top
 # 
 # Top level modules:
 # 	cnn_top
-# End time: 00:15:03 on Jul 23,2025, Elapsed time: 0:00:00
+# End time: 00:15:47 on Jul 23,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:15:03 on Jul 23,2025
+# Start time: 00:15:47 on Jul 23,2025
 # vlog -reportprogress 300 -sv cnn_engine.v 
 # -- Compiling module cnn_engine
 # 
 # Top level modules:
 # 	cnn_engine
-# End time: 00:15:03 on Jul 23,2025, Elapsed time: 0:00:00
+# End time: 00:15:47 on Jul 23,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:15:03 on Jul 23,2025
+# Start time: 00:15:47 on Jul 23,2025
 # vlog -reportprogress 300 -sv pool_layer.v 
 # -- Compiling module pool_layer
 # 
 # Top level modules:
 # 	pool_layer
-# End time: 00:15:03 on Jul 23,2025, Elapsed time: 0:00:00
+# End time: 00:15:47 on Jul 23,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:15:03 on Jul 23,2025
+# Start time: 00:15:47 on Jul 23,2025
 # vlog -reportprogress 300 -sv fc_layer.v 
 # -- Compiling module fc_layer
 # 
 # Top level modules:
 # 	fc_layer
-# End time: 00:15:03 on Jul 23,2025, Elapsed time: 0:00:00
+# End time: 00:15:47 on Jul 23,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:15:03 on Jul 23,2025
+# Start time: 00:15:47 on Jul 23,2025
 # vlog -reportprogress 300 -sv tb_cnn_multi.v 
 # -- Compiling module tb_cnn_multi
 # 
 # Top level modules:
 # 	tb_cnn_multi
-# End time: 00:15:03 on Jul 23,2025, Elapsed time: 0:00:00
+# End time: 00:15:47 on Jul 23,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:15:03 on Jul 23,2025
+# Start time: 00:15:47 on Jul 23,2025
 # vlog -reportprogress 300 -sv avg_pool_unit.v 
 # -- Compiling module avg_pool_unit
 # 
 # Top level modules:
 # 	avg_pool_unit
-# End time: 00:15:03 on Jul 23,2025, Elapsed time: 0:00:00
+# End time: 00:15:47 on Jul 23,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:15:03 on Jul 23,2025
+# Start time: 00:15:47 on Jul 23,2025
 # vlog -reportprogress 300 -sv relu_unit.v 
 # -- Compiling module relu_unit
 # 
 # Top level modules:
 # 	relu_unit
-# End time: 00:15:03 on Jul 23,2025, Elapsed time: 0:00:00
+# End time: 00:15:47 on Jul 23,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:15:03 on Jul 23,2025
+# Start time: 00:15:47 on Jul 23,2025
 # vlog -reportprogress 300 -sv mac_unit.v 
 # -- Compiling module mac_unit
 # 
 # Top level modules:
 # 	mac_unit
-# End time: 00:15:03 on Jul 23,2025, Elapsed time: 0:00:00
+# End time: 00:15:47 on Jul 23,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:15:03 on Jul 23,2025
+# Start time: 00:15:47 on Jul 23,2025
 # vlog -reportprogress 300 -sv multi_core.v 
 # -- Compiling module multi_core
 # 
 # Top level modules:
 # 	multi_core
-# End time: 00:15:04 on Jul 23,2025, Elapsed time: 0:00:01
+# End time: 00:15:47 on Jul 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -sv avg_pool_unit.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:16:23 on Jul 23,2025
+# vlog -reportprogress 300 -sv avg_pool_unit.v 
+# -- Compiling module avg_pool_unit
+# 
+# Top level modules:
+# 	avg_pool_unit
+# End time: 00:16:23 on Jul 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -sv cnn_core_unit.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:16:31 on Jul 23,2025
+# vlog -reportprogress 300 -sv cnn_core_unit.v 
+# -- Compiling module cnn_top
+# 
+# Top level modules:
+# 	cnn_top
+# End time: 00:16:31 on Jul 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -sv cnn_engine.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:16:41 on Jul 23,2025
+# vlog -reportprogress 300 -sv cnn_engine.v 
+# -- Compiling module cnn_engine
+# 
+# Top level modules:
+# 	cnn_engine
+# End time: 00:16:41 on Jul 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -sv tb_cnn_unit
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:16:47 on Jul 23,2025
+# vlog -reportprogress 300 -sv tb_cnn_unit 
+# ** Error: (vlog-7) Failed to open design unit file "tb_cnn_unit" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 00:16:47 on Jul 23,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# /home/shruti_hegde/intelFPGA/20.1/modelsim_ase/linuxaloem/vlog failed.
+vlog -sv tb_cnn_unit.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:16:53 on Jul 23,2025
+# vlog -reportprogress 300 -sv tb_cnn_unit.v 
+# -- Compiling module tb_cnn_unit
+# 
+# Top level modules:
+# 	tb_cnn_unit
+# End time: 00:16:53 on Jul 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim tb_cnn_unit
+# vsim tb_cnn_unit 
+# Start time: 00:16:59 on Jul 23,2025
+# Loading sv_std.std
+# Loading work.tb_cnn_unit
+# Loading work.cnn_top
+# Loading work.cnn_engine
+# Loading work.mac_unit
+# Loading work.relu_unit
+# Loading work.pool_layer
+# Loading work.avg_pool_unit
+# Loading work.fc_layer
+add wave -position insertpoint sim:/tb_cnn_unit/#INITIAL#27/*
+add wave -position insertpoint sim:/tb_cnn_unit/dut/conv_layer/#ALWAYS#63/*
+run 80 ns
+vlog -sv tb_cnn_unit.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:19:46 on Jul 23,2025
+# vlog -reportprogress 300 -sv tb_cnn_unit.v 
+# -- Compiling module tb_cnn_unit
+# 
+# Top level modules:
+# 	tb_cnn_unit
+# End time: 00:19:46 on Jul 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim tb_cnn_unit
+# End time: 00:19:50 on Jul 23,2025, Elapsed time: 0:02:51
+# Errors: 0, Warnings: 0
+# vsim tb_cnn_unit 
+# Start time: 00:19:50 on Jul 23,2025
+# Loading sv_std.std
+# Loading work.tb_cnn_unit
+# Loading work.cnn_top
+# Loading work.cnn_engine
+# Loading work.mac_unit
+# Loading work.relu_unit
+# Loading work.pool_layer
+# Loading work.avg_pool_unit
+# Loading work.fc_layer
+add wave -position insertpoint sim:/tb_cnn_unit/#INITIAL#27/*
+add wave -position insertpoint sim:/tb_cnn_unit/dut/conv_layer/#INITIAL#57/*
+run 80 ns
+vlog -sv cnn_engine.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:24:38 on Jul 23,2025
+# vlog -reportprogress 300 -sv cnn_engine.v 
+# -- Compiling module cnn_engine
+# 
+# Top level modules:
+# 	cnn_engine
+# End time: 00:24:38 on Jul 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim tb_cnn_unit
+# End time: 00:24:45 on Jul 23,2025, Elapsed time: 0:04:55
+# Errors: 0, Warnings: 0
+# vsim tb_cnn_unit 
+# Start time: 00:24:45 on Jul 23,2025
+# Loading sv_std.std
+# Loading work.tb_cnn_unit
+# Loading work.cnn_top
+# Loading work.cnn_engine
+# Loading work.mac_unit
+# Loading work.relu_unit
+# Loading work.pool_layer
+# Loading work.avg_pool_unit
+# Loading work.fc_layer
+run 80 ns
+add wave -position insertpoint sim:/tb_cnn_unit/#INITIAL#27/*
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_cnn_unit/#INITIAL#27/*'.
+add wave -position insertpoint sim:/tb_cnn_unit/#INITIAL#33/*
+add wave -position insertpoint sim:/tb_cnn_unit/dut/conv_layer/#ALWAYS#63/*
+run 80 ns
+delete wave -r *
+vsim -do compile.do
+# No design specified
+vlog -sv *
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:41:05 on Jul 23,2025
+# vlog -reportprogress 300 -sv avg_pool_unit.v cnn_core_unit.v cnn_engine.v compile.do fc_layer.v mac_unit.v multi_core.v pool_layer.v relu_unit.v tb_cnn_multi.v tb_cnn_unit.v transcript vsim.wlf work 
+# -- Compiling module avg_pool_unit
+# -- Compiling module cnn_top
+# -- Compiling module cnn_engine
+# ** Error: (vlog-13069) compile.do(1): near "work": syntax error, unexpected IDENTIFIER.
+# ** Error: compile.do(1): (vlog-13205) Syntax error found in the scope following 'vlib'. Is there a missing '::'?
+# ** Error: (vlog-13069) compile.do(2): near "module": syntax error, unexpected module.
+# ** Error: compile.do(2): (vlog-13205) Syntax error found in the scope following 'vlog'. Is there a missing '::'?
+# ** Error: (vlog-13069) transcript(1): near "#": syntax error, unexpected '#', expecting class.
+# ** Error: (vlog-13069) vsim.wlf(1): syntax error, unexpected $undefined, expecting class.
+# ** Error: (vlog-2054) File "work" is a directory.
+# End time: 00:41:05 on Jul 23,2025, Elapsed time: 0:00:00
+# Errors: 7, Warnings: 0
+# /home/shruti_hegde/intelFPGA/20.1/modelsim_ase/linuxaloem/vlog failed.
+vlog -sv *.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:41:23 on Jul 23,2025
+# vlog -reportprogress 300 -sv avg_pool_unit.v cnn_core_unit.v cnn_engine.v fc_layer.v mac_unit.v multi_core.v pool_layer.v relu_unit.v tb_cnn_multi.v tb_cnn_unit.v 
+# -- Compiling module avg_pool_unit
+# -- Compiling module cnn_top
+# -- Compiling module cnn_engine
+# -- Compiling module fc_layer
+# -- Compiling module mac_unit
+# -- Compiling module multi_core
+# -- Compiling module pool_layer
+# -- Compiling module relu_unit
+# -- Compiling module tb_cnn_multi
+# -- Compiling module tb_cnn_unit
+# 
+# Top level modules:
+# 	tb_cnn_multi
+# 	tb_cnn_unit
+# End time: 00:41:23 on Jul 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 00:41:39 on Jul 23,2025, Elapsed time: 0:16:54
 # Errors: 0, Warnings: 0

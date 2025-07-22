@@ -12,7 +12,7 @@ reg signed [31:0] fc_output;
 reg signed [31:0] bias;
 integer i;
 
-always @ (posedge clk or rst) begin
+always @ (posedge clk) begin
   if (rst) begin
     fc_output <= 32'd0;
   end 
