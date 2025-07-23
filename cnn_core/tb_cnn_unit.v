@@ -34,26 +34,41 @@ initial begin
   clk = 0;
   rst = 0;
   enable = 0;
-  #10;
-  for (i = 0; i < img_size; i = i + 1)begin
-    test_image[i] = 32'd1;
-  end
-  #10;
-  rst = 1;
-  enable = 1;
-  #20;
-  rst = 0;
-  for(i = 0; i < img_size; i = i + 1)begin
-    input_img[i] = test_image[i];
-  end
-  
-  #10;
-  enable = 1;
-  #10;
-  //enable = 0;
-  wait(done == 1);
-  $display("CNN prediction output: %d", value);
-  #20;
-  $finish;
+ #10;
+$display("Assigning test_image with all 1s...");
+for (i = 0; i < img_size; i = i + 1) begin
+  test_image[i] = 32'b00000000000000000000000000000001;
+end
+
+$display("Contents of test_image:");
+for (i = 0; i < img_size; i = i + 1) begin
+  $display("test_image[%0d] = %0d", i, test_image[i]);
+end
+
+#10;
+rst = 1;
+enable = 1;
+#20;
+rst = 0;
+
+$display("Assigning test_image to input_img...");
+for (i = 0; i < img_size; i = i + 1) begin
+  input_img[i] = test_image[i];
+end
+
+$display("Contents of input_img:");
+for (i = 0; i < img_size; i = i + 1) begin
+  $display("input_img[%0d] = %0d", i, input_img[i]);
+end
+
+#10;
+enable = 1;
+#10;
+// enable = 0;
+
+wait(done == 1);
+$display("CNN prediction output: %d", value);
+#20;
+$finish;
 end
 endmodule

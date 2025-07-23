@@ -11,7 +11,7 @@ cModel Technology
 Z0 d/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core
 vavg_pool_unit
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-!s110 1753212027
+!s110 1753256332
 !i10b 1
 !s100 ^7ECaDLc98=1GTj;=Z`VC3
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -22,13 +22,13 @@ R0
 w1751260953
 8avg_pool_unit.v
 Favg_pool_unit.v
-!i122 106
+!i122 119
 L0 1 58
 Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1753212027.000000
+!s108 1753256332.000000
 !s107 avg_pool_unit.v|
 !s90 -reportprogress|300|-sv|avg_pool_unit.v|
 !i113 1
@@ -36,24 +36,24 @@ o-sv
 Z5 tCvgOpt 0
 vcnn_engine
 R1
-!s110 1753212039
+!s110 1753256345
 !i10b 1
-!s100 Kad8``aiD53DNIOHPRX9<3
+!s100 ?@_jQE1ocn;_6gOgRhiZG0
 R2
-IdbI0NKj=KF53mQGVLCCF`0
+I_m]okSB6AB1n6_NO?l4k?2
 R3
 S1
 R0
-w1753211722
+w1753256112
 8cnn_engine.v
 Fcnn_engine.v
-!i122 108
-L0 1 158
+!i122 121
+L0 1 161
 R4
 r1
 !s85 0
 31
-!s108 1753212039.000000
+!s108 1753256345.000000
 !s107 cnn_engine.v|
 !s90 -reportprogress|300|-sv|cnn_engine.v|
 !i113 1
@@ -61,7 +61,7 @@ o-sv
 R5
 vcnn_top
 R1
-!s110 1753212033
+!s110 1753256339
 !i10b 1
 !s100 I7ejQ68J7GPOEh@7A:H9]3
 R2
@@ -72,13 +72,13 @@ R0
 w1753211738
 8cnn_core_unit.v
 Fcnn_core_unit.v
-!i122 107
+!i122 120
 L0 1 112
 R4
 r1
 !s85 0
 31
-!s108 1753212033.000000
+!s108 1753256339.000000
 !s107 cnn_core_unit.v|
 !s90 -reportprogress|300|-sv|cnn_core_unit.v|
 !i113 1
@@ -86,7 +86,7 @@ o-sv
 R5
 vfc_layer
 R1
-Z6 !s110 1753211872
+Z6 !s110 1753256320
 !i10b 1
 !s100 o[d4aZ5o@;PQ?1BAPVSzn1
 R2
@@ -97,13 +97,13 @@ R0
 w1753211752
 8fc_layer.v
 Ffc_layer.v
-!i122 100
+!i122 113
 L0 1 30
 R4
 r1
 !s85 0
 31
-Z7 !s108 1753211872.000000
+Z7 !s108 1753256320.000000
 !s107 fc_layer.v|
 !s90 -reportprogress|300|-sv|fc_layer.v|
 !i113 1
@@ -122,7 +122,7 @@ R0
 w1753211805
 8mac_unit.v
 Fmac_unit.v
-!i122 104
+!i122 117
 L0 1 59
 R4
 r1
@@ -136,7 +136,7 @@ o-sv
 R5
 vmulti_core
 R1
-R6
+!s110 1753256321
 !i10b 1
 !s100 i]AXT<Z1`f@YN?jEjG9BO1
 R2
@@ -147,13 +147,13 @@ R0
 w1753211831
 8multi_core.v
 Fmulti_core.v
-!i122 105
+!i122 118
 L0 1 76
 R4
 r1
 !s85 0
 31
-R7
+!s108 1753256321.000000
 !s107 multi_core.v|
 !s90 -reportprogress|300|-sv|multi_core.v|
 !i113 1
@@ -172,7 +172,7 @@ R0
 w1753211842
 8pool_layer.v
 Fpool_layer.v
-!i122 99
+!i122 112
 L0 1 137
 R4
 r1
@@ -197,7 +197,7 @@ R0
 w1750608535
 8relu_unit.v
 Frelu_unit.v
-!i122 103
+!i122 116
 L0 1 7
 R4
 r1
@@ -222,7 +222,7 @@ R0
 w1753179734
 8tb_cnn_multi.v
 Ftb_cnn_multi.v
-!i122 101
+!i122 114
 L0 3 55
 R4
 r1
