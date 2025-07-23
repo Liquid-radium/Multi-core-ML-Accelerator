@@ -66,7 +66,7 @@ enable = 1;
 #10;
 // enable = 0;
 
-//wait(done == 1);
+wait(done == 1);
 $display("CNN prediction output: %d", value);
 #20;
 $finish;
