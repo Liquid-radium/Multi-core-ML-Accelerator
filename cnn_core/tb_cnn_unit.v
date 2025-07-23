@@ -66,8 +66,7 @@ enable = 1;
 #10;
 // enable = 0;
 
-integer timeout;
-timeout = 0;
+integer timeout = 0;
 while (done !== 1 && timeout < 1000) begin
     #10;
     timeout = timeout + 1;
