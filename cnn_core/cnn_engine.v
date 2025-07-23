@@ -156,7 +156,6 @@ always@(posedge clk)begin
       done <= 1'b1;
       $display("DONE state reached at time %t", $time);
     end
-    end
     endcase
   end
 end
