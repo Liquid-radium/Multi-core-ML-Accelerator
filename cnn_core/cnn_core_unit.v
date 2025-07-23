@@ -27,8 +27,7 @@ localparam IDLE = 0,
            DONE = 7;
 
 reg [2:0] state;
-reg done_reg;
-assign done = done_reg;
+assign done;
 assign value = fc_output;
 
 //layer 1 : convolutional layer
@@ -99,12 +98,12 @@ always @ (posedge clk) begin
       end
       FC_WAIT: begin
         if(fc_done) begin
-          done_reg <= 1;
+          done <= 1;
           state <= DONE;
         end
       end
       DONE: begin
-        // hold done signal
+        done <= 1;
       end
     endcase
   end
