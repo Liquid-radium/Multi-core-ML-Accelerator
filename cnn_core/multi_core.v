@@ -30,10 +30,10 @@ end
 endgenerate
 
 reg [2:0] state;
-localparam IDLE = 0,
-           START_CORES = 1,
-           WAIT_FOR_DONE = 2,
-           DONE_STATE = 3;
+localparam IDLE = 3'b000,
+           START_CORES = 3'b001,
+           WAIT_FOR_DONE = 3'b010,
+           DONE_STATE = 3'b011;
 
 always @ (posedge clk) begin
   if (rst) begin

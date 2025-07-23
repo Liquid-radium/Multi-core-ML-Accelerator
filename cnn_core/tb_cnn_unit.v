@@ -66,7 +66,21 @@ enable = 1;
 #10;
 // enable = 0;
 
-wait(done == 1);
+integer timeout;
+timeout = 0;
+while (done !== 1 && timeout < 1000) begin
+    #10;
+    timeout = timeout + 1;
+    $display("Time: %t | done: %b", $time, done);
+end
+
+if (done === 1) begin
+    $display("CNN prediction output: %d", value);
+end else begin
+    $display("ERROR: Timeout waiting for done signal!");
+end
+$finish;
+#20;
 $display("CNN prediction output: %d", value);
 #20;
 $finish;

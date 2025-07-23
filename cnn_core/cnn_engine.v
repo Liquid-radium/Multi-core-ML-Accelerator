@@ -14,15 +14,15 @@ integer i;
 reg [31:0] line_buffer[0:2][0:7]; //stores 3 rows of the image (image line, therefore 8 columns * 3 rows)
 reg [31:0] kernel[0:2][0:2]; //stores the kernel values
 
-localparam IDLE = 0,
-           LOAD = 1,
-           SHIFT = 2,
-           MAC_RESET = 3,
-           MAC_FEED = 4,
-           MAC_WAIT = 5,
-           WRITE = 6,
-           NEXT = 7,
-           DONE = 8;
+localparam IDLE       = 4'b0000,
+           LOAD       = 4'b0001,
+           SHIFT      = 4'b0010,
+           MAC_RESET  = 4'b0011,
+           MAC_FEED   = 4'b0100,
+           MAC_WAIT   = 4'b0101,
+           WRITE      = 4'b0110,
+           NEXT       = 4'b0111,
+           DONE       = 4'b1000;
 
 reg [3:0] state; //stores the state number, 9 states in total
 reg [2:0] row, col; //stores the value of the row and column (cols 1-6 in op, hance 3 bits) 
@@ -153,7 +153,9 @@ always@(posedge clk)begin
       end 
     end
     DONE: begin
-        done <= 1'b1;
+      done <= 1'b1;
+      $display("DONE state reached at time %t", $time);
+    end
     end
     endcase
   end

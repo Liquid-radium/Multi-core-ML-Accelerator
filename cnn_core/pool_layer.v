@@ -12,21 +12,21 @@ parameter fm_height = 6;
 
 reg signed [31:0] line_buffer [0:1][0:5];
 
-localparam IDLE = 0,
-           LOAD = 1,
-           SHIFT = 2,
-           AVG_POOL_RESET = 3,
-           AVG_POOL_FEED = 4,
-           AVG_POOL_WAIT = 5,
-           WRITE = 6,
-           NEXT = 7,
-           DONE = 8;
+localparam IDLE = 4'b0000,
+           LOAD = 4'b0001,
+           SHIFT = 4'b0010,
+           AVG_POOL_RESET = 4'b0011,
+           AVG_POOL_FEED = 4'b0100,
+           AVG_POOL_WAIT = 4'b0101,
+           WRITE = 4'b0110,
+           NEXT = 4'b0111,
+           DONE = 4'b1000;
 
 reg [1:0] avg_pool_count; //stores the number of mac inputs multiplied and accumulated (4, hence 2 bits)
 reg [2:0] row, col;
 reg [5:0] fm_address;
 reg [3:0] latency_counter;
-reg [2:0] state;
+reg [3:0] state;
 integer i;
 
 //parameters for instantiation

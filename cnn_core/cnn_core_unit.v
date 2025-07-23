@@ -17,14 +17,14 @@ reg signed [31:0] pool_output [0:8];
 reg signed [31:0] fc_output;
 
 //FSM states
-localparam IDLE = 0,
-           CNN_START = 1,
-           CNN_WAIT = 2,
-           POOL_START = 3,
-           POOL_WAIT = 4,
-           FC_START = 5,
-           FC_WAIT = 6,
-           DONE = 7;
+localparam IDLE = 3'b000,
+           CNN_START = 3'b001,
+           CNN_WAIT = 3'b010,
+           POOL_START = 3'b011,
+           POOL_WAIT = 3'b100,
+           FC_START = 3'b101,
+           FC_WAIT = 3'b110,
+           DONE = 3'b111;
 
 reg [2:0] state;
 assign value = fc_output;
