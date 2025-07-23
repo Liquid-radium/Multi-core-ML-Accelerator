@@ -125,9 +125,6 @@ always @ (posedge clk) begin
     end
     end
     DONE: begin
-        if (rst) begin
-        done <= 0;
-        end else begin
           done <= 1;
         end
       end

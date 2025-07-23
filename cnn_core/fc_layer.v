@@ -15,6 +15,7 @@ integer i;
 always @ (posedge clk) begin
   if (rst) begin
     fc_output <= 32'd0;
+    done <= 0;
   end 
   else if(enable & ~rst) begin
     for (i = 0; i < 9; i = i + 1) begin
@@ -22,9 +23,6 @@ always @ (posedge clk) begin
     end
     fc_layer_op <= fc_output + bias;
     done <= 1;
-  end 
-  else begin
-    done <= 0;
-  end 
+  end
 end
 endmodule
