@@ -27,7 +27,6 @@ localparam IDLE = 0,
            DONE = 7;
 
 reg [2:0] state;
-assign done;
 assign value = fc_output;
 
 //layer 1 : convolutional layer
