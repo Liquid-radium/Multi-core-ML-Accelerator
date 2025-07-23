@@ -66,11 +66,10 @@ enable = 1;
 #10;
 // enable = 0;
 
-integer timeout;
-assign timeout = 0;
-while (done !== 1 && timeout < 1000) begin
+i = 0;
+while (done !== 1 && i < 1000) begin
     #10;
-    timeout = timeout + 1;
+    i = i + 1;
     $display("Time: %t | done: %b", $time, done);
 end
 
