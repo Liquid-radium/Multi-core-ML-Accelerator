@@ -1,99 +1,129 @@
 # do compile.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:41:58 on Jul 23,2025
+# Start time: 00:47:51 on Jul 23,2025
 # vlog -reportprogress 300 -sv cnn_core_unit.v 
 # -- Compiling module cnn_top
 # 
 # Top level modules:
 # 	cnn_top
-# End time: 00:41:58 on Jul 23,2025, Elapsed time: 0:00:00
+# End time: 00:47:52 on Jul 23,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:41:58 on Jul 23,2025
+# Start time: 00:47:52 on Jul 23,2025
 # vlog -reportprogress 300 -sv cnn_engine.v 
 # -- Compiling module cnn_engine
 # 
 # Top level modules:
 # 	cnn_engine
-# End time: 00:41:58 on Jul 23,2025, Elapsed time: 0:00:00
+# End time: 00:47:52 on Jul 23,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:41:58 on Jul 23,2025
+# Start time: 00:47:52 on Jul 23,2025
 # vlog -reportprogress 300 -sv pool_layer.v 
 # -- Compiling module pool_layer
 # 
 # Top level modules:
 # 	pool_layer
-# End time: 00:41:58 on Jul 23,2025, Elapsed time: 0:00:00
+# End time: 00:47:52 on Jul 23,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:41:58 on Jul 23,2025
+# Start time: 00:47:52 on Jul 23,2025
 # vlog -reportprogress 300 -sv fc_layer.v 
 # -- Compiling module fc_layer
 # 
 # Top level modules:
 # 	fc_layer
-# End time: 00:41:58 on Jul 23,2025, Elapsed time: 0:00:00
+# End time: 00:47:52 on Jul 23,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:41:58 on Jul 23,2025
+# Start time: 00:47:52 on Jul 23,2025
 # vlog -reportprogress 300 -sv tb_cnn_multi.v 
 # -- Compiling module tb_cnn_multi
 # 
 # Top level modules:
 # 	tb_cnn_multi
-# End time: 00:41:58 on Jul 23,2025, Elapsed time: 0:00:00
+# End time: 00:47:52 on Jul 23,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:41:58 on Jul 23,2025
+# Start time: 00:47:52 on Jul 23,2025
 # vlog -reportprogress 300 -sv avg_pool_unit.v 
 # -- Compiling module avg_pool_unit
 # 
 # Top level modules:
 # 	avg_pool_unit
-# End time: 00:41:58 on Jul 23,2025, Elapsed time: 0:00:00
+# End time: 00:47:52 on Jul 23,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:41:58 on Jul 23,2025
+# Start time: 00:47:52 on Jul 23,2025
 # vlog -reportprogress 300 -sv relu_unit.v 
 # -- Compiling module relu_unit
 # 
 # Top level modules:
 # 	relu_unit
-# End time: 00:41:58 on Jul 23,2025, Elapsed time: 0:00:00
+# End time: 00:47:52 on Jul 23,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:41:58 on Jul 23,2025
+# Start time: 00:47:52 on Jul 23,2025
 # vlog -reportprogress 300 -sv mac_unit.v 
 # -- Compiling module mac_unit
 # 
 # Top level modules:
 # 	mac_unit
-# End time: 00:41:58 on Jul 23,2025, Elapsed time: 0:00:00
+# End time: 00:47:52 on Jul 23,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:41:58 on Jul 23,2025
+# Start time: 00:47:52 on Jul 23,2025
 # vlog -reportprogress 300 -sv multi_core.v 
 # -- Compiling module multi_core
 # 
 # Top level modules:
 # 	multi_core
-# End time: 00:41:58 on Jul 23,2025, Elapsed time: 0:00:00
+# End time: 00:47:52 on Jul 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -sv avg_pool_unit.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:50:27 on Jul 23,2025
+# vlog -reportprogress 300 -sv avg_pool_unit.v 
+# -- Compiling module avg_pool_unit
+# 
+# Top level modules:
+# 	avg_pool_unit
+# End time: 00:50:27 on Jul 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -sv cnn_core_unit.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:50:33 on Jul 23,2025
+# vlog -reportprogress 300 -sv cnn_core_unit.v 
+# -- Compiling module cnn_top
+# 
+# Top level modules:
+# 	cnn_top
+# End time: 00:50:33 on Jul 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -sv cnn_engine.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:50:39 on Jul 23,2025
+# vlog -reportprogress 300 -sv cnn_engine.v 
+# -- Compiling module cnn_engine
+# 
+# Top level modules:
+# 	cnn_engine
+# End time: 00:50:39 on Jul 23,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -sv tb_cnn_unit.v
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:42:08 on Jul 23,2025
+# Start time: 00:50:51 on Jul 23,2025
 # vlog -reportprogress 300 -sv tb_cnn_unit.v 
 # -- Compiling module tb_cnn_unit
 # 
 # Top level modules:
 # 	tb_cnn_unit
-# End time: 00:42:08 on Jul 23,2025, Elapsed time: 0:00:00
+# End time: 00:50:51 on Jul 23,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vsim tb_cnn_unit
 # vsim tb_cnn_unit 
-# Start time: 00:42:28 on Jul 23,2025
+# Start time: 00:50:55 on Jul 23,2025
 # Loading sv_std.std
 # Loading work.tb_cnn_unit
 # Loading work.cnn_top
@@ -104,7 +134,8 @@ vsim tb_cnn_unit
 # Loading work.avg_pool_unit
 # Loading work.fc_layer
 add wave -position insertpoint sim:/tb_cnn_unit/#INITIAL#27/*
-add wave -position insertpoint sim:/tb_cnn_unit/dut/conv_layer/#INITIAL#57/*
 run 80 ns
-# End time: 00:47:39 on Jul 23,2025, Elapsed time: 0:05:11
+add wave -r *
+run 80 ns
+# End time: 13:08:29 on Jul 23,2025, Elapsed time: 12:17:34
 # Errors: 0, Warnings: 0

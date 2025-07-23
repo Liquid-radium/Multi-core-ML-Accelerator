@@ -63,20 +63,20 @@ end
 always@(posedge clk)begin
   if (rst) begin
     state <= 4'b0000;
-    row <= 3'b0;
-    col <= 3'b0;
-    done <= 0;
-    mac_count <= 4'b0;
-    latency_counter <= 4'b0;
-    mac_en <= 0;
-    mac_rst <= 0;
+    row <= 3'b000;
+    col <= 3'b000;
+    done <= 1'b0;
+    mac_count <= 4'b0000;
+    latency_counter <= 4'b0000;
+    mac_en <= 1'b0;
+    mac_rst <= 1'b0;
   end else if (~rst) begin
     case(state)
     IDLE: begin
       if (start) begin
-        row <= 3'b0;
-        col <= 3'b0;
-        img_address <= 6'b0;
+        row <= 3'b000;
+        col <= 3'b000;
+        img_address <= 6'b000000;
         state <= 4'b0001;
       end
     end
@@ -91,20 +91,20 @@ always@(posedge clk)begin
       img_address <= img_address + 1;
     end
     SHIFT: begin
-      col <= 1;
-      row <= 1;
+      col <= 3'b001;
+      row <= 3'b001;
       state <= 4'b0011;
     end
     MAC_RESET: begin
-      mac_rst <= 1;
-      mac_en <= 0;
-      mac_count <= 0;
-      latency_counter <= 0;
+      mac_rst <= 1'b1;
+      mac_en <= 1'b0;
+      mac_count <= 4'b0000;
+      latency_counter <= 4'b0000;
       state <= 4'b0100;
     end
     MAC_FEED: begin
-      mac_rst <= 0;
-      mac_en <= 1;
+      mac_rst <= 1'b0;
+      mac_en <= 1'b1;
       case(mac_count) 
         0: begin mac_a <= line_buffer[0][col-1]; mac_b <= kernel[0][0]; end
         1: begin mac_a <= line_buffer[0][col];   mac_b <= kernel[0][1]; end
@@ -118,15 +118,18 @@ always@(posedge clk)begin
       endcase
       mac_count <= mac_count + 1;
       if(mac_count == 4'b1001) begin
-        mac_en <= 0;
-        latency_counter <= 4'b0;
+        mac_en <= 1'b0;
+        latency_counter <= 4'b0000;
         state <= 4'b0101;
       end
     end
     MAC_WAIT: begin
       latency_counter <= latency_counter + 1;
-      if (latency_counter == 3)
-      state <= 4'b0110; //wait for 3 clock cycles for mac to finish
+      if (latency_counter == 4'b0011)begin
+        latency_counter <= 4'b0000;
+        state <= 4'b0110;
+      end
+      //state <= 4'b0110; //wait for 3 clock cycles for mac to finish
     end
     WRITE: begin
       output_ram[(row -1)*(img_width -2) + (col -1)] <= relu_acc;
@@ -150,7 +153,7 @@ always@(posedge clk)begin
       end 
     end
     DONE: begin
-        done <= 1;
+        done <= 1'b1;
     end
     endcase
   end

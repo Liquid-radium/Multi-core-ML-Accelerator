@@ -11,251 +11,251 @@ cModel Technology
 Z0 d/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core
 vavg_pool_unit
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1753211518
+!s110 1753212027
 !i10b 1
 !s100 ^7ECaDLc98=1GTj;=Z`VC3
-Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
 I:bbOm503I4e5?<9hGkA9_3
-Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
 w1751260953
 8avg_pool_unit.v
 Favg_pool_unit.v
-!i122 92
+!i122 106
 L0 1 58
-Z5 OV;L;2020.1;71
+Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1753211518.000000
+!s108 1753212027.000000
 !s107 avg_pool_unit.v|
 !s90 -reportprogress|300|-sv|avg_pool_unit.v|
 !i113 1
 o-sv
-Z7 tCvgOpt 0
+Z5 tCvgOpt 0
 vcnn_engine
 R1
-R2
+!s110 1753212039
 !i10b 1
-!s100 YTbb>?JP@X0o4f875[Kaf1
+!s100 Kad8``aiD53DNIOHPRX9<3
+R2
+IdbI0NKj=KF53mQGVLCCF`0
 R3
-IL^bLZ]W8:1SH=ZUl@^Lo31
-R4
 S1
 R0
-w1753211236
+w1753211722
 8cnn_engine.v
 Fcnn_engine.v
-!i122 88
+!i122 108
 L0 1 158
-R5
+R4
 r1
 !s85 0
 31
-R6
+!s108 1753212039.000000
 !s107 cnn_engine.v|
 !s90 -reportprogress|300|-sv|cnn_engine.v|
 !i113 1
 o-sv
-R7
+R5
 vcnn_top
 R1
-R2
+!s110 1753212033
 !i10b 1
-!s100 Ih]@m>ebb<VmCjG^3g^^01
+!s100 I7ejQ68J7GPOEh@7A:H9]3
+R2
+Id<6gGlDG`0@iW]=OC@I?Q2
 R3
-IXU?B3kE_IW>l^RI6Yc<Iz1
-R4
 S1
 R0
-w1753211250
+w1753211738
 8cnn_core_unit.v
 Fcnn_core_unit.v
-!i122 87
+!i122 107
 L0 1 112
-R5
+R4
 r1
 !s85 0
 31
-R6
+!s108 1753212033.000000
 !s107 cnn_core_unit.v|
 !s90 -reportprogress|300|-sv|cnn_core_unit.v|
 !i113 1
 o-sv
-R7
+R5
 vfc_layer
 R1
-R2
+Z6 !s110 1753211872
 !i10b 1
-!s100 =_W>DBignWV0G;LZR@46f1
+!s100 o[d4aZ5o@;PQ?1BAPVSzn1
+R2
+IzUZ4BGMgF>AR6o5Z6ggH`3
 R3
-I?B2i2UX6d48oIl;LAlCH<2
-R4
 S1
 R0
-w1753211259
+w1753211752
 8fc_layer.v
 Ffc_layer.v
-!i122 90
+!i122 100
 L0 1 30
-R5
+R4
 r1
 !s85 0
 31
-R6
+Z7 !s108 1753211872.000000
 !s107 fc_layer.v|
 !s90 -reportprogress|300|-sv|fc_layer.v|
 !i113 1
 o-sv
-R7
+R5
 vmac_unit
 R1
-R2
+R6
 !i10b 1
-!s100 Rh3Fa5X1_B:FUW]OF9gK>0
+!s100 2O:fP[Pd=APP7FGEcT]O21
+R2
+I4oc^Cg8_=DNUGYSe_BKR>3
 R3
-IUUY0a3VAJA]i@=hC5c[Q[0
-R4
 S1
 R0
-w1751179020
+w1753211805
 8mac_unit.v
 Fmac_unit.v
-!i122 94
+!i122 104
 L0 1 59
-R5
+R4
 r1
 !s85 0
 31
-R6
+R7
 !s107 mac_unit.v|
 !s90 -reportprogress|300|-sv|mac_unit.v|
 !i113 1
 o-sv
-R7
+R5
 vmulti_core
 R1
-R2
+R6
 !i10b 1
-!s100 ^7ZS@Kf?i9N92@LUGiag02
+!s100 i]AXT<Z1`f@YN?jEjG9BO1
+R2
+IFId3Pmz84?=ThB166[gSI3
 R3
-IG[SJUK:;WkYY1nL>NZ0N11
-R4
 S1
 R0
-w1753178379
+w1753211831
 8multi_core.v
 Fmulti_core.v
-!i122 95
+!i122 105
 L0 1 76
-R5
+R4
 r1
 !s85 0
 31
-R6
+R7
 !s107 multi_core.v|
 !s90 -reportprogress|300|-sv|multi_core.v|
 !i113 1
 o-sv
-R7
+R5
 vpool_layer
 R1
-R2
+R6
 !i10b 1
-!s100 N?cUm^Yd3O5`XQV^i=IBa1
+!s100 12GTCGKQcnIK?m8kSC1:^1
+R2
+ILlaSeB]BgG^[FK@CJ<;F50
 R3
-I<WfMUimYQNWk3D@j:>2?<2
-R4
 S1
 R0
-w1753211278
+w1753211842
 8pool_layer.v
 Fpool_layer.v
-!i122 89
+!i122 99
 L0 1 137
-R5
+R4
 r1
 !s85 0
 31
-R6
+R7
 !s107 pool_layer.v|
 !s90 -reportprogress|300|-sv|pool_layer.v|
 !i113 1
 o-sv
-R7
+R5
 vrelu_unit
 R1
-R2
+R6
 !i10b 1
 !s100 ?VUS_iG87zYleDWQcI;8V1
-R3
+R2
 I>R`VBC@:ba]jlF8InBK`S3
-R4
+R3
 S1
 R0
 w1750608535
 8relu_unit.v
 Frelu_unit.v
-!i122 93
+!i122 103
 L0 1 7
-R5
+R4
 r1
 !s85 0
 31
-R6
+R7
 !s107 relu_unit.v|
 !s90 -reportprogress|300|-sv|relu_unit.v|
 !i113 1
 o-sv
-R7
+R5
 vtb_cnn_multi
 R1
-R2
+R6
 !i10b 1
 !s100 zjc[B^HfB<Y59GYlVgB4o3
-R3
+R2
 IWL@l5Xe2aMjD;A5U1HRgO3
-R4
+R3
 S1
 R0
 w1753179734
 8tb_cnn_multi.v
 Ftb_cnn_multi.v
-!i122 91
+!i122 101
 L0 3 55
-R5
+R4
 r1
 !s85 0
 31
-R6
+R7
 !s107 tb_cnn_multi.v|
 !s90 -reportprogress|300|-sv|tb_cnn_multi.v|
 !i113 1
 o-sv
-R7
+R5
 vtb_cnn_unit
 R1
-!s110 1753211528
+!s110 1753212051
 !i10b 1
 !s100 8MzTW@o[a:liA:ThiDLVH3
-R3
+R2
 Ib?0cQSoA2BXM>ZLZ6h?901
-R4
+R3
 S1
 R0
 w1753211307
 8tb_cnn_unit.v
 Ftb_cnn_unit.v
-!i122 96
+!i122 109
 L0 3 57
-R5
+R4
 r1
 !s85 0
 31
-!s108 1753211528.000000
+!s108 1753212051.000000
 !s107 tb_cnn_unit.v|
 !s90 -reportprogress|300|-sv|tb_cnn_unit.v|
 !i113 1
 o-sv
-R7
+R5
