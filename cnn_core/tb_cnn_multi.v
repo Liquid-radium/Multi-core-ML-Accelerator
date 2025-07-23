@@ -49,7 +49,7 @@ initial begin
     end
   end
   #30;
-  wait(all_done == 1);
+  //wait(all_done == 1);
   //$display("CNN prediction output: %d", predictions);
   #20;
   $finish;
