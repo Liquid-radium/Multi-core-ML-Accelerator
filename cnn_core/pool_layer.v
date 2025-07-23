@@ -126,7 +126,6 @@ always @ (posedge clk) begin
     end
     DONE: begin
           done <= 1;
-        end
       end
     endcase
   end
