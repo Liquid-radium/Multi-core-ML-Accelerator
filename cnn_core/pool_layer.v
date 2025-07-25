@@ -97,7 +97,6 @@ always @ (posedge clk) begin
         1: avg_pool_ip <= line_buffer[0][col+1];
         2: avg_pool_ip <= line_buffer[1][col];
         3: avg_pool_ip <= line_buffer[1][col+1];
-        $display("Feeding avg_pool unit with value %d at time %t", avg_pool_ip, $time);
       endcase
       avg_pool_count <= avg_pool_count + 1;
       if(avg_pool_count == 2'b11) begin
@@ -105,6 +104,7 @@ always @ (posedge clk) begin
         latency_counter <= 4'b0000;
         state <= AVG_POOL_WAIT;
       end 
+      $display("Feeding avg_pool unit with value %d at time %t", avg_pool_ip, $time);
     end
     AVG_POOL_WAIT: begin
       latency_counter <= latency_counter + 1;
