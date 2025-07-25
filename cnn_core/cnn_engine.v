@@ -76,10 +76,11 @@ always@(posedge clk)begin
     mac_rst = 1'b0;
     $display("Resetting mac_count to %0d at time %t", mac_count, $time);
     state = IDLE;
-  end else if (~rst) begin
+  end else begin
     //$display("CNN Engine running at time %t", $time);
     case(state)
     IDLE: begin
+      $display("value of start signal at time %t is %b", $time, start);
       if (start) begin
         $display("Starting CNN Engine at time %t", $time);
         row <= 3'b000;
