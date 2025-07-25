@@ -56,13 +56,13 @@ always @ (posedge clk) begin
       row1 <= 0;
       col1 <= 0;
       latency_counter1 <= 0;
-      state1 <= AVG_POOL_RESET;
+      state1 <= AVG_POOL_RESET1;
     end 
     end
     LOAD1: begin
-      line_buffer[0][fm_address % fm_width] <= input_fm[fm_address]; //to get the first pixel to convolve in that row
+      line_buffer1[0][fm_address % fm_width] <= input_fm[fm_address]; //to get the first pixel to convolve in that row
       if((fm_address + 1) % fm_width == 0) begin //if end of row
-        line_buffer[1] <= line_buffer[0]; //used for maintaining the order of convolution in the image
+        line_buffer1[1] <= line_buffer1[0]; //used for maintaining the order of convolution in the image
       end
       if((fm_address + 1) == (fm_width * 2)) begin //if end of line buffer block
         state1 <= SHIFT1;
@@ -85,10 +85,10 @@ always @ (posedge clk) begin
       avg_pool_en <= 1;
       avg_pool_rst <= 0;
       case(avg_pool_count) 
-        0: avg_pool_ip <= line_buffer[0][col1];
-        1: avg_pool_ip <= line_buffer[0][col1+1];
-        2: avg_pool_ip <= line_buffer[1][col1];
-        3: avg_pool_ip <= line_buffer[1][col1+1];
+        0: avg_pool_ip <= line_buffer1[0][col1];
+        1: avg_pool_ip <= line_buffer1[0][col1+1];
+        2: avg_pool_ip <= line_buffer1[1][col1];
+        3: avg_pool_ip <= line_buffer1[1][col1+1];
       endcase
       avg_pool_count <= avg_pool_count + 1;
       if(avg_pool_count == 4) begin
@@ -116,9 +116,9 @@ always @ (posedge clk) begin
     else if (row1 < fm_height - 2) begin // if not last row1
         col1 <= 0;
         row1 <= row1 + 2;
-        line_buffer[0] <= line_buffer[1];
+        line_buffer1[0] <= line_buffer1[1];
         for (i = 0; i < fm_width; i = i + 1) begin
-        line_buffer[1][i] <= input_fm[(row1 + 2) * fm_width + i];
+        line_buffer1[1][i] <= input_fm[(row1 + 2) * fm_width + i];
         end
         state1 <= AVG_POOL_RESET1;
     end 

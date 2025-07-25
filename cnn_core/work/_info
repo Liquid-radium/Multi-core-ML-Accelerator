@@ -29,39 +29,39 @@ r1
 !s85 0
 31
 Z6 !s108 1753464150.000000
-!s107 tb_cnn_unit.v|tb_cnn_multi.v|relu_unit.v|pool_layer.v|multi_core.v|mac_unit.v|fc_layer.v|cnn_engine.v|cnn_core_unit.v|avg_pool_unit.v|
-Z7 !s90 -sv|avg_pool_unit.v|cnn_core_unit.v|cnn_engine.v|fc_layer.v|mac_unit.v|multi_core.v|pool_layer.v|relu_unit.v|tb_cnn_multi.v|tb_cnn_unit.v|
+Z7 !s107 tb_cnn_unit.v|tb_cnn_multi.v|relu_unit.v|pool_layer.v|multi_core.v|mac_unit.v|fc_layer.v|cnn_engine.v|cnn_core_unit.v|avg_pool_unit.v|
+Z8 !s90 -sv|avg_pool_unit.v|cnn_core_unit.v|cnn_engine.v|fc_layer.v|mac_unit.v|multi_core.v|pool_layer.v|relu_unit.v|tb_cnn_multi.v|tb_cnn_unit.v|
 !i113 1
 o-sv
-Z8 tCvgOpt 0
+Z9 tCvgOpt 0
 vcnn_engine
 R1
-R2
+Z10 !s110 1753465285
 !i10b 1
-!s100 ^:SOE55m^UencG7]bhZng2
+!s100 3QKngKondY5]7:@f@WTA13
 R3
-IVGn=ER5a^;KUN<mBYWdBE3
+I2ACI0H5WTioA<eL7PgV`l1
 R4
 S1
 R0
-w1753461916
+w1753465249
 8cnn_engine.v
 Fcnn_engine.v
-!i122 327
+!i122 329
 L0 1 177
 R5
 r1
 !s85 0
 31
-R6
-Z9 !s107 tb_cnn_unit.v|tb_cnn_multi.v|relu_unit.v|pool_layer.v|multi_core.v|mac_unit.v|fc_layer.v|cnn_engine.v|cnn_core_unit.v|avg_pool_unit.v|
-R7
+Z11 !s108 1753465285.000000
+!s107 cnn_engine.v|
+!s90 -reportprogress|300|-sv|cnn_engine.v|
 !i113 1
 o-sv
-R8
+R9
 vcnn_top
 R1
-R2
+R10
 !i10b 1
 !s100 UM:DDZZG6e[C:5R=U[1=30
 R3
@@ -72,18 +72,18 @@ R0
 w1753461548
 8cnn_core_unit.v
 Fcnn_core_unit.v
-!i122 327
+!i122 328
 L0 1 115
 R5
 r1
 !s85 0
 31
-R6
-R9
-R7
+R11
+!s107 cnn_core_unit.v|
+!s90 -reportprogress|300|-sv|cnn_core_unit.v|
 !i113 1
 o-sv
-R8
+R9
 vfc_layer
 R1
 R2
@@ -104,11 +104,11 @@ r1
 !s85 0
 31
 R6
-R9
 R7
+R8
 !i113 1
 o-sv
-R8
+R9
 vmac_unit
 R1
 R2
@@ -129,11 +129,11 @@ r1
 !s85 0
 31
 R6
-R9
 R7
+R8
 !i113 1
 o-sv
-R8
+R9
 vmulti_core
 R1
 R2
@@ -154,11 +154,11 @@ r1
 !s85 0
 31
 R6
-R9
 R7
+R8
 !i113 1
 o-sv
-R8
+R9
 vpool_layer
 R1
 R2
@@ -179,11 +179,11 @@ r1
 !s85 0
 31
 R6
-R9
 R7
+R8
 !i113 1
 o-sv
-R8
+R9
 vrelu_unit
 R1
 R2
@@ -204,11 +204,11 @@ r1
 !s85 0
 31
 R6
-R9
 R7
+R8
 !i113 1
 o-sv
-R8
+R9
 vtb_cnn_multi
 R1
 R2
@@ -229,11 +229,11 @@ r1
 !s85 0
 31
 R6
-R9
 R7
+R8
 !i113 1
 o-sv
-R8
+R9
 vtb_cnn_unit
 R1
 R2
@@ -254,8 +254,8 @@ r1
 !s85 0
 31
 R6
-R9
 R7
+R8
 !i113 1
 o-sv
-R8
+R9
