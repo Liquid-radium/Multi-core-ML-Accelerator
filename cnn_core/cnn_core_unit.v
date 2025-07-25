@@ -7,14 +7,21 @@ module cnn_top(
     output reg done
 );
 
-//registers needed for instantiation of cnn engine
-reg cnn_start, pool_start, fc_start;
-reg cnn_done, pool_done, fc_done;
+// FSM state register
+    logic [2:0] state;
 
-//output wires needed for inter-layer connection
-reg signed [31:0] conv_output [0:35];
-reg signed [31:0] pool_output [0:8];
-reg signed [31:0] fc_output;
+    // Control signals
+    logic cnn_start, cnn_done;
+    logic pool_start, pool_done;
+    logic fc_start, fc_done;
+
+    // Inter-layer storage
+    logic signed [31:0] conv_output [0:35]; // Output of 6x6 conv
+    logic signed [31:0] pool_output [0:8];  // Output of 3x3 pool
+    logic signed [31:0] fc_output;          // Final output before ReLU
+    logic signed [31:0] relu_acc;           // Final output after ReLU
+
+    assign value = relu_acc; // Final system output
 
 //FSM states
 localparam IDLE = 3'b000,
@@ -57,6 +64,11 @@ fc_layer fc_layer(
     .fc_input(pool_output),
     .done(fc_done),
     .fc_layer_op(fc_output)
+);
+
+relu_unit relu(
+    .fc_op(fc_output),
+    .relu_acc(value)
 );
 
 //FSM controller
