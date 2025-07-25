@@ -1,51 +1,22 @@
 # do compile.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:58:02 on Jul 26,2025
+# Start time: 01:00:35 on Jul 26,2025
 # vlog -reportprogress 300 -sv cnn_core_unit.v 
 # -- Compiling module cnn_top
 # 
 # Top level modules:
 # 	cnn_top
-# End time: 00:58:02 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 01:00:35 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:58:02 on Jul 26,2025
+# Start time: 01:00:35 on Jul 26,2025
 # vlog -reportprogress 300 -sv cnn_engine.v 
 # -- Compiling module cnn_engine
-# ** Error (suppressible): cnn_engine.v(72): (vlog-12003) Variable 'state' written by continuous and procedural assignments. See cnn_engine.v(33). 
-# ** Error (suppressible): cnn_engine.v(74): (vlog-12003) Variable 'row' written by continuous and procedural assignments. See cnn_engine.v(34). 
-# ** Error (suppressible): cnn_engine.v(76): (vlog-12003) Variable 'col' written by continuous and procedural assignments. See cnn_engine.v(35). 
-# ** Error (suppressible): cnn_engine.v(78): (vlog-12003) Variable 'img_address' written by continuous and procedural assignments. See cnn_engine.v(36). 
-# ** Error (suppressible): cnn_engine.v(81): (vlog-12003) Variable 'mac_count' written by continuous and procedural assignments. See cnn_engine.v(37). 
-# ** Error (suppressible): cnn_engine.v(82): (vlog-12003) Variable 'latency_counter' written by continuous and procedural assignments. See cnn_engine.v(38). 
-# ** Error (suppressible): cnn_engine.v(92): (vlog-12003) Variable 'row' written by continuous and procedural assignments. See cnn_engine.v(34). 
-# ** Error (suppressible): cnn_engine.v(93): (vlog-12003) Variable 'col' written by continuous and procedural assignments. See cnn_engine.v(35). 
-# ** Error (suppressible): cnn_engine.v(94): (vlog-12003) Variable 'img_address' written by continuous and procedural assignments. See cnn_engine.v(36). 
-# ** Error (suppressible): cnn_engine.v(96): (vlog-12003) Variable 'state' written by continuous and procedural assignments. See cnn_engine.v(33). 
-# ** Error (suppressible): cnn_engine.v(106): (vlog-12003) Variable 'state' written by continuous and procedural assignments. See cnn_engine.v(33). 
-# ** Error (suppressible): cnn_engine.v(108): (vlog-12003) Variable 'img_address' written by continuous and procedural assignments. See cnn_engine.v(36). 
-# ** Error (suppressible): cnn_engine.v(112): (vlog-12003) Variable 'col' written by continuous and procedural assignments. See cnn_engine.v(35). 
-# ** Error (suppressible): cnn_engine.v(113): (vlog-12003) Variable 'row' written by continuous and procedural assignments. See cnn_engine.v(34). 
-# ** Error (suppressible): cnn_engine.v(114): (vlog-12003) Variable 'state' written by continuous and procedural assignments. See cnn_engine.v(33). 
-# ** Error (suppressible): cnn_engine.v(120): (vlog-12003) Variable 'mac_count' written by continuous and procedural assignments. See cnn_engine.v(37). 
-# ** Error (suppressible): cnn_engine.v(121): (vlog-12003) Variable 'latency_counter' written by continuous and procedural assignments. See cnn_engine.v(38). 
-# ** Error (suppressible): cnn_engine.v(122): (vlog-12003) Variable 'state' written by continuous and procedural assignments. See cnn_engine.v(33). 
-# ** Error (suppressible): cnn_engine.v(139): (vlog-12003) Variable 'mac_count' written by continuous and procedural assignments. See cnn_engine.v(37). 
-# ** Error (suppressible): cnn_engine.v(142): (vlog-12003) Variable 'latency_counter' written by continuous and procedural assignments. See cnn_engine.v(38). 
-# ** Error (suppressible): cnn_engine.v(143): (vlog-12003) Variable 'state' written by continuous and procedural assignments. See cnn_engine.v(33). 
-# ** Error (suppressible): cnn_engine.v(148): (vlog-12003) Variable 'latency_counter' written by continuous and procedural assignments. See cnn_engine.v(38). 
-# ** Error (suppressible): cnn_engine.v(150): (vlog-12003) Variable 'latency_counter' written by continuous and procedural assignments. See cnn_engine.v(38). 
-# ** Error (suppressible): cnn_engine.v(151): (vlog-12003) Variable 'state' written by continuous and procedural assignments. See cnn_engine.v(33). 
-# ** Error (suppressible): cnn_engine.v(157): (vlog-12003) Variable 'state' written by continuous and procedural assignments. See cnn_engine.v(33). 
-# ** Error (suppressible): cnn_engine.v(162): (vlog-12003) Variable 'col' written by continuous and procedural assignments. See cnn_engine.v(35). 
-# ** Error (suppressible): cnn_engine.v(163): (vlog-12003) Variable 'state' written by continuous and procedural assignments. See cnn_engine.v(33). 
-# ** Error (suppressible): cnn_engine.v(165): (vlog-12003) Variable 'col' written by continuous and procedural assignments. See cnn_engine.v(35). 
-# ** Error (suppressible): cnn_engine.v(166): (vlog-12003) Variable 'row' written by continuous and procedural assignments. See cnn_engine.v(34). 
-# ** Error (suppressible): cnn_engine.v(171): (vlog-12003) Variable 'state' written by continuous and procedural assignments. See cnn_engine.v(33). 
-# ** Error (suppressible): cnn_engine.v(174): (vlog-12003) Variable 'state' written by continuous and procedural assignments. See cnn_engine.v(33). 
-# End time: 00:58:02 on Jul 26,2025, Elapsed time: 0:00:00
-# Errors: 31, Warnings: 0
+# ** Error: (vlog-13069) cnn_engine.v(33): near "=": syntax error, unexpected '='.
+# ** Error: cnn_engine.v(33): (vlog-13205) Syntax error found in the scope following 'state'. Is there a missing '::'?
+# End time: 01:00:35 on Jul 26,2025, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
 # ** Error: /home/shruti_hegde/intelFPGA/20.1/modelsim_ase/linuxaloem/vlog failed.
 # Error in macro ./compile.do line 3
 # /home/shruti_hegde/intelFPGA/20.1/modelsim_ase/linuxaloem/vlog failed.

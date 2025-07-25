@@ -30,13 +30,6 @@ reg [5:0] img_address; //stores the serial number of the pixel as per the input 
 reg [3:0] mac_count; //stores the number of mac inputs multiplied and accumulated (9, hence 4 bits)
 reg [3:0] latency_counter; //counter for waiting for pipeline to flush (2 bits sufficient, 4 for deeper pipelines)
 
-state = 4'b0000;
-row = 3'b000;
-col = 3'b000;
-img_address = 6'b000000;
-mac_count = 4'b0000;
-latency_counter = 4'b0000;
-
 // mac parameters for instantiation
 reg signed [31:0] mac_a;
 reg signed [31:0] mac_b;
