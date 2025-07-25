@@ -62,6 +62,10 @@ for (i = 0; i < img_size; i = i + 1) begin
 end
 
 #10;
+rst = 0;
+$display("Starting CNN processing...");
+#10;
+$display("Enabling CNN unit...");
 enable = 1;
 #10;
 // enable = 0;
