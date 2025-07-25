@@ -19,7 +19,6 @@ always @ (posedge clk or rst) begin
 
   if (rst) begin
     stage1 = 31'd0;
-    done = 0;
   end else if(enable) begin
     stage1 <= layer2;
   end
