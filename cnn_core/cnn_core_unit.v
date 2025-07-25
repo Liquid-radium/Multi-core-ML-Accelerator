@@ -84,7 +84,7 @@ always @ (posedge clk) begin
         $display("value of cnn_done signal at time %t is %b", $time, cnn_done);
       end
       CNN_WAIT: begin
-        if(cnn_done) begin
+        if(cnn_done == 1) begin
           pool_start <= 1;
           state <= POOL_START;
         end
@@ -94,7 +94,7 @@ always @ (posedge clk) begin
         state <= POOL_WAIT;
       end
       POOL_WAIT: begin
-        if(pool_done) begin
+        if(pool_done == 1) begin
           fc_start <= 1;
           state <= FC_START;
         end
@@ -104,7 +104,7 @@ always @ (posedge clk) begin
         state <= FC_WAIT;
       end
       FC_WAIT: begin
-        if(fc_done) begin
+        if(fc_done == 1) begin
           done <= 1;
           state <= DONE;
         end
