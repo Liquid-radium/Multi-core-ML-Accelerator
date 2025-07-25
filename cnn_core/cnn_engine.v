@@ -165,12 +165,13 @@ always@(posedge clk)begin
         state <= MAC_RESET; //go back to MAC reset
       end 
       else begin
-        state <= DONE; //all rows and columns processed
+        state <= DONE;
+        done <= 1; //all rows and columns processed
       end 
     end
     DONE: begin
-      done <= 1'b1;
-      $display("value of done signal at time %t is %b", $time, done);
+      //holds done signal
+      //$display("value of done signal at time %t is %b", $time, done);
     end
     endcase
   end

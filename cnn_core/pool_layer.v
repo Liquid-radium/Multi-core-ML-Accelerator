@@ -53,6 +53,8 @@ always @ (posedge clk) begin
     case(state)
     IDLE: begin
     if(start) begin
+      $display("value of start signal at time %t is %b", $time, start);
+      done <= 0;
       row <= 0;
       col <= 0;
       latency_counter <= 0;

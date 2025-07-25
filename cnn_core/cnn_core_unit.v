@@ -81,9 +81,10 @@ always @ (posedge clk) begin
       CNN_START: begin
         cnn_start <= 0;
         state <= CNN_WAIT;
-        $display("value of cnn_done signal at time %t is %b", $time, cnn_done);
+        //$display("value of cnn_done signal at time %t is %b", $time, cnn_done);
       end
       CNN_WAIT: begin
+      $display("Waiting for CNN layer to finish at time %t", $time);
         if(cnn_done == 1) begin
           pool_start <= 1;
           state <= POOL_START;
