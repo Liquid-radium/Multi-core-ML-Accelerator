@@ -1,89 +1,89 @@
 # do compile.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:16:37 on Jul 26,2025
+# Start time: 02:22:47 on Jul 26,2025
 # vlog -reportprogress 300 -sv cnn_core_unit.v 
 # -- Compiling module cnn_top
 # 
 # Top level modules:
 # 	cnn_top
-# End time: 02:16:37 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 02:22:47 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:16:37 on Jul 26,2025
+# Start time: 02:22:47 on Jul 26,2025
 # vlog -reportprogress 300 -sv cnn_engine.v 
 # -- Compiling module cnn_engine
 # 
 # Top level modules:
 # 	cnn_engine
-# End time: 02:16:37 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 02:22:47 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:16:37 on Jul 26,2025
+# Start time: 02:22:47 on Jul 26,2025
 # vlog -reportprogress 300 -sv pool_layer.v 
 # -- Compiling module pool_layer
 # 
 # Top level modules:
 # 	pool_layer
-# End time: 02:16:37 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 02:22:47 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:16:37 on Jul 26,2025
+# Start time: 02:22:47 on Jul 26,2025
 # vlog -reportprogress 300 -sv fc_layer.v 
 # -- Compiling module fc_layer
 # 
 # Top level modules:
 # 	fc_layer
-# End time: 02:16:37 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 02:22:47 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:16:37 on Jul 26,2025
+# Start time: 02:22:47 on Jul 26,2025
 # vlog -reportprogress 300 -sv tb_cnn_multi.v 
 # -- Compiling module tb_cnn_multi
 # 
 # Top level modules:
 # 	tb_cnn_multi
-# End time: 02:16:37 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 02:22:47 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:16:37 on Jul 26,2025
+# Start time: 02:22:47 on Jul 26,2025
 # vlog -reportprogress 300 -sv avg_pool_unit.v 
 # -- Compiling module avg_pool_unit
 # 
 # Top level modules:
 # 	avg_pool_unit
-# End time: 02:16:37 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 02:22:47 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:16:37 on Jul 26,2025
+# Start time: 02:22:47 on Jul 26,2025
 # vlog -reportprogress 300 -sv relu_unit.v 
 # -- Compiling module relu_unit
 # 
 # Top level modules:
 # 	relu_unit
-# End time: 02:16:37 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 02:22:47 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:16:37 on Jul 26,2025
+# Start time: 02:22:47 on Jul 26,2025
 # vlog -reportprogress 300 -sv mac_unit.v 
 # -- Compiling module mac_unit
 # 
 # Top level modules:
 # 	mac_unit
-# End time: 02:16:37 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 02:22:47 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:16:37 on Jul 26,2025
+# Start time: 02:22:47 on Jul 26,2025
 # vlog -reportprogress 300 -sv multi_core.v 
 # -- Compiling module multi_core
 # 
 # Top level modules:
 # 	multi_core
-# End time: 02:16:38 on Jul 26,2025, Elapsed time: 0:00:01
+# End time: 02:22:47 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vsim tb_cnn_unit
 # vsim tb_cnn_unit 
-# Start time: 02:16:41 on Jul 26,2025
+# Start time: 02:22:51 on Jul 26,2025
 # Loading sv_std.std
 # Loading work.tb_cnn_unit
 # Loading work.cnn_top
@@ -228,12 +228,28 @@ run -all
 # input_img[63] = 1
 # Starting CNN processing...
 # Enabling CNN unit...
+# writing the mac output 4294967293 at time               395000
+# writing the mac output          x at time               405000
+# writing the mac output          x at time               415000
+# writing the mac output          x at time               425000
+# writing the mac output          x at time               615000
+# writing the mac output          x at time               625000
+# writing the mac output          x at time               635000
+# writing the mac output          x at time               645000
+# writing the mac output          x at time               835000
+# writing the mac output          x at time               845000
+# writing the mac output          x at time               855000
+# writing the mac output          x at time               865000
 # Time:              1030000 | done: 0
 # Time:              1040000 | done: 0
 # Time:              1050000 | done: 0
+# writing the mac output          x at time              1055000
 # Time:              1060000 | done: 0
+# writing the mac output          x at time              1065000
 # Time:              1070000 | done: 0
+# writing the mac output          x at time              1075000
 # Time:              1080000 | done: 0
+# writing the mac output          x at time              1085000
 # Time:              1090000 | done: 0
 # Time:              1100000 | done: 0
 # Time:              1110000 | done: 0
@@ -253,9 +269,13 @@ run -all
 # Time:              1250000 | done: 0
 # Time:              1260000 | done: 0
 # Time:              1270000 | done: 0
+# writing the mac output          x at time              1275000
 # Time:              1280000 | done: 0
+# writing the mac output          x at time              1285000
 # Time:              1290000 | done: 0
+# writing the mac output          x at time              1295000
 # Time:              1300000 | done: 0
+# writing the mac output          x at time              1305000
 # Time:              1310000 | done: 0
 # Time:              1320000 | done: 0
 # Time:              1330000 | done: 0
@@ -275,9 +295,13 @@ run -all
 # Time:              1470000 | done: 0
 # Time:              1480000 | done: 0
 # Time:              1490000 | done: 0
+# writing the mac output          x at time              1495000
 # Time:              1500000 | done: 0
+# writing the mac output          x at time              1505000
 # Time:              1510000 | done: 0
+# writing the mac output          x at time              1515000
 # Time:              1520000 | done: 0
+# writing the mac output          x at time              1525000
 # Time:              1530000 | done: 0
 # Time:              1540000 | done: 0
 # Time:              1550000 | done: 0
@@ -292,9 +316,13 @@ run -all
 # Time:              1640000 | done: 0
 # Time:              1650000 | done: 0
 # Time:              1660000 | done: 0
+# writing the mac output          x at time              1665000
 # Time:              1670000 | done: 0
+# writing the mac output          x at time              1675000
 # Time:              1680000 | done: 0
+# writing the mac output          x at time              1685000
 # Time:              1690000 | done: 0
+# writing the mac output          x at time              1695000
 # Time:              1700000 | done: 0
 # Time:              1710000 | done: 0
 # Time:              1720000 | done: 0
@@ -314,9 +342,13 @@ run -all
 # Time:              1860000 | done: 0
 # Time:              1870000 | done: 0
 # Time:              1880000 | done: 0
+# writing the mac output          x at time              1885000
 # Time:              1890000 | done: 0
+# writing the mac output          x at time              1895000
 # Time:              1900000 | done: 0
+# writing the mac output          x at time              1905000
 # Time:              1910000 | done: 0
+# writing the mac output          x at time              1915000
 # Time:              1920000 | done: 0
 # Time:              1930000 | done: 0
 # Time:              1940000 | done: 0
@@ -336,9 +368,13 @@ run -all
 # Time:              2080000 | done: 0
 # Time:              2090000 | done: 0
 # Time:              2100000 | done: 0
+# writing the mac output          x at time              2105000
 # Time:              2110000 | done: 0
+# writing the mac output          x at time              2115000
 # Time:              2120000 | done: 0
+# writing the mac output          x at time              2125000
 # Time:              2130000 | done: 0
+# writing the mac output          x at time              2135000
 # Time:              2140000 | done: 0
 # Time:              2150000 | done: 0
 # Time:              2160000 | done: 0
@@ -358,9 +394,13 @@ run -all
 # Time:              2300000 | done: 0
 # Time:              2310000 | done: 0
 # Time:              2320000 | done: 0
+# writing the mac output          x at time              2325000
 # Time:              2330000 | done: 0
+# writing the mac output          x at time              2335000
 # Time:              2340000 | done: 0
+# writing the mac output          x at time              2345000
 # Time:              2350000 | done: 0
+# writing the mac output          x at time              2355000
 # Time:              2360000 | done: 0
 # Time:              2370000 | done: 0
 # Time:              2380000 | done: 0
@@ -380,9 +420,13 @@ run -all
 # Time:              2520000 | done: 0
 # Time:              2530000 | done: 0
 # Time:              2540000 | done: 0
+# writing the mac output          x at time              2545000
 # Time:              2550000 | done: 0
+# writing the mac output          x at time              2555000
 # Time:              2560000 | done: 0
+# writing the mac output          x at time              2565000
 # Time:              2570000 | done: 0
+# writing the mac output          x at time              2575000
 # Time:              2580000 | done: 0
 # Time:              2590000 | done: 0
 # Time:              2600000 | done: 0
@@ -402,9 +446,13 @@ run -all
 # Time:              2740000 | done: 0
 # Time:              2750000 | done: 0
 # Time:              2760000 | done: 0
+# writing the mac output          x at time              2765000
 # Time:              2770000 | done: 0
+# writing the mac output          x at time              2775000
 # Time:              2780000 | done: 0
+# writing the mac output          x at time              2785000
 # Time:              2790000 | done: 0
+# writing the mac output          x at time              2795000
 # Time:              2800000 | done: 0
 # Time:              2810000 | done: 0
 # Time:              2820000 | done: 0
@@ -419,9 +467,13 @@ run -all
 # Time:              2910000 | done: 0
 # Time:              2920000 | done: 0
 # Time:              2930000 | done: 0
+# writing the mac output          x at time              2935000
 # Time:              2940000 | done: 0
+# writing the mac output          x at time              2945000
 # Time:              2950000 | done: 0
+# writing the mac output          x at time              2955000
 # Time:              2960000 | done: 0
+# writing the mac output          x at time              2965000
 # Time:              2970000 | done: 0
 # Time:              2980000 | done: 0
 # Time:              2990000 | done: 0
@@ -441,9 +493,13 @@ run -all
 # Time:              3130000 | done: 0
 # Time:              3140000 | done: 0
 # Time:              3150000 | done: 0
+# writing the mac output          x at time              3155000
 # Time:              3160000 | done: 0
+# writing the mac output          x at time              3165000
 # Time:              3170000 | done: 0
+# writing the mac output          x at time              3175000
 # Time:              3180000 | done: 0
+# writing the mac output          x at time              3185000
 # Time:              3190000 | done: 0
 # Time:              3200000 | done: 0
 # Time:              3210000 | done: 0
@@ -463,9 +519,13 @@ run -all
 # Time:              3350000 | done: 0
 # Time:              3360000 | done: 0
 # Time:              3370000 | done: 0
+# writing the mac output          x at time              3375000
 # Time:              3380000 | done: 0
+# writing the mac output          x at time              3385000
 # Time:              3390000 | done: 0
+# writing the mac output          x at time              3395000
 # Time:              3400000 | done: 0
+# writing the mac output          x at time              3405000
 # Time:              3410000 | done: 0
 # Time:              3420000 | done: 0
 # Time:              3430000 | done: 0
@@ -485,9 +545,13 @@ run -all
 # Time:              3570000 | done: 0
 # Time:              3580000 | done: 0
 # Time:              3590000 | done: 0
+# writing the mac output          x at time              3595000
 # Time:              3600000 | done: 0
+# writing the mac output          x at time              3605000
 # Time:              3610000 | done: 0
+# writing the mac output          x at time              3615000
 # Time:              3620000 | done: 0
+# writing the mac output          x at time              3625000
 # Time:              3630000 | done: 0
 # Time:              3640000 | done: 0
 # Time:              3650000 | done: 0
@@ -507,9 +571,13 @@ run -all
 # Time:              3790000 | done: 0
 # Time:              3800000 | done: 0
 # Time:              3810000 | done: 0
+# writing the mac output          x at time              3815000
 # Time:              3820000 | done: 0
+# writing the mac output          x at time              3825000
 # Time:              3830000 | done: 0
+# writing the mac output          x at time              3835000
 # Time:              3840000 | done: 0
+# writing the mac output          x at time              3845000
 # Time:              3850000 | done: 0
 # Time:              3860000 | done: 0
 # Time:              3870000 | done: 0
@@ -529,9 +597,13 @@ run -all
 # Time:              4010000 | done: 0
 # Time:              4020000 | done: 0
 # Time:              4030000 | done: 0
+# writing the mac output          x at time              4035000
 # Time:              4040000 | done: 0
+# writing the mac output          x at time              4045000
 # Time:              4050000 | done: 0
+# writing the mac output          x at time              4055000
 # Time:              4060000 | done: 0
+# writing the mac output          x at time              4065000
 # Time:              4070000 | done: 0
 # Time:              4080000 | done: 0
 # Time:              4090000 | done: 0
@@ -546,9 +618,13 @@ run -all
 # Time:              4180000 | done: 0
 # Time:              4190000 | done: 0
 # Time:              4200000 | done: 0
+# writing the mac output 4294967293 at time              4205000
 # Time:              4210000 | done: 0
+# writing the mac output 4294967294 at time              4215000
 # Time:              4220000 | done: 0
+# writing the mac output 4294967295 at time              4225000
 # Time:              4230000 | done: 0
+# writing the mac output          0 at time              4235000
 # Time:              4240000 | done: 0
 # Time:              4250000 | done: 0
 # Time:              4260000 | done: 0
@@ -568,9 +644,13 @@ run -all
 # Time:              4400000 | done: 0
 # Time:              4410000 | done: 0
 # Time:              4420000 | done: 0
+# writing the mac output         10 at time              4425000
 # Time:              4430000 | done: 0
+# writing the mac output         11 at time              4435000
 # Time:              4440000 | done: 0
+# writing the mac output         12 at time              4445000
 # Time:              4450000 | done: 0
+# writing the mac output         13 at time              4455000
 # Time:              4460000 | done: 0
 # Time:              4470000 | done: 0
 # Time:              4480000 | done: 0
@@ -590,9 +670,13 @@ run -all
 # Time:              4620000 | done: 0
 # Time:              4630000 | done: 0
 # Time:              4640000 | done: 0
+# writing the mac output         23 at time              4645000
 # Time:              4650000 | done: 0
+# writing the mac output         24 at time              4655000
 # Time:              4660000 | done: 0
+# writing the mac output         25 at time              4665000
 # Time:              4670000 | done: 0
+# writing the mac output         26 at time              4675000
 # Time:              4680000 | done: 0
 # Time:              4690000 | done: 0
 # Time:              4700000 | done: 0
@@ -612,9 +696,13 @@ run -all
 # Time:              4840000 | done: 0
 # Time:              4850000 | done: 0
 # Time:              4860000 | done: 0
+# writing the mac output         36 at time              4865000
 # Time:              4870000 | done: 0
+# writing the mac output         37 at time              4875000
 # Time:              4880000 | done: 0
+# writing the mac output         38 at time              4885000
 # Time:              4890000 | done: 0
+# writing the mac output         39 at time              4895000
 # Time:              4900000 | done: 0
 # Time:              4910000 | done: 0
 # Time:              4920000 | done: 0
@@ -634,9 +722,13 @@ run -all
 # Time:              5060000 | done: 0
 # Time:              5070000 | done: 0
 # Time:              5080000 | done: 0
+# writing the mac output         49 at time              5085000
 # Time:              5090000 | done: 0
+# writing the mac output         50 at time              5095000
 # Time:              5100000 | done: 0
+# writing the mac output         51 at time              5105000
 # Time:              5110000 | done: 0
+# writing the mac output         52 at time              5115000
 # Time:              5120000 | done: 0
 # Time:              5130000 | done: 0
 # Time:              5140000 | done: 0
@@ -656,9 +748,13 @@ run -all
 # Time:              5280000 | done: 0
 # Time:              5290000 | done: 0
 # Time:              5300000 | done: 0
+# writing the mac output         62 at time              5305000
 # Time:              5310000 | done: 0
+# writing the mac output         63 at time              5315000
 # Time:              5320000 | done: 0
+# writing the mac output         64 at time              5325000
 # Time:              5330000 | done: 0
+# writing the mac output         65 at time              5335000
 # Time:              5340000 | done: 0
 # Time:              5350000 | done: 0
 # Time:              5360000 | done: 0
@@ -673,9 +769,13 @@ run -all
 # Time:              5450000 | done: 0
 # Time:              5460000 | done: 0
 # Time:              5470000 | done: 0
+# writing the mac output 4294967293 at time              5475000
 # Time:              5480000 | done: 0
+# writing the mac output 4294967294 at time              5485000
 # Time:              5490000 | done: 0
+# writing the mac output 4294967295 at time              5495000
 # Time:              5500000 | done: 0
+# writing the mac output          0 at time              5505000
 # Time:              5510000 | done: 0
 # Time:              5520000 | done: 0
 # Time:              5530000 | done: 0
@@ -695,9 +795,13 @@ run -all
 # Time:              5670000 | done: 0
 # Time:              5680000 | done: 0
 # Time:              5690000 | done: 0
+# writing the mac output         10 at time              5695000
 # Time:              5700000 | done: 0
+# writing the mac output         11 at time              5705000
 # Time:              5710000 | done: 0
+# writing the mac output         12 at time              5715000
 # Time:              5720000 | done: 0
+# writing the mac output         13 at time              5725000
 # Time:              5730000 | done: 0
 # Time:              5740000 | done: 0
 # Time:              5750000 | done: 0
@@ -717,9 +821,13 @@ run -all
 # Time:              5890000 | done: 0
 # Time:              5900000 | done: 0
 # Time:              5910000 | done: 0
+# writing the mac output         23 at time              5915000
 # Time:              5920000 | done: 0
+# writing the mac output         24 at time              5925000
 # Time:              5930000 | done: 0
+# writing the mac output         25 at time              5935000
 # Time:              5940000 | done: 0
+# writing the mac output         26 at time              5945000
 # Time:              5950000 | done: 0
 # Time:              5960000 | done: 0
 # Time:              5970000 | done: 0
@@ -739,9 +847,13 @@ run -all
 # Time:              6110000 | done: 0
 # Time:              6120000 | done: 0
 # Time:              6130000 | done: 0
+# writing the mac output         36 at time              6135000
 # Time:              6140000 | done: 0
+# writing the mac output         37 at time              6145000
 # Time:              6150000 | done: 0
+# writing the mac output         38 at time              6155000
 # Time:              6160000 | done: 0
+# writing the mac output         39 at time              6165000
 # Time:              6170000 | done: 0
 # Time:              6180000 | done: 0
 # Time:              6190000 | done: 0
@@ -761,9 +873,13 @@ run -all
 # Time:              6330000 | done: 0
 # Time:              6340000 | done: 0
 # Time:              6350000 | done: 0
+# writing the mac output         49 at time              6355000
 # Time:              6360000 | done: 0
+# writing the mac output         50 at time              6365000
 # Time:              6370000 | done: 0
+# writing the mac output         51 at time              6375000
 # Time:              6380000 | done: 0
+# writing the mac output         52 at time              6385000
 # Time:              6390000 | done: 0
 # Time:              6400000 | done: 0
 # Time:              6410000 | done: 0
@@ -783,9 +899,13 @@ run -all
 # Time:              6550000 | done: 0
 # Time:              6560000 | done: 0
 # Time:              6570000 | done: 0
+# writing the mac output         62 at time              6575000
 # Time:              6580000 | done: 0
+# writing the mac output         63 at time              6585000
 # Time:              6590000 | done: 0
+# writing the mac output         64 at time              6595000
 # Time:              6600000 | done: 0
+# writing the mac output         65 at time              6605000
 # Time:              6610000 | done: 0
 # Time:              6620000 | done: 0
 # Time:              6630000 | done: 0
@@ -800,9 +920,13 @@ run -all
 # Time:              6720000 | done: 0
 # Time:              6730000 | done: 0
 # Time:              6740000 | done: 0
+# writing the mac output 4294967293 at time              6745000
 # Time:              6750000 | done: 0
+# writing the mac output 4294967294 at time              6755000
 # Time:              6760000 | done: 0
+# writing the mac output 4294967295 at time              6765000
 # Time:              6770000 | done: 0
+# writing the mac output          0 at time              6775000
 # Time:              6780000 | done: 0
 # Time:              6790000 | done: 0
 # Time:              6800000 | done: 0
@@ -822,9 +946,13 @@ run -all
 # Time:              6940000 | done: 0
 # Time:              6950000 | done: 0
 # Time:              6960000 | done: 0
+# writing the mac output         10 at time              6965000
 # Time:              6970000 | done: 0
+# writing the mac output         11 at time              6975000
 # Time:              6980000 | done: 0
+# writing the mac output         12 at time              6985000
 # Time:              6990000 | done: 0
+# writing the mac output         13 at time              6995000
 # Time:              7000000 | done: 0
 # Time:              7010000 | done: 0
 # Time:              7020000 | done: 0
@@ -844,9 +972,13 @@ run -all
 # Time:              7160000 | done: 0
 # Time:              7170000 | done: 0
 # Time:              7180000 | done: 0
+# writing the mac output         23 at time              7185000
 # Time:              7190000 | done: 0
+# writing the mac output         24 at time              7195000
 # Time:              7200000 | done: 0
+# writing the mac output         25 at time              7205000
 # Time:              7210000 | done: 0
+# writing the mac output         26 at time              7215000
 # Time:              7220000 | done: 0
 # Time:              7230000 | done: 0
 # Time:              7240000 | done: 0
@@ -866,9 +998,13 @@ run -all
 # Time:              7380000 | done: 0
 # Time:              7390000 | done: 0
 # Time:              7400000 | done: 0
+# writing the mac output         36 at time              7405000
 # Time:              7410000 | done: 0
+# writing the mac output         37 at time              7415000
 # Time:              7420000 | done: 0
+# writing the mac output         38 at time              7425000
 # Time:              7430000 | done: 0
+# writing the mac output         39 at time              7435000
 # Time:              7440000 | done: 0
 # Time:              7450000 | done: 0
 # Time:              7460000 | done: 0
@@ -888,9 +1024,13 @@ run -all
 # Time:              7600000 | done: 0
 # Time:              7610000 | done: 0
 # Time:              7620000 | done: 0
+# writing the mac output         49 at time              7625000
 # Time:              7630000 | done: 0
+# writing the mac output         50 at time              7635000
 # Time:              7640000 | done: 0
+# writing the mac output         51 at time              7645000
 # Time:              7650000 | done: 0
+# writing the mac output         52 at time              7655000
 # Time:              7660000 | done: 0
 # Time:              7670000 | done: 0
 # Time:              7680000 | done: 0
@@ -910,9 +1050,13 @@ run -all
 # Time:              7820000 | done: 0
 # Time:              7830000 | done: 0
 # Time:              7840000 | done: 0
+# writing the mac output         62 at time              7845000
 # Time:              7850000 | done: 0
+# writing the mac output         63 at time              7855000
 # Time:              7860000 | done: 0
+# writing the mac output         64 at time              7865000
 # Time:              7870000 | done: 0
+# writing the mac output         65 at time              7875000
 # Time:              7880000 | done: 0
 # Time:              7890000 | done: 0
 # Time:              7900000 | done: 0
@@ -1125,5 +1269,5 @@ run -all
 #    Time: 8940 ns  Iteration: 0  Instance: /tb_cnn_unit
 # 1
 # Break in Module tb_cnn_unit at tb_cnn_unit.v line 78
-# End time: 02:22:36 on Jul 26,2025, Elapsed time: 0:05:55
+# End time: 02:25:34 on Jul 26,2025, Elapsed time: 0:02:43
 # Errors: 0, Warnings: 0
