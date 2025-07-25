@@ -78,6 +78,7 @@ always@(posedge clk)begin
         col <= 3'b000;
         img_address <= 6'b000000;
         state <= 4'b0001;
+        $display("IDLE state reached at time %t", $time);
       end
     end
     LOAD: begin
@@ -89,11 +90,13 @@ always@(posedge clk)begin
         state <= 4'b0010;
       end
       img_address <= img_address + 1;
+      $display("LOAD state reached at time %t", $time);
     end
     SHIFT: begin
       col <= 3'b001;
       row <= 3'b001;
       state <= 4'b0011;
+      $display("SHIFT state reached at time %t", $time);
     end
     MAC_RESET: begin
       mac_rst <= 1'b1;
@@ -101,6 +104,7 @@ always@(posedge clk)begin
       mac_count <= 4'b0000;
       latency_counter <= 4'b0000;
       state <= 4'b0100;
+      $display("MAC_RESET state reached at time %t", $time);
     end
     MAC_FEED: begin
       mac_rst <= 1'b0;
@@ -122,6 +126,7 @@ always@(posedge clk)begin
         latency_counter <= 4'b0000;
         state <= 4'b0101;
       end
+      $display("MAC_FEED state reached at time %t", $time);
     end
     MAC_WAIT: begin
       latency_counter <= latency_counter + 1;
@@ -130,10 +135,12 @@ always@(posedge clk)begin
         state <= 4'b0110;
       end
       //state <= 4'b0110; //wait for 3 clock cycles for mac to finish
+      $display("MAC_WAIT state reached at time %t", $time);
     end
     WRITE: begin
       output_ram[(row -1)*(img_width -2) + (col -1)] <= relu_acc;
       state <= 4'b0111;
+      $display("WRITE state reached at time %t", $time);
     end
     NEXT: begin
       if (col < img_width - 2) begin //if last column not reached
@@ -151,6 +158,7 @@ always@(posedge clk)begin
       else begin
         state <= 4'b1000; //all rows and columns processed
       end 
+      $display("NEXT state reached at time %t", $time);
     end
     DONE: begin
       done <= 1'b1;
