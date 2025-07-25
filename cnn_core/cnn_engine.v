@@ -75,7 +75,9 @@ always@(posedge clk)begin
     latency_counter <= 4'b0000;
     mac_en <= 1'b0;
     mac_rst <= 1'b0;
+    $display("Resetting mac_count to %0d at time %t", mac_count, $time);
   end else if (~rst) begin
+    $display("CNN Engine running at time %t", $time);
     case(state)
     IDLE: begin
       if (start) begin
@@ -83,6 +85,7 @@ always@(posedge clk)begin
         row <= 3'b000;
         col <= 3'b000;
         img_address <= 6'b000000;
+        $display("Resetting img_address to %0d at time %t", img_address, $time);
         state <= LOAD;
       end
     end
