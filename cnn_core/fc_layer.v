@@ -38,6 +38,7 @@ always @ (posedge clk) begin
     end
     fc_layer_op <= fc_output + bias;
     done <= 1;
+    $display("FC Layer output: %d at time %t", fc_layer_op, $time);
   end
 end
 endmodule
