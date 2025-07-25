@@ -22,7 +22,7 @@ localparam IDLE = 4'b0000,
            NEXT = 4'b0111,
            DONE = 4'b1000;
 
-reg [1:0] avg_pool_count; //stores the number of mac inputs multiplied and accumulated (4, hence 2 bits)
+reg [1:0] avg_pool_count; //stores the number of inputs operated on (4, hence 2 bits)
 reg [2:0] row, col;
 reg [5:0] fm_address;
 reg [3:0] latency_counter;
@@ -50,15 +50,18 @@ always @ (posedge clk) begin
     col = 3'b000;
     latency_counter = 4'b0000;
     fm_address = 6'b000000;
+    avg_pool_count = 2'b00;
+    avg_pool_ip = 32'd0;
+    avg_pool_en = 0;
   end else begin
     case(state)
     IDLE: begin
     if(start) begin
       $display("value of start signal at time %t is %b", $time, start);
       done <= 0;
-      row <= 0;
-      col <= 0;
-      latency_counter <= 0;
+      row <= 3'b000;
+      col <= 3'b000;
+      latency_counter <= 4'b0000;
       state <= AVG_POOL_RESET;
     end 
     end
@@ -81,8 +84,8 @@ always @ (posedge clk) begin
     AVG_POOL_RESET: begin
       avg_pool_rst <= 1;
       avg_pool_en <= 0;
-      avg_pool_count <= 0;
-      latency_counter <= 0;
+      avg_pool_count <= 2'b00;
+      latency_counter <= 4'b0000;
       state <= AVG_POOL_FEED;
       $display("Resetting avg_pool unit at time %t", $time);
     end
@@ -94,18 +97,18 @@ always @ (posedge clk) begin
         1: avg_pool_ip <= line_buffer[0][col+1];
         2: avg_pool_ip <= line_buffer[1][col];
         3: avg_pool_ip <= line_buffer[1][col+1];
+        $display("Feeding avg_pool unit with value %d at time %t", avg_pool_ip, $time);
       endcase
       avg_pool_count <= avg_pool_count + 1;
-      if(avg_pool_count == 4) begin
+      if(avg_pool_count == 2'b11) begin
         avg_pool_en <= 0;
-        latency_counter <= 0;
+        latency_counter <= 4'b0000;
         state <= AVG_POOL_WAIT;
-      end
-      $display("Feeding avg_pool unit with value %d at time %t", avg_pool_ip, $time);
+      end 
     end
     AVG_POOL_WAIT: begin
       latency_counter <= latency_counter + 1;
-      if(latency_counter == 3)begin
+      if(latency_counter == 4'b0011)begin
         latency_counter <= 0;
         state <= WRITE;
       end
