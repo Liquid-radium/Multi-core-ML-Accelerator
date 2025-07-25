@@ -33,7 +33,7 @@ assign value = fc_output;
 cnn_engine conv_layer(
     .clk(clk),
     .rst(rst),
-    .start(conv_start),
+    .start(cnn_start),
     .input_ram(input_img),
     .done(cnn_done),
     .output_ram(conv_output)
