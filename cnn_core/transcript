@@ -1,251 +1,41 @@
 # do compile.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:48:36 on Jul 25,2025
+# Start time: 21:06:36 on Jul 25,2025
 # vlog -reportprogress 300 -sv cnn_core_unit.v 
 # -- Compiling module cnn_top
 # 
 # Top level modules:
 # 	cnn_top
-# End time: 19:48:36 on Jul 25,2025, Elapsed time: 0:00:00
+# End time: 21:06:36 on Jul 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:48:36 on Jul 25,2025
+# Start time: 21:06:36 on Jul 25,2025
 # vlog -reportprogress 300 -sv cnn_engine.v 
 # -- Compiling module cnn_engine
 # 
 # Top level modules:
 # 	cnn_engine
-# End time: 19:48:36 on Jul 25,2025, Elapsed time: 0:00:00
+# End time: 21:06:37 on Jul 25,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:48:36 on Jul 25,2025
+# Start time: 21:06:37 on Jul 25,2025
 # vlog -reportprogress 300 -sv pool_layer.v 
 # -- Compiling module pool_layer
 # 
 # Top level modules:
 # 	pool_layer
-# End time: 19:48:36 on Jul 25,2025, Elapsed time: 0:00:00
+# End time: 21:06:37 on Jul 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:48:36 on Jul 25,2025
+# Start time: 21:06:37 on Jul 25,2025
 # vlog -reportprogress 300 -sv fc_layer.v 
 # -- Compiling module fc_layer
-# 
-# Top level modules:
-# 	fc_layer
-# End time: 19:48:36 on Jul 25,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:48:36 on Jul 25,2025
-# vlog -reportprogress 300 -sv tb_cnn_multi.v 
-# -- Compiling module tb_cnn_multi
-# 
-# Top level modules:
-# 	tb_cnn_multi
-# End time: 19:48:36 on Jul 25,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:48:36 on Jul 25,2025
-# vlog -reportprogress 300 -sv avg_pool_unit.v 
-# -- Compiling module avg_pool_unit
-# 
-# Top level modules:
-# 	avg_pool_unit
-# End time: 19:48:36 on Jul 25,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:48:36 on Jul 25,2025
-# vlog -reportprogress 300 -sv relu_unit.v 
-# -- Compiling module relu_unit
-# 
-# Top level modules:
-# 	relu_unit
-# End time: 19:48:36 on Jul 25,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:48:36 on Jul 25,2025
-# vlog -reportprogress 300 -sv mac_unit.v 
-# -- Compiling module mac_unit
-# 
-# Top level modules:
-# 	mac_unit
-# End time: 19:48:37 on Jul 25,2025, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:48:37 on Jul 25,2025
-# vlog -reportprogress 300 -sv multi_core.v 
-# -- Compiling module multi_core
-# 
-# Top level modules:
-# 	multi_core
-# End time: 19:48:37 on Jul 25,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -sv tb_cnn_unit.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:48:58 on Jul 25,2025
-# vlog -reportprogress 300 -sv tb_cnn_unit.v 
-# -- Compiling module tb_cnn_unit
-# 
-# Top level modules:
-# 	tb_cnn_unit
-# End time: 19:48:58 on Jul 25,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim tb_cnn_unit
-# vsim tb_cnn_unit 
-# Start time: 19:49:20 on Jul 25,2025
-# Loading sv_std.std
-# Loading work.tb_cnn_unit
-# Loading work.cnn_top
-# Loading work.cnn_engine
-# Loading work.mac_unit
-# Loading work.relu_unit
-# Loading work.pool_layer
-# Loading work.avg_pool_unit
-# Loading work.fc_layer
-add wave -r *
-run 130 ns
-# Assigning test_image with all 1s...
-# Contents of test_image:
-# test_image[0] = 1
-# test_image[1] = 1
-# test_image[2] = 1
-# test_image[3] = 1
-# test_image[4] = 1
-# test_image[5] = 1
-# test_image[6] = 1
-# test_image[7] = 1
-# test_image[8] = 1
-# test_image[9] = 1
-# test_image[10] = 1
-# test_image[11] = 1
-# test_image[12] = 1
-# test_image[13] = 1
-# test_image[14] = 1
-# test_image[15] = 1
-# test_image[16] = 1
-# test_image[17] = 1
-# test_image[18] = 1
-# test_image[19] = 1
-# test_image[20] = 1
-# test_image[21] = 1
-# test_image[22] = 1
-# test_image[23] = 1
-# test_image[24] = 1
-# test_image[25] = 1
-# test_image[26] = 1
-# test_image[27] = 1
-# test_image[28] = 1
-# test_image[29] = 1
-# test_image[30] = 1
-# test_image[31] = 1
-# test_image[32] = 1
-# test_image[33] = 1
-# test_image[34] = 1
-# test_image[35] = 1
-# test_image[36] = 1
-# test_image[37] = 1
-# test_image[38] = 1
-# test_image[39] = 1
-# test_image[40] = 1
-# test_image[41] = 1
-# test_image[42] = 1
-# test_image[43] = 1
-# test_image[44] = 1
-# test_image[45] = 1
-# test_image[46] = 1
-# test_image[47] = 1
-# test_image[48] = 1
-# test_image[49] = 1
-# test_image[50] = 1
-# test_image[51] = 1
-# test_image[52] = 1
-# test_image[53] = 1
-# test_image[54] = 1
-# test_image[55] = 1
-# test_image[56] = 1
-# test_image[57] = 1
-# test_image[58] = 1
-# test_image[59] = 1
-# test_image[60] = 1
-# test_image[61] = 1
-# test_image[62] = 1
-# test_image[63] = 1
-# Resetting CNN Engine at time                25000
-# Resetting row to x at time                25000
-# Resetting col to x at time                25000
-# Resetting img_address to x at time                25000
-# Resetting CNN Engine at time                35000
-# Resetting row to 0 at time                35000
-# Resetting col to 0 at time                35000
-# Resetting img_address to 0 at time                35000
-# Assigning test_image to input_img...
-# Contents of input_img:
-# input_img[0] = 1
-# input_img[1] = 1
-# input_img[2] = 1
-# input_img[3] = 1
-# input_img[4] = 1
-# input_img[5] = 1
-# input_img[6] = 1
-# input_img[7] = 1
-# input_img[8] = 1
-# input_img[9] = 1
-# input_img[10] = 1
-# input_img[11] = 1
-# input_img[12] = 1
-# input_img[13] = 1
-# input_img[14] = 1
-# input_img[15] = 1
-# input_img[16] = 1
-# input_img[17] = 1
-# input_img[18] = 1
-# input_img[19] = 1
-# input_img[20] = 1
-# input_img[21] = 1
-# input_img[22] = 1
-# input_img[23] = 1
-# input_img[24] = 1
-# input_img[25] = 1
-# input_img[26] = 1
-# input_img[27] = 1
-# input_img[28] = 1
-# input_img[29] = 1
-# input_img[30] = 1
-# input_img[31] = 1
-# input_img[32] = 1
-# input_img[33] = 1
-# input_img[34] = 1
-# input_img[35] = 1
-# input_img[36] = 1
-# input_img[37] = 1
-# input_img[38] = 1
-# input_img[39] = 1
-# input_img[40] = 1
-# input_img[41] = 1
-# input_img[42] = 1
-# input_img[43] = 1
-# input_img[44] = 1
-# input_img[45] = 1
-# input_img[46] = 1
-# input_img[47] = 1
-# input_img[48] = 1
-# input_img[49] = 1
-# input_img[50] = 1
-# input_img[51] = 1
-# input_img[52] = 1
-# input_img[53] = 1
-# input_img[54] = 1
-# input_img[55] = 1
-# input_img[56] = 1
-# input_img[57] = 1
-# input_img[58] = 1
-# input_img[59] = 1
-# input_img[60] = 1
-# input_img[61] = 1
-# input_img[62] = 1
-# input_img[63] = 1
-# Time:               120000 | done: x
-# Time:               130000 | done: x
-# End time: 21:06:05 on Jul 25,2025, Elapsed time: 1:16:45
-# Errors: 0, Warnings: 0
+# ** Error: fc_layer.v(22): (vlog-2730) Undefined variable: 'enable'.
+# End time: 21:06:37 on Jul 25,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /home/shruti_hegde/intelFPGA/20.1/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./compile.do line 5
+# /home/shruti_hegde/intelFPGA/20.1/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -sv fc_layer.v"

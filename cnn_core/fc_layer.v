@@ -1,6 +1,6 @@
 module fc_layer(
     input clk,
-    input start,
+    input enable,
     input rst,
     input signed [31:0] fc_input [0:8],
     output reg done,
@@ -14,10 +14,8 @@ integer i;
 
 always @ (posedge clk) begin
   if (rst) begin
-    if(start) begin
       fc_output <= 32'd0;
-      done <= 0;
-    end 
+      done <= 0; 
   end 
   else if(enable & ~rst) begin
     for (i = 0; i < 9; i = i + 1) begin
