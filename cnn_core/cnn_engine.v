@@ -62,7 +62,6 @@ end
 
 always@(posedge clk)begin
   if (rst) begin
-    state = 4'b0000;
     $display("Resetting CNN Engine at time %t", $time);
     row = 3'b000;
     $display("Resetting row to %0d at time %t", row, $time);
