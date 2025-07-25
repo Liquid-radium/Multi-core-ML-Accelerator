@@ -34,7 +34,6 @@ reg [3:0] latency_counter; //counter for waiting for pipeline to flush (2 bits s
 reg signed [31:0] mac_a;
 reg signed [31:0] mac_b;
 reg signed [31:0] mac_acc;
-reg [31:0] relu_acc;
 reg mac_en;
 reg mac_rst;
 
@@ -47,11 +46,6 @@ mac_unit mac(
     .acc(mac_acc)
 );
 
-//relu paramaters for instantiation
-relu_unit relu(
-    .mac_acc(mac_acc),
-    .relu_acc(relu_acc)
-);
 
 //initialising kernel values
 initial begin
@@ -149,7 +143,7 @@ always@(posedge clk)begin
     end
     WRITE: begin
       //$display("Writing output at time %t", $time);
-      output_ram[(row -1)*(img_width -2) + (col -1)] <= relu_acc;
+      output_ram[(row -1)*(img_width -2) + (col -1)] <= mac_acc;
       state <= NEXT;
     end
     NEXT: begin

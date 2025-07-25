@@ -27,6 +27,11 @@ initial begin
   bias = 32'sd0; // Bias can be set to any value, here we use zero
 end
 
+relu_unit relu(
+    .fc_op(fc_output),
+    .relu_acc(fc_layer_op)
+);
+
 always @ (posedge clk) begin
   if (rst) begin
       fc_output = 32'd0;
@@ -38,7 +43,7 @@ always @ (posedge clk) begin
     end
     fc_layer_op <= fc_output + bias;
     done <= 1;
-    $display("FC Layer output: %d at time %t", fc_layer_op, $time);
+    $display("FC Layer output: %d at time %t", relu_acc, $time);
   end
 end
 endmodule
