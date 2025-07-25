@@ -63,8 +63,13 @@ end
 always@(posedge clk)begin
   if (rst) begin
     state <= 4'b0000;
+    $display("Resetting CNN Engine at time %t", $time);
     row <= 3'b000;
+    $display("Resetting row to %0d at time %t", row, $time);
     col <= 3'b000;
+    $display("Resetting col to %0d at time %t", col, $time);
+    img_address <= 6'b000000;
+    $display("Resetting img_address to %0d at time %t", img_address, $time);
     done <= 1'b0;
     mac_count <= 4'b0000;
     latency_counter <= 4'b0000;
