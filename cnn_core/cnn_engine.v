@@ -170,7 +170,7 @@ always@(posedge clk)begin
     end
     DONE: begin
       done <= 1'b1;
-      //$display("DONE state reached at time %t", $time);
+      $display("value of done signal at time %t is %b", $time, done);
     end
     endcase
   end
