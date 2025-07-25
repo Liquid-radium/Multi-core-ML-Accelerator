@@ -34,7 +34,6 @@ initial begin
   clk = 0;
   rst = 1;
   enable = 0;
- #10;
 $display("Assigning test_image with all 1s...");
 for (i = 0; i < img_size; i = i + 1) begin
   test_image[i] = 32'b00000000000000000000000000000001;
@@ -49,7 +48,7 @@ $display("Assigning test_image to input_img...");
 for (i = 0; i < img_size; i = i + 1) begin
   input_img[i] = test_image[i];
 end
-#50;
+
 $display("Contents of input_img:");
 for (i = 0; i < img_size; i = i + 1) begin
   $display("input_img[%0d] = %0d", i, input_img[i]);

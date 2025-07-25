@@ -1,99 +1,89 @@
 # do compile.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:19:52 on Jul 25,2025
+# Start time: 22:31:46 on Jul 25,2025
 # vlog -reportprogress 300 -sv cnn_core_unit.v 
 # -- Compiling module cnn_top
 # 
 # Top level modules:
 # 	cnn_top
-# End time: 22:19:52 on Jul 25,2025, Elapsed time: 0:00:00
+# End time: 22:31:46 on Jul 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:19:52 on Jul 25,2025
+# Start time: 22:31:46 on Jul 25,2025
 # vlog -reportprogress 300 -sv cnn_engine.v 
 # -- Compiling module cnn_engine
 # 
 # Top level modules:
 # 	cnn_engine
-# End time: 22:19:52 on Jul 25,2025, Elapsed time: 0:00:00
+# End time: 22:31:46 on Jul 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:19:52 on Jul 25,2025
+# Start time: 22:31:46 on Jul 25,2025
 # vlog -reportprogress 300 -sv pool_layer.v 
 # -- Compiling module pool_layer
 # 
 # Top level modules:
 # 	pool_layer
-# End time: 22:19:52 on Jul 25,2025, Elapsed time: 0:00:00
+# End time: 22:31:47 on Jul 25,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:19:52 on Jul 25,2025
+# Start time: 22:31:47 on Jul 25,2025
 # vlog -reportprogress 300 -sv fc_layer.v 
 # -- Compiling module fc_layer
 # 
 # Top level modules:
 # 	fc_layer
-# End time: 22:19:52 on Jul 25,2025, Elapsed time: 0:00:00
+# End time: 22:31:47 on Jul 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:19:52 on Jul 25,2025
+# Start time: 22:31:47 on Jul 25,2025
 # vlog -reportprogress 300 -sv tb_cnn_multi.v 
 # -- Compiling module tb_cnn_multi
 # 
 # Top level modules:
 # 	tb_cnn_multi
-# End time: 22:19:52 on Jul 25,2025, Elapsed time: 0:00:00
+# End time: 22:31:47 on Jul 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:19:52 on Jul 25,2025
+# Start time: 22:31:47 on Jul 25,2025
 # vlog -reportprogress 300 -sv avg_pool_unit.v 
 # -- Compiling module avg_pool_unit
 # 
 # Top level modules:
 # 	avg_pool_unit
-# End time: 22:19:53 on Jul 25,2025, Elapsed time: 0:00:01
+# End time: 22:31:47 on Jul 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:19:53 on Jul 25,2025
+# Start time: 22:31:47 on Jul 25,2025
 # vlog -reportprogress 300 -sv relu_unit.v 
 # -- Compiling module relu_unit
 # 
 # Top level modules:
 # 	relu_unit
-# End time: 22:19:53 on Jul 25,2025, Elapsed time: 0:00:00
+# End time: 22:31:47 on Jul 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:19:53 on Jul 25,2025
+# Start time: 22:31:47 on Jul 25,2025
 # vlog -reportprogress 300 -sv mac_unit.v 
 # -- Compiling module mac_unit
 # 
 # Top level modules:
 # 	mac_unit
-# End time: 22:19:53 on Jul 25,2025, Elapsed time: 0:00:00
+# End time: 22:31:47 on Jul 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:19:53 on Jul 25,2025
+# Start time: 22:31:47 on Jul 25,2025
 # vlog -reportprogress 300 -sv multi_core.v 
 # -- Compiling module multi_core
 # 
 # Top level modules:
 # 	multi_core
-# End time: 22:19:53 on Jul 25,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -sv tb_cnn_unit.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:21:32 on Jul 25,2025
-# vlog -reportprogress 300 -sv tb_cnn_unit.v 
-# -- Compiling module tb_cnn_unit
-# 
-# Top level modules:
-# 	tb_cnn_unit
-# End time: 22:21:32 on Jul 25,2025, Elapsed time: 0:00:00
+# End time: 22:31:47 on Jul 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vsim tb_cnn_unit
 # vsim tb_cnn_unit 
-# Start time: 22:21:38 on Jul 25,2025
+# Start time: 22:32:29 on Jul 25,2025
 # Loading sv_std.std
 # Loading work.tb_cnn_unit
 # Loading work.cnn_top
@@ -175,19 +165,32 @@ run -all
 # test_image[61] = 1
 # test_image[62] = 1
 # test_image[63] = 1
+# Assigning test_image to input_img...
 # Resetting CNN Engine at time                15000
 # Resetting row to 0 at time                15000
 # Resetting col to 0 at time                15000
 # Resetting img_address to 0 at time                15000
 # Resetting mac_count to 0 at time                15000
-# CNN Engine running at time                25000
-# CNN Engine running at time                35000
-# Assigning test_image to input_img...
-# CNN Engine running at time                45000
-# CNN Engine running at time                55000
-# CNN Engine running at time                65000
-# CNN Engine running at time                75000
-# CNN Engine running at time                85000
+# Resetting CNN Engine at time                25000
+# Resetting row to 0 at time                25000
+# Resetting col to 0 at time                25000
+# Resetting img_address to 0 at time                25000
+# Resetting mac_count to 0 at time                25000
+# Resetting CNN Engine at time                35000
+# Resetting row to 0 at time                35000
+# Resetting col to 0 at time                35000
+# Resetting img_address to 0 at time                35000
+# Resetting mac_count to 0 at time                35000
+# Resetting CNN Engine at time                45000
+# Resetting row to 0 at time                45000
+# Resetting col to 0 at time                45000
+# Resetting img_address to 0 at time                45000
+# Resetting mac_count to 0 at time                45000
+# Resetting CNN Engine at time                55000
+# Resetting row to 0 at time                55000
+# Resetting col to 0 at time                55000
+# Resetting img_address to 0 at time                55000
+# Resetting mac_count to 0 at time                55000
 # Contents of input_img:
 # input_img[0] = 1
 # input_img[1] = 1
@@ -253,203 +256,114 @@ run -all
 # input_img[61] = 1
 # input_img[62] = 1
 # input_img[63] = 1
-# CNN Engine running at time                95000
+# Resetting CNN Engine at time                65000
+# Resetting row to 0 at time                65000
+# Resetting col to 0 at time                65000
+# Resetting img_address to 0 at time                65000
+# Resetting mac_count to 0 at time                65000
 # Starting CNN processing...
-# CNN Engine running at time               105000
+# CNN Engine running at time                75000
 # Enabling CNN unit...
+# CNN Engine running at time                85000
+# CNN Engine running at time                95000
+# CNN Engine running at time               105000
 # CNN Engine running at time               115000
 # CNN Engine running at time               125000
-# Time:               130000 | done: x
 # CNN Engine running at time               135000
-# Time:               140000 | done: x
 # CNN Engine running at time               145000
-# Time:               150000 | done: x
 # CNN Engine running at time               155000
-# Time:               160000 | done: x
 # CNN Engine running at time               165000
-# Time:               170000 | done: x
 # CNN Engine running at time               175000
-# Time:               180000 | done: x
 # CNN Engine running at time               185000
-# Time:               190000 | done: x
 # CNN Engine running at time               195000
-# Time:               200000 | done: x
 # CNN Engine running at time               205000
-# Time:               210000 | done: x
 # CNN Engine running at time               215000
-# Time:               220000 | done: x
 # CNN Engine running at time               225000
-# Time:               230000 | done: x
 # CNN Engine running at time               235000
-# Time:               240000 | done: x
 # CNN Engine running at time               245000
-# Time:               250000 | done: x
 # CNN Engine running at time               255000
-# Time:               260000 | done: x
 # CNN Engine running at time               265000
-# Time:               270000 | done: x
 # CNN Engine running at time               275000
-# Time:               280000 | done: x
 # CNN Engine running at time               285000
-# Time:               290000 | done: x
 # CNN Engine running at time               295000
-# Time:               300000 | done: x
 # CNN Engine running at time               305000
-# Time:               310000 | done: x
 # CNN Engine running at time               315000
-# Time:               320000 | done: x
 # CNN Engine running at time               325000
-# Time:               330000 | done: x
 # CNN Engine running at time               335000
-# Time:               340000 | done: x
 # CNN Engine running at time               345000
-# Time:               350000 | done: x
 # CNN Engine running at time               355000
-# Time:               360000 | done: x
 # CNN Engine running at time               365000
-# Time:               370000 | done: x
 # CNN Engine running at time               375000
-# Time:               380000 | done: x
 # CNN Engine running at time               385000
-# Time:               390000 | done: x
 # CNN Engine running at time               395000
-# Time:               400000 | done: x
 # CNN Engine running at time               405000
-# Time:               410000 | done: x
 # CNN Engine running at time               415000
-# Time:               420000 | done: x
 # CNN Engine running at time               425000
-# Time:               430000 | done: x
 # CNN Engine running at time               435000
-# Time:               440000 | done: x
 # CNN Engine running at time               445000
-# Time:               450000 | done: x
 # CNN Engine running at time               455000
-# Time:               460000 | done: x
 # CNN Engine running at time               465000
-# Time:               470000 | done: x
 # CNN Engine running at time               475000
-# Time:               480000 | done: x
 # CNN Engine running at time               485000
-# Time:               490000 | done: x
 # CNN Engine running at time               495000
-# Time:               500000 | done: x
 # CNN Engine running at time               505000
-# Time:               510000 | done: x
 # CNN Engine running at time               515000
-# Time:               520000 | done: x
 # CNN Engine running at time               525000
-# Time:               530000 | done: x
 # CNN Engine running at time               535000
-# Time:               540000 | done: x
 # CNN Engine running at time               545000
-# Time:               550000 | done: x
 # CNN Engine running at time               555000
-# Time:               560000 | done: x
 # CNN Engine running at time               565000
-# Time:               570000 | done: x
 # CNN Engine running at time               575000
-# Time:               580000 | done: x
 # CNN Engine running at time               585000
-# Time:               590000 | done: x
 # CNN Engine running at time               595000
-# Time:               600000 | done: x
 # CNN Engine running at time               605000
-# Time:               610000 | done: x
 # CNN Engine running at time               615000
-# Time:               620000 | done: x
 # CNN Engine running at time               625000
-# Time:               630000 | done: x
 # CNN Engine running at time               635000
-# Time:               640000 | done: x
 # CNN Engine running at time               645000
-# Time:               650000 | done: x
 # CNN Engine running at time               655000
-# Time:               660000 | done: x
 # CNN Engine running at time               665000
-# Time:               670000 | done: x
 # CNN Engine running at time               675000
-# Time:               680000 | done: x
 # CNN Engine running at time               685000
-# Time:               690000 | done: x
 # CNN Engine running at time               695000
-# Time:               700000 | done: x
 # CNN Engine running at time               705000
-# Time:               710000 | done: x
 # CNN Engine running at time               715000
-# Time:               720000 | done: x
 # CNN Engine running at time               725000
-# Time:               730000 | done: x
 # CNN Engine running at time               735000
-# Time:               740000 | done: x
 # CNN Engine running at time               745000
-# Time:               750000 | done: x
 # CNN Engine running at time               755000
-# Time:               760000 | done: x
 # CNN Engine running at time               765000
-# Time:               770000 | done: x
 # CNN Engine running at time               775000
-# Time:               780000 | done: x
 # CNN Engine running at time               785000
-# Time:               790000 | done: x
 # CNN Engine running at time               795000
-# Time:               800000 | done: x
 # CNN Engine running at time               805000
-# Time:               810000 | done: x
 # CNN Engine running at time               815000
-# Time:               820000 | done: x
 # CNN Engine running at time               825000
-# Time:               830000 | done: x
 # CNN Engine running at time               835000
-# Time:               840000 | done: x
 # CNN Engine running at time               845000
-# Time:               850000 | done: x
 # CNN Engine running at time               855000
-# Time:               860000 | done: x
 # CNN Engine running at time               865000
-# Time:               870000 | done: x
 # CNN Engine running at time               875000
-# Time:               880000 | done: x
 # CNN Engine running at time               885000
-# Time:               890000 | done: x
 # CNN Engine running at time               895000
-# Time:               900000 | done: x
 # CNN Engine running at time               905000
-# Time:               910000 | done: x
 # CNN Engine running at time               915000
-# Time:               920000 | done: x
 # CNN Engine running at time               925000
-# Time:               930000 | done: x
 # CNN Engine running at time               935000
-# Time:               940000 | done: x
 # CNN Engine running at time               945000
-# Time:               950000 | done: x
 # CNN Engine running at time               955000
-# Time:               960000 | done: x
 # CNN Engine running at time               965000
-# Time:               970000 | done: x
 # CNN Engine running at time               975000
-# Time:               980000 | done: x
 # CNN Engine running at time               985000
-# Time:               990000 | done: x
 # CNN Engine running at time               995000
-# Time:              1000000 | done: x
 # CNN Engine running at time              1005000
-# Time:              1010000 | done: x
 # CNN Engine running at time              1015000
-# Time:              1020000 | done: x
 # CNN Engine running at time              1025000
-# Time:              1030000 | done: x
 # CNN Engine running at time              1035000
-# Time:              1040000 | done: x
 # CNN Engine running at time              1045000
-# Time:              1050000 | done: x
 # CNN Engine running at time              1055000
-# Time:              1060000 | done: x
 # CNN Engine running at time              1065000
-# Time:              1070000 | done: x
 # CNN Engine running at time              1075000
-# Time:              1080000 | done: x
 # CNN Engine running at time              1085000
 # Time:              1090000 | done: x
 # CNN Engine running at time              1095000
@@ -2258,10 +2172,202 @@ run -all
 # Time:             10110000 | done: x
 # CNN Engine running at time             10115000
 # Time:             10120000 | done: x
+# CNN Engine running at time             10125000
+# Time:             10130000 | done: x
+# CNN Engine running at time             10135000
+# Time:             10140000 | done: x
+# CNN Engine running at time             10145000
+# Time:             10150000 | done: x
+# CNN Engine running at time             10155000
+# Time:             10160000 | done: x
+# CNN Engine running at time             10165000
+# Time:             10170000 | done: x
+# CNN Engine running at time             10175000
+# Time:             10180000 | done: x
+# CNN Engine running at time             10185000
+# Time:             10190000 | done: x
+# CNN Engine running at time             10195000
+# Time:             10200000 | done: x
+# CNN Engine running at time             10205000
+# Time:             10210000 | done: x
+# CNN Engine running at time             10215000
+# Time:             10220000 | done: x
+# CNN Engine running at time             10225000
+# Time:             10230000 | done: x
+# CNN Engine running at time             10235000
+# Time:             10240000 | done: x
+# CNN Engine running at time             10245000
+# Time:             10250000 | done: x
+# CNN Engine running at time             10255000
+# Time:             10260000 | done: x
+# CNN Engine running at time             10265000
+# Time:             10270000 | done: x
+# CNN Engine running at time             10275000
+# Time:             10280000 | done: x
+# CNN Engine running at time             10285000
+# Time:             10290000 | done: x
+# CNN Engine running at time             10295000
+# Time:             10300000 | done: x
+# CNN Engine running at time             10305000
+# Time:             10310000 | done: x
+# CNN Engine running at time             10315000
+# Time:             10320000 | done: x
+# CNN Engine running at time             10325000
+# Time:             10330000 | done: x
+# CNN Engine running at time             10335000
+# Time:             10340000 | done: x
+# CNN Engine running at time             10345000
+# Time:             10350000 | done: x
+# CNN Engine running at time             10355000
+# Time:             10360000 | done: x
+# CNN Engine running at time             10365000
+# Time:             10370000 | done: x
+# CNN Engine running at time             10375000
+# Time:             10380000 | done: x
+# CNN Engine running at time             10385000
+# Time:             10390000 | done: x
+# CNN Engine running at time             10395000
+# Time:             10400000 | done: x
+# CNN Engine running at time             10405000
+# Time:             10410000 | done: x
+# CNN Engine running at time             10415000
+# Time:             10420000 | done: x
+# CNN Engine running at time             10425000
+# Time:             10430000 | done: x
+# CNN Engine running at time             10435000
+# Time:             10440000 | done: x
+# CNN Engine running at time             10445000
+# Time:             10450000 | done: x
+# CNN Engine running at time             10455000
+# Time:             10460000 | done: x
+# CNN Engine running at time             10465000
+# Time:             10470000 | done: x
+# CNN Engine running at time             10475000
+# Time:             10480000 | done: x
+# CNN Engine running at time             10485000
+# Time:             10490000 | done: x
+# CNN Engine running at time             10495000
+# Time:             10500000 | done: x
+# CNN Engine running at time             10505000
+# Time:             10510000 | done: x
+# CNN Engine running at time             10515000
+# Time:             10520000 | done: x
+# CNN Engine running at time             10525000
+# Time:             10530000 | done: x
+# CNN Engine running at time             10535000
+# Time:             10540000 | done: x
+# CNN Engine running at time             10545000
+# Time:             10550000 | done: x
+# CNN Engine running at time             10555000
+# Time:             10560000 | done: x
+# CNN Engine running at time             10565000
+# Time:             10570000 | done: x
+# CNN Engine running at time             10575000
+# Time:             10580000 | done: x
+# CNN Engine running at time             10585000
+# Time:             10590000 | done: x
+# CNN Engine running at time             10595000
+# Time:             10600000 | done: x
+# CNN Engine running at time             10605000
+# Time:             10610000 | done: x
+# CNN Engine running at time             10615000
+# Time:             10620000 | done: x
+# CNN Engine running at time             10625000
+# Time:             10630000 | done: x
+# CNN Engine running at time             10635000
+# Time:             10640000 | done: x
+# CNN Engine running at time             10645000
+# Time:             10650000 | done: x
+# CNN Engine running at time             10655000
+# Time:             10660000 | done: x
+# CNN Engine running at time             10665000
+# Time:             10670000 | done: x
+# CNN Engine running at time             10675000
+# Time:             10680000 | done: x
+# CNN Engine running at time             10685000
+# Time:             10690000 | done: x
+# CNN Engine running at time             10695000
+# Time:             10700000 | done: x
+# CNN Engine running at time             10705000
+# Time:             10710000 | done: x
+# CNN Engine running at time             10715000
+# Time:             10720000 | done: x
+# CNN Engine running at time             10725000
+# Time:             10730000 | done: x
+# CNN Engine running at time             10735000
+# Time:             10740000 | done: x
+# CNN Engine running at time             10745000
+# Time:             10750000 | done: x
+# CNN Engine running at time             10755000
+# Time:             10760000 | done: x
+# CNN Engine running at time             10765000
+# Time:             10770000 | done: x
+# CNN Engine running at time             10775000
+# Time:             10780000 | done: x
+# CNN Engine running at time             10785000
+# Time:             10790000 | done: x
+# CNN Engine running at time             10795000
+# Time:             10800000 | done: x
+# CNN Engine running at time             10805000
+# Time:             10810000 | done: x
+# CNN Engine running at time             10815000
+# Time:             10820000 | done: x
+# CNN Engine running at time             10825000
+# Time:             10830000 | done: x
+# CNN Engine running at time             10835000
+# Time:             10840000 | done: x
+# CNN Engine running at time             10845000
+# Time:             10850000 | done: x
+# CNN Engine running at time             10855000
+# Time:             10860000 | done: x
+# CNN Engine running at time             10865000
+# Time:             10870000 | done: x
+# CNN Engine running at time             10875000
+# Time:             10880000 | done: x
+# CNN Engine running at time             10885000
+# Time:             10890000 | done: x
+# CNN Engine running at time             10895000
+# Time:             10900000 | done: x
+# CNN Engine running at time             10905000
+# Time:             10910000 | done: x
+# CNN Engine running at time             10915000
+# Time:             10920000 | done: x
+# CNN Engine running at time             10925000
+# Time:             10930000 | done: x
+# CNN Engine running at time             10935000
+# Time:             10940000 | done: x
+# CNN Engine running at time             10945000
+# Time:             10950000 | done: x
+# CNN Engine running at time             10955000
+# Time:             10960000 | done: x
+# CNN Engine running at time             10965000
+# Time:             10970000 | done: x
+# CNN Engine running at time             10975000
+# Time:             10980000 | done: x
+# CNN Engine running at time             10985000
+# Time:             10990000 | done: x
+# CNN Engine running at time             10995000
+# Time:             11000000 | done: x
+# CNN Engine running at time             11005000
+# Time:             11010000 | done: x
+# CNN Engine running at time             11015000
+# Time:             11020000 | done: x
+# CNN Engine running at time             11025000
+# Time:             11030000 | done: x
+# CNN Engine running at time             11035000
+# Time:             11040000 | done: x
+# CNN Engine running at time             11045000
+# Time:             11050000 | done: x
+# CNN Engine running at time             11055000
+# Time:             11060000 | done: x
+# CNN Engine running at time             11065000
+# Time:             11070000 | done: x
+# CNN Engine running at time             11075000
+# Time:             11080000 | done: x
 # ERROR: Timeout waiting for done signal!
-# ** Note: $finish    : tb_cnn_unit.v(85)
-#    Time: 10120 ns  Iteration: 0  Instance: /tb_cnn_unit
+# ** Note: $finish    : tb_cnn_unit.v(79)
+#    Time: 11080 ns  Iteration: 0  Instance: /tb_cnn_unit
 # 1
-# Break in Module tb_cnn_unit at tb_cnn_unit.v line 85
-# End time: 22:28:25 on Jul 25,2025, Elapsed time: 0:06:47
+# Break in Module tb_cnn_unit at tb_cnn_unit.v line 79
+# End time: 22:45:21 on Jul 25,2025, Elapsed time: 0:12:52
 # Errors: 0, Warnings: 0
