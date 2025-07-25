@@ -11,7 +11,7 @@ cModel Technology
 Z0 d/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core
 vavg_pool_unit
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1753475668
+Z2 !s110 1753476397
 !i10b 1
 !s100 ^7ECaDLc98=1GTj;=Z`VC3
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -22,13 +22,13 @@ R0
 w1751260953
 8avg_pool_unit.v
 Favg_pool_unit.v
-!i122 474
+!i122 485
 L0 1 58
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1753475668.000000
+Z6 !s108 1753476397.000000
 !s107 avg_pool_unit.v|
 !s90 -reportprogress|300|-sv|avg_pool_unit.v|
 !i113 1
@@ -36,7 +36,7 @@ o-sv
 Z7 tCvgOpt 0
 vcnn_engine
 R1
-Z8 !s110 1753476341
+R2
 !i10b 1
 !s100 lMC=BOnoXE70bPilff78e0
 R3
@@ -47,13 +47,13 @@ R0
 w1753475173
 8cnn_engine.v
 Fcnn_engine.v
-!i122 479
+!i122 481
 L0 1 179
 R5
 r1
 !s85 0
 31
-Z9 !s108 1753476341.000000
+R6
 !s107 cnn_engine.v|
 !s90 -reportprogress|300|-sv|cnn_engine.v|
 !i113 1
@@ -61,7 +61,7 @@ o-sv
 R7
 vcnn_top
 R1
-R8
+R2
 !i10b 1
 !s100 RAcR9ClPK;>P45`?k4lHX2
 R3
@@ -72,13 +72,13 @@ R0
 w1753475395
 8cnn_core_unit.v
 Fcnn_core_unit.v
-!i122 478
+!i122 480
 L0 1 119
 R5
 r1
 !s85 0
 31
-R9
+R6
 !s107 cnn_core_unit.v|
 !s90 -reportprogress|300|-sv|cnn_core_unit.v|
 !i113 1
@@ -97,7 +97,7 @@ R0
 w1753457973
 8fc_layer.v
 Ffc_layer.v
-!i122 472
+!i122 483
 L0 1 28
 R5
 r1
@@ -122,7 +122,7 @@ R0
 w1753211805
 8mac_unit.v
 Fmac_unit.v
-!i122 476
+!i122 487
 L0 1 59
 R5
 r1
@@ -136,7 +136,7 @@ o-sv
 R7
 vmulti_core
 R1
-!s110 1753475669
+R2
 !i10b 1
 !s100 ;XMcMdiXfMFaNzAh`7J0l0
 R3
@@ -147,7 +147,7 @@ R0
 w1753287356
 8multi_core.v
 Fmulti_core.v
-!i122 477
+!i122 488
 L0 1 76
 R5
 r1
@@ -163,17 +163,17 @@ vpool_layer
 R1
 R2
 !i10b 1
-!s100 6HSVzBlT^X?g;37iAJz?G2
+!s100 d:[F[KQMHHUXRNd]YjFBe0
 R3
-Izn8bEd=hMGQVlESPB@:jL0
+I>oUFliB7JWGB<KR<JHzdD3
 R4
 S1
 R0
-w1753475630
+w1753476379
 8pool_layer.v
 Fpool_layer.v
-!i122 471
-L0 1 145
+!i122 482
+L0 1 148
 R5
 r1
 !s85 0
@@ -197,7 +197,7 @@ R0
 w1750608535
 8relu_unit.v
 Frelu_unit.v
-!i122 475
+!i122 486
 L0 1 7
 R5
 r1
@@ -222,7 +222,7 @@ R0
 w1753286553
 8tb_cnn_multi.v
 Ftb_cnn_multi.v
-!i122 473
+!i122 484
 L0 3 55
 R5
 r1

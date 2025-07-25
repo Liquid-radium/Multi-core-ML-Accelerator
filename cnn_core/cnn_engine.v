@@ -144,6 +144,7 @@ always@(posedge clk)begin
         latency_counter <= 4'b0000;
         state <= WRITE;
       end
+      $display("writing the mac output %d at time %t", relu_acc, $time);
     end
     WRITE: begin
       //$display("Writing output at time %t", $time);
