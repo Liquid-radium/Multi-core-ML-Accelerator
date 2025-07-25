@@ -45,11 +45,11 @@ avg_pool_unit avg_pool(
 
 always @ (posedge clk) begin
   if(rst) begin
-    state <= IDLE;
-    row <= 0;
-    col <= 0;
-    latency_counter <= 0;
-  end else if (~rst) begin
+    state = IDLE;
+    row = 0;
+    col = 0;
+    latency_counter = 0;
+  end else begin
     case(state)
     IDLE: begin
     if(start) begin
