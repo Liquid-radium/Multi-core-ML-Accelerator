@@ -33,7 +33,6 @@ localparam IDLE = 3'b000,
            FC_WAIT = 3'b110,
            DONE = 3'b111;
 
-reg [2:0] state;
 assign value = fc_output;
 
 //layer 1 : convolutional layer
