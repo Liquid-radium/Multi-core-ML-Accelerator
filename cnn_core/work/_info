@@ -11,7 +11,7 @@ cModel Technology
 Z0 d/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core
 vavg_pool_unit
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1753474203
+Z2 !s110 1753474457
 !i10b 1
 !s100 ^7ECaDLc98=1GTj;=Z`VC3
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -22,13 +22,13 @@ R0
 w1751260953
 8avg_pool_unit.v
 Favg_pool_unit.v
-!i122 411
+!i122 420
 L0 1 58
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1753474203.000000
+Z6 !s108 1753474457.000000
 !s107 avg_pool_unit.v|
 !s90 -reportprogress|300|-sv|avg_pool_unit.v|
 !i113 1
@@ -38,16 +38,16 @@ vcnn_engine
 R1
 R2
 !i10b 1
-!s100 z>2C2IC6hKjzdh^fFPKUO2
+!s100 jLZGZY7onoPO><gnn5^j:2
 R3
-IO=:_g;oTo;KHdMLU]diM11
+IV5oa1Im`k_VQW<]WX^_Kc0
 R4
 S1
 R0
-w1753473557
+w1753474376
 8cnn_engine.v
 Fcnn_engine.v
-!i122 407
+!i122 416
 L0 1 178
 R5
 r1
@@ -72,7 +72,7 @@ R0
 w1753474171
 8cnn_core_unit.v
 Fcnn_core_unit.v
-!i122 406
+!i122 415
 L0 1 116
 R5
 r1
@@ -97,7 +97,7 @@ R0
 w1753457973
 8fc_layer.v
 Ffc_layer.v
-!i122 409
+!i122 418
 L0 1 28
 R5
 r1
@@ -111,7 +111,7 @@ o-sv
 R7
 vmac_unit
 R1
-R2
+Z8 !s110 1753474458
 !i10b 1
 !s100 2O:fP[Pd=APP7FGEcT]O21
 R3
@@ -122,13 +122,13 @@ R0
 w1753211805
 8mac_unit.v
 Fmac_unit.v
-!i122 413
+!i122 422
 L0 1 59
 R5
 r1
 !s85 0
 31
-R6
+Z9 !s108 1753474458.000000
 !s107 mac_unit.v|
 !s90 -reportprogress|300|-sv|mac_unit.v|
 !i113 1
@@ -136,7 +136,7 @@ o-sv
 R7
 vmulti_core
 R1
-R2
+R8
 !i10b 1
 !s100 ;XMcMdiXfMFaNzAh`7J0l0
 R3
@@ -147,13 +147,13 @@ R0
 w1753287356
 8multi_core.v
 Fmulti_core.v
-!i122 414
+!i122 423
 L0 1 76
 R5
 r1
 !s85 0
 31
-R6
+R9
 !s107 multi_core.v|
 !s90 -reportprogress|300|-sv|multi_core.v|
 !i113 1
@@ -172,7 +172,7 @@ R0
 w1753474188
 8pool_layer.v
 Fpool_layer.v
-!i122 408
+!i122 417
 L0 1 135
 R5
 r1
@@ -186,7 +186,7 @@ o-sv
 R7
 vrelu_unit
 R1
-R2
+R8
 !i10b 1
 !s100 ?VUS_iG87zYleDWQcI;8V1
 R3
@@ -197,7 +197,7 @@ R0
 w1750608535
 8relu_unit.v
 Frelu_unit.v
-!i122 412
+!i122 421
 L0 1 7
 R5
 r1
@@ -222,7 +222,7 @@ R0
 w1753286553
 8tb_cnn_multi.v
 Ftb_cnn_multi.v
-!i122 410
+!i122 419
 L0 3 55
 R5
 r1
