@@ -55,7 +55,7 @@ $display("Assigning test_image to input_img...");
 for (i = 0; i < img_size; i = i + 1) begin
   input_img[i] = test_image[i];
 end
-
+#50;
 $display("Contents of input_img:");
 for (i = 0; i < img_size; i = i + 1) begin
   $display("input_img[%0d] = %0d", i, input_img[i]);
