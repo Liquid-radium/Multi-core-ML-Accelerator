@@ -1,89 +1,89 @@
 # do compile.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:26:23 on Jul 26,2025
+# Start time: 01:29:33 on Jul 26,2025
 # vlog -reportprogress 300 -sv cnn_core_unit.v 
 # -- Compiling module cnn_top
 # 
 # Top level modules:
 # 	cnn_top
-# End time: 01:26:23 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 01:29:33 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:26:23 on Jul 26,2025
+# Start time: 01:29:33 on Jul 26,2025
 # vlog -reportprogress 300 -sv cnn_engine.v 
 # -- Compiling module cnn_engine
 # 
 # Top level modules:
 # 	cnn_engine
-# End time: 01:26:23 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 01:29:33 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:26:23 on Jul 26,2025
+# Start time: 01:29:33 on Jul 26,2025
 # vlog -reportprogress 300 -sv pool_layer.v 
 # -- Compiling module pool_layer
 # 
 # Top level modules:
 # 	pool_layer
-# End time: 01:26:23 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 01:29:33 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:26:23 on Jul 26,2025
+# Start time: 01:29:33 on Jul 26,2025
 # vlog -reportprogress 300 -sv fc_layer.v 
 # -- Compiling module fc_layer
 # 
 # Top level modules:
 # 	fc_layer
-# End time: 01:26:23 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 01:29:33 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:26:23 on Jul 26,2025
+# Start time: 01:29:33 on Jul 26,2025
 # vlog -reportprogress 300 -sv tb_cnn_multi.v 
 # -- Compiling module tb_cnn_multi
 # 
 # Top level modules:
 # 	tb_cnn_multi
-# End time: 01:26:23 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 01:29:33 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:26:23 on Jul 26,2025
+# Start time: 01:29:33 on Jul 26,2025
 # vlog -reportprogress 300 -sv avg_pool_unit.v 
 # -- Compiling module avg_pool_unit
 # 
 # Top level modules:
 # 	avg_pool_unit
-# End time: 01:26:23 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 01:29:33 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:26:23 on Jul 26,2025
+# Start time: 01:29:33 on Jul 26,2025
 # vlog -reportprogress 300 -sv relu_unit.v 
 # -- Compiling module relu_unit
 # 
 # Top level modules:
 # 	relu_unit
-# End time: 01:26:23 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 01:29:33 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:26:23 on Jul 26,2025
+# Start time: 01:29:33 on Jul 26,2025
 # vlog -reportprogress 300 -sv mac_unit.v 
 # -- Compiling module mac_unit
 # 
 # Top level modules:
 # 	mac_unit
-# End time: 01:26:23 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 01:29:33 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:26:23 on Jul 26,2025
+# Start time: 01:29:33 on Jul 26,2025
 # vlog -reportprogress 300 -sv multi_core.v 
 # -- Compiling module multi_core
 # 
 # Top level modules:
 # 	multi_core
-# End time: 01:26:23 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 01:29:33 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vsim tb_cnn_unit
 # vsim tb_cnn_unit 
-# Start time: 01:26:58 on Jul 26,2025
+# Start time: 01:29:39 on Jul 26,2025
 # Loading sv_std.std
 # Loading work.tb_cnn_unit
 # Loading work.cnn_top
@@ -232,1011 +232,2112 @@ run -all
 # Resetting img_address to 0 at time                 5000
 # Resetting mac_count to 0 at time                 5000
 # Starting CNN processing...
+# value of start signal at time                15000 is 0
 # Enabling CNN unit...
+# value of start signal at time                25000 is 0
+# value of start signal at time                35000 is 0
+# value of start signal at time                45000 is 0
+# value of start signal at time                55000 is 0
+# value of start signal at time                65000 is 0
+# value of start signal at time                75000 is 0
+# value of start signal at time                85000 is 0
+# value of start signal at time                95000 is 0
+# value of start signal at time               105000 is 0
+# value of start signal at time               115000 is 0
+# value of start signal at time               125000 is 0
+# value of start signal at time               135000 is 0
+# value of start signal at time               145000 is 0
+# value of start signal at time               155000 is 0
+# value of start signal at time               165000 is 0
+# value of start signal at time               175000 is 0
+# value of start signal at time               185000 is 0
+# value of start signal at time               195000 is 0
+# value of start signal at time               205000 is 0
+# value of start signal at time               215000 is 0
+# value of start signal at time               225000 is 0
+# value of start signal at time               235000 is 0
+# value of start signal at time               245000 is 0
+# value of start signal at time               255000 is 0
+# value of start signal at time               265000 is 0
+# value of start signal at time               275000 is 0
+# value of start signal at time               285000 is 0
+# value of start signal at time               295000 is 0
+# value of start signal at time               305000 is 0
+# value of start signal at time               315000 is 0
+# value of start signal at time               325000 is 0
+# value of start signal at time               335000 is 0
+# value of start signal at time               345000 is 0
+# value of start signal at time               355000 is 0
+# value of start signal at time               365000 is 0
+# value of start signal at time               375000 is 0
+# value of start signal at time               385000 is 0
+# value of start signal at time               395000 is 0
+# value of start signal at time               405000 is 0
+# value of start signal at time               415000 is 0
+# value of start signal at time               425000 is 0
+# value of start signal at time               435000 is 0
+# value of start signal at time               445000 is 0
+# value of start signal at time               455000 is 0
+# value of start signal at time               465000 is 0
+# value of start signal at time               475000 is 0
+# value of start signal at time               485000 is 0
+# value of start signal at time               495000 is 0
+# value of start signal at time               505000 is 0
+# value of start signal at time               515000 is 0
+# value of start signal at time               525000 is 0
+# value of start signal at time               535000 is 0
+# value of start signal at time               545000 is 0
+# value of start signal at time               555000 is 0
+# value of start signal at time               565000 is 0
+# value of start signal at time               575000 is 0
+# value of start signal at time               585000 is 0
+# value of start signal at time               595000 is 0
+# value of start signal at time               605000 is 0
+# value of start signal at time               615000 is 0
+# value of start signal at time               625000 is 0
+# value of start signal at time               635000 is 0
+# value of start signal at time               645000 is 0
+# value of start signal at time               655000 is 0
+# value of start signal at time               665000 is 0
+# value of start signal at time               675000 is 0
+# value of start signal at time               685000 is 0
+# value of start signal at time               695000 is 0
+# value of start signal at time               705000 is 0
+# value of start signal at time               715000 is 0
+# value of start signal at time               725000 is 0
+# value of start signal at time               735000 is 0
+# value of start signal at time               745000 is 0
+# value of start signal at time               755000 is 0
+# value of start signal at time               765000 is 0
+# value of start signal at time               775000 is 0
+# value of start signal at time               785000 is 0
+# value of start signal at time               795000 is 0
+# value of start signal at time               805000 is 0
+# value of start signal at time               815000 is 0
+# value of start signal at time               825000 is 0
+# value of start signal at time               835000 is 0
+# value of start signal at time               845000 is 0
+# value of start signal at time               855000 is 0
+# value of start signal at time               865000 is 0
+# value of start signal at time               875000 is 0
+# value of start signal at time               885000 is 0
+# value of start signal at time               895000 is 0
+# value of start signal at time               905000 is 0
+# value of start signal at time               915000 is 0
+# value of start signal at time               925000 is 0
+# value of start signal at time               935000 is 0
+# value of start signal at time               945000 is 0
+# value of start signal at time               955000 is 0
+# value of start signal at time               965000 is 0
+# value of start signal at time               975000 is 0
+# value of start signal at time               985000 is 0
+# value of start signal at time               995000 is 0
+# value of start signal at time              1005000 is 0
+# value of start signal at time              1015000 is 0
+# value of start signal at time              1025000 is 0
 # Time:              1030000 | done: x
+# value of start signal at time              1035000 is 0
 # Time:              1040000 | done: x
+# value of start signal at time              1045000 is 0
 # Time:              1050000 | done: x
+# value of start signal at time              1055000 is 0
 # Time:              1060000 | done: x
+# value of start signal at time              1065000 is 0
 # Time:              1070000 | done: x
+# value of start signal at time              1075000 is 0
 # Time:              1080000 | done: x
+# value of start signal at time              1085000 is 0
 # Time:              1090000 | done: x
+# value of start signal at time              1095000 is 0
 # Time:              1100000 | done: x
+# value of start signal at time              1105000 is 0
 # Time:              1110000 | done: x
+# value of start signal at time              1115000 is 0
 # Time:              1120000 | done: x
+# value of start signal at time              1125000 is 0
 # Time:              1130000 | done: x
+# value of start signal at time              1135000 is 0
 # Time:              1140000 | done: x
+# value of start signal at time              1145000 is 0
 # Time:              1150000 | done: x
+# value of start signal at time              1155000 is 0
 # Time:              1160000 | done: x
+# value of start signal at time              1165000 is 0
 # Time:              1170000 | done: x
+# value of start signal at time              1175000 is 0
 # Time:              1180000 | done: x
+# value of start signal at time              1185000 is 0
 # Time:              1190000 | done: x
+# value of start signal at time              1195000 is 0
 # Time:              1200000 | done: x
+# value of start signal at time              1205000 is 0
 # Time:              1210000 | done: x
+# value of start signal at time              1215000 is 0
 # Time:              1220000 | done: x
+# value of start signal at time              1225000 is 0
 # Time:              1230000 | done: x
+# value of start signal at time              1235000 is 0
 # Time:              1240000 | done: x
+# value of start signal at time              1245000 is 0
 # Time:              1250000 | done: x
+# value of start signal at time              1255000 is 0
 # Time:              1260000 | done: x
+# value of start signal at time              1265000 is 0
 # Time:              1270000 | done: x
+# value of start signal at time              1275000 is 0
 # Time:              1280000 | done: x
+# value of start signal at time              1285000 is 0
 # Time:              1290000 | done: x
+# value of start signal at time              1295000 is 0
 # Time:              1300000 | done: x
+# value of start signal at time              1305000 is 0
 # Time:              1310000 | done: x
+# value of start signal at time              1315000 is 0
 # Time:              1320000 | done: x
+# value of start signal at time              1325000 is 0
 # Time:              1330000 | done: x
+# value of start signal at time              1335000 is 0
 # Time:              1340000 | done: x
+# value of start signal at time              1345000 is 0
 # Time:              1350000 | done: x
+# value of start signal at time              1355000 is 0
 # Time:              1360000 | done: x
+# value of start signal at time              1365000 is 0
 # Time:              1370000 | done: x
+# value of start signal at time              1375000 is 0
 # Time:              1380000 | done: x
+# value of start signal at time              1385000 is 0
 # Time:              1390000 | done: x
+# value of start signal at time              1395000 is 0
 # Time:              1400000 | done: x
+# value of start signal at time              1405000 is 0
 # Time:              1410000 | done: x
+# value of start signal at time              1415000 is 0
 # Time:              1420000 | done: x
+# value of start signal at time              1425000 is 0
 # Time:              1430000 | done: x
+# value of start signal at time              1435000 is 0
 # Time:              1440000 | done: x
+# value of start signal at time              1445000 is 0
 # Time:              1450000 | done: x
+# value of start signal at time              1455000 is 0
 # Time:              1460000 | done: x
+# value of start signal at time              1465000 is 0
 # Time:              1470000 | done: x
+# value of start signal at time              1475000 is 0
 # Time:              1480000 | done: x
+# value of start signal at time              1485000 is 0
 # Time:              1490000 | done: x
+# value of start signal at time              1495000 is 0
 # Time:              1500000 | done: x
+# value of start signal at time              1505000 is 0
 # Time:              1510000 | done: x
+# value of start signal at time              1515000 is 0
 # Time:              1520000 | done: x
+# value of start signal at time              1525000 is 0
 # Time:              1530000 | done: x
+# value of start signal at time              1535000 is 0
 # Time:              1540000 | done: x
+# value of start signal at time              1545000 is 0
 # Time:              1550000 | done: x
+# value of start signal at time              1555000 is 0
 # Time:              1560000 | done: x
+# value of start signal at time              1565000 is 0
 # Time:              1570000 | done: x
+# value of start signal at time              1575000 is 0
 # Time:              1580000 | done: x
+# value of start signal at time              1585000 is 0
 # Time:              1590000 | done: x
+# value of start signal at time              1595000 is 0
 # Time:              1600000 | done: x
+# value of start signal at time              1605000 is 0
 # Time:              1610000 | done: x
+# value of start signal at time              1615000 is 0
 # Time:              1620000 | done: x
+# value of start signal at time              1625000 is 0
 # Time:              1630000 | done: x
+# value of start signal at time              1635000 is 0
 # Time:              1640000 | done: x
+# value of start signal at time              1645000 is 0
 # Time:              1650000 | done: x
+# value of start signal at time              1655000 is 0
 # Time:              1660000 | done: x
+# value of start signal at time              1665000 is 0
 # Time:              1670000 | done: x
+# value of start signal at time              1675000 is 0
 # Time:              1680000 | done: x
+# value of start signal at time              1685000 is 0
 # Time:              1690000 | done: x
+# value of start signal at time              1695000 is 0
 # Time:              1700000 | done: x
+# value of start signal at time              1705000 is 0
 # Time:              1710000 | done: x
+# value of start signal at time              1715000 is 0
 # Time:              1720000 | done: x
+# value of start signal at time              1725000 is 0
 # Time:              1730000 | done: x
+# value of start signal at time              1735000 is 0
 # Time:              1740000 | done: x
+# value of start signal at time              1745000 is 0
 # Time:              1750000 | done: x
+# value of start signal at time              1755000 is 0
 # Time:              1760000 | done: x
+# value of start signal at time              1765000 is 0
 # Time:              1770000 | done: x
+# value of start signal at time              1775000 is 0
 # Time:              1780000 | done: x
+# value of start signal at time              1785000 is 0
 # Time:              1790000 | done: x
+# value of start signal at time              1795000 is 0
 # Time:              1800000 | done: x
+# value of start signal at time              1805000 is 0
 # Time:              1810000 | done: x
+# value of start signal at time              1815000 is 0
 # Time:              1820000 | done: x
+# value of start signal at time              1825000 is 0
 # Time:              1830000 | done: x
+# value of start signal at time              1835000 is 0
 # Time:              1840000 | done: x
+# value of start signal at time              1845000 is 0
 # Time:              1850000 | done: x
+# value of start signal at time              1855000 is 0
 # Time:              1860000 | done: x
+# value of start signal at time              1865000 is 0
 # Time:              1870000 | done: x
+# value of start signal at time              1875000 is 0
 # Time:              1880000 | done: x
+# value of start signal at time              1885000 is 0
 # Time:              1890000 | done: x
+# value of start signal at time              1895000 is 0
 # Time:              1900000 | done: x
+# value of start signal at time              1905000 is 0
 # Time:              1910000 | done: x
+# value of start signal at time              1915000 is 0
 # Time:              1920000 | done: x
+# value of start signal at time              1925000 is 0
 # Time:              1930000 | done: x
+# value of start signal at time              1935000 is 0
 # Time:              1940000 | done: x
+# value of start signal at time              1945000 is 0
 # Time:              1950000 | done: x
+# value of start signal at time              1955000 is 0
 # Time:              1960000 | done: x
+# value of start signal at time              1965000 is 0
 # Time:              1970000 | done: x
+# value of start signal at time              1975000 is 0
 # Time:              1980000 | done: x
+# value of start signal at time              1985000 is 0
 # Time:              1990000 | done: x
+# value of start signal at time              1995000 is 0
 # Time:              2000000 | done: x
+# value of start signal at time              2005000 is 0
 # Time:              2010000 | done: x
+# value of start signal at time              2015000 is 0
 # Time:              2020000 | done: x
+# value of start signal at time              2025000 is 0
 # Time:              2030000 | done: x
+# value of start signal at time              2035000 is 0
 # Time:              2040000 | done: x
+# value of start signal at time              2045000 is 0
 # Time:              2050000 | done: x
+# value of start signal at time              2055000 is 0
 # Time:              2060000 | done: x
+# value of start signal at time              2065000 is 0
 # Time:              2070000 | done: x
+# value of start signal at time              2075000 is 0
 # Time:              2080000 | done: x
+# value of start signal at time              2085000 is 0
 # Time:              2090000 | done: x
+# value of start signal at time              2095000 is 0
 # Time:              2100000 | done: x
+# value of start signal at time              2105000 is 0
 # Time:              2110000 | done: x
+# value of start signal at time              2115000 is 0
 # Time:              2120000 | done: x
+# value of start signal at time              2125000 is 0
 # Time:              2130000 | done: x
+# value of start signal at time              2135000 is 0
 # Time:              2140000 | done: x
+# value of start signal at time              2145000 is 0
 # Time:              2150000 | done: x
+# value of start signal at time              2155000 is 0
 # Time:              2160000 | done: x
+# value of start signal at time              2165000 is 0
 # Time:              2170000 | done: x
+# value of start signal at time              2175000 is 0
 # Time:              2180000 | done: x
+# value of start signal at time              2185000 is 0
 # Time:              2190000 | done: x
+# value of start signal at time              2195000 is 0
 # Time:              2200000 | done: x
+# value of start signal at time              2205000 is 0
 # Time:              2210000 | done: x
+# value of start signal at time              2215000 is 0
 # Time:              2220000 | done: x
+# value of start signal at time              2225000 is 0
 # Time:              2230000 | done: x
+# value of start signal at time              2235000 is 0
 # Time:              2240000 | done: x
+# value of start signal at time              2245000 is 0
 # Time:              2250000 | done: x
+# value of start signal at time              2255000 is 0
 # Time:              2260000 | done: x
+# value of start signal at time              2265000 is 0
 # Time:              2270000 | done: x
+# value of start signal at time              2275000 is 0
 # Time:              2280000 | done: x
+# value of start signal at time              2285000 is 0
 # Time:              2290000 | done: x
+# value of start signal at time              2295000 is 0
 # Time:              2300000 | done: x
+# value of start signal at time              2305000 is 0
 # Time:              2310000 | done: x
+# value of start signal at time              2315000 is 0
 # Time:              2320000 | done: x
+# value of start signal at time              2325000 is 0
 # Time:              2330000 | done: x
+# value of start signal at time              2335000 is 0
 # Time:              2340000 | done: x
+# value of start signal at time              2345000 is 0
 # Time:              2350000 | done: x
+# value of start signal at time              2355000 is 0
 # Time:              2360000 | done: x
+# value of start signal at time              2365000 is 0
 # Time:              2370000 | done: x
+# value of start signal at time              2375000 is 0
 # Time:              2380000 | done: x
+# value of start signal at time              2385000 is 0
 # Time:              2390000 | done: x
+# value of start signal at time              2395000 is 0
 # Time:              2400000 | done: x
+# value of start signal at time              2405000 is 0
 # Time:              2410000 | done: x
+# value of start signal at time              2415000 is 0
 # Time:              2420000 | done: x
+# value of start signal at time              2425000 is 0
 # Time:              2430000 | done: x
+# value of start signal at time              2435000 is 0
 # Time:              2440000 | done: x
+# value of start signal at time              2445000 is 0
 # Time:              2450000 | done: x
+# value of start signal at time              2455000 is 0
 # Time:              2460000 | done: x
+# value of start signal at time              2465000 is 0
 # Time:              2470000 | done: x
+# value of start signal at time              2475000 is 0
 # Time:              2480000 | done: x
+# value of start signal at time              2485000 is 0
 # Time:              2490000 | done: x
+# value of start signal at time              2495000 is 0
 # Time:              2500000 | done: x
+# value of start signal at time              2505000 is 0
 # Time:              2510000 | done: x
+# value of start signal at time              2515000 is 0
 # Time:              2520000 | done: x
+# value of start signal at time              2525000 is 0
 # Time:              2530000 | done: x
+# value of start signal at time              2535000 is 0
 # Time:              2540000 | done: x
+# value of start signal at time              2545000 is 0
 # Time:              2550000 | done: x
+# value of start signal at time              2555000 is 0
 # Time:              2560000 | done: x
+# value of start signal at time              2565000 is 0
 # Time:              2570000 | done: x
+# value of start signal at time              2575000 is 0
 # Time:              2580000 | done: x
+# value of start signal at time              2585000 is 0
 # Time:              2590000 | done: x
+# value of start signal at time              2595000 is 0
 # Time:              2600000 | done: x
+# value of start signal at time              2605000 is 0
 # Time:              2610000 | done: x
+# value of start signal at time              2615000 is 0
 # Time:              2620000 | done: x
+# value of start signal at time              2625000 is 0
 # Time:              2630000 | done: x
+# value of start signal at time              2635000 is 0
 # Time:              2640000 | done: x
+# value of start signal at time              2645000 is 0
 # Time:              2650000 | done: x
+# value of start signal at time              2655000 is 0
 # Time:              2660000 | done: x
+# value of start signal at time              2665000 is 0
 # Time:              2670000 | done: x
+# value of start signal at time              2675000 is 0
 # Time:              2680000 | done: x
+# value of start signal at time              2685000 is 0
 # Time:              2690000 | done: x
+# value of start signal at time              2695000 is 0
 # Time:              2700000 | done: x
+# value of start signal at time              2705000 is 0
 # Time:              2710000 | done: x
+# value of start signal at time              2715000 is 0
 # Time:              2720000 | done: x
+# value of start signal at time              2725000 is 0
 # Time:              2730000 | done: x
+# value of start signal at time              2735000 is 0
 # Time:              2740000 | done: x
+# value of start signal at time              2745000 is 0
 # Time:              2750000 | done: x
+# value of start signal at time              2755000 is 0
 # Time:              2760000 | done: x
+# value of start signal at time              2765000 is 0
 # Time:              2770000 | done: x
+# value of start signal at time              2775000 is 0
 # Time:              2780000 | done: x
+# value of start signal at time              2785000 is 0
 # Time:              2790000 | done: x
+# value of start signal at time              2795000 is 0
 # Time:              2800000 | done: x
+# value of start signal at time              2805000 is 0
 # Time:              2810000 | done: x
+# value of start signal at time              2815000 is 0
 # Time:              2820000 | done: x
+# value of start signal at time              2825000 is 0
 # Time:              2830000 | done: x
+# value of start signal at time              2835000 is 0
 # Time:              2840000 | done: x
+# value of start signal at time              2845000 is 0
 # Time:              2850000 | done: x
+# value of start signal at time              2855000 is 0
 # Time:              2860000 | done: x
+# value of start signal at time              2865000 is 0
 # Time:              2870000 | done: x
+# value of start signal at time              2875000 is 0
 # Time:              2880000 | done: x
+# value of start signal at time              2885000 is 0
 # Time:              2890000 | done: x
+# value of start signal at time              2895000 is 0
 # Time:              2900000 | done: x
+# value of start signal at time              2905000 is 0
 # Time:              2910000 | done: x
+# value of start signal at time              2915000 is 0
 # Time:              2920000 | done: x
+# value of start signal at time              2925000 is 0
 # Time:              2930000 | done: x
+# value of start signal at time              2935000 is 0
 # Time:              2940000 | done: x
+# value of start signal at time              2945000 is 0
 # Time:              2950000 | done: x
+# value of start signal at time              2955000 is 0
 # Time:              2960000 | done: x
+# value of start signal at time              2965000 is 0
 # Time:              2970000 | done: x
+# value of start signal at time              2975000 is 0
 # Time:              2980000 | done: x
+# value of start signal at time              2985000 is 0
 # Time:              2990000 | done: x
+# value of start signal at time              2995000 is 0
 # Time:              3000000 | done: x
+# value of start signal at time              3005000 is 0
 # Time:              3010000 | done: x
+# value of start signal at time              3015000 is 0
 # Time:              3020000 | done: x
+# value of start signal at time              3025000 is 0
 # Time:              3030000 | done: x
+# value of start signal at time              3035000 is 0
 # Time:              3040000 | done: x
+# value of start signal at time              3045000 is 0
 # Time:              3050000 | done: x
+# value of start signal at time              3055000 is 0
 # Time:              3060000 | done: x
+# value of start signal at time              3065000 is 0
 # Time:              3070000 | done: x
+# value of start signal at time              3075000 is 0
 # Time:              3080000 | done: x
+# value of start signal at time              3085000 is 0
 # Time:              3090000 | done: x
+# value of start signal at time              3095000 is 0
 # Time:              3100000 | done: x
+# value of start signal at time              3105000 is 0
 # Time:              3110000 | done: x
+# value of start signal at time              3115000 is 0
 # Time:              3120000 | done: x
+# value of start signal at time              3125000 is 0
 # Time:              3130000 | done: x
+# value of start signal at time              3135000 is 0
 # Time:              3140000 | done: x
+# value of start signal at time              3145000 is 0
 # Time:              3150000 | done: x
+# value of start signal at time              3155000 is 0
 # Time:              3160000 | done: x
+# value of start signal at time              3165000 is 0
 # Time:              3170000 | done: x
+# value of start signal at time              3175000 is 0
 # Time:              3180000 | done: x
+# value of start signal at time              3185000 is 0
 # Time:              3190000 | done: x
+# value of start signal at time              3195000 is 0
 # Time:              3200000 | done: x
+# value of start signal at time              3205000 is 0
 # Time:              3210000 | done: x
+# value of start signal at time              3215000 is 0
 # Time:              3220000 | done: x
+# value of start signal at time              3225000 is 0
 # Time:              3230000 | done: x
+# value of start signal at time              3235000 is 0
 # Time:              3240000 | done: x
+# value of start signal at time              3245000 is 0
 # Time:              3250000 | done: x
+# value of start signal at time              3255000 is 0
 # Time:              3260000 | done: x
+# value of start signal at time              3265000 is 0
 # Time:              3270000 | done: x
+# value of start signal at time              3275000 is 0
 # Time:              3280000 | done: x
+# value of start signal at time              3285000 is 0
 # Time:              3290000 | done: x
+# value of start signal at time              3295000 is 0
 # Time:              3300000 | done: x
+# value of start signal at time              3305000 is 0
 # Time:              3310000 | done: x
+# value of start signal at time              3315000 is 0
 # Time:              3320000 | done: x
+# value of start signal at time              3325000 is 0
 # Time:              3330000 | done: x
+# value of start signal at time              3335000 is 0
 # Time:              3340000 | done: x
+# value of start signal at time              3345000 is 0
 # Time:              3350000 | done: x
+# value of start signal at time              3355000 is 0
 # Time:              3360000 | done: x
+# value of start signal at time              3365000 is 0
 # Time:              3370000 | done: x
+# value of start signal at time              3375000 is 0
 # Time:              3380000 | done: x
+# value of start signal at time              3385000 is 0
 # Time:              3390000 | done: x
+# value of start signal at time              3395000 is 0
 # Time:              3400000 | done: x
+# value of start signal at time              3405000 is 0
 # Time:              3410000 | done: x
+# value of start signal at time              3415000 is 0
 # Time:              3420000 | done: x
+# value of start signal at time              3425000 is 0
 # Time:              3430000 | done: x
+# value of start signal at time              3435000 is 0
 # Time:              3440000 | done: x
+# value of start signal at time              3445000 is 0
 # Time:              3450000 | done: x
+# value of start signal at time              3455000 is 0
 # Time:              3460000 | done: x
+# value of start signal at time              3465000 is 0
 # Time:              3470000 | done: x
+# value of start signal at time              3475000 is 0
 # Time:              3480000 | done: x
+# value of start signal at time              3485000 is 0
 # Time:              3490000 | done: x
+# value of start signal at time              3495000 is 0
 # Time:              3500000 | done: x
+# value of start signal at time              3505000 is 0
 # Time:              3510000 | done: x
+# value of start signal at time              3515000 is 0
 # Time:              3520000 | done: x
+# value of start signal at time              3525000 is 0
 # Time:              3530000 | done: x
+# value of start signal at time              3535000 is 0
 # Time:              3540000 | done: x
+# value of start signal at time              3545000 is 0
 # Time:              3550000 | done: x
+# value of start signal at time              3555000 is 0
 # Time:              3560000 | done: x
+# value of start signal at time              3565000 is 0
 # Time:              3570000 | done: x
+# value of start signal at time              3575000 is 0
 # Time:              3580000 | done: x
+# value of start signal at time              3585000 is 0
 # Time:              3590000 | done: x
+# value of start signal at time              3595000 is 0
 # Time:              3600000 | done: x
+# value of start signal at time              3605000 is 0
 # Time:              3610000 | done: x
+# value of start signal at time              3615000 is 0
 # Time:              3620000 | done: x
+# value of start signal at time              3625000 is 0
 # Time:              3630000 | done: x
+# value of start signal at time              3635000 is 0
 # Time:              3640000 | done: x
+# value of start signal at time              3645000 is 0
 # Time:              3650000 | done: x
+# value of start signal at time              3655000 is 0
 # Time:              3660000 | done: x
+# value of start signal at time              3665000 is 0
 # Time:              3670000 | done: x
+# value of start signal at time              3675000 is 0
 # Time:              3680000 | done: x
+# value of start signal at time              3685000 is 0
 # Time:              3690000 | done: x
+# value of start signal at time              3695000 is 0
 # Time:              3700000 | done: x
+# value of start signal at time              3705000 is 0
 # Time:              3710000 | done: x
+# value of start signal at time              3715000 is 0
 # Time:              3720000 | done: x
+# value of start signal at time              3725000 is 0
 # Time:              3730000 | done: x
+# value of start signal at time              3735000 is 0
 # Time:              3740000 | done: x
+# value of start signal at time              3745000 is 0
 # Time:              3750000 | done: x
+# value of start signal at time              3755000 is 0
 # Time:              3760000 | done: x
+# value of start signal at time              3765000 is 0
 # Time:              3770000 | done: x
+# value of start signal at time              3775000 is 0
 # Time:              3780000 | done: x
+# value of start signal at time              3785000 is 0
 # Time:              3790000 | done: x
+# value of start signal at time              3795000 is 0
 # Time:              3800000 | done: x
+# value of start signal at time              3805000 is 0
 # Time:              3810000 | done: x
+# value of start signal at time              3815000 is 0
 # Time:              3820000 | done: x
+# value of start signal at time              3825000 is 0
 # Time:              3830000 | done: x
+# value of start signal at time              3835000 is 0
 # Time:              3840000 | done: x
+# value of start signal at time              3845000 is 0
 # Time:              3850000 | done: x
+# value of start signal at time              3855000 is 0
 # Time:              3860000 | done: x
+# value of start signal at time              3865000 is 0
 # Time:              3870000 | done: x
+# value of start signal at time              3875000 is 0
 # Time:              3880000 | done: x
+# value of start signal at time              3885000 is 0
 # Time:              3890000 | done: x
+# value of start signal at time              3895000 is 0
 # Time:              3900000 | done: x
+# value of start signal at time              3905000 is 0
 # Time:              3910000 | done: x
+# value of start signal at time              3915000 is 0
 # Time:              3920000 | done: x
+# value of start signal at time              3925000 is 0
 # Time:              3930000 | done: x
+# value of start signal at time              3935000 is 0
 # Time:              3940000 | done: x
+# value of start signal at time              3945000 is 0
 # Time:              3950000 | done: x
+# value of start signal at time              3955000 is 0
 # Time:              3960000 | done: x
+# value of start signal at time              3965000 is 0
 # Time:              3970000 | done: x
+# value of start signal at time              3975000 is 0
 # Time:              3980000 | done: x
+# value of start signal at time              3985000 is 0
 # Time:              3990000 | done: x
+# value of start signal at time              3995000 is 0
 # Time:              4000000 | done: x
+# value of start signal at time              4005000 is 0
 # Time:              4010000 | done: x
+# value of start signal at time              4015000 is 0
 # Time:              4020000 | done: x
+# value of start signal at time              4025000 is 0
 # Time:              4030000 | done: x
+# value of start signal at time              4035000 is 0
 # Time:              4040000 | done: x
+# value of start signal at time              4045000 is 0
 # Time:              4050000 | done: x
+# value of start signal at time              4055000 is 0
 # Time:              4060000 | done: x
+# value of start signal at time              4065000 is 0
 # Time:              4070000 | done: x
+# value of start signal at time              4075000 is 0
 # Time:              4080000 | done: x
+# value of start signal at time              4085000 is 0
 # Time:              4090000 | done: x
+# value of start signal at time              4095000 is 0
 # Time:              4100000 | done: x
+# value of start signal at time              4105000 is 0
 # Time:              4110000 | done: x
+# value of start signal at time              4115000 is 0
 # Time:              4120000 | done: x
+# value of start signal at time              4125000 is 0
 # Time:              4130000 | done: x
+# value of start signal at time              4135000 is 0
 # Time:              4140000 | done: x
+# value of start signal at time              4145000 is 0
 # Time:              4150000 | done: x
+# value of start signal at time              4155000 is 0
 # Time:              4160000 | done: x
+# value of start signal at time              4165000 is 0
 # Time:              4170000 | done: x
+# value of start signal at time              4175000 is 0
 # Time:              4180000 | done: x
+# value of start signal at time              4185000 is 0
 # Time:              4190000 | done: x
+# value of start signal at time              4195000 is 0
 # Time:              4200000 | done: x
+# value of start signal at time              4205000 is 0
 # Time:              4210000 | done: x
+# value of start signal at time              4215000 is 0
 # Time:              4220000 | done: x
+# value of start signal at time              4225000 is 0
 # Time:              4230000 | done: x
+# value of start signal at time              4235000 is 0
 # Time:              4240000 | done: x
+# value of start signal at time              4245000 is 0
 # Time:              4250000 | done: x
+# value of start signal at time              4255000 is 0
 # Time:              4260000 | done: x
+# value of start signal at time              4265000 is 0
 # Time:              4270000 | done: x
+# value of start signal at time              4275000 is 0
 # Time:              4280000 | done: x
+# value of start signal at time              4285000 is 0
 # Time:              4290000 | done: x
+# value of start signal at time              4295000 is 0
 # Time:              4300000 | done: x
+# value of start signal at time              4305000 is 0
 # Time:              4310000 | done: x
+# value of start signal at time              4315000 is 0
 # Time:              4320000 | done: x
+# value of start signal at time              4325000 is 0
 # Time:              4330000 | done: x
+# value of start signal at time              4335000 is 0
 # Time:              4340000 | done: x
+# value of start signal at time              4345000 is 0
 # Time:              4350000 | done: x
+# value of start signal at time              4355000 is 0
 # Time:              4360000 | done: x
+# value of start signal at time              4365000 is 0
 # Time:              4370000 | done: x
+# value of start signal at time              4375000 is 0
 # Time:              4380000 | done: x
+# value of start signal at time              4385000 is 0
 # Time:              4390000 | done: x
+# value of start signal at time              4395000 is 0
 # Time:              4400000 | done: x
+# value of start signal at time              4405000 is 0
 # Time:              4410000 | done: x
+# value of start signal at time              4415000 is 0
 # Time:              4420000 | done: x
+# value of start signal at time              4425000 is 0
 # Time:              4430000 | done: x
+# value of start signal at time              4435000 is 0
 # Time:              4440000 | done: x
+# value of start signal at time              4445000 is 0
 # Time:              4450000 | done: x
+# value of start signal at time              4455000 is 0
 # Time:              4460000 | done: x
+# value of start signal at time              4465000 is 0
 # Time:              4470000 | done: x
+# value of start signal at time              4475000 is 0
 # Time:              4480000 | done: x
+# value of start signal at time              4485000 is 0
 # Time:              4490000 | done: x
+# value of start signal at time              4495000 is 0
 # Time:              4500000 | done: x
+# value of start signal at time              4505000 is 0
 # Time:              4510000 | done: x
+# value of start signal at time              4515000 is 0
 # Time:              4520000 | done: x
+# value of start signal at time              4525000 is 0
 # Time:              4530000 | done: x
+# value of start signal at time              4535000 is 0
 # Time:              4540000 | done: x
+# value of start signal at time              4545000 is 0
 # Time:              4550000 | done: x
+# value of start signal at time              4555000 is 0
 # Time:              4560000 | done: x
+# value of start signal at time              4565000 is 0
 # Time:              4570000 | done: x
+# value of start signal at time              4575000 is 0
 # Time:              4580000 | done: x
+# value of start signal at time              4585000 is 0
 # Time:              4590000 | done: x
+# value of start signal at time              4595000 is 0
 # Time:              4600000 | done: x
+# value of start signal at time              4605000 is 0
 # Time:              4610000 | done: x
+# value of start signal at time              4615000 is 0
 # Time:              4620000 | done: x
+# value of start signal at time              4625000 is 0
 # Time:              4630000 | done: x
+# value of start signal at time              4635000 is 0
 # Time:              4640000 | done: x
+# value of start signal at time              4645000 is 0
 # Time:              4650000 | done: x
+# value of start signal at time              4655000 is 0
 # Time:              4660000 | done: x
+# value of start signal at time              4665000 is 0
 # Time:              4670000 | done: x
+# value of start signal at time              4675000 is 0
 # Time:              4680000 | done: x
+# value of start signal at time              4685000 is 0
 # Time:              4690000 | done: x
+# value of start signal at time              4695000 is 0
 # Time:              4700000 | done: x
+# value of start signal at time              4705000 is 0
 # Time:              4710000 | done: x
+# value of start signal at time              4715000 is 0
 # Time:              4720000 | done: x
+# value of start signal at time              4725000 is 0
 # Time:              4730000 | done: x
+# value of start signal at time              4735000 is 0
 # Time:              4740000 | done: x
+# value of start signal at time              4745000 is 0
 # Time:              4750000 | done: x
+# value of start signal at time              4755000 is 0
 # Time:              4760000 | done: x
+# value of start signal at time              4765000 is 0
 # Time:              4770000 | done: x
+# value of start signal at time              4775000 is 0
 # Time:              4780000 | done: x
+# value of start signal at time              4785000 is 0
 # Time:              4790000 | done: x
+# value of start signal at time              4795000 is 0
 # Time:              4800000 | done: x
+# value of start signal at time              4805000 is 0
 # Time:              4810000 | done: x
+# value of start signal at time              4815000 is 0
 # Time:              4820000 | done: x
+# value of start signal at time              4825000 is 0
 # Time:              4830000 | done: x
+# value of start signal at time              4835000 is 0
 # Time:              4840000 | done: x
+# value of start signal at time              4845000 is 0
 # Time:              4850000 | done: x
+# value of start signal at time              4855000 is 0
 # Time:              4860000 | done: x
+# value of start signal at time              4865000 is 0
 # Time:              4870000 | done: x
+# value of start signal at time              4875000 is 0
 # Time:              4880000 | done: x
+# value of start signal at time              4885000 is 0
 # Time:              4890000 | done: x
+# value of start signal at time              4895000 is 0
 # Time:              4900000 | done: x
+# value of start signal at time              4905000 is 0
 # Time:              4910000 | done: x
+# value of start signal at time              4915000 is 0
 # Time:              4920000 | done: x
+# value of start signal at time              4925000 is 0
 # Time:              4930000 | done: x
+# value of start signal at time              4935000 is 0
 # Time:              4940000 | done: x
+# value of start signal at time              4945000 is 0
 # Time:              4950000 | done: x
+# value of start signal at time              4955000 is 0
 # Time:              4960000 | done: x
+# value of start signal at time              4965000 is 0
 # Time:              4970000 | done: x
+# value of start signal at time              4975000 is 0
 # Time:              4980000 | done: x
+# value of start signal at time              4985000 is 0
 # Time:              4990000 | done: x
+# value of start signal at time              4995000 is 0
 # Time:              5000000 | done: x
+# value of start signal at time              5005000 is 0
 # Time:              5010000 | done: x
+# value of start signal at time              5015000 is 0
 # Time:              5020000 | done: x
+# value of start signal at time              5025000 is 0
 # Time:              5030000 | done: x
+# value of start signal at time              5035000 is 0
 # Time:              5040000 | done: x
+# value of start signal at time              5045000 is 0
 # Time:              5050000 | done: x
+# value of start signal at time              5055000 is 0
 # Time:              5060000 | done: x
+# value of start signal at time              5065000 is 0
 # Time:              5070000 | done: x
+# value of start signal at time              5075000 is 0
 # Time:              5080000 | done: x
+# value of start signal at time              5085000 is 0
 # Time:              5090000 | done: x
+# value of start signal at time              5095000 is 0
 # Time:              5100000 | done: x
+# value of start signal at time              5105000 is 0
 # Time:              5110000 | done: x
+# value of start signal at time              5115000 is 0
 # Time:              5120000 | done: x
+# value of start signal at time              5125000 is 0
 # Time:              5130000 | done: x
+# value of start signal at time              5135000 is 0
 # Time:              5140000 | done: x
+# value of start signal at time              5145000 is 0
 # Time:              5150000 | done: x
+# value of start signal at time              5155000 is 0
 # Time:              5160000 | done: x
+# value of start signal at time              5165000 is 0
 # Time:              5170000 | done: x
+# value of start signal at time              5175000 is 0
 # Time:              5180000 | done: x
+# value of start signal at time              5185000 is 0
 # Time:              5190000 | done: x
+# value of start signal at time              5195000 is 0
 # Time:              5200000 | done: x
+# value of start signal at time              5205000 is 0
 # Time:              5210000 | done: x
+# value of start signal at time              5215000 is 0
 # Time:              5220000 | done: x
+# value of start signal at time              5225000 is 0
 # Time:              5230000 | done: x
+# value of start signal at time              5235000 is 0
 # Time:              5240000 | done: x
+# value of start signal at time              5245000 is 0
 # Time:              5250000 | done: x
+# value of start signal at time              5255000 is 0
 # Time:              5260000 | done: x
+# value of start signal at time              5265000 is 0
 # Time:              5270000 | done: x
+# value of start signal at time              5275000 is 0
 # Time:              5280000 | done: x
+# value of start signal at time              5285000 is 0
 # Time:              5290000 | done: x
+# value of start signal at time              5295000 is 0
 # Time:              5300000 | done: x
+# value of start signal at time              5305000 is 0
 # Time:              5310000 | done: x
+# value of start signal at time              5315000 is 0
 # Time:              5320000 | done: x
+# value of start signal at time              5325000 is 0
 # Time:              5330000 | done: x
+# value of start signal at time              5335000 is 0
 # Time:              5340000 | done: x
+# value of start signal at time              5345000 is 0
 # Time:              5350000 | done: x
+# value of start signal at time              5355000 is 0
 # Time:              5360000 | done: x
+# value of start signal at time              5365000 is 0
 # Time:              5370000 | done: x
+# value of start signal at time              5375000 is 0
 # Time:              5380000 | done: x
+# value of start signal at time              5385000 is 0
 # Time:              5390000 | done: x
+# value of start signal at time              5395000 is 0
 # Time:              5400000 | done: x
+# value of start signal at time              5405000 is 0
 # Time:              5410000 | done: x
+# value of start signal at time              5415000 is 0
 # Time:              5420000 | done: x
+# value of start signal at time              5425000 is 0
 # Time:              5430000 | done: x
+# value of start signal at time              5435000 is 0
 # Time:              5440000 | done: x
+# value of start signal at time              5445000 is 0
 # Time:              5450000 | done: x
+# value of start signal at time              5455000 is 0
 # Time:              5460000 | done: x
+# value of start signal at time              5465000 is 0
 # Time:              5470000 | done: x
+# value of start signal at time              5475000 is 0
 # Time:              5480000 | done: x
+# value of start signal at time              5485000 is 0
 # Time:              5490000 | done: x
+# value of start signal at time              5495000 is 0
 # Time:              5500000 | done: x
+# value of start signal at time              5505000 is 0
 # Time:              5510000 | done: x
+# value of start signal at time              5515000 is 0
 # Time:              5520000 | done: x
+# value of start signal at time              5525000 is 0
 # Time:              5530000 | done: x
+# value of start signal at time              5535000 is 0
 # Time:              5540000 | done: x
+# value of start signal at time              5545000 is 0
 # Time:              5550000 | done: x
+# value of start signal at time              5555000 is 0
 # Time:              5560000 | done: x
+# value of start signal at time              5565000 is 0
 # Time:              5570000 | done: x
+# value of start signal at time              5575000 is 0
 # Time:              5580000 | done: x
+# value of start signal at time              5585000 is 0
 # Time:              5590000 | done: x
+# value of start signal at time              5595000 is 0
 # Time:              5600000 | done: x
+# value of start signal at time              5605000 is 0
 # Time:              5610000 | done: x
+# value of start signal at time              5615000 is 0
 # Time:              5620000 | done: x
+# value of start signal at time              5625000 is 0
 # Time:              5630000 | done: x
+# value of start signal at time              5635000 is 0
 # Time:              5640000 | done: x
+# value of start signal at time              5645000 is 0
 # Time:              5650000 | done: x
+# value of start signal at time              5655000 is 0
 # Time:              5660000 | done: x
+# value of start signal at time              5665000 is 0
 # Time:              5670000 | done: x
+# value of start signal at time              5675000 is 0
 # Time:              5680000 | done: x
+# value of start signal at time              5685000 is 0
 # Time:              5690000 | done: x
+# value of start signal at time              5695000 is 0
 # Time:              5700000 | done: x
+# value of start signal at time              5705000 is 0
 # Time:              5710000 | done: x
+# value of start signal at time              5715000 is 0
 # Time:              5720000 | done: x
+# value of start signal at time              5725000 is 0
 # Time:              5730000 | done: x
+# value of start signal at time              5735000 is 0
 # Time:              5740000 | done: x
+# value of start signal at time              5745000 is 0
 # Time:              5750000 | done: x
+# value of start signal at time              5755000 is 0
 # Time:              5760000 | done: x
+# value of start signal at time              5765000 is 0
 # Time:              5770000 | done: x
+# value of start signal at time              5775000 is 0
 # Time:              5780000 | done: x
+# value of start signal at time              5785000 is 0
 # Time:              5790000 | done: x
+# value of start signal at time              5795000 is 0
 # Time:              5800000 | done: x
+# value of start signal at time              5805000 is 0
 # Time:              5810000 | done: x
+# value of start signal at time              5815000 is 0
 # Time:              5820000 | done: x
+# value of start signal at time              5825000 is 0
 # Time:              5830000 | done: x
+# value of start signal at time              5835000 is 0
 # Time:              5840000 | done: x
+# value of start signal at time              5845000 is 0
 # Time:              5850000 | done: x
+# value of start signal at time              5855000 is 0
 # Time:              5860000 | done: x
+# value of start signal at time              5865000 is 0
 # Time:              5870000 | done: x
+# value of start signal at time              5875000 is 0
 # Time:              5880000 | done: x
+# value of start signal at time              5885000 is 0
 # Time:              5890000 | done: x
+# value of start signal at time              5895000 is 0
 # Time:              5900000 | done: x
+# value of start signal at time              5905000 is 0
 # Time:              5910000 | done: x
+# value of start signal at time              5915000 is 0
 # Time:              5920000 | done: x
+# value of start signal at time              5925000 is 0
 # Time:              5930000 | done: x
+# value of start signal at time              5935000 is 0
 # Time:              5940000 | done: x
+# value of start signal at time              5945000 is 0
 # Time:              5950000 | done: x
+# value of start signal at time              5955000 is 0
 # Time:              5960000 | done: x
+# value of start signal at time              5965000 is 0
 # Time:              5970000 | done: x
+# value of start signal at time              5975000 is 0
 # Time:              5980000 | done: x
+# value of start signal at time              5985000 is 0
 # Time:              5990000 | done: x
+# value of start signal at time              5995000 is 0
 # Time:              6000000 | done: x
+# value of start signal at time              6005000 is 0
 # Time:              6010000 | done: x
+# value of start signal at time              6015000 is 0
 # Time:              6020000 | done: x
+# value of start signal at time              6025000 is 0
 # Time:              6030000 | done: x
+# value of start signal at time              6035000 is 0
 # Time:              6040000 | done: x
+# value of start signal at time              6045000 is 0
 # Time:              6050000 | done: x
+# value of start signal at time              6055000 is 0
 # Time:              6060000 | done: x
+# value of start signal at time              6065000 is 0
 # Time:              6070000 | done: x
+# value of start signal at time              6075000 is 0
 # Time:              6080000 | done: x
+# value of start signal at time              6085000 is 0
 # Time:              6090000 | done: x
+# value of start signal at time              6095000 is 0
 # Time:              6100000 | done: x
+# value of start signal at time              6105000 is 0
 # Time:              6110000 | done: x
+# value of start signal at time              6115000 is 0
 # Time:              6120000 | done: x
+# value of start signal at time              6125000 is 0
 # Time:              6130000 | done: x
+# value of start signal at time              6135000 is 0
 # Time:              6140000 | done: x
+# value of start signal at time              6145000 is 0
 # Time:              6150000 | done: x
+# value of start signal at time              6155000 is 0
 # Time:              6160000 | done: x
+# value of start signal at time              6165000 is 0
 # Time:              6170000 | done: x
+# value of start signal at time              6175000 is 0
 # Time:              6180000 | done: x
+# value of start signal at time              6185000 is 0
 # Time:              6190000 | done: x
+# value of start signal at time              6195000 is 0
 # Time:              6200000 | done: x
+# value of start signal at time              6205000 is 0
 # Time:              6210000 | done: x
+# value of start signal at time              6215000 is 0
 # Time:              6220000 | done: x
+# value of start signal at time              6225000 is 0
 # Time:              6230000 | done: x
+# value of start signal at time              6235000 is 0
 # Time:              6240000 | done: x
+# value of start signal at time              6245000 is 0
 # Time:              6250000 | done: x
+# value of start signal at time              6255000 is 0
 # Time:              6260000 | done: x
+# value of start signal at time              6265000 is 0
 # Time:              6270000 | done: x
+# value of start signal at time              6275000 is 0
 # Time:              6280000 | done: x
+# value of start signal at time              6285000 is 0
 # Time:              6290000 | done: x
+# value of start signal at time              6295000 is 0
 # Time:              6300000 | done: x
+# value of start signal at time              6305000 is 0
 # Time:              6310000 | done: x
+# value of start signal at time              6315000 is 0
 # Time:              6320000 | done: x
+# value of start signal at time              6325000 is 0
 # Time:              6330000 | done: x
+# value of start signal at time              6335000 is 0
 # Time:              6340000 | done: x
+# value of start signal at time              6345000 is 0
 # Time:              6350000 | done: x
+# value of start signal at time              6355000 is 0
 # Time:              6360000 | done: x
+# value of start signal at time              6365000 is 0
 # Time:              6370000 | done: x
+# value of start signal at time              6375000 is 0
 # Time:              6380000 | done: x
+# value of start signal at time              6385000 is 0
 # Time:              6390000 | done: x
+# value of start signal at time              6395000 is 0
 # Time:              6400000 | done: x
+# value of start signal at time              6405000 is 0
 # Time:              6410000 | done: x
+# value of start signal at time              6415000 is 0
 # Time:              6420000 | done: x
+# value of start signal at time              6425000 is 0
 # Time:              6430000 | done: x
+# value of start signal at time              6435000 is 0
 # Time:              6440000 | done: x
+# value of start signal at time              6445000 is 0
 # Time:              6450000 | done: x
+# value of start signal at time              6455000 is 0
 # Time:              6460000 | done: x
+# value of start signal at time              6465000 is 0
 # Time:              6470000 | done: x
+# value of start signal at time              6475000 is 0
 # Time:              6480000 | done: x
+# value of start signal at time              6485000 is 0
 # Time:              6490000 | done: x
+# value of start signal at time              6495000 is 0
 # Time:              6500000 | done: x
+# value of start signal at time              6505000 is 0
 # Time:              6510000 | done: x
+# value of start signal at time              6515000 is 0
 # Time:              6520000 | done: x
+# value of start signal at time              6525000 is 0
 # Time:              6530000 | done: x
+# value of start signal at time              6535000 is 0
 # Time:              6540000 | done: x
+# value of start signal at time              6545000 is 0
 # Time:              6550000 | done: x
+# value of start signal at time              6555000 is 0
 # Time:              6560000 | done: x
+# value of start signal at time              6565000 is 0
 # Time:              6570000 | done: x
+# value of start signal at time              6575000 is 0
 # Time:              6580000 | done: x
+# value of start signal at time              6585000 is 0
 # Time:              6590000 | done: x
+# value of start signal at time              6595000 is 0
 # Time:              6600000 | done: x
+# value of start signal at time              6605000 is 0
 # Time:              6610000 | done: x
+# value of start signal at time              6615000 is 0
 # Time:              6620000 | done: x
+# value of start signal at time              6625000 is 0
 # Time:              6630000 | done: x
+# value of start signal at time              6635000 is 0
 # Time:              6640000 | done: x
+# value of start signal at time              6645000 is 0
 # Time:              6650000 | done: x
+# value of start signal at time              6655000 is 0
 # Time:              6660000 | done: x
+# value of start signal at time              6665000 is 0
 # Time:              6670000 | done: x
+# value of start signal at time              6675000 is 0
 # Time:              6680000 | done: x
+# value of start signal at time              6685000 is 0
 # Time:              6690000 | done: x
+# value of start signal at time              6695000 is 0
 # Time:              6700000 | done: x
+# value of start signal at time              6705000 is 0
 # Time:              6710000 | done: x
+# value of start signal at time              6715000 is 0
 # Time:              6720000 | done: x
+# value of start signal at time              6725000 is 0
 # Time:              6730000 | done: x
+# value of start signal at time              6735000 is 0
 # Time:              6740000 | done: x
+# value of start signal at time              6745000 is 0
 # Time:              6750000 | done: x
+# value of start signal at time              6755000 is 0
 # Time:              6760000 | done: x
+# value of start signal at time              6765000 is 0
 # Time:              6770000 | done: x
+# value of start signal at time              6775000 is 0
 # Time:              6780000 | done: x
+# value of start signal at time              6785000 is 0
 # Time:              6790000 | done: x
+# value of start signal at time              6795000 is 0
 # Time:              6800000 | done: x
+# value of start signal at time              6805000 is 0
 # Time:              6810000 | done: x
+# value of start signal at time              6815000 is 0
 # Time:              6820000 | done: x
+# value of start signal at time              6825000 is 0
 # Time:              6830000 | done: x
+# value of start signal at time              6835000 is 0
 # Time:              6840000 | done: x
+# value of start signal at time              6845000 is 0
 # Time:              6850000 | done: x
+# value of start signal at time              6855000 is 0
 # Time:              6860000 | done: x
+# value of start signal at time              6865000 is 0
 # Time:              6870000 | done: x
+# value of start signal at time              6875000 is 0
 # Time:              6880000 | done: x
+# value of start signal at time              6885000 is 0
 # Time:              6890000 | done: x
+# value of start signal at time              6895000 is 0
 # Time:              6900000 | done: x
+# value of start signal at time              6905000 is 0
 # Time:              6910000 | done: x
+# value of start signal at time              6915000 is 0
 # Time:              6920000 | done: x
+# value of start signal at time              6925000 is 0
 # Time:              6930000 | done: x
+# value of start signal at time              6935000 is 0
 # Time:              6940000 | done: x
+# value of start signal at time              6945000 is 0
 # Time:              6950000 | done: x
+# value of start signal at time              6955000 is 0
 # Time:              6960000 | done: x
+# value of start signal at time              6965000 is 0
 # Time:              6970000 | done: x
+# value of start signal at time              6975000 is 0
 # Time:              6980000 | done: x
+# value of start signal at time              6985000 is 0
 # Time:              6990000 | done: x
+# value of start signal at time              6995000 is 0
 # Time:              7000000 | done: x
+# value of start signal at time              7005000 is 0
 # Time:              7010000 | done: x
+# value of start signal at time              7015000 is 0
 # Time:              7020000 | done: x
+# value of start signal at time              7025000 is 0
 # Time:              7030000 | done: x
+# value of start signal at time              7035000 is 0
 # Time:              7040000 | done: x
+# value of start signal at time              7045000 is 0
 # Time:              7050000 | done: x
+# value of start signal at time              7055000 is 0
 # Time:              7060000 | done: x
+# value of start signal at time              7065000 is 0
 # Time:              7070000 | done: x
+# value of start signal at time              7075000 is 0
 # Time:              7080000 | done: x
+# value of start signal at time              7085000 is 0
 # Time:              7090000 | done: x
+# value of start signal at time              7095000 is 0
 # Time:              7100000 | done: x
+# value of start signal at time              7105000 is 0
 # Time:              7110000 | done: x
+# value of start signal at time              7115000 is 0
 # Time:              7120000 | done: x
+# value of start signal at time              7125000 is 0
 # Time:              7130000 | done: x
+# value of start signal at time              7135000 is 0
 # Time:              7140000 | done: x
+# value of start signal at time              7145000 is 0
 # Time:              7150000 | done: x
+# value of start signal at time              7155000 is 0
 # Time:              7160000 | done: x
+# value of start signal at time              7165000 is 0
 # Time:              7170000 | done: x
+# value of start signal at time              7175000 is 0
 # Time:              7180000 | done: x
+# value of start signal at time              7185000 is 0
 # Time:              7190000 | done: x
+# value of start signal at time              7195000 is 0
 # Time:              7200000 | done: x
+# value of start signal at time              7205000 is 0
 # Time:              7210000 | done: x
+# value of start signal at time              7215000 is 0
 # Time:              7220000 | done: x
+# value of start signal at time              7225000 is 0
 # Time:              7230000 | done: x
+# value of start signal at time              7235000 is 0
 # Time:              7240000 | done: x
+# value of start signal at time              7245000 is 0
 # Time:              7250000 | done: x
+# value of start signal at time              7255000 is 0
 # Time:              7260000 | done: x
+# value of start signal at time              7265000 is 0
 # Time:              7270000 | done: x
+# value of start signal at time              7275000 is 0
 # Time:              7280000 | done: x
+# value of start signal at time              7285000 is 0
 # Time:              7290000 | done: x
+# value of start signal at time              7295000 is 0
 # Time:              7300000 | done: x
+# value of start signal at time              7305000 is 0
 # Time:              7310000 | done: x
+# value of start signal at time              7315000 is 0
 # Time:              7320000 | done: x
+# value of start signal at time              7325000 is 0
 # Time:              7330000 | done: x
+# value of start signal at time              7335000 is 0
 # Time:              7340000 | done: x
+# value of start signal at time              7345000 is 0
 # Time:              7350000 | done: x
+# value of start signal at time              7355000 is 0
 # Time:              7360000 | done: x
+# value of start signal at time              7365000 is 0
 # Time:              7370000 | done: x
+# value of start signal at time              7375000 is 0
 # Time:              7380000 | done: x
+# value of start signal at time              7385000 is 0
 # Time:              7390000 | done: x
+# value of start signal at time              7395000 is 0
 # Time:              7400000 | done: x
+# value of start signal at time              7405000 is 0
 # Time:              7410000 | done: x
+# value of start signal at time              7415000 is 0
 # Time:              7420000 | done: x
+# value of start signal at time              7425000 is 0
 # Time:              7430000 | done: x
+# value of start signal at time              7435000 is 0
 # Time:              7440000 | done: x
+# value of start signal at time              7445000 is 0
 # Time:              7450000 | done: x
+# value of start signal at time              7455000 is 0
 # Time:              7460000 | done: x
+# value of start signal at time              7465000 is 0
 # Time:              7470000 | done: x
+# value of start signal at time              7475000 is 0
 # Time:              7480000 | done: x
+# value of start signal at time              7485000 is 0
 # Time:              7490000 | done: x
+# value of start signal at time              7495000 is 0
 # Time:              7500000 | done: x
+# value of start signal at time              7505000 is 0
 # Time:              7510000 | done: x
+# value of start signal at time              7515000 is 0
 # Time:              7520000 | done: x
+# value of start signal at time              7525000 is 0
 # Time:              7530000 | done: x
+# value of start signal at time              7535000 is 0
 # Time:              7540000 | done: x
+# value of start signal at time              7545000 is 0
 # Time:              7550000 | done: x
+# value of start signal at time              7555000 is 0
 # Time:              7560000 | done: x
+# value of start signal at time              7565000 is 0
 # Time:              7570000 | done: x
+# value of start signal at time              7575000 is 0
 # Time:              7580000 | done: x
+# value of start signal at time              7585000 is 0
 # Time:              7590000 | done: x
+# value of start signal at time              7595000 is 0
 # Time:              7600000 | done: x
+# value of start signal at time              7605000 is 0
 # Time:              7610000 | done: x
+# value of start signal at time              7615000 is 0
 # Time:              7620000 | done: x
+# value of start signal at time              7625000 is 0
 # Time:              7630000 | done: x
+# value of start signal at time              7635000 is 0
 # Time:              7640000 | done: x
+# value of start signal at time              7645000 is 0
 # Time:              7650000 | done: x
+# value of start signal at time              7655000 is 0
 # Time:              7660000 | done: x
+# value of start signal at time              7665000 is 0
 # Time:              7670000 | done: x
+# value of start signal at time              7675000 is 0
 # Time:              7680000 | done: x
+# value of start signal at time              7685000 is 0
 # Time:              7690000 | done: x
+# value of start signal at time              7695000 is 0
 # Time:              7700000 | done: x
+# value of start signal at time              7705000 is 0
 # Time:              7710000 | done: x
+# value of start signal at time              7715000 is 0
 # Time:              7720000 | done: x
+# value of start signal at time              7725000 is 0
 # Time:              7730000 | done: x
+# value of start signal at time              7735000 is 0
 # Time:              7740000 | done: x
+# value of start signal at time              7745000 is 0
 # Time:              7750000 | done: x
+# value of start signal at time              7755000 is 0
 # Time:              7760000 | done: x
+# value of start signal at time              7765000 is 0
 # Time:              7770000 | done: x
+# value of start signal at time              7775000 is 0
 # Time:              7780000 | done: x
+# value of start signal at time              7785000 is 0
 # Time:              7790000 | done: x
+# value of start signal at time              7795000 is 0
 # Time:              7800000 | done: x
+# value of start signal at time              7805000 is 0
 # Time:              7810000 | done: x
+# value of start signal at time              7815000 is 0
 # Time:              7820000 | done: x
+# value of start signal at time              7825000 is 0
 # Time:              7830000 | done: x
+# value of start signal at time              7835000 is 0
 # Time:              7840000 | done: x
+# value of start signal at time              7845000 is 0
 # Time:              7850000 | done: x
+# value of start signal at time              7855000 is 0
 # Time:              7860000 | done: x
+# value of start signal at time              7865000 is 0
 # Time:              7870000 | done: x
+# value of start signal at time              7875000 is 0
 # Time:              7880000 | done: x
+# value of start signal at time              7885000 is 0
 # Time:              7890000 | done: x
+# value of start signal at time              7895000 is 0
 # Time:              7900000 | done: x
+# value of start signal at time              7905000 is 0
 # Time:              7910000 | done: x
+# value of start signal at time              7915000 is 0
 # Time:              7920000 | done: x
+# value of start signal at time              7925000 is 0
 # Time:              7930000 | done: x
+# value of start signal at time              7935000 is 0
 # Time:              7940000 | done: x
+# value of start signal at time              7945000 is 0
 # Time:              7950000 | done: x
+# value of start signal at time              7955000 is 0
 # Time:              7960000 | done: x
+# value of start signal at time              7965000 is 0
 # Time:              7970000 | done: x
+# value of start signal at time              7975000 is 0
 # Time:              7980000 | done: x
+# value of start signal at time              7985000 is 0
 # Time:              7990000 | done: x
+# value of start signal at time              7995000 is 0
 # Time:              8000000 | done: x
+# value of start signal at time              8005000 is 0
 # Time:              8010000 | done: x
+# value of start signal at time              8015000 is 0
 # Time:              8020000 | done: x
+# value of start signal at time              8025000 is 0
 # Time:              8030000 | done: x
+# value of start signal at time              8035000 is 0
 # Time:              8040000 | done: x
+# value of start signal at time              8045000 is 0
 # Time:              8050000 | done: x
+# value of start signal at time              8055000 is 0
 # Time:              8060000 | done: x
+# value of start signal at time              8065000 is 0
 # Time:              8070000 | done: x
+# value of start signal at time              8075000 is 0
 # Time:              8080000 | done: x
+# value of start signal at time              8085000 is 0
 # Time:              8090000 | done: x
+# value of start signal at time              8095000 is 0
 # Time:              8100000 | done: x
+# value of start signal at time              8105000 is 0
 # Time:              8110000 | done: x
+# value of start signal at time              8115000 is 0
 # Time:              8120000 | done: x
+# value of start signal at time              8125000 is 0
 # Time:              8130000 | done: x
+# value of start signal at time              8135000 is 0
 # Time:              8140000 | done: x
+# value of start signal at time              8145000 is 0
 # Time:              8150000 | done: x
+# value of start signal at time              8155000 is 0
 # Time:              8160000 | done: x
+# value of start signal at time              8165000 is 0
 # Time:              8170000 | done: x
+# value of start signal at time              8175000 is 0
 # Time:              8180000 | done: x
+# value of start signal at time              8185000 is 0
 # Time:              8190000 | done: x
+# value of start signal at time              8195000 is 0
 # Time:              8200000 | done: x
+# value of start signal at time              8205000 is 0
 # Time:              8210000 | done: x
+# value of start signal at time              8215000 is 0
 # Time:              8220000 | done: x
+# value of start signal at time              8225000 is 0
 # Time:              8230000 | done: x
+# value of start signal at time              8235000 is 0
 # Time:              8240000 | done: x
+# value of start signal at time              8245000 is 0
 # Time:              8250000 | done: x
+# value of start signal at time              8255000 is 0
 # Time:              8260000 | done: x
+# value of start signal at time              8265000 is 0
 # Time:              8270000 | done: x
+# value of start signal at time              8275000 is 0
 # Time:              8280000 | done: x
+# value of start signal at time              8285000 is 0
 # Time:              8290000 | done: x
+# value of start signal at time              8295000 is 0
 # Time:              8300000 | done: x
+# value of start signal at time              8305000 is 0
 # Time:              8310000 | done: x
+# value of start signal at time              8315000 is 0
 # Time:              8320000 | done: x
+# value of start signal at time              8325000 is 0
 # Time:              8330000 | done: x
+# value of start signal at time              8335000 is 0
 # Time:              8340000 | done: x
+# value of start signal at time              8345000 is 0
 # Time:              8350000 | done: x
+# value of start signal at time              8355000 is 0
 # Time:              8360000 | done: x
+# value of start signal at time              8365000 is 0
 # Time:              8370000 | done: x
+# value of start signal at time              8375000 is 0
 # Time:              8380000 | done: x
+# value of start signal at time              8385000 is 0
 # Time:              8390000 | done: x
+# value of start signal at time              8395000 is 0
 # Time:              8400000 | done: x
+# value of start signal at time              8405000 is 0
 # Time:              8410000 | done: x
+# value of start signal at time              8415000 is 0
 # Time:              8420000 | done: x
+# value of start signal at time              8425000 is 0
 # Time:              8430000 | done: x
+# value of start signal at time              8435000 is 0
 # Time:              8440000 | done: x
+# value of start signal at time              8445000 is 0
 # Time:              8450000 | done: x
+# value of start signal at time              8455000 is 0
 # Time:              8460000 | done: x
+# value of start signal at time              8465000 is 0
 # Time:              8470000 | done: x
+# value of start signal at time              8475000 is 0
 # Time:              8480000 | done: x
+# value of start signal at time              8485000 is 0
 # Time:              8490000 | done: x
+# value of start signal at time              8495000 is 0
 # Time:              8500000 | done: x
+# value of start signal at time              8505000 is 0
 # Time:              8510000 | done: x
+# value of start signal at time              8515000 is 0
 # Time:              8520000 | done: x
+# value of start signal at time              8525000 is 0
 # Time:              8530000 | done: x
+# value of start signal at time              8535000 is 0
 # Time:              8540000 | done: x
+# value of start signal at time              8545000 is 0
 # Time:              8550000 | done: x
+# value of start signal at time              8555000 is 0
 # Time:              8560000 | done: x
+# value of start signal at time              8565000 is 0
 # Time:              8570000 | done: x
+# value of start signal at time              8575000 is 0
 # Time:              8580000 | done: x
+# value of start signal at time              8585000 is 0
 # Time:              8590000 | done: x
+# value of start signal at time              8595000 is 0
 # Time:              8600000 | done: x
+# value of start signal at time              8605000 is 0
 # Time:              8610000 | done: x
+# value of start signal at time              8615000 is 0
 # Time:              8620000 | done: x
+# value of start signal at time              8625000 is 0
 # Time:              8630000 | done: x
+# value of start signal at time              8635000 is 0
 # Time:              8640000 | done: x
+# value of start signal at time              8645000 is 0
 # Time:              8650000 | done: x
+# value of start signal at time              8655000 is 0
 # Time:              8660000 | done: x
+# value of start signal at time              8665000 is 0
 # Time:              8670000 | done: x
+# value of start signal at time              8675000 is 0
 # Time:              8680000 | done: x
+# value of start signal at time              8685000 is 0
 # Time:              8690000 | done: x
+# value of start signal at time              8695000 is 0
 # Time:              8700000 | done: x
+# value of start signal at time              8705000 is 0
 # Time:              8710000 | done: x
+# value of start signal at time              8715000 is 0
 # Time:              8720000 | done: x
+# value of start signal at time              8725000 is 0
 # Time:              8730000 | done: x
+# value of start signal at time              8735000 is 0
 # Time:              8740000 | done: x
+# value of start signal at time              8745000 is 0
 # Time:              8750000 | done: x
+# value of start signal at time              8755000 is 0
 # Time:              8760000 | done: x
+# value of start signal at time              8765000 is 0
 # Time:              8770000 | done: x
+# value of start signal at time              8775000 is 0
 # Time:              8780000 | done: x
+# value of start signal at time              8785000 is 0
 # Time:              8790000 | done: x
+# value of start signal at time              8795000 is 0
 # Time:              8800000 | done: x
+# value of start signal at time              8805000 is 0
 # Time:              8810000 | done: x
+# value of start signal at time              8815000 is 0
 # Time:              8820000 | done: x
+# value of start signal at time              8825000 is 0
 # Time:              8830000 | done: x
+# value of start signal at time              8835000 is 0
 # Time:              8840000 | done: x
+# value of start signal at time              8845000 is 0
 # Time:              8850000 | done: x
+# value of start signal at time              8855000 is 0
 # Time:              8860000 | done: x
+# value of start signal at time              8865000 is 0
 # Time:              8870000 | done: x
+# value of start signal at time              8875000 is 0
 # Time:              8880000 | done: x
+# value of start signal at time              8885000 is 0
 # Time:              8890000 | done: x
+# value of start signal at time              8895000 is 0
 # Time:              8900000 | done: x
+# value of start signal at time              8905000 is 0
 # Time:              8910000 | done: x
+# value of start signal at time              8915000 is 0
 # Time:              8920000 | done: x
+# value of start signal at time              8925000 is 0
 # Time:              8930000 | done: x
+# value of start signal at time              8935000 is 0
 # Time:              8940000 | done: x
+# value of start signal at time              8945000 is 0
 # Time:              8950000 | done: x
+# value of start signal at time              8955000 is 0
 # Time:              8960000 | done: x
+# value of start signal at time              8965000 is 0
 # Time:              8970000 | done: x
+# value of start signal at time              8975000 is 0
 # Time:              8980000 | done: x
+# value of start signal at time              8985000 is 0
 # Time:              8990000 | done: x
+# value of start signal at time              8995000 is 0
 # Time:              9000000 | done: x
+# value of start signal at time              9005000 is 0
 # Time:              9010000 | done: x
+# value of start signal at time              9015000 is 0
 # Time:              9020000 | done: x
+# value of start signal at time              9025000 is 0
 # Time:              9030000 | done: x
+# value of start signal at time              9035000 is 0
 # Time:              9040000 | done: x
+# value of start signal at time              9045000 is 0
 # Time:              9050000 | done: x
+# value of start signal at time              9055000 is 0
 # Time:              9060000 | done: x
+# value of start signal at time              9065000 is 0
 # Time:              9070000 | done: x
+# value of start signal at time              9075000 is 0
 # Time:              9080000 | done: x
+# value of start signal at time              9085000 is 0
 # Time:              9090000 | done: x
+# value of start signal at time              9095000 is 0
 # Time:              9100000 | done: x
+# value of start signal at time              9105000 is 0
 # Time:              9110000 | done: x
+# value of start signal at time              9115000 is 0
 # Time:              9120000 | done: x
+# value of start signal at time              9125000 is 0
 # Time:              9130000 | done: x
+# value of start signal at time              9135000 is 0
 # Time:              9140000 | done: x
+# value of start signal at time              9145000 is 0
 # Time:              9150000 | done: x
+# value of start signal at time              9155000 is 0
 # Time:              9160000 | done: x
+# value of start signal at time              9165000 is 0
 # Time:              9170000 | done: x
+# value of start signal at time              9175000 is 0
 # Time:              9180000 | done: x
+# value of start signal at time              9185000 is 0
 # Time:              9190000 | done: x
+# value of start signal at time              9195000 is 0
 # Time:              9200000 | done: x
+# value of start signal at time              9205000 is 0
 # Time:              9210000 | done: x
+# value of start signal at time              9215000 is 0
 # Time:              9220000 | done: x
+# value of start signal at time              9225000 is 0
 # Time:              9230000 | done: x
+# value of start signal at time              9235000 is 0
 # Time:              9240000 | done: x
+# value of start signal at time              9245000 is 0
 # Time:              9250000 | done: x
+# value of start signal at time              9255000 is 0
 # Time:              9260000 | done: x
+# value of start signal at time              9265000 is 0
 # Time:              9270000 | done: x
+# value of start signal at time              9275000 is 0
 # Time:              9280000 | done: x
+# value of start signal at time              9285000 is 0
 # Time:              9290000 | done: x
+# value of start signal at time              9295000 is 0
 # Time:              9300000 | done: x
+# value of start signal at time              9305000 is 0
 # Time:              9310000 | done: x
+# value of start signal at time              9315000 is 0
 # Time:              9320000 | done: x
+# value of start signal at time              9325000 is 0
 # Time:              9330000 | done: x
+# value of start signal at time              9335000 is 0
 # Time:              9340000 | done: x
+# value of start signal at time              9345000 is 0
 # Time:              9350000 | done: x
+# value of start signal at time              9355000 is 0
 # Time:              9360000 | done: x
+# value of start signal at time              9365000 is 0
 # Time:              9370000 | done: x
+# value of start signal at time              9375000 is 0
 # Time:              9380000 | done: x
+# value of start signal at time              9385000 is 0
 # Time:              9390000 | done: x
+# value of start signal at time              9395000 is 0
 # Time:              9400000 | done: x
+# value of start signal at time              9405000 is 0
 # Time:              9410000 | done: x
+# value of start signal at time              9415000 is 0
 # Time:              9420000 | done: x
+# value of start signal at time              9425000 is 0
 # Time:              9430000 | done: x
+# value of start signal at time              9435000 is 0
 # Time:              9440000 | done: x
+# value of start signal at time              9445000 is 0
 # Time:              9450000 | done: x
+# value of start signal at time              9455000 is 0
 # Time:              9460000 | done: x
+# value of start signal at time              9465000 is 0
 # Time:              9470000 | done: x
+# value of start signal at time              9475000 is 0
 # Time:              9480000 | done: x
+# value of start signal at time              9485000 is 0
 # Time:              9490000 | done: x
+# value of start signal at time              9495000 is 0
 # Time:              9500000 | done: x
+# value of start signal at time              9505000 is 0
 # Time:              9510000 | done: x
+# value of start signal at time              9515000 is 0
 # Time:              9520000 | done: x
+# value of start signal at time              9525000 is 0
 # Time:              9530000 | done: x
+# value of start signal at time              9535000 is 0
 # Time:              9540000 | done: x
+# value of start signal at time              9545000 is 0
 # Time:              9550000 | done: x
+# value of start signal at time              9555000 is 0
 # Time:              9560000 | done: x
+# value of start signal at time              9565000 is 0
 # Time:              9570000 | done: x
+# value of start signal at time              9575000 is 0
 # Time:              9580000 | done: x
+# value of start signal at time              9585000 is 0
 # Time:              9590000 | done: x
+# value of start signal at time              9595000 is 0
 # Time:              9600000 | done: x
+# value of start signal at time              9605000 is 0
 # Time:              9610000 | done: x
+# value of start signal at time              9615000 is 0
 # Time:              9620000 | done: x
+# value of start signal at time              9625000 is 0
 # Time:              9630000 | done: x
+# value of start signal at time              9635000 is 0
 # Time:              9640000 | done: x
+# value of start signal at time              9645000 is 0
 # Time:              9650000 | done: x
+# value of start signal at time              9655000 is 0
 # Time:              9660000 | done: x
+# value of start signal at time              9665000 is 0
 # Time:              9670000 | done: x
+# value of start signal at time              9675000 is 0
 # Time:              9680000 | done: x
+# value of start signal at time              9685000 is 0
 # Time:              9690000 | done: x
+# value of start signal at time              9695000 is 0
 # Time:              9700000 | done: x
+# value of start signal at time              9705000 is 0
 # Time:              9710000 | done: x
+# value of start signal at time              9715000 is 0
 # Time:              9720000 | done: x
+# value of start signal at time              9725000 is 0
 # Time:              9730000 | done: x
+# value of start signal at time              9735000 is 0
 # Time:              9740000 | done: x
+# value of start signal at time              9745000 is 0
 # Time:              9750000 | done: x
+# value of start signal at time              9755000 is 0
 # Time:              9760000 | done: x
+# value of start signal at time              9765000 is 0
 # Time:              9770000 | done: x
+# value of start signal at time              9775000 is 0
 # Time:              9780000 | done: x
+# value of start signal at time              9785000 is 0
 # Time:              9790000 | done: x
+# value of start signal at time              9795000 is 0
 # Time:              9800000 | done: x
+# value of start signal at time              9805000 is 0
 # Time:              9810000 | done: x
+# value of start signal at time              9815000 is 0
 # Time:              9820000 | done: x
+# value of start signal at time              9825000 is 0
 # Time:              9830000 | done: x
+# value of start signal at time              9835000 is 0
 # Time:              9840000 | done: x
+# value of start signal at time              9845000 is 0
 # Time:              9850000 | done: x
+# value of start signal at time              9855000 is 0
 # Time:              9860000 | done: x
+# value of start signal at time              9865000 is 0
 # Time:              9870000 | done: x
+# value of start signal at time              9875000 is 0
 # Time:              9880000 | done: x
+# value of start signal at time              9885000 is 0
 # Time:              9890000 | done: x
+# value of start signal at time              9895000 is 0
 # Time:              9900000 | done: x
+# value of start signal at time              9905000 is 0
 # Time:              9910000 | done: x
+# value of start signal at time              9915000 is 0
 # Time:              9920000 | done: x
+# value of start signal at time              9925000 is 0
 # Time:              9930000 | done: x
+# value of start signal at time              9935000 is 0
 # Time:              9940000 | done: x
+# value of start signal at time              9945000 is 0
 # Time:              9950000 | done: x
+# value of start signal at time              9955000 is 0
 # Time:              9960000 | done: x
+# value of start signal at time              9965000 is 0
 # Time:              9970000 | done: x
+# value of start signal at time              9975000 is 0
 # Time:              9980000 | done: x
+# value of start signal at time              9985000 is 0
 # Time:              9990000 | done: x
+# value of start signal at time              9995000 is 0
 # Time:             10000000 | done: x
+# value of start signal at time             10005000 is 0
 # Time:             10010000 | done: x
+# value of start signal at time             10015000 is 0
 # Time:             10020000 | done: x
+# value of start signal at time             10025000 is 0
 # Time:             10030000 | done: x
+# value of start signal at time             10035000 is 0
 # Time:             10040000 | done: x
+# value of start signal at time             10045000 is 0
 # Time:             10050000 | done: x
+# value of start signal at time             10055000 is 0
 # Time:             10060000 | done: x
+# value of start signal at time             10065000 is 0
 # Time:             10070000 | done: x
+# value of start signal at time             10075000 is 0
 # Time:             10080000 | done: x
+# value of start signal at time             10085000 is 0
 # Time:             10090000 | done: x
+# value of start signal at time             10095000 is 0
 # Time:             10100000 | done: x
+# value of start signal at time             10105000 is 0
 # Time:             10110000 | done: x
+# value of start signal at time             10115000 is 0
 # Time:             10120000 | done: x
+# value of start signal at time             10125000 is 0
 # Time:             10130000 | done: x
+# value of start signal at time             10135000 is 0
 # Time:             10140000 | done: x
+# value of start signal at time             10145000 is 0
 # Time:             10150000 | done: x
+# value of start signal at time             10155000 is 0
 # Time:             10160000 | done: x
+# value of start signal at time             10165000 is 0
 # Time:             10170000 | done: x
+# value of start signal at time             10175000 is 0
 # Time:             10180000 | done: x
+# value of start signal at time             10185000 is 0
 # Time:             10190000 | done: x
+# value of start signal at time             10195000 is 0
 # Time:             10200000 | done: x
+# value of start signal at time             10205000 is 0
 # Time:             10210000 | done: x
+# value of start signal at time             10215000 is 0
 # Time:             10220000 | done: x
+# value of start signal at time             10225000 is 0
 # Time:             10230000 | done: x
+# value of start signal at time             10235000 is 0
 # Time:             10240000 | done: x
+# value of start signal at time             10245000 is 0
 # Time:             10250000 | done: x
+# value of start signal at time             10255000 is 0
 # Time:             10260000 | done: x
+# value of start signal at time             10265000 is 0
 # Time:             10270000 | done: x
+# value of start signal at time             10275000 is 0
 # Time:             10280000 | done: x
+# value of start signal at time             10285000 is 0
 # Time:             10290000 | done: x
+# value of start signal at time             10295000 is 0
 # Time:             10300000 | done: x
+# value of start signal at time             10305000 is 0
 # Time:             10310000 | done: x
+# value of start signal at time             10315000 is 0
 # Time:             10320000 | done: x
+# value of start signal at time             10325000 is 0
 # Time:             10330000 | done: x
+# value of start signal at time             10335000 is 0
 # Time:             10340000 | done: x
+# value of start signal at time             10345000 is 0
 # Time:             10350000 | done: x
+# value of start signal at time             10355000 is 0
 # Time:             10360000 | done: x
+# value of start signal at time             10365000 is 0
 # Time:             10370000 | done: x
+# value of start signal at time             10375000 is 0
 # Time:             10380000 | done: x
+# value of start signal at time             10385000 is 0
 # Time:             10390000 | done: x
+# value of start signal at time             10395000 is 0
 # Time:             10400000 | done: x
+# value of start signal at time             10405000 is 0
 # Time:             10410000 | done: x
+# value of start signal at time             10415000 is 0
 # Time:             10420000 | done: x
+# value of start signal at time             10425000 is 0
 # Time:             10430000 | done: x
+# value of start signal at time             10435000 is 0
 # Time:             10440000 | done: x
+# value of start signal at time             10445000 is 0
 # Time:             10450000 | done: x
+# value of start signal at time             10455000 is 0
 # Time:             10460000 | done: x
+# value of start signal at time             10465000 is 0
 # Time:             10470000 | done: x
+# value of start signal at time             10475000 is 0
 # Time:             10480000 | done: x
+# value of start signal at time             10485000 is 0
 # Time:             10490000 | done: x
+# value of start signal at time             10495000 is 0
 # Time:             10500000 | done: x
+# value of start signal at time             10505000 is 0
 # Time:             10510000 | done: x
+# value of start signal at time             10515000 is 0
 # Time:             10520000 | done: x
+# value of start signal at time             10525000 is 0
 # Time:             10530000 | done: x
+# value of start signal at time             10535000 is 0
 # Time:             10540000 | done: x
+# value of start signal at time             10545000 is 0
 # Time:             10550000 | done: x
+# value of start signal at time             10555000 is 0
 # Time:             10560000 | done: x
+# value of start signal at time             10565000 is 0
 # Time:             10570000 | done: x
+# value of start signal at time             10575000 is 0
 # Time:             10580000 | done: x
+# value of start signal at time             10585000 is 0
 # Time:             10590000 | done: x
+# value of start signal at time             10595000 is 0
 # Time:             10600000 | done: x
+# value of start signal at time             10605000 is 0
 # Time:             10610000 | done: x
+# value of start signal at time             10615000 is 0
 # Time:             10620000 | done: x
+# value of start signal at time             10625000 is 0
 # Time:             10630000 | done: x
+# value of start signal at time             10635000 is 0
 # Time:             10640000 | done: x
+# value of start signal at time             10645000 is 0
 # Time:             10650000 | done: x
+# value of start signal at time             10655000 is 0
 # Time:             10660000 | done: x
+# value of start signal at time             10665000 is 0
 # Time:             10670000 | done: x
+# value of start signal at time             10675000 is 0
 # Time:             10680000 | done: x
+# value of start signal at time             10685000 is 0
 # Time:             10690000 | done: x
+# value of start signal at time             10695000 is 0
 # Time:             10700000 | done: x
+# value of start signal at time             10705000 is 0
 # Time:             10710000 | done: x
+# value of start signal at time             10715000 is 0
 # Time:             10720000 | done: x
+# value of start signal at time             10725000 is 0
 # Time:             10730000 | done: x
+# value of start signal at time             10735000 is 0
 # Time:             10740000 | done: x
+# value of start signal at time             10745000 is 0
 # Time:             10750000 | done: x
+# value of start signal at time             10755000 is 0
 # Time:             10760000 | done: x
+# value of start signal at time             10765000 is 0
 # Time:             10770000 | done: x
+# value of start signal at time             10775000 is 0
 # Time:             10780000 | done: x
+# value of start signal at time             10785000 is 0
 # Time:             10790000 | done: x
+# value of start signal at time             10795000 is 0
 # Time:             10800000 | done: x
+# value of start signal at time             10805000 is 0
 # Time:             10810000 | done: x
+# value of start signal at time             10815000 is 0
 # Time:             10820000 | done: x
+# value of start signal at time             10825000 is 0
 # Time:             10830000 | done: x
+# value of start signal at time             10835000 is 0
 # Time:             10840000 | done: x
+# value of start signal at time             10845000 is 0
 # Time:             10850000 | done: x
+# value of start signal at time             10855000 is 0
 # Time:             10860000 | done: x
+# value of start signal at time             10865000 is 0
 # Time:             10870000 | done: x
+# value of start signal at time             10875000 is 0
 # Time:             10880000 | done: x
+# value of start signal at time             10885000 is 0
 # Time:             10890000 | done: x
+# value of start signal at time             10895000 is 0
 # Time:             10900000 | done: x
+# value of start signal at time             10905000 is 0
 # Time:             10910000 | done: x
+# value of start signal at time             10915000 is 0
 # Time:             10920000 | done: x
+# value of start signal at time             10925000 is 0
 # Time:             10930000 | done: x
+# value of start signal at time             10935000 is 0
 # Time:             10940000 | done: x
+# value of start signal at time             10945000 is 0
 # Time:             10950000 | done: x
+# value of start signal at time             10955000 is 0
 # Time:             10960000 | done: x
+# value of start signal at time             10965000 is 0
 # Time:             10970000 | done: x
+# value of start signal at time             10975000 is 0
 # Time:             10980000 | done: x
+# value of start signal at time             10985000 is 0
 # Time:             10990000 | done: x
+# value of start signal at time             10995000 is 0
 # Time:             11000000 | done: x
+# value of start signal at time             11005000 is 0
 # Time:             11010000 | done: x
+# value of start signal at time             11015000 is 0
 # Time:             11020000 | done: x
 # ERROR: Timeout waiting for done signal!
 # ** Note: $finish    : tb_cnn_unit.v(78)
 #    Time: 11020 ns  Iteration: 0  Instance: /tb_cnn_unit
 # 1
 # Break in Module tb_cnn_unit at tb_cnn_unit.v line 78
-# End time: 01:27:16 on Jul 26,2025, Elapsed time: 0:00:18
+# End time: 01:32:34 on Jul 26,2025, Elapsed time: 0:02:55
 # Errors: 0, Warnings: 0

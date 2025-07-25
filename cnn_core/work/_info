@@ -11,7 +11,7 @@ cModel Technology
 Z0 d/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core
 vavg_pool_unit
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1753473383
+Z2 !s110 1753473573
 !i10b 1
 !s100 ^7ECaDLc98=1GTj;=Z`VC3
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -22,13 +22,13 @@ R0
 w1751260953
 8avg_pool_unit.v
 Favg_pool_unit.v
-!i122 384
+!i122 393
 L0 1 58
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1753473383.000000
+Z6 !s108 1753473573.000000
 !s107 avg_pool_unit.v|
 !s90 -reportprogress|300|-sv|avg_pool_unit.v|
 !i113 1
@@ -38,17 +38,17 @@ vcnn_engine
 R1
 R2
 !i10b 1
-!s100 I?Z[S:Q=zDfR7P^XTU0DP1
+!s100 z>2C2IC6hKjzdh^fFPKUO2
 R3
-IzoCaHCAgb=2i`UC<;NELY0
+IO=:_g;oTo;KHdMLU]diM11
 R4
 S1
 R0
-w1753473360
+w1753473557
 8cnn_engine.v
 Fcnn_engine.v
-!i122 380
-L0 1 177
+!i122 389
+L0 1 178
 R5
 r1
 !s85 0
@@ -72,7 +72,7 @@ R0
 w1753461548
 8cnn_core_unit.v
 Fcnn_core_unit.v
-!i122 379
+!i122 388
 L0 1 115
 R5
 r1
@@ -97,7 +97,7 @@ R0
 w1753457973
 8fc_layer.v
 Ffc_layer.v
-!i122 382
+!i122 391
 L0 1 28
 R5
 r1
@@ -122,7 +122,7 @@ R0
 w1753211805
 8mac_unit.v
 Fmac_unit.v
-!i122 386
+!i122 395
 L0 1 59
 R5
 r1
@@ -147,7 +147,7 @@ R0
 w1753287356
 8multi_core.v
 Fmulti_core.v
-!i122 387
+!i122 396
 L0 1 76
 R5
 r1
@@ -172,7 +172,7 @@ R0
 w1753472419
 8pool_layer.v
 Fpool_layer.v
-!i122 381
+!i122 390
 L0 1 135
 R5
 r1
@@ -197,7 +197,7 @@ R0
 w1750608535
 8relu_unit.v
 Frelu_unit.v
-!i122 385
+!i122 394
 L0 1 7
 R5
 r1
@@ -222,7 +222,7 @@ R0
 w1753286553
 8tb_cnn_multi.v
 Ftb_cnn_multi.v
-!i122 383
+!i122 392
 L0 3 55
 R5
 r1

@@ -62,16 +62,17 @@ fc_layer fc_layer(
 //FSM controller
 always @ (posedge clk) begin
   if (rst) begin
-    cnn_start <= 0;
-    pool_start <= 0;
-    fc_start <= 0;
-  end else if (~rst) begin
+    cnn_start = 0;
+    pool_start = 0;
+    fc_start = 0;
+  end else begin
+    cnn_start <= 1;
     case(state) 
       IDLE: begin
         if(enable) begin
           $display("Starting CNN processing at time %t", $time);
           state <= CNN_START;
-          cnn_start <= 1;
+          //cnn_start <= 1;
         end else begin
           done <= 0; //if not enabled, stay in IDLE
         end
