@@ -86,7 +86,6 @@ always @ (posedge clk) begin
         end
       end
       POOL_START: begin
-        pool_start <= 0;
         state <= POOL_WAIT;
       end
       POOL_WAIT: begin
@@ -96,7 +95,6 @@ always @ (posedge clk) begin
         end
       end
       FC_START: begin
-        fc_start <= 0;
         state <= FC_WAIT;
       end
       FC_WAIT: begin

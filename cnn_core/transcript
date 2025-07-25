@@ -1,89 +1,99 @@
 # do compile.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:39:43 on Jul 25,2025
+# Start time: 21:44:42 on Jul 25,2025
 # vlog -reportprogress 300 -sv cnn_core_unit.v 
 # -- Compiling module cnn_top
 # 
 # Top level modules:
 # 	cnn_top
-# End time: 21:39:43 on Jul 25,2025, Elapsed time: 0:00:00
+# End time: 21:44:42 on Jul 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:39:43 on Jul 25,2025
+# Start time: 21:44:42 on Jul 25,2025
 # vlog -reportprogress 300 -sv cnn_engine.v 
 # -- Compiling module cnn_engine
 # 
 # Top level modules:
 # 	cnn_engine
-# End time: 21:39:44 on Jul 25,2025, Elapsed time: 0:00:01
+# End time: 21:44:42 on Jul 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:39:44 on Jul 25,2025
+# Start time: 21:44:42 on Jul 25,2025
 # vlog -reportprogress 300 -sv pool_layer.v 
 # -- Compiling module pool_layer
 # 
 # Top level modules:
 # 	pool_layer
-# End time: 21:39:44 on Jul 25,2025, Elapsed time: 0:00:00
+# End time: 21:44:42 on Jul 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:39:44 on Jul 25,2025
+# Start time: 21:44:42 on Jul 25,2025
 # vlog -reportprogress 300 -sv fc_layer.v 
 # -- Compiling module fc_layer
 # 
 # Top level modules:
 # 	fc_layer
-# End time: 21:39:44 on Jul 25,2025, Elapsed time: 0:00:00
+# End time: 21:44:42 on Jul 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:39:44 on Jul 25,2025
+# Start time: 21:44:42 on Jul 25,2025
 # vlog -reportprogress 300 -sv tb_cnn_multi.v 
 # -- Compiling module tb_cnn_multi
 # 
 # Top level modules:
 # 	tb_cnn_multi
-# End time: 21:39:44 on Jul 25,2025, Elapsed time: 0:00:00
+# End time: 21:44:42 on Jul 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:39:44 on Jul 25,2025
+# Start time: 21:44:42 on Jul 25,2025
 # vlog -reportprogress 300 -sv avg_pool_unit.v 
 # -- Compiling module avg_pool_unit
 # 
 # Top level modules:
 # 	avg_pool_unit
-# End time: 21:39:44 on Jul 25,2025, Elapsed time: 0:00:00
+# End time: 21:44:42 on Jul 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:39:44 on Jul 25,2025
+# Start time: 21:44:42 on Jul 25,2025
 # vlog -reportprogress 300 -sv relu_unit.v 
 # -- Compiling module relu_unit
 # 
 # Top level modules:
 # 	relu_unit
-# End time: 21:39:44 on Jul 25,2025, Elapsed time: 0:00:00
+# End time: 21:44:43 on Jul 25,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:39:44 on Jul 25,2025
+# Start time: 21:44:43 on Jul 25,2025
 # vlog -reportprogress 300 -sv mac_unit.v 
 # -- Compiling module mac_unit
 # 
 # Top level modules:
 # 	mac_unit
-# End time: 21:39:44 on Jul 25,2025, Elapsed time: 0:00:00
+# End time: 21:44:43 on Jul 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:39:44 on Jul 25,2025
+# Start time: 21:44:43 on Jul 25,2025
 # vlog -reportprogress 300 -sv multi_core.v 
 # -- Compiling module multi_core
 # 
 # Top level modules:
 # 	multi_core
-# End time: 21:39:44 on Jul 25,2025, Elapsed time: 0:00:00
+# End time: 21:44:43 on Jul 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -sv tb_cnn_unit.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:45:50 on Jul 25,2025
+# vlog -reportprogress 300 -sv tb_cnn_unit.v 
+# -- Compiling module tb_cnn_unit
+# 
+# Top level modules:
+# 	tb_cnn_unit
+# End time: 21:45:50 on Jul 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vsim tb_cnn_unit
 # vsim tb_cnn_unit 
-# Start time: 21:43:05 on Jul 25,2025
+# Start time: 21:47:53 on Jul 25,2025
 # Loading sv_std.std
 # Loading work.tb_cnn_unit
 # Loading work.cnn_top
@@ -1241,5 +1251,1196 @@ run -all
 #    Time: 10120 ns  Iteration: 0  Instance: /tb_cnn_unit
 # 1
 # Break in Module tb_cnn_unit at tb_cnn_unit.v line 85
-# End time: 21:44:30 on Jul 25,2025, Elapsed time: 0:01:25
+vlog cnn_core_unit.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:51:55 on Jul 25,2025
+# vlog -reportprogress 300 cnn_core_unit.v 
+# -- Compiling module cnn_top
+# ** Error: cnn_core_unit.v(5): 'Port' must not be declared to be an array: input_img.
+# End time: 21:51:55 on Jul 25,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# /home/shruti_hegde/intelFPGA/20.1/modelsim_ase/linuxaloem/vlog failed.
+vlog -sv cnn_core_unit.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:52:17 on Jul 25,2025
+# vlog -reportprogress 300 -sv cnn_core_unit.v 
+# -- Compiling module cnn_top
+# 
+# Top level modules:
+# 	cnn_top
+# End time: 21:52:17 on Jul 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -sv cnn_engine.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:52:33 on Jul 25,2025
+# vlog -reportprogress 300 -sv cnn_engine.v 
+# -- Compiling module cnn_engine
+# 
+# Top level modules:
+# 	cnn_engine
+# End time: 21:52:33 on Jul 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim tb_cnn_unit
+# End time: 21:52:46 on Jul 25,2025, Elapsed time: 0:04:53
+# Errors: 0, Warnings: 0
+# vsim tb_cnn_unit 
+# Start time: 21:52:46 on Jul 25,2025
+# Loading sv_std.std
+# Loading work.tb_cnn_unit
+# Loading work.cnn_top
+# Loading work.cnn_engine
+# Loading work.mac_unit
+# Loading work.relu_unit
+# Loading work.pool_layer
+# Loading work.avg_pool_unit
+# Loading work.fc_layer
+run -all
+# Resetting CNN Engine at time                 5000
+# Resetting row to x at time                 5000
+# Resetting col to x at time                 5000
+# Resetting img_address to x at time                 5000
+# Assigning test_image with all 1s...
+# Contents of test_image:
+# test_image[0] = 1
+# test_image[1] = 1
+# test_image[2] = 1
+# test_image[3] = 1
+# test_image[4] = 1
+# test_image[5] = 1
+# test_image[6] = 1
+# test_image[7] = 1
+# test_image[8] = 1
+# test_image[9] = 1
+# test_image[10] = 1
+# test_image[11] = 1
+# test_image[12] = 1
+# test_image[13] = 1
+# test_image[14] = 1
+# test_image[15] = 1
+# test_image[16] = 1
+# test_image[17] = 1
+# test_image[18] = 1
+# test_image[19] = 1
+# test_image[20] = 1
+# test_image[21] = 1
+# test_image[22] = 1
+# test_image[23] = 1
+# test_image[24] = 1
+# test_image[25] = 1
+# test_image[26] = 1
+# test_image[27] = 1
+# test_image[28] = 1
+# test_image[29] = 1
+# test_image[30] = 1
+# test_image[31] = 1
+# test_image[32] = 1
+# test_image[33] = 1
+# test_image[34] = 1
+# test_image[35] = 1
+# test_image[36] = 1
+# test_image[37] = 1
+# test_image[38] = 1
+# test_image[39] = 1
+# test_image[40] = 1
+# test_image[41] = 1
+# test_image[42] = 1
+# test_image[43] = 1
+# test_image[44] = 1
+# test_image[45] = 1
+# test_image[46] = 1
+# test_image[47] = 1
+# test_image[48] = 1
+# test_image[49] = 1
+# test_image[50] = 1
+# test_image[51] = 1
+# test_image[52] = 1
+# test_image[53] = 1
+# test_image[54] = 1
+# test_image[55] = 1
+# test_image[56] = 1
+# test_image[57] = 1
+# test_image[58] = 1
+# test_image[59] = 1
+# test_image[60] = 1
+# test_image[61] = 1
+# test_image[62] = 1
+# test_image[63] = 1
+# Resetting CNN Engine at time                15000
+# Resetting row to 0 at time                15000
+# Resetting col to 0 at time                15000
+# Resetting img_address to 0 at time                15000
+# Assigning test_image to input_img...
+# Contents of input_img:
+# input_img[0] = 1
+# input_img[1] = 1
+# input_img[2] = 1
+# input_img[3] = 1
+# input_img[4] = 1
+# input_img[5] = 1
+# input_img[6] = 1
+# input_img[7] = 1
+# input_img[8] = 1
+# input_img[9] = 1
+# input_img[10] = 1
+# input_img[11] = 1
+# input_img[12] = 1
+# input_img[13] = 1
+# input_img[14] = 1
+# input_img[15] = 1
+# input_img[16] = 1
+# input_img[17] = 1
+# input_img[18] = 1
+# input_img[19] = 1
+# input_img[20] = 1
+# input_img[21] = 1
+# input_img[22] = 1
+# input_img[23] = 1
+# input_img[24] = 1
+# input_img[25] = 1
+# input_img[26] = 1
+# input_img[27] = 1
+# input_img[28] = 1
+# input_img[29] = 1
+# input_img[30] = 1
+# input_img[31] = 1
+# input_img[32] = 1
+# input_img[33] = 1
+# input_img[34] = 1
+# input_img[35] = 1
+# input_img[36] = 1
+# input_img[37] = 1
+# input_img[38] = 1
+# input_img[39] = 1
+# input_img[40] = 1
+# input_img[41] = 1
+# input_img[42] = 1
+# input_img[43] = 1
+# input_img[44] = 1
+# input_img[45] = 1
+# input_img[46] = 1
+# input_img[47] = 1
+# input_img[48] = 1
+# input_img[49] = 1
+# input_img[50] = 1
+# input_img[51] = 1
+# input_img[52] = 1
+# input_img[53] = 1
+# input_img[54] = 1
+# input_img[55] = 1
+# input_img[56] = 1
+# input_img[57] = 1
+# input_img[58] = 1
+# input_img[59] = 1
+# input_img[60] = 1
+# input_img[61] = 1
+# input_img[62] = 1
+# input_img[63] = 1
+# Starting CNN processing...
+# Enabling CNN unit...
+# Time:               130000 | done: x
+# Time:               140000 | done: x
+# Time:               150000 | done: x
+# Time:               160000 | done: x
+# Time:               170000 | done: x
+# Time:               180000 | done: x
+# Time:               190000 | done: x
+# Time:               200000 | done: x
+# Time:               210000 | done: x
+# Time:               220000 | done: x
+# Time:               230000 | done: x
+# Time:               240000 | done: x
+# Time:               250000 | done: x
+# Time:               260000 | done: x
+# Time:               270000 | done: x
+# Time:               280000 | done: x
+# Time:               290000 | done: x
+# Time:               300000 | done: x
+# Time:               310000 | done: x
+# Time:               320000 | done: x
+# Time:               330000 | done: x
+# Time:               340000 | done: x
+# Time:               350000 | done: x
+# Time:               360000 | done: x
+# Time:               370000 | done: x
+# Time:               380000 | done: x
+# Time:               390000 | done: x
+# Time:               400000 | done: x
+# Time:               410000 | done: x
+# Time:               420000 | done: x
+# Time:               430000 | done: x
+# Time:               440000 | done: x
+# Time:               450000 | done: x
+# Time:               460000 | done: x
+# Time:               470000 | done: x
+# Time:               480000 | done: x
+# Time:               490000 | done: x
+# Time:               500000 | done: x
+# Time:               510000 | done: x
+# Time:               520000 | done: x
+# Time:               530000 | done: x
+# Time:               540000 | done: x
+# Time:               550000 | done: x
+# Time:               560000 | done: x
+# Time:               570000 | done: x
+# Time:               580000 | done: x
+# Time:               590000 | done: x
+# Time:               600000 | done: x
+# Time:               610000 | done: x
+# Time:               620000 | done: x
+# Time:               630000 | done: x
+# Time:               640000 | done: x
+# Time:               650000 | done: x
+# Time:               660000 | done: x
+# Time:               670000 | done: x
+# Time:               680000 | done: x
+# Time:               690000 | done: x
+# Time:               700000 | done: x
+# Time:               710000 | done: x
+# Time:               720000 | done: x
+# Time:               730000 | done: x
+# Time:               740000 | done: x
+# Time:               750000 | done: x
+# Time:               760000 | done: x
+# Time:               770000 | done: x
+# Time:               780000 | done: x
+# Time:               790000 | done: x
+# Time:               800000 | done: x
+# Time:               810000 | done: x
+# Time:               820000 | done: x
+# Time:               830000 | done: x
+# Time:               840000 | done: x
+# Time:               850000 | done: x
+# Time:               860000 | done: x
+# Time:               870000 | done: x
+# Time:               880000 | done: x
+# Time:               890000 | done: x
+# Time:               900000 | done: x
+# Time:               910000 | done: x
+# Time:               920000 | done: x
+# Time:               930000 | done: x
+# Time:               940000 | done: x
+# Time:               950000 | done: x
+# Time:               960000 | done: x
+# Time:               970000 | done: x
+# Time:               980000 | done: x
+# Time:               990000 | done: x
+# Time:              1000000 | done: x
+# Time:              1010000 | done: x
+# Time:              1020000 | done: x
+# Time:              1030000 | done: x
+# Time:              1040000 | done: x
+# Time:              1050000 | done: x
+# Time:              1060000 | done: x
+# Time:              1070000 | done: x
+# Time:              1080000 | done: x
+# Time:              1090000 | done: x
+# Time:              1100000 | done: x
+# Time:              1110000 | done: x
+# Time:              1120000 | done: x
+# Time:              1130000 | done: x
+# Time:              1140000 | done: x
+# Time:              1150000 | done: x
+# Time:              1160000 | done: x
+# Time:              1170000 | done: x
+# Time:              1180000 | done: x
+# Time:              1190000 | done: x
+# Time:              1200000 | done: x
+# Time:              1210000 | done: x
+# Time:              1220000 | done: x
+# Time:              1230000 | done: x
+# Time:              1240000 | done: x
+# Time:              1250000 | done: x
+# Time:              1260000 | done: x
+# Time:              1270000 | done: x
+# Time:              1280000 | done: x
+# Time:              1290000 | done: x
+# Time:              1300000 | done: x
+# Time:              1310000 | done: x
+# Time:              1320000 | done: x
+# Time:              1330000 | done: x
+# Time:              1340000 | done: x
+# Time:              1350000 | done: x
+# Time:              1360000 | done: x
+# Time:              1370000 | done: x
+# Time:              1380000 | done: x
+# Time:              1390000 | done: x
+# Time:              1400000 | done: x
+# Time:              1410000 | done: x
+# Time:              1420000 | done: x
+# Time:              1430000 | done: x
+# Time:              1440000 | done: x
+# Time:              1450000 | done: x
+# Time:              1460000 | done: x
+# Time:              1470000 | done: x
+# Time:              1480000 | done: x
+# Time:              1490000 | done: x
+# Time:              1500000 | done: x
+# Time:              1510000 | done: x
+# Time:              1520000 | done: x
+# Time:              1530000 | done: x
+# Time:              1540000 | done: x
+# Time:              1550000 | done: x
+# Time:              1560000 | done: x
+# Time:              1570000 | done: x
+# Time:              1580000 | done: x
+# Time:              1590000 | done: x
+# Time:              1600000 | done: x
+# Time:              1610000 | done: x
+# Time:              1620000 | done: x
+# Time:              1630000 | done: x
+# Time:              1640000 | done: x
+# Time:              1650000 | done: x
+# Time:              1660000 | done: x
+# Time:              1670000 | done: x
+# Time:              1680000 | done: x
+# Time:              1690000 | done: x
+# Time:              1700000 | done: x
+# Time:              1710000 | done: x
+# Time:              1720000 | done: x
+# Time:              1730000 | done: x
+# Time:              1740000 | done: x
+# Time:              1750000 | done: x
+# Time:              1760000 | done: x
+# Time:              1770000 | done: x
+# Time:              1780000 | done: x
+# Time:              1790000 | done: x
+# Time:              1800000 | done: x
+# Time:              1810000 | done: x
+# Time:              1820000 | done: x
+# Time:              1830000 | done: x
+# Time:              1840000 | done: x
+# Time:              1850000 | done: x
+# Time:              1860000 | done: x
+# Time:              1870000 | done: x
+# Time:              1880000 | done: x
+# Time:              1890000 | done: x
+# Time:              1900000 | done: x
+# Time:              1910000 | done: x
+# Time:              1920000 | done: x
+# Time:              1930000 | done: x
+# Time:              1940000 | done: x
+# Time:              1950000 | done: x
+# Time:              1960000 | done: x
+# Time:              1970000 | done: x
+# Time:              1980000 | done: x
+# Time:              1990000 | done: x
+# Time:              2000000 | done: x
+# Time:              2010000 | done: x
+# Time:              2020000 | done: x
+# Time:              2030000 | done: x
+# Time:              2040000 | done: x
+# Time:              2050000 | done: x
+# Time:              2060000 | done: x
+# Time:              2070000 | done: x
+# Time:              2080000 | done: x
+# Time:              2090000 | done: x
+# Time:              2100000 | done: x
+# Time:              2110000 | done: x
+# Time:              2120000 | done: x
+# Time:              2130000 | done: x
+# Time:              2140000 | done: x
+# Time:              2150000 | done: x
+# Time:              2160000 | done: x
+# Time:              2170000 | done: x
+# Time:              2180000 | done: x
+# Time:              2190000 | done: x
+# Time:              2200000 | done: x
+# Time:              2210000 | done: x
+# Time:              2220000 | done: x
+# Time:              2230000 | done: x
+# Time:              2240000 | done: x
+# Time:              2250000 | done: x
+# Time:              2260000 | done: x
+# Time:              2270000 | done: x
+# Time:              2280000 | done: x
+# Time:              2290000 | done: x
+# Time:              2300000 | done: x
+# Time:              2310000 | done: x
+# Time:              2320000 | done: x
+# Time:              2330000 | done: x
+# Time:              2340000 | done: x
+# Time:              2350000 | done: x
+# Time:              2360000 | done: x
+# Time:              2370000 | done: x
+# Time:              2380000 | done: x
+# Time:              2390000 | done: x
+# Time:              2400000 | done: x
+# Time:              2410000 | done: x
+# Time:              2420000 | done: x
+# Time:              2430000 | done: x
+# Time:              2440000 | done: x
+# Time:              2450000 | done: x
+# Time:              2460000 | done: x
+# Time:              2470000 | done: x
+# Time:              2480000 | done: x
+# Time:              2490000 | done: x
+# Time:              2500000 | done: x
+# Time:              2510000 | done: x
+# Time:              2520000 | done: x
+# Time:              2530000 | done: x
+# Time:              2540000 | done: x
+# Time:              2550000 | done: x
+# Time:              2560000 | done: x
+# Time:              2570000 | done: x
+# Time:              2580000 | done: x
+# Time:              2590000 | done: x
+# Time:              2600000 | done: x
+# Time:              2610000 | done: x
+# Time:              2620000 | done: x
+# Time:              2630000 | done: x
+# Time:              2640000 | done: x
+# Time:              2650000 | done: x
+# Time:              2660000 | done: x
+# Time:              2670000 | done: x
+# Time:              2680000 | done: x
+# Time:              2690000 | done: x
+# Time:              2700000 | done: x
+# Time:              2710000 | done: x
+# Time:              2720000 | done: x
+# Time:              2730000 | done: x
+# Time:              2740000 | done: x
+# Time:              2750000 | done: x
+# Time:              2760000 | done: x
+# Time:              2770000 | done: x
+# Time:              2780000 | done: x
+# Time:              2790000 | done: x
+# Time:              2800000 | done: x
+# Time:              2810000 | done: x
+# Time:              2820000 | done: x
+# Time:              2830000 | done: x
+# Time:              2840000 | done: x
+# Time:              2850000 | done: x
+# Time:              2860000 | done: x
+# Time:              2870000 | done: x
+# Time:              2880000 | done: x
+# Time:              2890000 | done: x
+# Time:              2900000 | done: x
+# Time:              2910000 | done: x
+# Time:              2920000 | done: x
+# Time:              2930000 | done: x
+# Time:              2940000 | done: x
+# Time:              2950000 | done: x
+# Time:              2960000 | done: x
+# Time:              2970000 | done: x
+# Time:              2980000 | done: x
+# Time:              2990000 | done: x
+# Time:              3000000 | done: x
+# Time:              3010000 | done: x
+# Time:              3020000 | done: x
+# Time:              3030000 | done: x
+# Time:              3040000 | done: x
+# Time:              3050000 | done: x
+# Time:              3060000 | done: x
+# Time:              3070000 | done: x
+# Time:              3080000 | done: x
+# Time:              3090000 | done: x
+# Time:              3100000 | done: x
+# Time:              3110000 | done: x
+# Time:              3120000 | done: x
+# Time:              3130000 | done: x
+# Time:              3140000 | done: x
+# Time:              3150000 | done: x
+# Time:              3160000 | done: x
+# Time:              3170000 | done: x
+# Time:              3180000 | done: x
+# Time:              3190000 | done: x
+# Time:              3200000 | done: x
+# Time:              3210000 | done: x
+# Time:              3220000 | done: x
+# Time:              3230000 | done: x
+# Time:              3240000 | done: x
+# Time:              3250000 | done: x
+# Time:              3260000 | done: x
+# Time:              3270000 | done: x
+# Time:              3280000 | done: x
+# Time:              3290000 | done: x
+# Time:              3300000 | done: x
+# Time:              3310000 | done: x
+# Time:              3320000 | done: x
+# Time:              3330000 | done: x
+# Time:              3340000 | done: x
+# Time:              3350000 | done: x
+# Time:              3360000 | done: x
+# Time:              3370000 | done: x
+# Time:              3380000 | done: x
+# Time:              3390000 | done: x
+# Time:              3400000 | done: x
+# Time:              3410000 | done: x
+# Time:              3420000 | done: x
+# Time:              3430000 | done: x
+# Time:              3440000 | done: x
+# Time:              3450000 | done: x
+# Time:              3460000 | done: x
+# Time:              3470000 | done: x
+# Time:              3480000 | done: x
+# Time:              3490000 | done: x
+# Time:              3500000 | done: x
+# Time:              3510000 | done: x
+# Time:              3520000 | done: x
+# Time:              3530000 | done: x
+# Time:              3540000 | done: x
+# Time:              3550000 | done: x
+# Time:              3560000 | done: x
+# Time:              3570000 | done: x
+# Time:              3580000 | done: x
+# Time:              3590000 | done: x
+# Time:              3600000 | done: x
+# Time:              3610000 | done: x
+# Time:              3620000 | done: x
+# Time:              3630000 | done: x
+# Time:              3640000 | done: x
+# Time:              3650000 | done: x
+# Time:              3660000 | done: x
+# Time:              3670000 | done: x
+# Time:              3680000 | done: x
+# Time:              3690000 | done: x
+# Time:              3700000 | done: x
+# Time:              3710000 | done: x
+# Time:              3720000 | done: x
+# Time:              3730000 | done: x
+# Time:              3740000 | done: x
+# Time:              3750000 | done: x
+# Time:              3760000 | done: x
+# Time:              3770000 | done: x
+# Time:              3780000 | done: x
+# Time:              3790000 | done: x
+# Time:              3800000 | done: x
+# Time:              3810000 | done: x
+# Time:              3820000 | done: x
+# Time:              3830000 | done: x
+# Time:              3840000 | done: x
+# Time:              3850000 | done: x
+# Time:              3860000 | done: x
+# Time:              3870000 | done: x
+# Time:              3880000 | done: x
+# Time:              3890000 | done: x
+# Time:              3900000 | done: x
+# Time:              3910000 | done: x
+# Time:              3920000 | done: x
+# Time:              3930000 | done: x
+# Time:              3940000 | done: x
+# Time:              3950000 | done: x
+# Time:              3960000 | done: x
+# Time:              3970000 | done: x
+# Time:              3980000 | done: x
+# Time:              3990000 | done: x
+# Time:              4000000 | done: x
+# Time:              4010000 | done: x
+# Time:              4020000 | done: x
+# Time:              4030000 | done: x
+# Time:              4040000 | done: x
+# Time:              4050000 | done: x
+# Time:              4060000 | done: x
+# Time:              4070000 | done: x
+# Time:              4080000 | done: x
+# Time:              4090000 | done: x
+# Time:              4100000 | done: x
+# Time:              4110000 | done: x
+# Time:              4120000 | done: x
+# Time:              4130000 | done: x
+# Time:              4140000 | done: x
+# Time:              4150000 | done: x
+# Time:              4160000 | done: x
+# Time:              4170000 | done: x
+# Time:              4180000 | done: x
+# Time:              4190000 | done: x
+# Time:              4200000 | done: x
+# Time:              4210000 | done: x
+# Time:              4220000 | done: x
+# Time:              4230000 | done: x
+# Time:              4240000 | done: x
+# Time:              4250000 | done: x
+# Time:              4260000 | done: x
+# Time:              4270000 | done: x
+# Time:              4280000 | done: x
+# Time:              4290000 | done: x
+# Time:              4300000 | done: x
+# Time:              4310000 | done: x
+# Time:              4320000 | done: x
+# Time:              4330000 | done: x
+# Time:              4340000 | done: x
+# Time:              4350000 | done: x
+# Time:              4360000 | done: x
+# Time:              4370000 | done: x
+# Time:              4380000 | done: x
+# Time:              4390000 | done: x
+# Time:              4400000 | done: x
+# Time:              4410000 | done: x
+# Time:              4420000 | done: x
+# Time:              4430000 | done: x
+# Time:              4440000 | done: x
+# Time:              4450000 | done: x
+# Time:              4460000 | done: x
+# Time:              4470000 | done: x
+# Time:              4480000 | done: x
+# Time:              4490000 | done: x
+# Time:              4500000 | done: x
+# Time:              4510000 | done: x
+# Time:              4520000 | done: x
+# Time:              4530000 | done: x
+# Time:              4540000 | done: x
+# Time:              4550000 | done: x
+# Time:              4560000 | done: x
+# Time:              4570000 | done: x
+# Time:              4580000 | done: x
+# Time:              4590000 | done: x
+# Time:              4600000 | done: x
+# Time:              4610000 | done: x
+# Time:              4620000 | done: x
+# Time:              4630000 | done: x
+# Time:              4640000 | done: x
+# Time:              4650000 | done: x
+# Time:              4660000 | done: x
+# Time:              4670000 | done: x
+# Time:              4680000 | done: x
+# Time:              4690000 | done: x
+# Time:              4700000 | done: x
+# Time:              4710000 | done: x
+# Time:              4720000 | done: x
+# Time:              4730000 | done: x
+# Time:              4740000 | done: x
+# Time:              4750000 | done: x
+# Time:              4760000 | done: x
+# Time:              4770000 | done: x
+# Time:              4780000 | done: x
+# Time:              4790000 | done: x
+# Time:              4800000 | done: x
+# Time:              4810000 | done: x
+# Time:              4820000 | done: x
+# Time:              4830000 | done: x
+# Time:              4840000 | done: x
+# Time:              4850000 | done: x
+# Time:              4860000 | done: x
+# Time:              4870000 | done: x
+# Time:              4880000 | done: x
+# Time:              4890000 | done: x
+# Time:              4900000 | done: x
+# Time:              4910000 | done: x
+# Time:              4920000 | done: x
+# Time:              4930000 | done: x
+# Time:              4940000 | done: x
+# Time:              4950000 | done: x
+# Time:              4960000 | done: x
+# Time:              4970000 | done: x
+# Time:              4980000 | done: x
+# Time:              4990000 | done: x
+# Time:              5000000 | done: x
+# Time:              5010000 | done: x
+# Time:              5020000 | done: x
+# Time:              5030000 | done: x
+# Time:              5040000 | done: x
+# Time:              5050000 | done: x
+# Time:              5060000 | done: x
+# Time:              5070000 | done: x
+# Time:              5080000 | done: x
+# Time:              5090000 | done: x
+# Time:              5100000 | done: x
+# Time:              5110000 | done: x
+# Time:              5120000 | done: x
+# Time:              5130000 | done: x
+# Time:              5140000 | done: x
+# Time:              5150000 | done: x
+# Time:              5160000 | done: x
+# Time:              5170000 | done: x
+# Time:              5180000 | done: x
+# Time:              5190000 | done: x
+# Time:              5200000 | done: x
+# Time:              5210000 | done: x
+# Time:              5220000 | done: x
+# Time:              5230000 | done: x
+# Time:              5240000 | done: x
+# Time:              5250000 | done: x
+# Time:              5260000 | done: x
+# Time:              5270000 | done: x
+# Time:              5280000 | done: x
+# Time:              5290000 | done: x
+# Time:              5300000 | done: x
+# Time:              5310000 | done: x
+# Time:              5320000 | done: x
+# Time:              5330000 | done: x
+# Time:              5340000 | done: x
+# Time:              5350000 | done: x
+# Time:              5360000 | done: x
+# Time:              5370000 | done: x
+# Time:              5380000 | done: x
+# Time:              5390000 | done: x
+# Time:              5400000 | done: x
+# Time:              5410000 | done: x
+# Time:              5420000 | done: x
+# Time:              5430000 | done: x
+# Time:              5440000 | done: x
+# Time:              5450000 | done: x
+# Time:              5460000 | done: x
+# Time:              5470000 | done: x
+# Time:              5480000 | done: x
+# Time:              5490000 | done: x
+# Time:              5500000 | done: x
+# Time:              5510000 | done: x
+# Time:              5520000 | done: x
+# Time:              5530000 | done: x
+# Time:              5540000 | done: x
+# Time:              5550000 | done: x
+# Time:              5560000 | done: x
+# Time:              5570000 | done: x
+# Time:              5580000 | done: x
+# Time:              5590000 | done: x
+# Time:              5600000 | done: x
+# Time:              5610000 | done: x
+# Time:              5620000 | done: x
+# Time:              5630000 | done: x
+# Time:              5640000 | done: x
+# Time:              5650000 | done: x
+# Time:              5660000 | done: x
+# Time:              5670000 | done: x
+# Time:              5680000 | done: x
+# Time:              5690000 | done: x
+# Time:              5700000 | done: x
+# Time:              5710000 | done: x
+# Time:              5720000 | done: x
+# Time:              5730000 | done: x
+# Time:              5740000 | done: x
+# Time:              5750000 | done: x
+# Time:              5760000 | done: x
+# Time:              5770000 | done: x
+# Time:              5780000 | done: x
+# Time:              5790000 | done: x
+# Time:              5800000 | done: x
+# Time:              5810000 | done: x
+# Time:              5820000 | done: x
+# Time:              5830000 | done: x
+# Time:              5840000 | done: x
+# Time:              5850000 | done: x
+# Time:              5860000 | done: x
+# Time:              5870000 | done: x
+# Time:              5880000 | done: x
+# Time:              5890000 | done: x
+# Time:              5900000 | done: x
+# Time:              5910000 | done: x
+# Time:              5920000 | done: x
+# Time:              5930000 | done: x
+# Time:              5940000 | done: x
+# Time:              5950000 | done: x
+# Time:              5960000 | done: x
+# Time:              5970000 | done: x
+# Time:              5980000 | done: x
+# Time:              5990000 | done: x
+# Time:              6000000 | done: x
+# Time:              6010000 | done: x
+# Time:              6020000 | done: x
+# Time:              6030000 | done: x
+# Time:              6040000 | done: x
+# Time:              6050000 | done: x
+# Time:              6060000 | done: x
+# Time:              6070000 | done: x
+# Time:              6080000 | done: x
+# Time:              6090000 | done: x
+# Time:              6100000 | done: x
+# Time:              6110000 | done: x
+# Time:              6120000 | done: x
+# Time:              6130000 | done: x
+# Time:              6140000 | done: x
+# Time:              6150000 | done: x
+# Time:              6160000 | done: x
+# Time:              6170000 | done: x
+# Time:              6180000 | done: x
+# Time:              6190000 | done: x
+# Time:              6200000 | done: x
+# Time:              6210000 | done: x
+# Time:              6220000 | done: x
+# Time:              6230000 | done: x
+# Time:              6240000 | done: x
+# Time:              6250000 | done: x
+# Time:              6260000 | done: x
+# Time:              6270000 | done: x
+# Time:              6280000 | done: x
+# Time:              6290000 | done: x
+# Time:              6300000 | done: x
+# Time:              6310000 | done: x
+# Time:              6320000 | done: x
+# Time:              6330000 | done: x
+# Time:              6340000 | done: x
+# Time:              6350000 | done: x
+# Time:              6360000 | done: x
+# Time:              6370000 | done: x
+# Time:              6380000 | done: x
+# Time:              6390000 | done: x
+# Time:              6400000 | done: x
+# Time:              6410000 | done: x
+# Time:              6420000 | done: x
+# Time:              6430000 | done: x
+# Time:              6440000 | done: x
+# Time:              6450000 | done: x
+# Time:              6460000 | done: x
+# Time:              6470000 | done: x
+# Time:              6480000 | done: x
+# Time:              6490000 | done: x
+# Time:              6500000 | done: x
+# Time:              6510000 | done: x
+# Time:              6520000 | done: x
+# Time:              6530000 | done: x
+# Time:              6540000 | done: x
+# Time:              6550000 | done: x
+# Time:              6560000 | done: x
+# Time:              6570000 | done: x
+# Time:              6580000 | done: x
+# Time:              6590000 | done: x
+# Time:              6600000 | done: x
+# Time:              6610000 | done: x
+# Time:              6620000 | done: x
+# Time:              6630000 | done: x
+# Time:              6640000 | done: x
+# Time:              6650000 | done: x
+# Time:              6660000 | done: x
+# Time:              6670000 | done: x
+# Time:              6680000 | done: x
+# Time:              6690000 | done: x
+# Time:              6700000 | done: x
+# Time:              6710000 | done: x
+# Time:              6720000 | done: x
+# Time:              6730000 | done: x
+# Time:              6740000 | done: x
+# Time:              6750000 | done: x
+# Time:              6760000 | done: x
+# Time:              6770000 | done: x
+# Time:              6780000 | done: x
+# Time:              6790000 | done: x
+# Time:              6800000 | done: x
+# Time:              6810000 | done: x
+# Time:              6820000 | done: x
+# Time:              6830000 | done: x
+# Time:              6840000 | done: x
+# Time:              6850000 | done: x
+# Time:              6860000 | done: x
+# Time:              6870000 | done: x
+# Time:              6880000 | done: x
+# Time:              6890000 | done: x
+# Time:              6900000 | done: x
+# Time:              6910000 | done: x
+# Time:              6920000 | done: x
+# Time:              6930000 | done: x
+# Time:              6940000 | done: x
+# Time:              6950000 | done: x
+# Time:              6960000 | done: x
+# Time:              6970000 | done: x
+# Time:              6980000 | done: x
+# Time:              6990000 | done: x
+# Time:              7000000 | done: x
+# Time:              7010000 | done: x
+# Time:              7020000 | done: x
+# Time:              7030000 | done: x
+# Time:              7040000 | done: x
+# Time:              7050000 | done: x
+# Time:              7060000 | done: x
+# Time:              7070000 | done: x
+# Time:              7080000 | done: x
+# Time:              7090000 | done: x
+# Time:              7100000 | done: x
+# Time:              7110000 | done: x
+# Time:              7120000 | done: x
+# Time:              7130000 | done: x
+# Time:              7140000 | done: x
+# Time:              7150000 | done: x
+# Time:              7160000 | done: x
+# Time:              7170000 | done: x
+# Time:              7180000 | done: x
+# Time:              7190000 | done: x
+# Time:              7200000 | done: x
+# Time:              7210000 | done: x
+# Time:              7220000 | done: x
+# Time:              7230000 | done: x
+# Time:              7240000 | done: x
+# Time:              7250000 | done: x
+# Time:              7260000 | done: x
+# Time:              7270000 | done: x
+# Time:              7280000 | done: x
+# Time:              7290000 | done: x
+# Time:              7300000 | done: x
+# Time:              7310000 | done: x
+# Time:              7320000 | done: x
+# Time:              7330000 | done: x
+# Time:              7340000 | done: x
+# Time:              7350000 | done: x
+# Time:              7360000 | done: x
+# Time:              7370000 | done: x
+# Time:              7380000 | done: x
+# Time:              7390000 | done: x
+# Time:              7400000 | done: x
+# Time:              7410000 | done: x
+# Time:              7420000 | done: x
+# Time:              7430000 | done: x
+# Time:              7440000 | done: x
+# Time:              7450000 | done: x
+# Time:              7460000 | done: x
+# Time:              7470000 | done: x
+# Time:              7480000 | done: x
+# Time:              7490000 | done: x
+# Time:              7500000 | done: x
+# Time:              7510000 | done: x
+# Time:              7520000 | done: x
+# Time:              7530000 | done: x
+# Time:              7540000 | done: x
+# Time:              7550000 | done: x
+# Time:              7560000 | done: x
+# Time:              7570000 | done: x
+# Time:              7580000 | done: x
+# Time:              7590000 | done: x
+# Time:              7600000 | done: x
+# Time:              7610000 | done: x
+# Time:              7620000 | done: x
+# Time:              7630000 | done: x
+# Time:              7640000 | done: x
+# Time:              7650000 | done: x
+# Time:              7660000 | done: x
+# Time:              7670000 | done: x
+# Time:              7680000 | done: x
+# Time:              7690000 | done: x
+# Time:              7700000 | done: x
+# Time:              7710000 | done: x
+# Time:              7720000 | done: x
+# Time:              7730000 | done: x
+# Time:              7740000 | done: x
+# Time:              7750000 | done: x
+# Time:              7760000 | done: x
+# Time:              7770000 | done: x
+# Time:              7780000 | done: x
+# Time:              7790000 | done: x
+# Time:              7800000 | done: x
+# Time:              7810000 | done: x
+# Time:              7820000 | done: x
+# Time:              7830000 | done: x
+# Time:              7840000 | done: x
+# Time:              7850000 | done: x
+# Time:              7860000 | done: x
+# Time:              7870000 | done: x
+# Time:              7880000 | done: x
+# Time:              7890000 | done: x
+# Time:              7900000 | done: x
+# Time:              7910000 | done: x
+# Time:              7920000 | done: x
+# Time:              7930000 | done: x
+# Time:              7940000 | done: x
+# Time:              7950000 | done: x
+# Time:              7960000 | done: x
+# Time:              7970000 | done: x
+# Time:              7980000 | done: x
+# Time:              7990000 | done: x
+# Time:              8000000 | done: x
+# Time:              8010000 | done: x
+# Time:              8020000 | done: x
+# Time:              8030000 | done: x
+# Time:              8040000 | done: x
+# Time:              8050000 | done: x
+# Time:              8060000 | done: x
+# Time:              8070000 | done: x
+# Time:              8080000 | done: x
+# Time:              8090000 | done: x
+# Time:              8100000 | done: x
+# Time:              8110000 | done: x
+# Time:              8120000 | done: x
+# Time:              8130000 | done: x
+# Time:              8140000 | done: x
+# Time:              8150000 | done: x
+# Time:              8160000 | done: x
+# Time:              8170000 | done: x
+# Time:              8180000 | done: x
+# Time:              8190000 | done: x
+# Time:              8200000 | done: x
+# Time:              8210000 | done: x
+# Time:              8220000 | done: x
+# Time:              8230000 | done: x
+# Time:              8240000 | done: x
+# Time:              8250000 | done: x
+# Time:              8260000 | done: x
+# Time:              8270000 | done: x
+# Time:              8280000 | done: x
+# Time:              8290000 | done: x
+# Time:              8300000 | done: x
+# Time:              8310000 | done: x
+# Time:              8320000 | done: x
+# Time:              8330000 | done: x
+# Time:              8340000 | done: x
+# Time:              8350000 | done: x
+# Time:              8360000 | done: x
+# Time:              8370000 | done: x
+# Time:              8380000 | done: x
+# Time:              8390000 | done: x
+# Time:              8400000 | done: x
+# Time:              8410000 | done: x
+# Time:              8420000 | done: x
+# Time:              8430000 | done: x
+# Time:              8440000 | done: x
+# Time:              8450000 | done: x
+# Time:              8460000 | done: x
+# Time:              8470000 | done: x
+# Time:              8480000 | done: x
+# Time:              8490000 | done: x
+# Time:              8500000 | done: x
+# Time:              8510000 | done: x
+# Time:              8520000 | done: x
+# Time:              8530000 | done: x
+# Time:              8540000 | done: x
+# Time:              8550000 | done: x
+# Time:              8560000 | done: x
+# Time:              8570000 | done: x
+# Time:              8580000 | done: x
+# Time:              8590000 | done: x
+# Time:              8600000 | done: x
+# Time:              8610000 | done: x
+# Time:              8620000 | done: x
+# Time:              8630000 | done: x
+# Time:              8640000 | done: x
+# Time:              8650000 | done: x
+# Time:              8660000 | done: x
+# Time:              8670000 | done: x
+# Time:              8680000 | done: x
+# Time:              8690000 | done: x
+# Time:              8700000 | done: x
+# Time:              8710000 | done: x
+# Time:              8720000 | done: x
+# Time:              8730000 | done: x
+# Time:              8740000 | done: x
+# Time:              8750000 | done: x
+# Time:              8760000 | done: x
+# Time:              8770000 | done: x
+# Time:              8780000 | done: x
+# Time:              8790000 | done: x
+# Time:              8800000 | done: x
+# Time:              8810000 | done: x
+# Time:              8820000 | done: x
+# Time:              8830000 | done: x
+# Time:              8840000 | done: x
+# Time:              8850000 | done: x
+# Time:              8860000 | done: x
+# Time:              8870000 | done: x
+# Time:              8880000 | done: x
+# Time:              8890000 | done: x
+# Time:              8900000 | done: x
+# Time:              8910000 | done: x
+# Time:              8920000 | done: x
+# Time:              8930000 | done: x
+# Time:              8940000 | done: x
+# Time:              8950000 | done: x
+# Time:              8960000 | done: x
+# Time:              8970000 | done: x
+# Time:              8980000 | done: x
+# Time:              8990000 | done: x
+# Time:              9000000 | done: x
+# Time:              9010000 | done: x
+# Time:              9020000 | done: x
+# Time:              9030000 | done: x
+# Time:              9040000 | done: x
+# Time:              9050000 | done: x
+# Time:              9060000 | done: x
+# Time:              9070000 | done: x
+# Time:              9080000 | done: x
+# Time:              9090000 | done: x
+# Time:              9100000 | done: x
+# Time:              9110000 | done: x
+# Time:              9120000 | done: x
+# Time:              9130000 | done: x
+# Time:              9140000 | done: x
+# Time:              9150000 | done: x
+# Time:              9160000 | done: x
+# Time:              9170000 | done: x
+# Time:              9180000 | done: x
+# Time:              9190000 | done: x
+# Time:              9200000 | done: x
+# Time:              9210000 | done: x
+# Time:              9220000 | done: x
+# Time:              9230000 | done: x
+# Time:              9240000 | done: x
+# Time:              9250000 | done: x
+# Time:              9260000 | done: x
+# Time:              9270000 | done: x
+# Time:              9280000 | done: x
+# Time:              9290000 | done: x
+# Time:              9300000 | done: x
+# Time:              9310000 | done: x
+# Time:              9320000 | done: x
+# Time:              9330000 | done: x
+# Time:              9340000 | done: x
+# Time:              9350000 | done: x
+# Time:              9360000 | done: x
+# Time:              9370000 | done: x
+# Time:              9380000 | done: x
+# Time:              9390000 | done: x
+# Time:              9400000 | done: x
+# Time:              9410000 | done: x
+# Time:              9420000 | done: x
+# Time:              9430000 | done: x
+# Time:              9440000 | done: x
+# Time:              9450000 | done: x
+# Time:              9460000 | done: x
+# Time:              9470000 | done: x
+# Time:              9480000 | done: x
+# Time:              9490000 | done: x
+# Time:              9500000 | done: x
+# Time:              9510000 | done: x
+# Time:              9520000 | done: x
+# Time:              9530000 | done: x
+# Time:              9540000 | done: x
+# Time:              9550000 | done: x
+# Time:              9560000 | done: x
+# Time:              9570000 | done: x
+# Time:              9580000 | done: x
+# Time:              9590000 | done: x
+# Time:              9600000 | done: x
+# Time:              9610000 | done: x
+# Time:              9620000 | done: x
+# Time:              9630000 | done: x
+# Time:              9640000 | done: x
+# Time:              9650000 | done: x
+# Time:              9660000 | done: x
+# Time:              9670000 | done: x
+# Time:              9680000 | done: x
+# Time:              9690000 | done: x
+# Time:              9700000 | done: x
+# Time:              9710000 | done: x
+# Time:              9720000 | done: x
+# Time:              9730000 | done: x
+# Time:              9740000 | done: x
+# Time:              9750000 | done: x
+# Time:              9760000 | done: x
+# Time:              9770000 | done: x
+# Time:              9780000 | done: x
+# Time:              9790000 | done: x
+# Time:              9800000 | done: x
+# Time:              9810000 | done: x
+# Time:              9820000 | done: x
+# Time:              9830000 | done: x
+# Time:              9840000 | done: x
+# Time:              9850000 | done: x
+# Time:              9860000 | done: x
+# Time:              9870000 | done: x
+# Time:              9880000 | done: x
+# Time:              9890000 | done: x
+# Time:              9900000 | done: x
+# Time:              9910000 | done: x
+# Time:              9920000 | done: x
+# Time:              9930000 | done: x
+# Time:              9940000 | done: x
+# Time:              9950000 | done: x
+# Time:              9960000 | done: x
+# Time:              9970000 | done: x
+# Time:              9980000 | done: x
+# Time:              9990000 | done: x
+# Time:             10000000 | done: x
+# Time:             10010000 | done: x
+# Time:             10020000 | done: x
+# Time:             10030000 | done: x
+# Time:             10040000 | done: x
+# Time:             10050000 | done: x
+# Time:             10060000 | done: x
+# Time:             10070000 | done: x
+# Time:             10080000 | done: x
+# Time:             10090000 | done: x
+# Time:             10100000 | done: x
+# Time:             10110000 | done: x
+# Time:             10120000 | done: x
+# ERROR: Timeout waiting for done signal!
+# ** Note: $finish    : tb_cnn_unit.v(85)
+#    Time: 10120 ns  Iteration: 0  Instance: /tb_cnn_unit
+# 1
+# Break in Module tb_cnn_unit at tb_cnn_unit.v line 85
+# End time: 21:57:30 on Jul 25,2025, Elapsed time: 0:04:44
 # Errors: 0, Warnings: 0
