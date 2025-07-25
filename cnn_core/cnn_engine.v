@@ -77,7 +77,7 @@ always@(posedge clk)begin
     $display("Resetting mac_count to %0d at time %t", mac_count, $time);
     state = IDLE;
   end else if (~rst) begin
-    $display("CNN Engine running at time %t", $time);
+    //$display("CNN Engine running at time %t", $time);
     case(state)
     IDLE: begin
       if (start) begin
