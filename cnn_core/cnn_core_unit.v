@@ -65,11 +65,15 @@ always @ (posedge clk) begin
     cnn_start <= 0;
     pool_start <= 0;
     fc_start <= 0;
-  end else if (enable & ~rst) begin
+  end else if (~rst) begin
     case(state) 
       IDLE: begin
-        cnn_start <= 1;
-        state <= CNN_START;
+        if(enable) begin
+          $display("Starting CNN processing at time %t", $time);
+          state <= CNN_START;
+        end else begin
+          done <= 0; //if not enabled, stay in IDLE
+        end
       end
       CNN_START: begin
         cnn_start <= 0;
