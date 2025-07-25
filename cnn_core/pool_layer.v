@@ -91,54 +91,53 @@ always @ (posedge clk) begin
       $display("Resetting avg_pool unit at time %t", $time);
     end
     AVG_POOL_FEED: begin
-      avg_pool_en <= 1;
-      avg_pool_rst <= 0;
-      case(avg_pool_count) 
-        0: avg_pool_ip <= line_buffer[0][col];
-        1: avg_pool_ip <= line_buffer[0][col+1];
-        2: avg_pool_ip <= line_buffer[1][col];
-        3: avg_pool_ip <= line_buffer[1][col+1];
-      endcase
-      avg_pool_count <= avg_pool_count + 1;
-      if(avg_pool_count == 2'b11) begin
-        avg_pool_en <= 0;
-        latency_counter <= 4'b0000;
-        state <= AVG_POOL_WAIT;
-      end 
-      $display("Feeding avg_pool unit with value %d at time %t", avg_pool_ip, $time);
+    avg_pool_en <= 1;
+    avg_pool_rst <= 0;
+
+    case(avg_pool_count) 
+      2'b00: avg_pool_ip <= line_buffer[0][col];
+      2'b01: avg_pool_ip <= line_buffer[0][col+1];
+      2'b10: avg_pool_ip <= line_buffer[1][col];
+      2'b11: avg_pool_ip <= line_buffer[1][col+1];
+    endcase
+
+    avg_pool_count <= avg_pool_count + 1;
+
+    if (avg_pool_count == 2'b11) begin
+      // Wait for next clock to send last input before disabling
+      next_state <= AVG_POOL_WAIT;
     end
+    $display("Feeding avg_pool unit with input %d at time %t", avg_pool_ip, $time);
+  end
     AVG_POOL_WAIT: begin
-      latency_counter <= latency_counter + 1;
-      if(latency_counter == 4'b0011)begin
-        latency_counter <= 0;
-        state <= WRITE;
-      end
-      $display("Waiting for avg_pool output at time %t", $time);
+    avg_pool_en <= 0; // stop feeding after previous state sent last input
+    latency_counter <= latency_counter + 1;
+
+    if(latency_counter == 4) begin
+      latency_counter <= 0;
+      state <= WRITE;
+    end
+    $display("Waiting for avg_pool output at time %t", $time);
     end
     WRITE: begin
-      output_fm[(row/2)*(fm_width/2) + (col/2)] <= avg_pool_op;
-      state <= NEXT;
-      $display("Writing output %d to output_fm at time %t", avg_pool_op, $time);
+    output_fm[(row >> 1)*(fm_width >> 1) + (col >> 1)] <= avg_pool_op;
+    $display("Writing output %d to output_fm[%0d] at time %t", 
+              avg_pool_op, (row >> 1)*(fm_width >> 1) + (col >> 1), $time);
+    state <= NEXT;
     end
     NEXT: begin
-    if (col < fm_width - 2) begin // if not last column
-        col <= col + 2;
-        state <= AVG_POOL_RESET;
-    end 
-    else if (row < fm_height - 2) begin // if not last row
-        col <= 0;
+    if (col + 2 < fm_width) begin
+      col <= col + 2;
+    end else begin
+      col <= 0;
+      if (row + 2 < fm_height) begin
         row <= row + 2;
-        line_buffer[0] <= line_buffer[1];
-        for (i = 0; i < fm_width; i = i + 1) begin
-        line_buffer[1][i] <= input_fm[(row + 2) * fm_width + i];
-        end
-        state <= AVG_POOL_RESET;
-    end 
-    else begin
-        state <= DONE;
+      end else begin
         done <= 1;
+        state <= IDLE;
+      end
     end
-    $display("Next state reached at time %t", $time);
+    state <= AVG_POOL_RESET; // or back to LOAD, depending on design
     end
     DONE: begin
         //holds done signal 
