@@ -27,6 +27,7 @@ reg [2:0] row, col;
 reg [5:0] fm_address;
 reg [3:0] latency_counter;
 reg [3:0] state;
+reg avg_pool_done;
 integer i;
 
 //parameters for instantiation

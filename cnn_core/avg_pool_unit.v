@@ -18,7 +18,8 @@ always @ (posedge clk or rst) begin
   stage4 <= 31'd0;
 
   if (rst) begin
-    stage1 <= 31'd0;
+    stage1 = 31'd0;
+    done = 0;
   end else if(enable) begin
     stage1 <= layer2;
   end
@@ -54,5 +55,6 @@ always @ (posedge clk or rst) begin
   end else begin
     avg <= stage4 >> 2;
   end
+  $display("Average Pooling output: %d at time %t", avg, $time);
 end
 endmodule
