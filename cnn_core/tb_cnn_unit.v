@@ -32,7 +32,7 @@ integer i;
 
 initial begin
   clk = 0;
-  rst = 0;
+  rst = 1;
   enable = 0;
  #10;
 $display("Assigning test_image with all 1s...");
@@ -46,7 +46,7 @@ for (i = 0; i < img_size; i = i + 1) begin
 end
 
 #10;
-rst = 1;
+rst = 0;
 enable = 1;
 #20;
 rst = 0;
