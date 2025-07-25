@@ -9,7 +9,7 @@ module cnn_top(
 
 //registers needed for instantiation of cnn engine
 reg cnn_start, pool_start, fc_start;
-wire cnn_done, pool_done, fc_done;
+reg cnn_done, pool_done, fc_done;
 
 //output wires needed for inter-layer connection
 reg signed [31:0] conv_output [0:35];

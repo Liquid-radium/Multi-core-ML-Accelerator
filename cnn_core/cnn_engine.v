@@ -79,39 +79,40 @@ always@(posedge clk)begin
     case(state)
     IDLE: begin
       if (start) begin
+        $display("Starting CNN Engine at time %t", $time);
         row <= 3'b000;
         col <= 3'b000;
         img_address <= 6'b000000;
-        state <= 4'b0001;
-        $display("IDLE state reached at time %t", $time);
+        state <= LOAD;
       end
     end
     LOAD: begin
+      $display("Loading image at time %t", $time);
       line_buffer[0][img_address % img_width] <= input_ram[img_address]; //to get the first pixel to convolve in that row
       if((img_address + 1) % img_width == 0) begin //if end of row
         line_buffer[1] <= line_buffer[0]; //used for maintaining the order of convolution in the image
       end
       if((img_address + 1) == (img_width * 3)) begin //if end of line buffer block
-        state <= 4'b0010;
+        state <= SHIFT;
       end
       img_address <= img_address + 1;
-      $display("LOAD state reached at time %t", $time);
     end
     SHIFT: begin
+      $display("Shifting rows at time %t", $time);
       col <= 3'b001;
       row <= 3'b001;
-      state <= 4'b0011;
-      $display("SHIFT state reached at time %t", $time);
+      state <= MAC_RESET;
     end
     MAC_RESET: begin
+      $display("Resetting MAC at time %t", $time);
       mac_rst <= 1'b1;
       mac_en <= 1'b0;
       mac_count <= 4'b0000;
       latency_counter <= 4'b0000;
-      state <= 4'b0100;
-      $display("MAC_RESET state reached at time %t", $time);
+      state <= MAC_FEED;
     end
     MAC_FEED: begin
+      $display("Feeding MAC at time %t", $time);
       mac_rst <= 1'b0;
       mac_en <= 1'b1;
       case(mac_count) 
@@ -129,25 +130,24 @@ always@(posedge clk)begin
       if(mac_count == 4'b1001) begin
         mac_en <= 1'b0;
         latency_counter <= 4'b0000;
-        state <= 4'b0101;
+        state <= MAC_WAIT;
       end
-      $display("MAC_FEED state reached at time %t", $time);
     end
     MAC_WAIT: begin
+      $display("Waiting for MAC at time %t", $time);
       latency_counter <= latency_counter + 1;
       if (latency_counter == 4'b0011)begin
         latency_counter <= 4'b0000;
-        state <= 4'b0110;
+        state <= WRITE;
       end
-      //state <= 4'b0110; //wait for 3 clock cycles for mac to finish
-      $display("MAC_WAIT state reached at time %t", $time);
     end
     WRITE: begin
+      $display("Writing output at time %t", $time);
       output_ram[(row -1)*(img_width -2) + (col -1)] <= relu_acc;
-      state <= 4'b0111;
-      $display("WRITE state reached at time %t", $time);
+      state <= NEXT;
     end
     NEXT: begin
+      $display("Next state reached at time %t", $time);
       if (col < img_width - 2) begin //if last column not reached
         col <= col + 1;
         state <= 4'b0100; //go back to MAC feed
@@ -158,12 +158,11 @@ always@(posedge clk)begin
       line_buffer[1] <= line_buffer[2];
       for (i = 0; i < img_width; i = i +1)
         line_buffer[2][i] <= input_ram[(row + 2)*img_width + i];
-        state <= 4'b0011; //go back to MAC reset
+        state <= MAC_RESET; //go back to MAC reset
       end 
       else begin
-        state <= 4'b1000; //all rows and columns processed
+        state <= DONE; //all rows and columns processed
       end 
-      $display("NEXT state reached at time %t", $time);
     end
     DONE: begin
       done <= 1'b1;

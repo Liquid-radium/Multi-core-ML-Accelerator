@@ -52,10 +52,12 @@ always @ (posedge clk) begin
   end else if (~rst) begin
     case(state)
     IDLE: begin
+    if(start) begin
       row <= 0;
       col <= 0;
       latency_counter <= 0;
       state <= AVG_POOL_RESET;
+    end 
     end
     LOAD: begin
       line_buffer[0][fm_address % fm_width] <= input_fm[fm_address]; //to get the first pixel to convolve in that row
