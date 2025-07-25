@@ -45,12 +45,6 @@ for (i = 0; i < img_size; i = i + 1) begin
   $display("test_image[%0d] = %0d", i, test_image[i]);
 end
 
-#10;
-rst = 0;
-enable = 1;
-#20;
-rst = 0;
-
 $display("Assigning test_image to input_img...");
 for (i = 0; i < img_size; i = i + 1) begin
   input_img[i] = test_image[i];
@@ -67,7 +61,7 @@ $display("Starting CNN processing...");
 #10;
 $display("Enabling CNN unit...");
 enable = 1;
-#10;
+#1000;
 // enable = 0;
 
 i = 0;
