@@ -76,7 +76,7 @@ always @ (posedge clk) begin
         end
       end
       CNN_START: begin
-        cnn_start <= 0;
+        cnn_start <= 1;
         state <= CNN_WAIT;
       end
       CNN_WAIT: begin
