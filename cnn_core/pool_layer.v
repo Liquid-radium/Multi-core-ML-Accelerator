@@ -105,7 +105,7 @@ always @ (posedge clk) begin
 
     if (avg_pool_count == 2'b11) begin
       // Wait for next clock to send last input before disabling
-      next_state <= AVG_POOL_WAIT;
+      state <= AVG_POOL_WAIT;
     end
     $display("Feeding avg_pool unit with input %d at time %t", avg_pool_ip, $time);
   end
