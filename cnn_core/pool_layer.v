@@ -75,6 +75,7 @@ always @ (posedge clk) begin
       row <= 0;
       col <= 0;
       state <= AVG_POOL_RESET;
+      $display("Shifting line buffer at time %t", $time);
     end
     AVG_POOL_RESET: begin
       avg_pool_rst <= 1;
@@ -82,6 +83,7 @@ always @ (posedge clk) begin
       avg_pool_count <= 0;
       latency_counter <= 0;
       state <= AVG_POOL_FEED;
+      $display("Resetting avg_pool unit at time %t", $time);
     end
     AVG_POOL_FEED: begin
       avg_pool_en <= 1;
@@ -98,6 +100,7 @@ always @ (posedge clk) begin
         latency_counter <= 0;
         state <= AVG_POOL_WAIT;
       end
+      $display("Feeding avg_pool unit with value %d at time %t", avg_pool_ip, $time);
     end
     AVG_POOL_WAIT: begin
       latency_counter <= latency_counter + 1;
@@ -105,10 +108,12 @@ always @ (posedge clk) begin
         latency_counter <= 0;
         state <= WRITE;
       end
+      $display("Waiting for avg_pool output at time %t", $time);
     end
     WRITE: begin
       output_fm[(row/2)*(fm_width/2) + (col/2)] <= avg_pool_op;
       state <= NEXT;
+      $display("Writing output %d to output_fm at time %t", avg_pool_op, $time);
     end
     NEXT: begin
     if (col < fm_width - 2) begin // if not last column
@@ -126,10 +131,12 @@ always @ (posedge clk) begin
     end 
     else begin
         state <= DONE;
+        done <= 1;
     end
+    $display("Next state reached at time %t", $time);
     end
     DONE: begin
-          done <= 1;
+        //holds done signal 
       end
     endcase
   end

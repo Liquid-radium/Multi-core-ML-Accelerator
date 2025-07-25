@@ -71,7 +71,7 @@ always @ (posedge clk) begin
     case(state) 
       IDLE: begin
         if(enable) begin
-          $display("Starting CNN processing at time %t", $time);
+          //$display("Starting CNN processing at time %t", $time);
           state <= CNN_START;
           //cnn_start <= 1;
         end else begin
@@ -84,7 +84,7 @@ always @ (posedge clk) begin
         //$display("value of cnn_done signal at time %t is %b", $time, cnn_done);
       end
       CNN_WAIT: begin
-      $display("Waiting for CNN layer to finish at time %t", $time);
+      //$display("Waiting for CNN layer to finish at time %t", $time);
         if(cnn_done == 1) begin
           pool_start <= 1;
           state <= POOL_START;
