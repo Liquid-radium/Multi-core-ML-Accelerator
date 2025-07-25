@@ -1,24 +1,49 @@
 # do compile.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:00:35 on Jul 26,2025
+# Start time: 01:06:53 on Jul 26,2025
 # vlog -reportprogress 300 -sv cnn_core_unit.v 
 # -- Compiling module cnn_top
 # 
 # Top level modules:
 # 	cnn_top
-# End time: 01:00:35 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 01:06:53 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:00:35 on Jul 26,2025
+# Start time: 01:06:53 on Jul 26,2025
 # vlog -reportprogress 300 -sv cnn_engine.v 
 # -- Compiling module cnn_engine
-# ** Error: (vlog-13069) cnn_engine.v(33): near "=": syntax error, unexpected '='.
-# ** Error: cnn_engine.v(33): (vlog-13205) Syntax error found in the scope following 'state'. Is there a missing '::'?
-# End time: 01:00:35 on Jul 26,2025, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
+# 
+# Top level modules:
+# 	cnn_engine
+# End time: 01:06:53 on Jul 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:06:53 on Jul 26,2025
+# vlog -reportprogress 300 -sv pool_layer.v 
+# -- Compiling module pool_layer
+# ** Error: pool_layer.v(48): (vlog-2730) Undefined variable: 'IDLE1'.
+# ** Error: pool_layer.v(54): (vlog-2730) Undefined variable: 'IDLE1'.
+# ** Error: pool_layer.v(59): (vlog-2730) Undefined variable: 'AVG_POOL_RESET1'.
+# ** Error: pool_layer.v(62): (vlog-2730) Undefined variable: 'LOAD1'.
+# ** Error: pool_layer.v(68): (vlog-2730) Undefined variable: 'SHIFT1'.
+# ** Error: pool_layer.v(72): (vlog-2730) Undefined variable: 'SHIFT1'.
+# ** Error: pool_layer.v(75): (vlog-2730) Undefined variable: 'AVG_POOL_RESET1'.
+# ** Error: pool_layer.v(77): (vlog-2730) Undefined variable: 'AVG_POOL_RESET1'.
+# ** Error: pool_layer.v(82): (vlog-2730) Undefined variable: 'AVG_POOL_FEED1'.
+# ** Error: pool_layer.v(84): (vlog-2730) Undefined variable: 'AVG_POOL_FEED1'.
+# ** Error: pool_layer.v(97): (vlog-2730) Undefined variable: 'AVG_POOL_WAIT1'.
+# ** Error: pool_layer.v(100): (vlog-2730) Undefined variable: 'AVG_POOL_WAIT1'.
+# ** Error: pool_layer.v(104): (vlog-2730) Undefined variable: 'WRITE1'.
+# ** Error: pool_layer.v(107): (vlog-2730) Undefined variable: 'WRITE1'.
+# ** Error: pool_layer.v(109): (vlog-2730) Undefined variable: 'NEXT1'.
+# ** Error: pool_layer.v(111): (vlog-2730) Undefined variable: 'NEXT1'.
+# ** Error: pool_layer.v(126): (vlog-2730) Undefined variable: 'DONE1'.
+# ** Error: pool_layer.v(129): (vlog-2730) Undefined variable: 'DONE1'.
+# End time: 01:06:53 on Jul 26,2025, Elapsed time: 0:00:00
+# Errors: 18, Warnings: 0
 # ** Error: /home/shruti_hegde/intelFPGA/20.1/modelsim_ase/linuxaloem/vlog failed.
-# Error in macro ./compile.do line 3
+# Error in macro ./compile.do line 4
 # /home/shruti_hegde/intelFPGA/20.1/modelsim_ase/linuxaloem/vlog failed.
 #     while executing
-# "vlog -sv cnn_engine.v"
+# "vlog -sv pool_layer.v"

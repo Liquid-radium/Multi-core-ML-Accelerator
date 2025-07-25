@@ -45,43 +45,43 @@ avg_pool_unit avg_pool(
 
 always @ (posedge clk) begin
   if(rst) begin
-    state <= IDLE1;
+    state <= IDLE;
     row <= 0;
     col <= 0;
     latency_counter <= 0;
   end else if (~rst) begin
     case(state)
-    IDLE1: begin
+    IDLE: begin
     if(start) begin
       row <= 0;
       col <= 0;
       latency_counter <= 0;
-      state <= AVG_POOL_RESET1;
+      state <= AVG_POOL_RESET;
     end 
     end
-    LOAD1: begin
+    LOAD: begin
       line_buffer[0][fm_address % fm_width] <= input_fm[fm_address]; //to get the first pixel to convolve in that row
       if((fm_address + 1) % fm_width == 0) begin //if end of row
         line_buffer[1] <= line_buffer[0]; //used for maintaining the order of convolution in the image
       end
       if((fm_address + 1) == (fm_width * 2)) begin //if end of line buffer block
-        state <= SHIFT1;
+        state <= SHIFT;
       end
       fm_address <= fm_address + 1;
     end
-    SHIFT1: begin
+    SHIFT: begin
       row <= 0;
       col <= 0;
-      state <= AVG_POOL_RESET1;
+      state <= AVG_POOL_RESET;
     end
-    AVG_POOL_RESET1: begin
+    AVG_POOL_RESET: begin
       avg_pool_rst <= 1;
       avg_pool_en <= 0;
       avg_pool_count <= 0;
       latency_counter <= 0;
-      state <= AVG_POOL_FEED1;
+      state <= AVG_POOL_FEED;
     end
-    AVG_POOL_FEED1: begin
+    AVG_POOL_FEED: begin
       avg_pool_en <= 1;
       avg_pool_rst <= 0;
       case(avg_pool_count) 
@@ -94,24 +94,24 @@ always @ (posedge clk) begin
       if(avg_pool_count == 4) begin
         avg_pool_en <= 0;
         latency_counter <= 0;
-        state <= AVG_POOL_WAIT1;
+        state <= AVG_POOL_WAIT;
       end
     end
-    AVG_POOL_WAIT1: begin
+    AVG_POOL_WAIT: begin
       latency_counter <= latency_counter + 1;
       if(latency_counter == 3)begin
         latency_counter <= 0;
-        state <= WRITE1;
+        state <= WRITE;
       end
     end
-    WRITE1: begin
+    WRITE: begin
       output_fm[(row/2)*(fm_width/2) + (col/2)] <= avg_pool_op;
-      state <= NEXT1;
+      state <= NEXT;
     end
-    NEXT1: begin
+    NEXT: begin
     if (col < fm_width - 2) begin // if not last column
         col <= col + 2;
-        state <= AVG_POOL_RESET1;
+        state <= AVG_POOL_RESET;
     end 
     else if (row < fm_height - 2) begin // if not last row
         col <= 0;
@@ -120,13 +120,13 @@ always @ (posedge clk) begin
         for (i = 0; i < fm_width; i = i + 1) begin
         line_buffer[1][i] <= input_fm[(row + 2) * fm_width + i];
         end
-        state <= AVG_POOL_RESET1;
+        state <= AVG_POOL_RESET;
     end 
     else begin
-        state <= DONE1;
+        state <= DONE;
     end
     end
-    DONE1: begin
+    DONE: begin
           done <= 1;
       end
     endcase
