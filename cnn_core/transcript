@@ -1,89 +1,89 @@
 # do compile.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:24:28 on Jul 26,2025
+# Start time: 14:38:34 on Jul 26,2025
 # vlog -reportprogress 300 -sv cnn_core_unit.v 
 # -- Compiling module cnn_top
 # 
 # Top level modules:
 # 	cnn_top
-# End time: 12:24:28 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 14:38:34 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:24:28 on Jul 26,2025
+# Start time: 14:38:34 on Jul 26,2025
 # vlog -reportprogress 300 -sv cnn_engine.v 
 # -- Compiling module cnn_engine
 # 
 # Top level modules:
 # 	cnn_engine
-# End time: 12:24:28 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 14:38:34 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:24:28 on Jul 26,2025
+# Start time: 14:38:34 on Jul 26,2025
 # vlog -reportprogress 300 -sv pool_layer.v 
 # -- Compiling module pool_layer
 # 
 # Top level modules:
 # 	pool_layer
-# End time: 12:24:28 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 14:38:34 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:24:28 on Jul 26,2025
+# Start time: 14:38:34 on Jul 26,2025
 # vlog -reportprogress 300 -sv fc_layer.v 
 # -- Compiling module fc_layer
 # 
 # Top level modules:
 # 	fc_layer
-# End time: 12:24:28 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 14:38:34 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:24:28 on Jul 26,2025
+# Start time: 14:38:34 on Jul 26,2025
 # vlog -reportprogress 300 -sv tb_cnn_multi.v 
 # -- Compiling module tb_cnn_multi
 # 
 # Top level modules:
 # 	tb_cnn_multi
-# End time: 12:24:28 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 14:38:34 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:24:28 on Jul 26,2025
+# Start time: 14:38:34 on Jul 26,2025
 # vlog -reportprogress 300 -sv avg_pool_unit.v 
 # -- Compiling module avg_pool_unit
 # 
 # Top level modules:
 # 	avg_pool_unit
-# End time: 12:24:28 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 14:38:35 on Jul 26,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:24:28 on Jul 26,2025
+# Start time: 14:38:35 on Jul 26,2025
 # vlog -reportprogress 300 -sv relu_unit.v 
 # -- Compiling module relu_unit
 # 
 # Top level modules:
 # 	relu_unit
-# End time: 12:24:28 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 14:38:35 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:24:28 on Jul 26,2025
+# Start time: 14:38:35 on Jul 26,2025
 # vlog -reportprogress 300 -sv mac_unit.v 
 # -- Compiling module mac_unit
 # 
 # Top level modules:
 # 	mac_unit
-# End time: 12:24:29 on Jul 26,2025, Elapsed time: 0:00:01
+# End time: 14:38:35 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:24:29 on Jul 26,2025
+# Start time: 14:38:35 on Jul 26,2025
 # vlog -reportprogress 300 -sv multi_core.v 
 # -- Compiling module multi_core
 # 
 # Top level modules:
 # 	multi_core
-# End time: 12:24:29 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 14:38:35 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vsim tb_cnn_unit
 # vsim tb_cnn_unit 
-# Start time: 12:24:34 on Jul 26,2025
+# Start time: 14:53:45 on Jul 26,2025
 # Loading sv_std.std
 # Loading work.tb_cnn_unit
 # Loading work.cnn_top
@@ -1002,580 +1002,108 @@ run -all
 # Time:              8280000 | done: 0
 # Loading input_fm[23] =          66 into line_buffer[0][5] at time              8285000
 # Time:              8290000 | done: 0
-# Loading input_fm[24] =           1 into line_buffer[0][0] at time              8295000
+# Shifting line buffer at time              8295000
 # Time:              8300000 | done: 0
-# Loading input_fm[25] =          14 into line_buffer[0][1] at time              8305000
+# Resetting avg_pool unit at time              8305000
 # Time:              8310000 | done: 0
-# Loading input_fm[26] =          27 into line_buffer[0][2] at time              8315000
+# Feeding avg_pool unit with input           x at time              8315000
+# Feeding avg_pool unit with input           x at time              8315000
+# avg_pool_count: 0 at time              8315000
 # Time:              8320000 | done: 0
-# Loading input_fm[27] =          40 into line_buffer[0][3] at time              8325000
+# Feeding avg_pool unit with input           1 at time              8325000
+# avg_pool_count: 1 at time              8325000
 # Time:              8330000 | done: 0
-# Loading input_fm[28] =          53 into line_buffer[0][4] at time              8335000
+# Feeding avg_pool unit with input          14 at time              8335000
+# avg_pool_count: 2 at time              8335000
 # Time:              8340000 | done: 0
-# Loading input_fm[29] =          66 into line_buffer[0][5] at time              8345000
+# Feeding avg_pool unit with input           1 at time              8345000
+# avg_pool_count: 3 at time              8345000
 # Time:              8350000 | done: 0
-# Loading input_fm[30] =           1 into line_buffer[0][0] at time              8355000
+# Waiting for avg_pool output at time              8355000
 # Time:              8360000 | done: 0
-# Loading input_fm[31] =          14 into line_buffer[0][1] at time              8365000
+# Waiting for avg_pool output at time              8365000
 # Time:              8370000 | done: 0
-# Loading input_fm[32] =          27 into line_buffer[0][2] at time              8375000
+# Waiting for avg_pool output at time              8375000
 # Time:              8380000 | done: 0
-# Loading input_fm[33] =          40 into line_buffer[0][3] at time              8385000
+# Waiting for avg_pool output at time              8385000
 # Time:              8390000 | done: 0
-# Loading input_fm[34] =          53 into line_buffer[0][4] at time              8395000
+# Waiting for avg_pool output at time              8395000
 # Time:              8400000 | done: 0
-# Loading input_fm[35] =          66 into line_buffer[0][5] at time              8405000
+# Writing output          31 to output_fm[0] at time              8405000
+# moving to next state NEXT at time              8405000
 # Time:              8410000 | done: 0
-# Loading input_fm[36] =           x into line_buffer[0][0] at time              8415000
+# fm_address incremented to 24 at time              8415000
+# Moving to next column: 0 at time              8415000
+# Incrementing fm_address to 24 at time              8415000
 # Time:              8420000 | done: 0
-# Loading input_fm[37] =           x into line_buffer[0][1] at time              8425000
+# Loading input_fm[24] =           1 into line_buffer[0][0] at time              8425000
 # Time:              8430000 | done: 0
-# Loading input_fm[38] =           x into line_buffer[0][2] at time              8435000
+# Loading input_fm[25] =          14 into line_buffer[0][1] at time              8435000
 # Time:              8440000 | done: 0
-# Loading input_fm[39] =           x into line_buffer[0][3] at time              8445000
+# Loading input_fm[26] =          27 into line_buffer[0][2] at time              8445000
 # Time:              8450000 | done: 0
-# Loading input_fm[40] =           x into line_buffer[0][4] at time              8455000
+# Loading input_fm[27] =          40 into line_buffer[0][3] at time              8455000
 # Time:              8460000 | done: 0
-# Loading input_fm[41] =           x into line_buffer[0][5] at time              8465000
+# Loading input_fm[28] =          53 into line_buffer[0][4] at time              8465000
 # Time:              8470000 | done: 0
-# Loading input_fm[42] =           x into line_buffer[0][0] at time              8475000
+# Loading input_fm[29] =          66 into line_buffer[0][5] at time              8475000
 # Time:              8480000 | done: 0
-# Loading input_fm[43] =           x into line_buffer[0][1] at time              8485000
+# Loading input_fm[30] =           1 into line_buffer[0][0] at time              8485000
 # Time:              8490000 | done: 0
-# Loading input_fm[44] =           x into line_buffer[0][2] at time              8495000
+# Loading input_fm[31] =          14 into line_buffer[0][1] at time              8495000
 # Time:              8500000 | done: 0
-# Loading input_fm[45] =           x into line_buffer[0][3] at time              8505000
+# Loading input_fm[32] =          27 into line_buffer[0][2] at time              8505000
 # Time:              8510000 | done: 0
-# Loading input_fm[46] =           x into line_buffer[0][4] at time              8515000
+# Loading input_fm[33] =          40 into line_buffer[0][3] at time              8515000
 # Time:              8520000 | done: 0
-# Loading input_fm[47] =           x into line_buffer[0][5] at time              8525000
+# Loading input_fm[34] =          53 into line_buffer[0][4] at time              8525000
 # Time:              8530000 | done: 0
-# Loading input_fm[48] =           x into line_buffer[0][0] at time              8535000
+# Loading input_fm[35] =          66 into line_buffer[0][5] at time              8535000
 # Time:              8540000 | done: 0
-# Loading input_fm[49] =           x into line_buffer[0][1] at time              8545000
+# Shifting line buffer at time              8545000
 # Time:              8550000 | done: 0
-# Loading input_fm[50] =           x into line_buffer[0][2] at time              8555000
+# Resetting avg_pool unit at time              8555000
 # Time:              8560000 | done: 0
-# Loading input_fm[51] =           x into line_buffer[0][3] at time              8565000
+# Feeding avg_pool unit with input          14 at time              8565000
+# Feeding avg_pool unit with input          14 at time              8565000
+# avg_pool_count: 0 at time              8565000
 # Time:              8570000 | done: 0
-# Loading input_fm[52] =           x into line_buffer[0][4] at time              8575000
+# Feeding avg_pool unit with input           1 at time              8575000
+# avg_pool_count: 1 at time              8575000
 # Time:              8580000 | done: 0
-# Loading input_fm[53] =           x into line_buffer[0][5] at time              8585000
+# Feeding avg_pool unit with input          14 at time              8585000
+# avg_pool_count: 2 at time              8585000
 # Time:              8590000 | done: 0
-# Loading input_fm[54] =           x into line_buffer[0][0] at time              8595000
+# Feeding avg_pool unit with input           1 at time              8595000
+# avg_pool_count: 3 at time              8595000
 # Time:              8600000 | done: 0
-# Loading input_fm[55] =           x into line_buffer[0][1] at time              8605000
+# Waiting for avg_pool output at time              8605000
 # Time:              8610000 | done: 0
-# Loading input_fm[56] =           x into line_buffer[0][2] at time              8615000
+# Waiting for avg_pool output at time              8615000
 # Time:              8620000 | done: 0
-# Loading input_fm[57] =           x into line_buffer[0][3] at time              8625000
+# Waiting for avg_pool output at time              8625000
 # Time:              8630000 | done: 0
-# Loading input_fm[58] =           x into line_buffer[0][4] at time              8635000
+# Waiting for avg_pool output at time              8635000
 # Time:              8640000 | done: 0
-# Loading input_fm[59] =           x into line_buffer[0][5] at time              8645000
+# Waiting for avg_pool output at time              8645000
 # Time:              8650000 | done: 0
-# Loading input_fm[60] =           x into line_buffer[0][0] at time              8655000
+# Writing output          31 to output_fm[0] at time              8655000
+# moving to next state NEXT at time              8655000
 # Time:              8660000 | done: 0
-# Loading input_fm[61] =           x into line_buffer[0][1] at time              8665000
+# fm_address incremented to 36 at time              8665000
+# Moving to next column: 0 at time              8665000
+# Resetting fm_address to 0 at time              8665000
+# Pool layer done at time              8665000
+# Pool layer done signal set to 1 at time              8665000
 # Time:              8670000 | done: 0
-# Loading input_fm[62] =           x into line_buffer[0][2] at time              8675000
 # Time:              8680000 | done: 0
-# Loading input_fm[63] =           x into line_buffer[0][3] at time              8685000
+# FC Layer output:          x at time              8685000
 # Time:              8690000 | done: 0
-# Loading input_fm[0] =           x into line_buffer[0][0] at time              8695000
-# Time:              8700000 | done: 0
-# Loading input_fm[1] =           x into line_buffer[0][1] at time              8705000
-# Time:              8710000 | done: 0
-# Loading input_fm[2] =           x into line_buffer[0][2] at time              8715000
-# Time:              8720000 | done: 0
-# Loading input_fm[3] =           x into line_buffer[0][3] at time              8725000
-# Time:              8730000 | done: 0
-# Loading input_fm[4] =           x into line_buffer[0][4] at time              8735000
-# Time:              8740000 | done: 0
-# Loading input_fm[5] =           x into line_buffer[0][5] at time              8745000
-# Time:              8750000 | done: 0
-# Loading input_fm[6] =           x into line_buffer[0][0] at time              8755000
-# Time:              8760000 | done: 0
-# Loading input_fm[7] =           x into line_buffer[0][1] at time              8765000
-# Time:              8770000 | done: 0
-# Loading input_fm[8] =           x into line_buffer[0][2] at time              8775000
-# Time:              8780000 | done: 0
-# Loading input_fm[9] =           x into line_buffer[0][3] at time              8785000
-# Time:              8790000 | done: 0
-# Loading input_fm[10] =           x into line_buffer[0][4] at time              8795000
-# Time:              8800000 | done: 0
-# Loading input_fm[11] =           x into line_buffer[0][5] at time              8805000
-# Time:              8810000 | done: 0
-# Shifting line buffer at time              8815000
-# Time:              8820000 | done: 0
-# Resetting avg_pool unit at time              8825000
-# Time:              8830000 | done: 0
-# Feeding avg_pool unit with input           x at time              8835000
-# Feeding avg_pool unit with input           x at time              8835000
-# avg_pool_count: 0 at time              8835000
-# Time:              8840000 | done: 0
-# Feeding avg_pool unit with input           x at time              8845000
-# avg_pool_count: 1 at time              8845000
-# Time:              8850000 | done: 0
-# Feeding avg_pool unit with input           x at time              8855000
-# avg_pool_count: 2 at time              8855000
-# Time:              8860000 | done: 0
-# Feeding avg_pool unit with input           x at time              8865000
-# avg_pool_count: 3 at time              8865000
-# Time:              8870000 | done: 0
-# Waiting for avg_pool output at time              8875000
-# Time:              8880000 | done: 0
-# Waiting for avg_pool output at time              8885000
-# Time:              8890000 | done: 0
-# Waiting for avg_pool output at time              8895000
-# Time:              8900000 | done: 0
-# Waiting for avg_pool output at time              8905000
-# Time:              8910000 | done: 0
-# Waiting for avg_pool output at time              8915000
-# Time:              8920000 | done: 0
-# Writing output           X to output_fm[0] at time              8925000
-# moving to next state NEXT at time              8925000
-# Time:              8930000 | done: 0
-# fm_address incremented to 12 at time              8935000
-# Moving to next column: 0 at time              8935000
-# Incrementing fm_address to 12 at time              8935000
-# Time:              8940000 | done: 0
-# Loading input_fm[12] =           x into line_buffer[0][0] at time              8945000
-# Time:              8950000 | done: 0
-# Loading input_fm[13] =           x into line_buffer[0][1] at time              8955000
-# Time:              8960000 | done: 0
-# Loading input_fm[14] =           x into line_buffer[0][2] at time              8965000
-# Time:              8970000 | done: 0
-# Loading input_fm[15] =           x into line_buffer[0][3] at time              8975000
-# Time:              8980000 | done: 0
-# Loading input_fm[16] =           x into line_buffer[0][4] at time              8985000
-# Time:              8990000 | done: 0
-# Loading input_fm[17] =           x into line_buffer[0][5] at time              8995000
-# Time:              9000000 | done: 0
-# Loading input_fm[18] =           1 into line_buffer[0][0] at time              9005000
-# Time:              9010000 | done: 0
-# Loading input_fm[19] =          14 into line_buffer[0][1] at time              9015000
-# Time:              9020000 | done: 0
-# Loading input_fm[20] =          27 into line_buffer[0][2] at time              9025000
-# Time:              9030000 | done: 0
-# Loading input_fm[21] =          40 into line_buffer[0][3] at time              9035000
-# Time:              9040000 | done: 0
-# Loading input_fm[22] =          53 into line_buffer[0][4] at time              9045000
-# Time:              9050000 | done: 0
-# Loading input_fm[23] =          66 into line_buffer[0][5] at time              9055000
-# Time:              9060000 | done: 0
-# Loading input_fm[24] =           1 into line_buffer[0][0] at time              9065000
-# Time:              9070000 | done: 0
-# Loading input_fm[25] =          14 into line_buffer[0][1] at time              9075000
-# Time:              9080000 | done: 0
-# Loading input_fm[26] =          27 into line_buffer[0][2] at time              9085000
-# Time:              9090000 | done: 0
-# Loading input_fm[27] =          40 into line_buffer[0][3] at time              9095000
-# Time:              9100000 | done: 0
-# Loading input_fm[28] =          53 into line_buffer[0][4] at time              9105000
-# Time:              9110000 | done: 0
-# Loading input_fm[29] =          66 into line_buffer[0][5] at time              9115000
-# Time:              9120000 | done: 0
-# Loading input_fm[30] =           1 into line_buffer[0][0] at time              9125000
-# Time:              9130000 | done: 0
-# Loading input_fm[31] =          14 into line_buffer[0][1] at time              9135000
-# Time:              9140000 | done: 0
-# Loading input_fm[32] =          27 into line_buffer[0][2] at time              9145000
-# Time:              9150000 | done: 0
-# Loading input_fm[33] =          40 into line_buffer[0][3] at time              9155000
-# Time:              9160000 | done: 0
-# Loading input_fm[34] =          53 into line_buffer[0][4] at time              9165000
-# Time:              9170000 | done: 0
-# Loading input_fm[35] =          66 into line_buffer[0][5] at time              9175000
-# Time:              9180000 | done: 0
-# Loading input_fm[36] =           x into line_buffer[0][0] at time              9185000
-# Time:              9190000 | done: 0
-# Loading input_fm[37] =           x into line_buffer[0][1] at time              9195000
-# Time:              9200000 | done: 0
-# Loading input_fm[38] =           x into line_buffer[0][2] at time              9205000
-# Time:              9210000 | done: 0
-# Loading input_fm[39] =           x into line_buffer[0][3] at time              9215000
-# Time:              9220000 | done: 0
-# Loading input_fm[40] =           x into line_buffer[0][4] at time              9225000
-# Time:              9230000 | done: 0
-# Loading input_fm[41] =           x into line_buffer[0][5] at time              9235000
-# Time:              9240000 | done: 0
-# Loading input_fm[42] =           x into line_buffer[0][0] at time              9245000
-# Time:              9250000 | done: 0
-# Loading input_fm[43] =           x into line_buffer[0][1] at time              9255000
-# Time:              9260000 | done: 0
-# Loading input_fm[44] =           x into line_buffer[0][2] at time              9265000
-# Time:              9270000 | done: 0
-# Loading input_fm[45] =           x into line_buffer[0][3] at time              9275000
-# Time:              9280000 | done: 0
-# Loading input_fm[46] =           x into line_buffer[0][4] at time              9285000
-# Time:              9290000 | done: 0
-# Loading input_fm[47] =           x into line_buffer[0][5] at time              9295000
-# Time:              9300000 | done: 0
-# Loading input_fm[48] =           x into line_buffer[0][0] at time              9305000
-# Time:              9310000 | done: 0
-# Loading input_fm[49] =           x into line_buffer[0][1] at time              9315000
-# Time:              9320000 | done: 0
-# Loading input_fm[50] =           x into line_buffer[0][2] at time              9325000
-# Time:              9330000 | done: 0
-# Loading input_fm[51] =           x into line_buffer[0][3] at time              9335000
-# Time:              9340000 | done: 0
-# Loading input_fm[52] =           x into line_buffer[0][4] at time              9345000
-# Time:              9350000 | done: 0
-# Loading input_fm[53] =           x into line_buffer[0][5] at time              9355000
-# Time:              9360000 | done: 0
-# Loading input_fm[54] =           x into line_buffer[0][0] at time              9365000
-# Time:              9370000 | done: 0
-# Loading input_fm[55] =           x into line_buffer[0][1] at time              9375000
-# Time:              9380000 | done: 0
-# Loading input_fm[56] =           x into line_buffer[0][2] at time              9385000
-# Time:              9390000 | done: 0
-# Loading input_fm[57] =           x into line_buffer[0][3] at time              9395000
-# Time:              9400000 | done: 0
-# Loading input_fm[58] =           x into line_buffer[0][4] at time              9405000
-# Time:              9410000 | done: 0
-# Loading input_fm[59] =           x into line_buffer[0][5] at time              9415000
-# Time:              9420000 | done: 0
-# Loading input_fm[60] =           x into line_buffer[0][0] at time              9425000
-# Time:              9430000 | done: 0
-# Loading input_fm[61] =           x into line_buffer[0][1] at time              9435000
-# Time:              9440000 | done: 0
-# Loading input_fm[62] =           x into line_buffer[0][2] at time              9445000
-# Time:              9450000 | done: 0
-# Loading input_fm[63] =           x into line_buffer[0][3] at time              9455000
-# Time:              9460000 | done: 0
-# Loading input_fm[0] =           x into line_buffer[0][0] at time              9465000
-# Time:              9470000 | done: 0
-# Loading input_fm[1] =           x into line_buffer[0][1] at time              9475000
-# Time:              9480000 | done: 0
-# Loading input_fm[2] =           x into line_buffer[0][2] at time              9485000
-# Time:              9490000 | done: 0
-# Loading input_fm[3] =           x into line_buffer[0][3] at time              9495000
-# Time:              9500000 | done: 0
-# Loading input_fm[4] =           x into line_buffer[0][4] at time              9505000
-# Time:              9510000 | done: 0
-# Loading input_fm[5] =           x into line_buffer[0][5] at time              9515000
-# Time:              9520000 | done: 0
-# Loading input_fm[6] =           x into line_buffer[0][0] at time              9525000
-# Time:              9530000 | done: 0
-# Loading input_fm[7] =           x into line_buffer[0][1] at time              9535000
-# Time:              9540000 | done: 0
-# Loading input_fm[8] =           x into line_buffer[0][2] at time              9545000
-# Time:              9550000 | done: 0
-# Loading input_fm[9] =           x into line_buffer[0][3] at time              9555000
-# Time:              9560000 | done: 0
-# Loading input_fm[10] =           x into line_buffer[0][4] at time              9565000
-# Time:              9570000 | done: 0
-# Loading input_fm[11] =           x into line_buffer[0][5] at time              9575000
-# Time:              9580000 | done: 0
-# Shifting line buffer at time              9585000
-# Time:              9590000 | done: 0
-# Resetting avg_pool unit at time              9595000
-# Time:              9600000 | done: 0
-# Feeding avg_pool unit with input           x at time              9605000
-# Feeding avg_pool unit with input           x at time              9605000
-# avg_pool_count: 0 at time              9605000
-# Time:              9610000 | done: 0
-# Feeding avg_pool unit with input           x at time              9615000
-# avg_pool_count: 1 at time              9615000
-# Time:              9620000 | done: 0
-# Feeding avg_pool unit with input           x at time              9625000
-# avg_pool_count: 2 at time              9625000
-# Time:              9630000 | done: 0
-# Feeding avg_pool unit with input           x at time              9635000
-# avg_pool_count: 3 at time              9635000
-# Time:              9640000 | done: 0
-# Waiting for avg_pool output at time              9645000
-# Time:              9650000 | done: 0
-# Waiting for avg_pool output at time              9655000
-# Time:              9660000 | done: 0
-# Waiting for avg_pool output at time              9665000
-# Time:              9670000 | done: 0
-# Waiting for avg_pool output at time              9675000
-# Time:              9680000 | done: 0
-# Waiting for avg_pool output at time              9685000
-# Time:              9690000 | done: 0
-# Writing output           X to output_fm[0] at time              9695000
-# moving to next state NEXT at time              9695000
-# Time:              9700000 | done: 0
-# fm_address incremented to 12 at time              9705000
-# Moving to next column: 0 at time              9705000
-# Incrementing fm_address to 12 at time              9705000
-# Time:              9710000 | done: 0
-# Loading input_fm[12] =           x into line_buffer[0][0] at time              9715000
-# Time:              9720000 | done: 0
-# Loading input_fm[13] =           x into line_buffer[0][1] at time              9725000
-# Time:              9730000 | done: 0
-# Loading input_fm[14] =           x into line_buffer[0][2] at time              9735000
-# Time:              9740000 | done: 0
-# Loading input_fm[15] =           x into line_buffer[0][3] at time              9745000
-# Time:              9750000 | done: 0
-# Loading input_fm[16] =           x into line_buffer[0][4] at time              9755000
-# Time:              9760000 | done: 0
-# Loading input_fm[17] =           x into line_buffer[0][5] at time              9765000
-# Time:              9770000 | done: 0
-# Loading input_fm[18] =           1 into line_buffer[0][0] at time              9775000
-# Time:              9780000 | done: 0
-# Loading input_fm[19] =          14 into line_buffer[0][1] at time              9785000
-# Time:              9790000 | done: 0
-# Loading input_fm[20] =          27 into line_buffer[0][2] at time              9795000
-# Time:              9800000 | done: 0
-# Loading input_fm[21] =          40 into line_buffer[0][3] at time              9805000
-# Time:              9810000 | done: 0
-# Loading input_fm[22] =          53 into line_buffer[0][4] at time              9815000
-# Time:              9820000 | done: 0
-# Loading input_fm[23] =          66 into line_buffer[0][5] at time              9825000
-# Time:              9830000 | done: 0
-# Loading input_fm[24] =           1 into line_buffer[0][0] at time              9835000
-# Time:              9840000 | done: 0
-# Loading input_fm[25] =          14 into line_buffer[0][1] at time              9845000
-# Time:              9850000 | done: 0
-# Loading input_fm[26] =          27 into line_buffer[0][2] at time              9855000
-# Time:              9860000 | done: 0
-# Loading input_fm[27] =          40 into line_buffer[0][3] at time              9865000
-# Time:              9870000 | done: 0
-# Loading input_fm[28] =          53 into line_buffer[0][4] at time              9875000
-# Time:              9880000 | done: 0
-# Loading input_fm[29] =          66 into line_buffer[0][5] at time              9885000
-# Time:              9890000 | done: 0
-# Loading input_fm[30] =           1 into line_buffer[0][0] at time              9895000
-# Time:              9900000 | done: 0
-# Loading input_fm[31] =          14 into line_buffer[0][1] at time              9905000
-# Time:              9910000 | done: 0
-# Loading input_fm[32] =          27 into line_buffer[0][2] at time              9915000
-# Time:              9920000 | done: 0
-# Loading input_fm[33] =          40 into line_buffer[0][3] at time              9925000
-# Time:              9930000 | done: 0
-# Loading input_fm[34] =          53 into line_buffer[0][4] at time              9935000
-# Time:              9940000 | done: 0
-# Loading input_fm[35] =          66 into line_buffer[0][5] at time              9945000
-# Time:              9950000 | done: 0
-# Loading input_fm[36] =           x into line_buffer[0][0] at time              9955000
-# Time:              9960000 | done: 0
-# Loading input_fm[37] =           x into line_buffer[0][1] at time              9965000
-# Time:              9970000 | done: 0
-# Loading input_fm[38] =           x into line_buffer[0][2] at time              9975000
-# Time:              9980000 | done: 0
-# Loading input_fm[39] =           x into line_buffer[0][3] at time              9985000
-# Time:              9990000 | done: 0
-# Loading input_fm[40] =           x into line_buffer[0][4] at time              9995000
-# Time:             10000000 | done: 0
-# Loading input_fm[41] =           x into line_buffer[0][5] at time             10005000
-# Time:             10010000 | done: 0
-# Loading input_fm[42] =           x into line_buffer[0][0] at time             10015000
-# Time:             10020000 | done: 0
-# Loading input_fm[43] =           x into line_buffer[0][1] at time             10025000
-# Time:             10030000 | done: 0
-# Loading input_fm[44] =           x into line_buffer[0][2] at time             10035000
-# Time:             10040000 | done: 0
-# Loading input_fm[45] =           x into line_buffer[0][3] at time             10045000
-# Time:             10050000 | done: 0
-# Loading input_fm[46] =           x into line_buffer[0][4] at time             10055000
-# Time:             10060000 | done: 0
-# Loading input_fm[47] =           x into line_buffer[0][5] at time             10065000
-# Time:             10070000 | done: 0
-# Loading input_fm[48] =           x into line_buffer[0][0] at time             10075000
-# Time:             10080000 | done: 0
-# Loading input_fm[49] =           x into line_buffer[0][1] at time             10085000
-# Time:             10090000 | done: 0
-# Loading input_fm[50] =           x into line_buffer[0][2] at time             10095000
-# Time:             10100000 | done: 0
-# Loading input_fm[51] =           x into line_buffer[0][3] at time             10105000
-# Time:             10110000 | done: 0
-# Loading input_fm[52] =           x into line_buffer[0][4] at time             10115000
-# Time:             10120000 | done: 0
-# Loading input_fm[53] =           x into line_buffer[0][5] at time             10125000
-# Time:             10130000 | done: 0
-# Loading input_fm[54] =           x into line_buffer[0][0] at time             10135000
-# Time:             10140000 | done: 0
-# Loading input_fm[55] =           x into line_buffer[0][1] at time             10145000
-# Time:             10150000 | done: 0
-# Loading input_fm[56] =           x into line_buffer[0][2] at time             10155000
-# Time:             10160000 | done: 0
-# Loading input_fm[57] =           x into line_buffer[0][3] at time             10165000
-# Time:             10170000 | done: 0
-# Loading input_fm[58] =           x into line_buffer[0][4] at time             10175000
-# Time:             10180000 | done: 0
-# Loading input_fm[59] =           x into line_buffer[0][5] at time             10185000
-# Time:             10190000 | done: 0
-# Loading input_fm[60] =           x into line_buffer[0][0] at time             10195000
-# Time:             10200000 | done: 0
-# Loading input_fm[61] =           x into line_buffer[0][1] at time             10205000
-# Time:             10210000 | done: 0
-# Loading input_fm[62] =           x into line_buffer[0][2] at time             10215000
-# Time:             10220000 | done: 0
-# Loading input_fm[63] =           x into line_buffer[0][3] at time             10225000
-# Time:             10230000 | done: 0
-# Loading input_fm[0] =           x into line_buffer[0][0] at time             10235000
-# Time:             10240000 | done: 0
-# Loading input_fm[1] =           x into line_buffer[0][1] at time             10245000
-# Time:             10250000 | done: 0
-# Loading input_fm[2] =           x into line_buffer[0][2] at time             10255000
-# Time:             10260000 | done: 0
-# Loading input_fm[3] =           x into line_buffer[0][3] at time             10265000
-# Time:             10270000 | done: 0
-# Loading input_fm[4] =           x into line_buffer[0][4] at time             10275000
-# Time:             10280000 | done: 0
-# Loading input_fm[5] =           x into line_buffer[0][5] at time             10285000
-# Time:             10290000 | done: 0
-# Loading input_fm[6] =           x into line_buffer[0][0] at time             10295000
-# Time:             10300000 | done: 0
-# Loading input_fm[7] =           x into line_buffer[0][1] at time             10305000
-# Time:             10310000 | done: 0
-# Loading input_fm[8] =           x into line_buffer[0][2] at time             10315000
-# Time:             10320000 | done: 0
-# Loading input_fm[9] =           x into line_buffer[0][3] at time             10325000
-# Time:             10330000 | done: 0
-# Loading input_fm[10] =           x into line_buffer[0][4] at time             10335000
-# Time:             10340000 | done: 0
-# Loading input_fm[11] =           x into line_buffer[0][5] at time             10345000
-# Time:             10350000 | done: 0
-# Shifting line buffer at time             10355000
-# Time:             10360000 | done: 0
-# Resetting avg_pool unit at time             10365000
-# Time:             10370000 | done: 0
-# Feeding avg_pool unit with input           x at time             10375000
-# Feeding avg_pool unit with input           x at time             10375000
-# avg_pool_count: 0 at time             10375000
-# Time:             10380000 | done: 0
-# Feeding avg_pool unit with input           x at time             10385000
-# avg_pool_count: 1 at time             10385000
-# Time:             10390000 | done: 0
-# Feeding avg_pool unit with input           x at time             10395000
-# avg_pool_count: 2 at time             10395000
-# Time:             10400000 | done: 0
-# Feeding avg_pool unit with input           x at time             10405000
-# avg_pool_count: 3 at time             10405000
-# Time:             10410000 | done: 0
-# Waiting for avg_pool output at time             10415000
-# Time:             10420000 | done: 0
-# Waiting for avg_pool output at time             10425000
-# Time:             10430000 | done: 0
-# Waiting for avg_pool output at time             10435000
-# Time:             10440000 | done: 0
-# Waiting for avg_pool output at time             10445000
-# Time:             10450000 | done: 0
-# Waiting for avg_pool output at time             10455000
-# Time:             10460000 | done: 0
-# Writing output           X to output_fm[0] at time             10465000
-# moving to next state NEXT at time             10465000
-# Time:             10470000 | done: 0
-# fm_address incremented to 12 at time             10475000
-# Moving to next column: 0 at time             10475000
-# Incrementing fm_address to 12 at time             10475000
-# Time:             10480000 | done: 0
-# Loading input_fm[12] =           x into line_buffer[0][0] at time             10485000
-# Time:             10490000 | done: 0
-# Loading input_fm[13] =           x into line_buffer[0][1] at time             10495000
-# Time:             10500000 | done: 0
-# Loading input_fm[14] =           x into line_buffer[0][2] at time             10505000
-# Time:             10510000 | done: 0
-# Loading input_fm[15] =           x into line_buffer[0][3] at time             10515000
-# Time:             10520000 | done: 0
-# Loading input_fm[16] =           x into line_buffer[0][4] at time             10525000
-# Time:             10530000 | done: 0
-# Loading input_fm[17] =           x into line_buffer[0][5] at time             10535000
-# Time:             10540000 | done: 0
-# Loading input_fm[18] =           1 into line_buffer[0][0] at time             10545000
-# Time:             10550000 | done: 0
-# Loading input_fm[19] =          14 into line_buffer[0][1] at time             10555000
-# Time:             10560000 | done: 0
-# Loading input_fm[20] =          27 into line_buffer[0][2] at time             10565000
-# Time:             10570000 | done: 0
-# Loading input_fm[21] =          40 into line_buffer[0][3] at time             10575000
-# Time:             10580000 | done: 0
-# Loading input_fm[22] =          53 into line_buffer[0][4] at time             10585000
-# Time:             10590000 | done: 0
-# Loading input_fm[23] =          66 into line_buffer[0][5] at time             10595000
-# Time:             10600000 | done: 0
-# Loading input_fm[24] =           1 into line_buffer[0][0] at time             10605000
-# Time:             10610000 | done: 0
-# Loading input_fm[25] =          14 into line_buffer[0][1] at time             10615000
-# Time:             10620000 | done: 0
-# Loading input_fm[26] =          27 into line_buffer[0][2] at time             10625000
-# Time:             10630000 | done: 0
-# Loading input_fm[27] =          40 into line_buffer[0][3] at time             10635000
-# Time:             10640000 | done: 0
-# Loading input_fm[28] =          53 into line_buffer[0][4] at time             10645000
-# Time:             10650000 | done: 0
-# Loading input_fm[29] =          66 into line_buffer[0][5] at time             10655000
-# Time:             10660000 | done: 0
-# Loading input_fm[30] =           1 into line_buffer[0][0] at time             10665000
-# Time:             10670000 | done: 0
-# Loading input_fm[31] =          14 into line_buffer[0][1] at time             10675000
-# Time:             10680000 | done: 0
-# Loading input_fm[32] =          27 into line_buffer[0][2] at time             10685000
-# Time:             10690000 | done: 0
-# Loading input_fm[33] =          40 into line_buffer[0][3] at time             10695000
-# Time:             10700000 | done: 0
-# Loading input_fm[34] =          53 into line_buffer[0][4] at time             10705000
-# Time:             10710000 | done: 0
-# Loading input_fm[35] =          66 into line_buffer[0][5] at time             10715000
-# Time:             10720000 | done: 0
-# Loading input_fm[36] =           x into line_buffer[0][0] at time             10725000
-# Time:             10730000 | done: 0
-# Loading input_fm[37] =           x into line_buffer[0][1] at time             10735000
-# Time:             10740000 | done: 0
-# Loading input_fm[38] =           x into line_buffer[0][2] at time             10745000
-# Time:             10750000 | done: 0
-# Loading input_fm[39] =           x into line_buffer[0][3] at time             10755000
-# Time:             10760000 | done: 0
-# Loading input_fm[40] =           x into line_buffer[0][4] at time             10765000
-# Time:             10770000 | done: 0
-# Loading input_fm[41] =           x into line_buffer[0][5] at time             10775000
-# Time:             10780000 | done: 0
-# Loading input_fm[42] =           x into line_buffer[0][0] at time             10785000
-# Time:             10790000 | done: 0
-# Loading input_fm[43] =           x into line_buffer[0][1] at time             10795000
-# Time:             10800000 | done: 0
-# Loading input_fm[44] =           x into line_buffer[0][2] at time             10805000
-# Time:             10810000 | done: 0
-# Loading input_fm[45] =           x into line_buffer[0][3] at time             10815000
-# Time:             10820000 | done: 0
-# Loading input_fm[46] =           x into line_buffer[0][4] at time             10825000
-# Time:             10830000 | done: 0
-# Loading input_fm[47] =           x into line_buffer[0][5] at time             10835000
-# Time:             10840000 | done: 0
-# Loading input_fm[48] =           x into line_buffer[0][0] at time             10845000
-# Time:             10850000 | done: 0
-# Loading input_fm[49] =           x into line_buffer[0][1] at time             10855000
-# Time:             10860000 | done: 0
-# Loading input_fm[50] =           x into line_buffer[0][2] at time             10865000
-# Time:             10870000 | done: 0
-# Loading input_fm[51] =           x into line_buffer[0][3] at time             10875000
-# Time:             10880000 | done: 0
-# Loading input_fm[52] =           x into line_buffer[0][4] at time             10885000
-# Time:             10890000 | done: 0
-# Loading input_fm[53] =           x into line_buffer[0][5] at time             10895000
-# Time:             10900000 | done: 0
-# Loading input_fm[54] =           x into line_buffer[0][0] at time             10905000
-# Time:             10910000 | done: 0
-# Loading input_fm[55] =           x into line_buffer[0][1] at time             10915000
-# Time:             10920000 | done: 0
-# Loading input_fm[56] =           x into line_buffer[0][2] at time             10925000
-# Time:             10930000 | done: 0
-# Loading input_fm[57] =           x into line_buffer[0][3] at time             10935000
-# Time:             10940000 | done: 0
-# Loading input_fm[58] =           x into line_buffer[0][4] at time             10945000
-# Time:             10950000 | done: 0
-# Loading input_fm[59] =           x into line_buffer[0][5] at time             10955000
-# Time:             10960000 | done: 0
-# Loading input_fm[60] =           x into line_buffer[0][0] at time             10965000
-# Time:             10970000 | done: 0
-# Loading input_fm[61] =           x into line_buffer[0][1] at time             10975000
-# Time:             10980000 | done: 0
-# Loading input_fm[62] =           x into line_buffer[0][2] at time             10985000
-# Time:             10990000 | done: 0
-# Loading input_fm[63] =           x into line_buffer[0][3] at time             10995000
-# Time:             11000000 | done: 0
-# Loading input_fm[0] =           x into line_buffer[0][0] at time             11005000
-# Time:             11010000 | done: 0
-# Loading input_fm[1] =           x into line_buffer[0][1] at time             11015000
-# Time:             11020000 | done: 0
-# ERROR: Timeout waiting for done signal!
+# Time:              8700000 | done: 1
+# CNN prediction output:          x
 # ** Note: $finish    : tb_cnn_unit.v(78)
-#    Time: 11020 ns  Iteration: 0  Instance: /tb_cnn_unit
+#    Time: 8700 ns  Iteration: 0  Instance: /tb_cnn_unit
 # 1
 # Break in Module tb_cnn_unit at tb_cnn_unit.v line 78
-# End time: 14:38:21 on Jul 26,2025, Elapsed time: 2:13:47
+# End time: 15:47:44 on Jul 26,2025, Elapsed time: 0:53:59
 # Errors: 0, Warnings: 0

@@ -58,13 +58,13 @@ fc_layer fc_layer(
     .clk(clk),
     .rst(rst),
     .enable(fc_start),
-    .fc_input(pool_output),
+    .fc_input(pool_output[0:8]),
     .done(fc_done),
     .fc_layer_op(fc_output)
 );
 
 relu_unit relu(
-    .fc_op(fc_output),
+    .fc_op(fc_output[0:31]),
     .relu_acc(value)
 );
 

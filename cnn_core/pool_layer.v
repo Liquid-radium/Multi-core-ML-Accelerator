@@ -116,14 +116,14 @@ always @ (posedge clk) begin
     avg_pool_en <= 0; // stop feeding after previous state sent last input
     latency_counter <= latency_counter + 1;
 
-    if(latency_counter == 4) begin
-      latency_counter <= 0;
+    if(latency_counter == 4'b0100) begin
+      latency_counter <= 4'b0000;
       state <= WRITE;
     end
     $display("Waiting for avg_pool output at time %t", $time);
     end
     WRITE: begin
-      output_fm[(row >> 1)*(fm_width >> 1) + (col >> 1)] <= avg_pool_op;
+      output_fm[((row >> 1) * 3) + (col >> 1)] <= avg_pool_op;
       $display("Writing output %d to output_fm[%0d] at time %t", 
                 avg_pool_op, (row >> 1)*(fm_width >> 1) + (col >> 1), $time);
       state <= NEXT;
