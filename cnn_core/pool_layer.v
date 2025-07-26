@@ -111,8 +111,7 @@ always @ (posedge clk) begin
       // Wait for next clock to send last input before disabling
       state <= AVG_POOL_WAIT;
     end
-
-  end
+    end
     AVG_POOL_WAIT: begin
     avg_pool_en <= 0; // stop feeding after previous state sent last input
     latency_counter <= latency_counter + 1;
@@ -161,7 +160,7 @@ always @ (posedge clk) begin
     DONE: begin
         //holds done signal 
       end
-    end
   endcase
 end
+end 
 endmodule
