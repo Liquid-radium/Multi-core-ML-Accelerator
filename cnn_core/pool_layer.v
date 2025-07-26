@@ -76,13 +76,6 @@ always @ (posedge clk) begin
         state <= SHIFT;
       end
       fm_address <= fm_address + 1; 
-      if(fm_address == 6'b100011) begin
-        $display("End of line buffer block reached at time %t", $time);
-        fm_address <= 6'b000000; //reset fm_address for next block  
-        state <= SHIFT; // or next state if needed
-        $display("Resetting fm_address to 0 at time %t", $time);
-        $display("Pool layer done at time %t", $time);
-        end
       end 
     SHIFT: begin
       row <= 0;
@@ -153,7 +146,17 @@ always @ (posedge clk) begin
         state <= IDLE;
       end
     end
-    state <= LOAD; // or back to LOAD, depending on design
+    if(fm_address < 6'b100011) begin
+      state <= LOAD; // or back to LOAD, depending on design
+      $display("Incrementing fm_address to %0d at time %t", fm_address, $time);
+    end else begin
+      fm_address <= 6'b000000; //reset fm_address for next block  
+      $display("Resetting fm_address to 0 at time %t", $time);
+      $display("Pool layer done at time %t", $time);
+      done <= 1; //indicate that pooling is done
+      $display("Pool layer done signal set to 1 at time %t", $time);
+      // Reset state to IDLE or next state if needed
+      state <= DONE;
     end
     DONE: begin
         //holds done signal 
