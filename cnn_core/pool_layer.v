@@ -146,7 +146,7 @@ always @ (posedge clk) begin
         state <= IDLE;
       end
     end
-    state <= AVG_POOL_RESET; // or back to LOAD, depending on design
+    state <= LOAD; // or back to LOAD, depending on design
     end
     DONE: begin
         //holds done signal 

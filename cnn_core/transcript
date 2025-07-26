@@ -1,89 +1,89 @@
 # do compile.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:32:42 on Jul 26,2025
+# Start time: 11:45:20 on Jul 26,2025
 # vlog -reportprogress 300 -sv cnn_core_unit.v 
 # -- Compiling module cnn_top
 # 
 # Top level modules:
 # 	cnn_top
-# End time: 11:32:42 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 11:45:20 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:32:42 on Jul 26,2025
+# Start time: 11:45:20 on Jul 26,2025
 # vlog -reportprogress 300 -sv cnn_engine.v 
 # -- Compiling module cnn_engine
 # 
 # Top level modules:
 # 	cnn_engine
-# End time: 11:32:42 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 11:45:20 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:32:42 on Jul 26,2025
+# Start time: 11:45:20 on Jul 26,2025
 # vlog -reportprogress 300 -sv pool_layer.v 
 # -- Compiling module pool_layer
 # 
 # Top level modules:
 # 	pool_layer
-# End time: 11:32:42 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 11:45:20 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:32:42 on Jul 26,2025
+# Start time: 11:45:20 on Jul 26,2025
 # vlog -reportprogress 300 -sv fc_layer.v 
 # -- Compiling module fc_layer
 # 
 # Top level modules:
 # 	fc_layer
-# End time: 11:32:42 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 11:45:21 on Jul 26,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:32:42 on Jul 26,2025
+# Start time: 11:45:21 on Jul 26,2025
 # vlog -reportprogress 300 -sv tb_cnn_multi.v 
 # -- Compiling module tb_cnn_multi
 # 
 # Top level modules:
 # 	tb_cnn_multi
-# End time: 11:32:42 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 11:45:21 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:32:42 on Jul 26,2025
+# Start time: 11:45:21 on Jul 26,2025
 # vlog -reportprogress 300 -sv avg_pool_unit.v 
 # -- Compiling module avg_pool_unit
 # 
 # Top level modules:
 # 	avg_pool_unit
-# End time: 11:32:43 on Jul 26,2025, Elapsed time: 0:00:01
+# End time: 11:45:21 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:32:43 on Jul 26,2025
+# Start time: 11:45:21 on Jul 26,2025
 # vlog -reportprogress 300 -sv relu_unit.v 
 # -- Compiling module relu_unit
 # 
 # Top level modules:
 # 	relu_unit
-# End time: 11:32:43 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 11:45:21 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:32:43 on Jul 26,2025
+# Start time: 11:45:21 on Jul 26,2025
 # vlog -reportprogress 300 -sv mac_unit.v 
 # -- Compiling module mac_unit
 # 
 # Top level modules:
 # 	mac_unit
-# End time: 11:32:43 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 11:45:21 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:32:43 on Jul 26,2025
+# Start time: 11:45:21 on Jul 26,2025
 # vlog -reportprogress 300 -sv multi_core.v 
 # -- Compiling module multi_core
 # 
 # Top level modules:
 # 	multi_core
-# End time: 11:32:43 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 11:45:21 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vsim tb_cnn_unit
 # vsim tb_cnn_unit 
-# Start time: 11:32:47 on Jul 26,2025
+# Start time: 11:45:26 on Jul 26,2025
 # Loading sv_std.std
 # Loading work.tb_cnn_unit
 # Loading work.cnn_top
@@ -921,33 +921,46 @@ run -all
 # value of input_fm at time              7915000 is '{x, x, x, x, x, x, x, x, x, x, x, x, x, x, x, x, x, x, 1, 14, 27, 40, 53, 66, 1, 14, 27, 40, 53, 66, 1, 14, 27, 40, 53, 66}
 # Time:              7920000 | done: 0
 # Loading input_fm[0] =           x into line_buffer[0][0] at time              7925000
+# fm_address incremented to 0 at time              7925000
 # Time:              7930000 | done: 0
 # Loading input_fm[1] =           x into line_buffer[0][1] at time              7935000
+# fm_address incremented to 1 at time              7935000
 # Time:              7940000 | done: 0
 # Loading input_fm[2] =           x into line_buffer[0][2] at time              7945000
+# fm_address incremented to 2 at time              7945000
 # Time:              7950000 | done: 0
 # Loading input_fm[3] =           x into line_buffer[0][3] at time              7955000
+# fm_address incremented to 3 at time              7955000
 # Time:              7960000 | done: 0
 # Loading input_fm[4] =           x into line_buffer[0][4] at time              7965000
+# fm_address incremented to 4 at time              7965000
 # Time:              7970000 | done: 0
 # Loading input_fm[5] =           x into line_buffer[0][5] at time              7975000
+# fm_address incremented to 5 at time              7975000
 # Time:              7980000 | done: 0
 # Loading input_fm[6] =           x into line_buffer[0][0] at time              7985000
+# fm_address incremented to 6 at time              7985000
 # Time:              7990000 | done: 0
 # Loading input_fm[7] =           x into line_buffer[0][1] at time              7995000
+# fm_address incremented to 7 at time              7995000
 # Time:              8000000 | done: 0
 # Loading input_fm[8] =           x into line_buffer[0][2] at time              8005000
+# fm_address incremented to 8 at time              8005000
 # Time:              8010000 | done: 0
 # Loading input_fm[9] =           x into line_buffer[0][3] at time              8015000
+# fm_address incremented to 9 at time              8015000
 # Time:              8020000 | done: 0
 # Loading input_fm[10] =           x into line_buffer[0][4] at time              8025000
+# fm_address incremented to 10 at time              8025000
 # Time:              8030000 | done: 0
 # Loading input_fm[11] =           x into line_buffer[0][5] at time              8035000
+# fm_address incremented to 11 at time              8035000
 # Time:              8040000 | done: 0
 # Shifting line buffer at time              8045000
 # Time:              8050000 | done: 0
 # Resetting avg_pool unit at time              8055000
 # Time:              8060000 | done: 0
+# Feeding avg_pool unit with input           0 at time              8065000
 # Feeding avg_pool unit with input           0 at time              8065000
 # avg_pool_count: 0 at time              8065000
 # Time:              8070000 | done: 0
@@ -978,6 +991,7 @@ run -all
 # Resetting avg_pool unit at time              8175000
 # Time:              8180000 | done: 0
 # Feeding avg_pool unit with input           x at time              8185000
+# Feeding avg_pool unit with input           x at time              8185000
 # avg_pool_count: 0 at time              8185000
 # Time:              8190000 | done: 0
 # Feeding avg_pool unit with input           x at time              8195000
@@ -1006,6 +1020,7 @@ run -all
 # Time:              8290000 | done: 0
 # Resetting avg_pool unit at time              8295000
 # Time:              8300000 | done: 0
+# Feeding avg_pool unit with input           x at time              8305000
 # Feeding avg_pool unit with input           x at time              8305000
 # avg_pool_count: 0 at time              8305000
 # Time:              8310000 | done: 0
@@ -1036,6 +1051,7 @@ run -all
 # Resetting avg_pool unit at time              8415000
 # Time:              8420000 | done: 0
 # Feeding avg_pool unit with input           x at time              8425000
+# Feeding avg_pool unit with input           x at time              8425000
 # avg_pool_count: 0 at time              8425000
 # Time:              8430000 | done: 0
 # Feeding avg_pool unit with input           x at time              8435000
@@ -1064,6 +1080,7 @@ run -all
 # Time:              8530000 | done: 0
 # Resetting avg_pool unit at time              8535000
 # Time:              8540000 | done: 0
+# Feeding avg_pool unit with input           x at time              8545000
 # Feeding avg_pool unit with input           x at time              8545000
 # avg_pool_count: 0 at time              8545000
 # Time:              8550000 | done: 0
@@ -1094,6 +1111,7 @@ run -all
 # Resetting avg_pool unit at time              8655000
 # Time:              8660000 | done: 0
 # Feeding avg_pool unit with input           x at time              8665000
+# Feeding avg_pool unit with input           x at time              8665000
 # avg_pool_count: 0 at time              8665000
 # Time:              8670000 | done: 0
 # Feeding avg_pool unit with input           x at time              8675000
@@ -1122,6 +1140,7 @@ run -all
 # Time:              8770000 | done: 0
 # Resetting avg_pool unit at time              8775000
 # Time:              8780000 | done: 0
+# Feeding avg_pool unit with input           x at time              8785000
 # Feeding avg_pool unit with input           x at time              8785000
 # avg_pool_count: 0 at time              8785000
 # Time:              8790000 | done: 0
@@ -1152,6 +1171,7 @@ run -all
 # Resetting avg_pool unit at time              8895000
 # Time:              8900000 | done: 0
 # Feeding avg_pool unit with input           x at time              8905000
+# Feeding avg_pool unit with input           x at time              8905000
 # avg_pool_count: 0 at time              8905000
 # Time:              8910000 | done: 0
 # Feeding avg_pool unit with input           x at time              8915000
@@ -1181,6 +1201,7 @@ run -all
 # Resetting avg_pool unit at time              9015000
 # Time:              9020000 | done: 0
 # Feeding avg_pool unit with input           x at time              9025000
+# Feeding avg_pool unit with input           x at time              9025000
 # avg_pool_count: 0 at time              9025000
 # Time:              9030000 | done: 0
 # Feeding avg_pool unit with input           x at time              9035000
@@ -1209,6 +1230,7 @@ run -all
 # Resetting avg_pool unit at time              9135000
 # Time:              9140000 | done: 0
 # Feeding avg_pool unit with input           x at time              9145000
+# Feeding avg_pool unit with input           x at time              9145000
 # avg_pool_count: 0 at time              9145000
 # FC Layer output:          x at time              9145000
 # Time:              9150000 | done: 0
@@ -1220,5 +1242,5 @@ run -all
 #    Time: 9160 ns  Iteration: 0  Instance: /tb_cnn_unit
 # 1
 # Break in Module tb_cnn_unit at tb_cnn_unit.v line 78
-# End time: 11:45:06 on Jul 26,2025, Elapsed time: 0:12:19
+# End time: 11:46:37 on Jul 26,2025, Elapsed time: 0:01:11
 # Errors: 0, Warnings: 0
