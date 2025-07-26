@@ -1,89 +1,89 @@
 # do compile.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:10:29 on Jul 26,2025
+# Start time: 11:12:09 on Jul 26,2025
 # vlog -reportprogress 300 -sv cnn_core_unit.v 
 # -- Compiling module cnn_top
 # 
 # Top level modules:
 # 	cnn_top
-# End time: 11:10:29 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 11:12:09 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:10:29 on Jul 26,2025
+# Start time: 11:12:09 on Jul 26,2025
 # vlog -reportprogress 300 -sv cnn_engine.v 
 # -- Compiling module cnn_engine
 # 
 # Top level modules:
 # 	cnn_engine
-# End time: 11:10:29 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 11:12:09 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:10:29 on Jul 26,2025
+# Start time: 11:12:09 on Jul 26,2025
 # vlog -reportprogress 300 -sv pool_layer.v 
 # -- Compiling module pool_layer
 # 
 # Top level modules:
 # 	pool_layer
-# End time: 11:10:29 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 11:12:10 on Jul 26,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:10:29 on Jul 26,2025
+# Start time: 11:12:10 on Jul 26,2025
 # vlog -reportprogress 300 -sv fc_layer.v 
 # -- Compiling module fc_layer
 # 
 # Top level modules:
 # 	fc_layer
-# End time: 11:10:29 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 11:12:10 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:10:29 on Jul 26,2025
+# Start time: 11:12:10 on Jul 26,2025
 # vlog -reportprogress 300 -sv tb_cnn_multi.v 
 # -- Compiling module tb_cnn_multi
 # 
 # Top level modules:
 # 	tb_cnn_multi
-# End time: 11:10:29 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 11:12:10 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:10:29 on Jul 26,2025
+# Start time: 11:12:10 on Jul 26,2025
 # vlog -reportprogress 300 -sv avg_pool_unit.v 
 # -- Compiling module avg_pool_unit
 # 
 # Top level modules:
 # 	avg_pool_unit
-# End time: 11:10:29 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 11:12:10 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:10:29 on Jul 26,2025
+# Start time: 11:12:10 on Jul 26,2025
 # vlog -reportprogress 300 -sv relu_unit.v 
 # -- Compiling module relu_unit
 # 
 # Top level modules:
 # 	relu_unit
-# End time: 11:10:30 on Jul 26,2025, Elapsed time: 0:00:01
+# End time: 11:12:10 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:10:30 on Jul 26,2025
+# Start time: 11:12:10 on Jul 26,2025
 # vlog -reportprogress 300 -sv mac_unit.v 
 # -- Compiling module mac_unit
 # 
 # Top level modules:
 # 	mac_unit
-# End time: 11:10:30 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 11:12:10 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:10:30 on Jul 26,2025
+# Start time: 11:12:10 on Jul 26,2025
 # vlog -reportprogress 300 -sv multi_core.v 
 # -- Compiling module multi_core
 # 
 # Top level modules:
 # 	multi_core
-# End time: 11:10:30 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 11:12:10 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vsim tb_cnn_unit
 # vsim tb_cnn_unit 
-# Start time: 11:10:36 on Jul 26,2025
+# Start time: 11:12:15 on Jul 26,2025
 # Loading sv_std.std
 # Loading work.tb_cnn_unit
 # Loading work.cnn_top
@@ -93,8 +93,8 @@ vsim tb_cnn_unit
 # Loading work.avg_pool_unit
 # Loading work.fc_layer
 # Loading work.relu_unit
-# ** Error (suppressible): (vsim-12027) Array connection type 'reg signed[31:0]' is incompatible with 'wire signed[31:0]$[0:35]' for  port (input_fm):  Can't mix packed and unpacked types.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_unit/dut/pool_layer File: cnn_core_unit.v Line: 47
+# ** Error (suppressible): (vsim-8323) $display : Argument number 3 is an unpacked type, and may only be printed with the '%p' format.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_unit/dut File: cnn_core_unit.v Line: 103
 # Error loading design
-# End time: 11:10:36 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 11:12:15 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 1, Warnings: 0

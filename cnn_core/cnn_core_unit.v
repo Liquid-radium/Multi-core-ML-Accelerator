@@ -100,7 +100,7 @@ always @ (posedge clk) begin
         end
       end
       POOL_START: begin
-        $display("value of input_fm at time %t is %d", $time, conv_output[0:35]);
+        $display("value of input_fm at time %t is %p", $time, conv_output[0:35]);
         pool_start <= 0;
         state <= POOL_WAIT;
       end
