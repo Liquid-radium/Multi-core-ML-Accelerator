@@ -1,43 +1,43 @@
 # do compile.do
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:09:38 on Jul 26,2025
+# Start time: 16:13:24 on Jul 26,2025
 # vlog -reportprogress 300 -sv bus_decoder.v 
 # -- Compiling module bus_decoder
 # 
 # Top level modules:
 # 	bus_decoder
-# End time: 16:09:38 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 16:13:24 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:09:39 on Jul 26,2025
+# Start time: 16:13:24 on Jul 26,2025
 # vlog -reportprogress 300 -sv dual_ram.v 
 # -- Compiling module dual_ram
 # 
 # Top level modules:
 # 	dual_ram
-# End time: 16:09:39 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 16:13:24 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:09:39 on Jul 26,2025
+# Start time: 16:13:24 on Jul 26,2025
 # vlog -reportprogress 300 -sv gpio_module.v 
 # -- Compiling module gpio_module
 # 
 # Top level modules:
 # 	gpio_module
-# End time: 16:09:39 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 16:13:24 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:09:39 on Jul 26,2025
+# Start time: 16:13:24 on Jul 26,2025
 # vlog -reportprogress 300 -sv tb_gpio.v 
 # -- Compiling module tb_gpio
 # 
 # Top level modules:
 # 	tb_gpio
-# End time: 16:09:39 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 16:13:24 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vsim tb_gpio
 # vsim tb_gpio 
-# Start time: 16:09:46 on Jul 26,2025
+# Start time: 16:13:30 on Jul 26,2025
 # Loading sv_std.std
 # Loading work.tb_gpio
 # Loading work.gpio_module
@@ -45,5 +45,5 @@ run -all
 # led1: 0, led2: 0, led3: 0, led4: 0
 # Break key hit
 # Simulation stop requested.
-# End time: 16:12:22 on Jul 26,2025, Elapsed time: 0:02:36
+# End time: 16:16:30 on Jul 26,2025, Elapsed time: 0:03:00
 # Errors: 0, Warnings: 0

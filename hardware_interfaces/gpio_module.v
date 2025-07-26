@@ -26,21 +26,30 @@ always @ (posedge clk) begin
         IDLE: begin
           led1 <= 1;
           ctrl <= START_CORES;
+          $display("GPIO module is in IDLE state at time %t", $time);
+          $display("LED1 is ON at time %t", $time);
         end
         START_CORES: begin
           //led1 <= 0;
           led2 <= 1;
           ctrl <= WAIT_FOR_DONE;
+          $display("Starting cores at time %t", $time);
+          $display("LED2 is ON at time %t", $time);
         end
         WAIT_FOR_DONE: begin
           //led2 <= 0;
           led3 <= 1;
           ctrl <= DONE_STATE;
+          $display("Waiting for cores to finish at time %t", $time);
+          $display("LED3 is ON at time %t", $time);
         end
         DONE_STATE: begin
           //led3 <= 0;
           led4 <= 1;
           led_done <= 1;
+          ctrl <= IDLE;
+          $display("All cores done at time %t", $time);
+          $display("LED4 is ON at time %t", $time);
         end
     endcase
   end
