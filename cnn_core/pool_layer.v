@@ -72,7 +72,7 @@ always @ (posedge clk) begin
       if((fm_address + 1) % fm_width == 0) begin //if end of row
         line_buffer[1] <= line_buffer[0]; //used for maintaining the order of convolution in the image
       end
-      if((fm_address + 1) == (fm_width * 2)) begin //if end of line buffer block
+      if((fm_address + 1) % (fm_width * 2) == 0) begin //if end of line buffer block
         state <= SHIFT;
       end
       fm_address <= fm_address + 1; 
