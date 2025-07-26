@@ -130,37 +130,38 @@ always @ (posedge clk) begin
       $display("moving to next state NEXT at time %t", $time);
     end
     NEXT: begin
-      $display("fm_address incremented to %0d at time %t", fm_address, $time);
-    if (col + 2 < fm_width) begin
-      col <= col + 2;
-      $display("Moving to next column: %d at time %t", col, $time);
+  $display("fm_address incremented to %0d at time %t", fm_address, $time);
+  
+  if (col + 2 < fm_width) begin
+    col <= col + 2;
+    $display("Moving to next column: %d at time %t", col, $time);
+  end else begin
+    if (row + 2 < fm_height) begin
+      row <= row + 2;
+      col <= 0;
+      $display("Moving to next row: %d at time %t", row, $time);
     end else begin
-      //col <= 0;
-      if (row + 2 < fm_height) begin
-        row <= row + 2;
-        col <= 0;
-        $display("Moving to next row: %d at time %t", row, $time);
-      end else begin
-        done <= 1;
-        state <= IDLE;
-      end
+      done <= 1;
+      state <= IDLE;
     end
-    if(fm_address < 6'b100011) begin
-      state <= LOAD; // or back to LOAD, depending on design
-      $display("Incrementing fm_address to %0d at time %t", fm_address, $time);
-    end else begin
-      fm_address <= 6'b000000; //reset fm_address for next block  
-      $display("Resetting fm_address to 0 at time %t", $time);
-      $display("Pool layer done at time %t", $time);
-      done <= 1; //indicate that pooling is done
-      $display("Pool layer done signal set to 1 at time %t", $time);
-      // Reset state to IDLE or next state if needed
-      state <= DONE;
-    end
-    DONE: begin
-        //holds done signal 
-      end
-  endcase
+  end
+
+  if(fm_address < 6'b100011) begin
+    state <= LOAD;
+    $display("Incrementing fm_address to %0d at time %t", fm_address, $time);
+  end else begin
+    fm_address <= 6'b000000;
+    $display("Resetting fm_address to 0 at time %t", $time);
+    $display("Pool layer done at time %t", $time);
+    done <= 1;
+    $display("Pool layer done signal set to 1 at time %t", $time);
+    state <= DONE; // This just sets up for the next cycle
+  end
 end
-end 
-endmodule
+
+DONE: begin
+  // You can keep this empty or use it to latch done = 1
+end
+    endcase
+  end
+end
