@@ -53,4 +53,5 @@ always @ (posedge clk) begin
     $display("FC Layer output: %d at time %t", relu_acc, $time);
   end
 end
+end 
 endmodule
