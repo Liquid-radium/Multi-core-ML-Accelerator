@@ -11,24 +11,24 @@ cModel Technology
 Z0 d/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core
 vavg_pool_unit
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1753507859
+Z2 !s110 1753508429
 !i10b 1
-!s100 0cJ`HQzmm`amkGHS4lD?l2
+!s100 M13@kk8a@goG<L^bkTn;Z3
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I[ejP@ej63SgzN>:3iCeXX2
+Ia]mPYalfWRVzm_[liB_@a0
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1753477751
+w1753508314
 8avg_pool_unit.v
 Favg_pool_unit.v
-!i122 600
+!i122 609
 Z5 L0 1 59
 Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1753507859.000000
+Z7 !s108 1753508429.000000
 !s107 avg_pool_unit.v|
 !s90 -reportprogress|300|-sv|avg_pool_unit.v|
 !i113 1
@@ -47,7 +47,7 @@ R0
 w1753507523
 8cnn_engine.v
 Fcnn_engine.v
-!i122 596
+!i122 605
 L0 1 175
 R6
 r1
@@ -63,17 +63,17 @@ vcnn_top
 R1
 R2
 !i10b 1
-!s100 [hJ:@`T9;31MEV_[c=STF1
+!s100 >T_`@V7Zz<ncKIRiG@`al1
 R3
-IcHgYC70TD;Z2NiFLKOhb_0
+IM9Q_P?6jo`j[VI>Zj08_30
 R4
 S1
 R0
-w1753478960
+w1753508411
 8cnn_core_unit.v
 Fcnn_core_unit.v
-!i122 595
-L0 1 128
+!i122 604
+L0 1 129
 R6
 r1
 !s85 0
@@ -97,7 +97,7 @@ R0
 w1753477339
 8fc_layer.v
 Ffc_layer.v
-!i122 598
+!i122 607
 L0 1 50
 R6
 r1
@@ -111,7 +111,7 @@ o-sv
 R8
 vmac_unit
 R1
-R2
+Z9 !s110 1753508430
 !i10b 1
 !s100 2O:fP[Pd=APP7FGEcT]O21
 R3
@@ -122,13 +122,13 @@ R0
 w1753211805
 8mac_unit.v
 Fmac_unit.v
-!i122 602
+!i122 611
 R5
 R6
 r1
 !s85 0
 31
-R7
+Z10 !s108 1753508430.000000
 !s107 mac_unit.v|
 !s90 -reportprogress|300|-sv|mac_unit.v|
 !i113 1
@@ -136,7 +136,7 @@ o-sv
 R8
 vmulti_core
 R1
-R2
+R9
 !i10b 1
 !s100 ;XMcMdiXfMFaNzAh`7J0l0
 R3
@@ -147,13 +147,13 @@ R0
 w1753287356
 8multi_core.v
 Fmulti_core.v
-!i122 603
+!i122 612
 L0 1 76
 R6
 r1
 !s85 0
 31
-R7
+R10
 !s107 multi_core.v|
 !s90 -reportprogress|300|-sv|multi_core.v|
 !i113 1
@@ -172,7 +172,7 @@ R0
 w1753507849
 8pool_layer.v
 Fpool_layer.v
-!i122 597
+!i122 606
 L0 1 149
 R6
 r1
@@ -186,7 +186,7 @@ o-sv
 R8
 vrelu_unit
 R1
-R2
+R9
 !i10b 1
 !s100 DR^EMC?oL[4:Vz1oYgA?T3
 R3
@@ -197,7 +197,7 @@ R0
 w1753477083
 8relu_unit.v
 Frelu_unit.v
-!i122 601
+!i122 610
 L0 1 7
 R6
 r1
@@ -222,7 +222,7 @@ R0
 w1753286553
 8tb_cnn_multi.v
 Ftb_cnn_multi.v
-!i122 599
+!i122 608
 L0 3 55
 R6
 r1
