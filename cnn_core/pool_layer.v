@@ -76,6 +76,14 @@ always @ (posedge clk) begin
         state <= SHIFT;
       end
       fm_address <= fm_address + 1;
+      if(fm_address == (fm_width * 2)) begin
+        $display("End of line buffer block reached at time %t", $time);
+        fm_address <= 0; //reset fm_address for next block
+        done <= 1; //indicate completion of loading
+        state <= DONE; // or next state if needed
+        $display("Resetting fm_address to 0 at time %t", $time);
+        $display("Pool layer done at time %t", $time);
+      end
       $display("fm_address incremented to %0d at time %t", fm_address, $time);
     end
     SHIFT: begin
