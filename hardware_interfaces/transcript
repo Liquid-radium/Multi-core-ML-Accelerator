@@ -1,150 +1,350 @@
 # do compile.do
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:29:24 on Jul 26,2025
+# Start time: 16:33:58 on Jul 26,2025
 # vlog -reportprogress 300 -sv bus_decoder.v 
 # -- Compiling module bus_decoder
 # 
 # Top level modules:
 # 	bus_decoder
-# End time: 16:29:24 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 16:33:58 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:29:24 on Jul 26,2025
+# Start time: 16:33:58 on Jul 26,2025
 # vlog -reportprogress 300 -sv dual_ram.v 
 # -- Compiling module dual_ram
 # 
 # Top level modules:
 # 	dual_ram
-# End time: 16:29:24 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 16:33:58 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:29:25 on Jul 26,2025
+# Start time: 16:33:58 on Jul 26,2025
 # vlog -reportprogress 300 -sv gpio_module.v 
 # -- Compiling module gpio_module
 # 
 # Top level modules:
 # 	gpio_module
-# End time: 16:29:25 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 16:33:58 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:29:25 on Jul 26,2025
+# Start time: 16:33:58 on Jul 26,2025
 # vlog -reportprogress 300 -sv tb_gpio.v 
 # -- Compiling module tb_gpio
 # 
 # Top level modules:
 # 	tb_gpio
-# End time: 16:29:25 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 16:33:58 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vsim tb_gpio
 # vsim tb_gpio 
-# Start time: 16:29:29 on Jul 26,2025
+# Start time: 16:35:28 on Jul 26,2025
 # Loading sv_std.std
 # Loading work.tb_gpio
 # Loading work.gpio_module
 run -all
 # GPIO module initialized at time                15000
+# GPIO module is in IDLE state at time                15000
+# LED1 is ON at time                15000
 # GPIO module initialized at time                25000
+# Starting cores at time                25000
+# LED2 is ON at time                25000
 # GPIO module initialized at time                35000
+# Waiting for cores to finish at time                35000
+# LED3 is ON at time                35000
 # GPIO module initialized at time                45000
+# All cores done at time                45000
+# LED4 is ON at time                45000
 # GPIO module initialized at time                55000
+# GPIO module is in IDLE state at time                55000
+# LED1 is ON at time                55000
 # GPIO module initialized at time                65000
+# Starting cores at time                65000
+# LED2 is ON at time                65000
 # GPIO module initialized at time                75000
+# Waiting for cores to finish at time                75000
+# LED3 is ON at time                75000
 # GPIO module initialized at time                85000
+# All cores done at time                85000
+# LED4 is ON at time                85000
 # GPIO module initialized at time                95000
+# GPIO module is in IDLE state at time                95000
+# LED1 is ON at time                95000
 # GPIO module initialized at time               105000
+# Starting cores at time               105000
+# LED2 is ON at time               105000
 # GPIO module initialized at time               115000
+# Waiting for cores to finish at time               115000
+# LED3 is ON at time               115000
 # GPIO module initialized at time               125000
+# All cores done at time               125000
+# LED4 is ON at time               125000
 # GPIO module initialized at time               135000
+# GPIO module is in IDLE state at time               135000
+# LED1 is ON at time               135000
 # GPIO module initialized at time               145000
+# Starting cores at time               145000
+# LED2 is ON at time               145000
 # GPIO module initialized at time               155000
+# Waiting for cores to finish at time               155000
+# LED3 is ON at time               155000
 # GPIO module initialized at time               165000
+# All cores done at time               165000
+# LED4 is ON at time               165000
 # GPIO module initialized at time               175000
+# GPIO module is in IDLE state at time               175000
+# LED1 is ON at time               175000
 # GPIO module initialized at time               185000
+# Starting cores at time               185000
+# LED2 is ON at time               185000
 # GPIO module initialized at time               195000
+# Waiting for cores to finish at time               195000
+# LED3 is ON at time               195000
 # GPIO module initialized at time               205000
+# All cores done at time               205000
+# LED4 is ON at time               205000
 # GPIO module initialized at time               215000
+# GPIO module is in IDLE state at time               215000
+# LED1 is ON at time               215000
 # GPIO module initialized at time               225000
+# Starting cores at time               225000
+# LED2 is ON at time               225000
 # GPIO module initialized at time               235000
+# Waiting for cores to finish at time               235000
+# LED3 is ON at time               235000
 # GPIO module initialized at time               245000
+# All cores done at time               245000
+# LED4 is ON at time               245000
 # GPIO module initialized at time               255000
+# GPIO module is in IDLE state at time               255000
+# LED1 is ON at time               255000
 # GPIO module initialized at time               265000
+# Starting cores at time               265000
+# LED2 is ON at time               265000
 # GPIO module initialized at time               275000
+# Waiting for cores to finish at time               275000
+# LED3 is ON at time               275000
 # GPIO module initialized at time               285000
+# All cores done at time               285000
+# LED4 is ON at time               285000
 # GPIO module initialized at time               295000
+# GPIO module is in IDLE state at time               295000
+# LED1 is ON at time               295000
 # GPIO module initialized at time               305000
+# Starting cores at time               305000
+# LED2 is ON at time               305000
 # GPIO module initialized at time               315000
+# Waiting for cores to finish at time               315000
+# LED3 is ON at time               315000
 # GPIO module initialized at time               325000
+# All cores done at time               325000
+# LED4 is ON at time               325000
 # GPIO module initialized at time               335000
+# GPIO module is in IDLE state at time               335000
+# LED1 is ON at time               335000
 # GPIO module initialized at time               345000
+# Starting cores at time               345000
+# LED2 is ON at time               345000
 # GPIO module initialized at time               355000
+# Waiting for cores to finish at time               355000
+# LED3 is ON at time               355000
 # GPIO module initialized at time               365000
+# All cores done at time               365000
+# LED4 is ON at time               365000
 # GPIO module initialized at time               375000
+# GPIO module is in IDLE state at time               375000
+# LED1 is ON at time               375000
 # GPIO module initialized at time               385000
+# Starting cores at time               385000
+# LED2 is ON at time               385000
 # GPIO module initialized at time               395000
+# Waiting for cores to finish at time               395000
+# LED3 is ON at time               395000
 # GPIO module initialized at time               405000
+# All cores done at time               405000
+# LED4 is ON at time               405000
 # GPIO module initialized at time               415000
+# GPIO module is in IDLE state at time               415000
+# LED1 is ON at time               415000
 # GPIO module initialized at time               425000
+# Starting cores at time               425000
+# LED2 is ON at time               425000
 # GPIO module initialized at time               435000
+# Waiting for cores to finish at time               435000
+# LED3 is ON at time               435000
 # GPIO module initialized at time               445000
+# All cores done at time               445000
+# LED4 is ON at time               445000
 # GPIO module initialized at time               455000
+# GPIO module is in IDLE state at time               455000
+# LED1 is ON at time               455000
 # GPIO module initialized at time               465000
+# Starting cores at time               465000
+# LED2 is ON at time               465000
 # GPIO module initialized at time               475000
+# Waiting for cores to finish at time               475000
+# LED3 is ON at time               475000
 # GPIO module initialized at time               485000
+# All cores done at time               485000
+# LED4 is ON at time               485000
 # GPIO module initialized at time               495000
+# GPIO module is in IDLE state at time               495000
+# LED1 is ON at time               495000
 # GPIO module initialized at time               505000
+# Starting cores at time               505000
+# LED2 is ON at time               505000
 # GPIO module initialized at time               515000
+# Waiting for cores to finish at time               515000
+# LED3 is ON at time               515000
 # GPIO module initialized at time               525000
+# All cores done at time               525000
+# LED4 is ON at time               525000
 # GPIO module initialized at time               535000
+# GPIO module is in IDLE state at time               535000
+# LED1 is ON at time               535000
 # GPIO module initialized at time               545000
+# Starting cores at time               545000
+# LED2 is ON at time               545000
 # GPIO module initialized at time               555000
+# Waiting for cores to finish at time               555000
+# LED3 is ON at time               555000
 # GPIO module initialized at time               565000
+# All cores done at time               565000
+# LED4 is ON at time               565000
 # GPIO module initialized at time               575000
+# GPIO module is in IDLE state at time               575000
+# LED1 is ON at time               575000
 # GPIO module initialized at time               585000
+# Starting cores at time               585000
+# LED2 is ON at time               585000
 # GPIO module initialized at time               595000
+# Waiting for cores to finish at time               595000
+# LED3 is ON at time               595000
 # GPIO module initialized at time               605000
+# All cores done at time               605000
+# LED4 is ON at time               605000
 # GPIO module initialized at time               615000
+# GPIO module is in IDLE state at time               615000
+# LED1 is ON at time               615000
 # GPIO module initialized at time               625000
+# Starting cores at time               625000
+# LED2 is ON at time               625000
 # GPIO module initialized at time               635000
+# Waiting for cores to finish at time               635000
+# LED3 is ON at time               635000
 # GPIO module initialized at time               645000
+# All cores done at time               645000
+# LED4 is ON at time               645000
 # GPIO module initialized at time               655000
+# GPIO module is in IDLE state at time               655000
+# LED1 is ON at time               655000
 # GPIO module initialized at time               665000
+# Starting cores at time               665000
+# LED2 is ON at time               665000
 # GPIO module initialized at time               675000
+# Waiting for cores to finish at time               675000
+# LED3 is ON at time               675000
 # GPIO module initialized at time               685000
+# All cores done at time               685000
+# LED4 is ON at time               685000
 # GPIO module initialized at time               695000
+# GPIO module is in IDLE state at time               695000
+# LED1 is ON at time               695000
 # GPIO module initialized at time               705000
+# Starting cores at time               705000
+# LED2 is ON at time               705000
 # GPIO module initialized at time               715000
+# Waiting for cores to finish at time               715000
+# LED3 is ON at time               715000
 # GPIO module initialized at time               725000
+# All cores done at time               725000
+# LED4 is ON at time               725000
 # GPIO module initialized at time               735000
+# GPIO module is in IDLE state at time               735000
+# LED1 is ON at time               735000
 # GPIO module initialized at time               745000
+# Starting cores at time               745000
+# LED2 is ON at time               745000
 # GPIO module initialized at time               755000
+# Waiting for cores to finish at time               755000
+# LED3 is ON at time               755000
 # GPIO module initialized at time               765000
+# All cores done at time               765000
+# LED4 is ON at time               765000
 # GPIO module initialized at time               775000
+# GPIO module is in IDLE state at time               775000
+# LED1 is ON at time               775000
 # GPIO module initialized at time               785000
+# Starting cores at time               785000
+# LED2 is ON at time               785000
 # GPIO module initialized at time               795000
+# Waiting for cores to finish at time               795000
+# LED3 is ON at time               795000
 # GPIO module initialized at time               805000
+# All cores done at time               805000
+# LED4 is ON at time               805000
 # GPIO module initialized at time               815000
+# GPIO module is in IDLE state at time               815000
+# LED1 is ON at time               815000
 # GPIO module initialized at time               825000
+# Starting cores at time               825000
+# LED2 is ON at time               825000
 # GPIO module initialized at time               835000
+# Waiting for cores to finish at time               835000
+# LED3 is ON at time               835000
 # GPIO module initialized at time               845000
+# All cores done at time               845000
+# LED4 is ON at time               845000
 # GPIO module initialized at time               855000
+# GPIO module is in IDLE state at time               855000
+# LED1 is ON at time               855000
 # GPIO module initialized at time               865000
+# Starting cores at time               865000
+# LED2 is ON at time               865000
 # GPIO module initialized at time               875000
+# Waiting for cores to finish at time               875000
+# LED3 is ON at time               875000
 # GPIO module initialized at time               885000
+# All cores done at time               885000
+# LED4 is ON at time               885000
 # GPIO module initialized at time               895000
+# GPIO module is in IDLE state at time               895000
+# LED1 is ON at time               895000
 # GPIO module initialized at time               905000
+# Starting cores at time               905000
+# LED2 is ON at time               905000
 # GPIO module initialized at time               915000
+# Waiting for cores to finish at time               915000
+# LED3 is ON at time               915000
 # GPIO module initialized at time               925000
+# All cores done at time               925000
+# LED4 is ON at time               925000
 # GPIO module initialized at time               935000
+# GPIO module is in IDLE state at time               935000
+# LED1 is ON at time               935000
 # GPIO module initialized at time               945000
+# Starting cores at time               945000
+# LED2 is ON at time               945000
 # GPIO module initialized at time               955000
+# Waiting for cores to finish at time               955000
+# LED3 is ON at time               955000
 # GPIO module initialized at time               965000
+# All cores done at time               965000
+# LED4 is ON at time               965000
 # GPIO module initialized at time               975000
+# GPIO module is in IDLE state at time               975000
+# LED1 is ON at time               975000
 # GPIO module initialized at time               985000
+# Starting cores at time               985000
+# LED2 is ON at time               985000
 # GPIO module initialized at time               995000
+# Waiting for cores to finish at time               995000
+# LED3 is ON at time               995000
 # GPIO module initialized at time              1005000
-# led1: 0, led2: 0, led3: 0, led4: 0
+# All cores done at time              1005000
+# LED4 is ON at time              1005000
+# led1: 0, led2: 1, led3: 1, led4: 1
 # ** Note: $stop    : tb_gpio.v(39)
 #    Time: 1010 ns  Iteration: 0  Instance: /tb_gpio
 # Break in Module tb_gpio at tb_gpio.v line 39
-# End time: 16:33:24 on Jul 26,2025, Elapsed time: 0:03:55
+# End time: 16:36:00 on Jul 26,2025, Elapsed time: 0:00:32
 # Errors: 0, Warnings: 0

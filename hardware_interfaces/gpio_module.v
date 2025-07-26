@@ -25,7 +25,7 @@ always @ (posedge clk) begin
     ctrl <= IDLE;
   end else begin
     $display("GPIO module initialized at time %t", $time);
-    led1 <= 0;
+    //led1 <= 0;
     case(ctrl) 
         IDLE: begin
           led1 <= 1;
