@@ -38,9 +38,15 @@ always @ (posedge clk) begin
       fc_output = 32'd0;
       done = 0; 
   end 
-  else if(enable & ~rst) begin
+  else begin
+  if(enable) begin
+    fc_output = 32'd0; // Reset output for new computation
+    done = 0; // Reset done signal
+    $display("Starting FC Layer computation at time %t", $time);
+    // Perform the fully connected layer operation
     for (i = 0; i < 9; i = i + 1) begin
       fc_output = fc_output + fc_input[i] * fc_weights[i];
+      $display("Multiplying input %d with weight %d, current output: %d", fc_input[i], fc_weights[i], fc_output);
     end
     fc_layer_op <= fc_output + bias;
     done <= 1;
