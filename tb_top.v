@@ -102,26 +102,33 @@ initial begin
     #50;
 
     // Initialize image pixels with values 0 to 63
-    for (i = 0; i < 64; i = i + 1)
-        input_image[i] = i;
+    for (i = 0; i < 64; i = i + 1)begin
+        input_image[i] = i;  // Example: simple pattern
+    end
+    $display("Input Image:");
 
     // Pack 4 pixels per 32-bit word and write to memory
     for (i = 0; i < 64; i = i + 4) begin
         wb_write(32'h0000_0000 + (i >> 2)*4,
             {input_image[i+3], input_image[i+2], input_image[i+1], input_image[i]});
+        
     end
+    $display("Image written to memory.");
 
     // Trigger CNN operation
     wb_write(32'h4000_0000, 32'h1);  // Control register: start
+    $display("CNN processing started.");
 
     // Wait for CNN to complete (wait for o_wb_ack or monitor status)
     wait(dut.cnn_inst.o_wb_ack);
+    $display("CNN processing completed.");
 
     // Read output (assuming results start at 0x4000_0004)
     $display("\n---- Output Feature Map ----");
     for (i = 0; i < 16; i = i + 1) begin  // Assuming 4x4 output for 2x2 avg pooling
         wb_read(32'h4000_0004 + i*4);
     end
+    $display("Output feature map read from memory.");
 
     #100;
     $stop;
