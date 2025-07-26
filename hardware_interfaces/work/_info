@@ -11,118 +11,118 @@ cModel Technology
 Z0 d/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/hardware_interfaces
 vbus_decoder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1753194041
+!s110 1753526378
 !i10b 1
 !s100 PdkPoA4Pn[lZGL_U3bznU0
-Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
 IbjIRzR=?B4@dHfjnRz74W3
-Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
 w1751176124
 8bus_decoder.v
 Fbus_decoder.v
-!i122 16
+!i122 20
 L0 1 25
-Z5 OV;L;2020.1;71
+Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1753194041.000000
+!s108 1753526378.000000
 !s107 bus_decoder.v|
 !s90 -reportprogress|300|-sv|bus_decoder.v|
 !i113 1
 o-sv
-Z7 tCvgOpt 0
+Z5 tCvgOpt 0
 vdual_ram
 R1
-R2
+Z6 !s110 1753526379
 !i10b 1
 !s100 aKgie==[8m5E2[GG6G8]B3
-R3
+R2
 I>;NSj;N8I51?9;;54=^F12
-R4
+R3
 S1
 R0
 w1751178956
 8dual_ram.v
 Fdual_ram.v
-!i122 17
+!i122 21
 L0 1 36
-R5
+R4
 r1
 !s85 0
 31
-R6
+Z7 !s108 1753526379.000000
 !s107 dual_ram.v|
 !s90 -reportprogress|300|-sv|dual_ram.v|
 !i113 1
 o-sv
-R7
+R5
 vgpio_module
 R1
-Z8 !s110 1753194042
+R6
 !i10b 1
 !s100 NB<`o^z?@_P4O7EY_n3IN0
-R3
+R2
 IaEHNO5aC>W>hzkkmnzn<I3
-R4
+R3
 S1
 R0
 w1753178224
 8gpio_module.v
 Fgpio_module.v
-!i122 18
+!i122 22
 L0 1 48
-R5
+R4
 r1
 !s85 0
 31
-R6
+R7
 !s107 gpio_module.v|
 !s90 -reportprogress|300|-sv|gpio_module.v|
 !i113 1
 o-sv
-R7
+R5
 vtb_gpio
 R1
-R8
+R6
 !i10b 1
 !s100 D87@Zz6MV@zV[^T@?PLo[1
-R3
+R2
 I15`;ULIJR6Rbe?o:Y>`F52
-R4
+R3
 S1
 R0
 w1753188675
 8tb_gpio.v
 Ftb_gpio.v
-!i122 19
+!i122 23
 L0 3 39
-R5
+R4
 r1
 !s85 0
 31
-!s108 1753194042.000000
+R7
 !s107 tb_gpio.v|
 !s90 -reportprogress|300|-sv|tb_gpio.v|
 !i113 1
 o-sv
-R7
+R5
 vtb_min
 !s110 1753189275
 !i10b 1
 !s100 KiNVX<kJm4mUJimabjW8P2
-R3
+R2
 IlLgVO2n;kGzbC3K1_o[<11
-R4
+R3
 R0
 w1753188988
 8tb_min.v
 Ftb_min.v
 !i122 15
 L0 3 13
-R5
+R4
 r1
 !s85 0
 31
@@ -130,4 +130,4 @@ r1
 !s107 tb_min.v|
 !s90 -reportprogress|300|tb_min.v|
 !i113 1
-R7
+R5

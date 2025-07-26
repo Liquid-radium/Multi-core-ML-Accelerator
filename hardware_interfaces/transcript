@@ -1,49 +1,49 @@
 # do compile.do
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:50:41 on Jul 22,2025
+# Start time: 16:09:38 on Jul 26,2025
 # vlog -reportprogress 300 -sv bus_decoder.v 
 # -- Compiling module bus_decoder
 # 
 # Top level modules:
 # 	bus_decoder
-# End time: 19:50:41 on Jul 22,2025, Elapsed time: 0:00:00
+# End time: 16:09:38 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:50:41 on Jul 22,2025
+# Start time: 16:09:39 on Jul 26,2025
 # vlog -reportprogress 300 -sv dual_ram.v 
 # -- Compiling module dual_ram
 # 
 # Top level modules:
 # 	dual_ram
-# End time: 19:50:41 on Jul 22,2025, Elapsed time: 0:00:00
+# End time: 16:09:39 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:50:41 on Jul 22,2025
+# Start time: 16:09:39 on Jul 26,2025
 # vlog -reportprogress 300 -sv gpio_module.v 
 # -- Compiling module gpio_module
 # 
 # Top level modules:
 # 	gpio_module
-# End time: 19:50:42 on Jul 22,2025, Elapsed time: 0:00:01
+# End time: 16:09:39 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:50:42 on Jul 22,2025
+# Start time: 16:09:39 on Jul 26,2025
 # vlog -reportprogress 300 -sv tb_gpio.v 
 # -- Compiling module tb_gpio
 # 
 # Top level modules:
 # 	tb_gpio
-# End time: 19:50:42 on Jul 22,2025, Elapsed time: 0:00:00
+# End time: 16:09:39 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vsim tb_gpio
 # vsim tb_gpio 
-# Start time: 19:51:59 on Jul 22,2025
+# Start time: 16:09:46 on Jul 26,2025
 # Loading sv_std.std
 # Loading work.tb_gpio
 # Loading work.gpio_module
-add wave -position insertpoint sim:/tb_gpio/#INITIAL#25/*
-run 100 ns
-add wave -position insertpoint sim:/tb_gpio/dut/#ALWAYS#18/*
-run 90 ns
-# End time: 20:06:23 on Jul 22,2025, Elapsed time: 0:14:24
+run -all
+# led1: 0, led2: 0, led3: 0, led4: 0
+# Break key hit
+# Simulation stop requested.
+# End time: 16:12:22 on Jul 26,2025, Elapsed time: 0:02:36
 # Errors: 0, Warnings: 0

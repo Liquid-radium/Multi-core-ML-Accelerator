@@ -10,17 +10,17 @@ module gpio_module(
 
 reg [1:0] ctrl;
 
-localparam IDLE = 0,
-           START_CORES = 1,
-           WAIT_FOR_DONE = 2,
-           DONE_STATE = 3;
+localparam IDLE = 2'b00,
+           START_CORES = 2'b01,
+           WAIT_FOR_DONE = 2'b10,
+           DONE_STATE = 2'b11;
 
 always @ (posedge clk) begin
   if (rst) begin
-    led1 <= 0;
-    led2 <= 0;
-    led3 <= 0;
-    led4 <= 0;
+    led1 = 0;
+    led2 = 0;
+    led3 = 0;
+    led4 = 0;
   end else begin
     case(ctrl) 
         IDLE: begin
@@ -28,17 +28,17 @@ always @ (posedge clk) begin
           ctrl <= START_CORES;
         end
         START_CORES: begin
-          led1 <= 0;
+          //led1 <= 0;
           led2 <= 1;
           ctrl <= WAIT_FOR_DONE;
         end
         WAIT_FOR_DONE: begin
-          led2 <= 0;
+          //led2 <= 0;
           led3 <= 1;
           ctrl <= DONE_STATE;
         end
         DONE_STATE: begin
-          led3 <= 0;
+          //led3 <= 0;
           led4 <= 1;
           led_done <= 1;
         end
