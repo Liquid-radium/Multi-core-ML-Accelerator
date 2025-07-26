@@ -76,6 +76,7 @@ always @ (posedge clk) begin
         state <= SHIFT;
       end
       fm_address <= fm_address + 1; 
+      end 
     SHIFT: begin
       row <= 0;
       col <= 0;
@@ -137,9 +138,8 @@ always @ (posedge clk) begin
         state <= DONE; // or next state if needed
         $display("Resetting fm_address to 0 at time %t", $time);
         $display("Pool layer done at time %t", $time);
-      end
-      $display("fm_address incremented to %0d at time %t", fm_address, $time);
     end
+      $display("fm_address incremented to %0d at time %t", fm_address, $time);
     if (col + 2 < fm_width) begin
       col <= col + 2;
       $display("Moving to next column: %d at time %t", col, $time);
