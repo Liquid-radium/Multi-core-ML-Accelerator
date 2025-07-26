@@ -161,6 +161,7 @@ always @ (posedge clk) begin
     DONE: begin
         //holds done signal 
       end
+    end
   endcase
 end
 endmodule
