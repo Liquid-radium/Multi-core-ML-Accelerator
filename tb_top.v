@@ -2,7 +2,7 @@
 
 module tb_top;
 
-//dut signals 
+// Wishbone DUT signals
 reg clk;
 reg rst;
 reg i_wb_cyc;
@@ -15,12 +15,14 @@ reg i_wb_re;
 wire [31:0] o_wb_data;
 wire o_wb_ack;
 wire o_wb_stall;
+
+// UART and GPIO
 reg uart_rx;
 wire uart_tx;
 wire [3:0] gpio_pins;
 
-//instantiating the module
-wb_interconnect dut(
+// Instantiate DUT (your Wishbone interconnect + CNN)
+wb_interconnect dut (
     .clk(clk),
     .rst(rst),
     .i_wb_cyc(i_wb_cyc),
@@ -38,67 +40,91 @@ wb_interconnect dut(
     .gpio_pins(gpio_pins)
 );
 
-assign uart_rx = uart_tx;
-integer i;
+assign uart_rx = uart_tx;  // Loopback for UART if needed
 
+// Clock generation
 initial clk = 0;
 always #5 clk = ~clk;
 
-//task: wishbone write
+// 8x8 grayscale image = 64 pixels
+reg [7:0] input_image [0:63];  // 8-bit grayscale pixels
+
+integer i;
+
+// Wishbone Write Task
 task wb_write(input [31:0] addr, input [31:0] data);
 begin
-  @(posedge clk);
-        i_wb_addr <= addr;
-        i_wb_data <= data;
-        i_wb_sel  <= 4'b1111;
-        i_wb_cyc  <= 1;
-        i_wb_stb  <= 1;
-        i_wb_we   <= 1;
-        wait (o_wb_ack);
-        @(posedge clk);
-        i_wb_cyc  <= 0;
-        i_wb_stb  <= 0;
-        i_wb_we   <= 0;
+    @(posedge clk);
+    i_wb_addr <= addr;
+    i_wb_data <= data;
+    i_wb_sel  <= 4'b1111;
+    i_wb_cyc  <= 1;
+    i_wb_stb  <= 1;
+    i_wb_we   <= 1;
+    wait (o_wb_ack);
+    @(posedge clk);
+    i_wb_cyc  <= 0;
+    i_wb_stb  <= 0;
+    i_wb_we   <= 0;
 end
 endtask
 
-//task: wishbone read
+// Wishbone Read Task
 task wb_read(input [31:0] addr);
-        begin
-            @(posedge clk);
-            i_wb_addr <= addr;
-            i_wb_sel  <= 4'b1111;
-            i_wb_cyc  <= 1;
-            i_wb_stb  <= 1;
-            i_wb_we   <= 0;
-            wait (o_wb_ack);
-            @(posedge clk);
-            $display("Read from %h: %h", addr, o_wb_data);
-            i_wb_cyc  <= 0;
-            i_wb_stb  <= 0;
-        end
+begin
+    @(posedge clk);
+    i_wb_addr <= addr;
+    i_wb_sel  <= 4'b1111;
+    i_wb_cyc  <= 1;
+    i_wb_stb  <= 1;
+    i_wb_we   <= 0;
+    wait (o_wb_ack);
+    @(posedge clk);
+    $display("Read from %h: %h", addr, o_wb_data);
+    i_wb_cyc  <= 0;
+    i_wb_stb  <= 0;
+end
 endtask
 
+// Initialization and Stimulus
 initial begin
-  rst = 1;
-  i_wb_cyc = 0;
-  i_wb_stb = 0;
-  i_wb_we = 0;
-  i_wb_sel = 4'b1111;
-  i_wb_addr = 0;
-  i_wb_data = 0;
-  #50;
+    // Reset and defaults
+    rst = 1;
+    i_wb_cyc = 0;
+    i_wb_stb = 0;
+    i_wb_we  = 0;
+    i_wb_sel = 4'b1111;
+    i_wb_addr = 0;
+    i_wb_data = 0;
 
-  rst = 0;
-  #50;
+    #50;
+    rst = 0;
+    #50;
 
-  for(i = 0; i <64; i = i +1)begin
-    wb_write(32'h0000_0000 + i, i);
-  end
-  wb_write(32'h4000_0000, 32'h1);
-  wait(dut.cnn_inst.o_wb_ack);
-  wb_read(32'h4000_0004);
-  #100;
-  $stop;
+    // Initialize image pixels with values 0 to 63
+    for (i = 0; i < 64; i = i + 1)
+        input_image[i] = i;
+
+    // Pack 4 pixels per 32-bit word and write to memory
+    for (i = 0; i < 64; i = i + 4) begin
+        wb_write(32'h0000_0000 + (i >> 2)*4,
+            {input_image[i+3], input_image[i+2], input_image[i+1], input_image[i]});
+    end
+
+    // Trigger CNN operation
+    wb_write(32'h4000_0000, 32'h1);  // Control register: start
+
+    // Wait for CNN to complete (wait for o_wb_ack or monitor status)
+    wait(dut.cnn_inst.o_wb_ack);
+
+    // Read output (assuming results start at 0x4000_0004)
+    $display("\n---- Output Feature Map ----");
+    for (i = 0; i < 16; i = i + 1) begin  // Assuming 4x4 output for 2x2 avg pooling
+        wb_read(32'h4000_0004 + i*4);
+    end
+
+    #100;
+    $stop;
 end
+
 endmodule

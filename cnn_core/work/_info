@@ -11,7 +11,7 @@ cModel Technology
 Z0 d/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/cnn_core
 vavg_pool_unit
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1753525587
+Z2 !s110 1753525765
 !i10b 1
 !s100 M13@kk8a@goG<L^bkTn;Z3
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -22,13 +22,13 @@ R0
 w1753508314
 8avg_pool_unit.v
 Favg_pool_unit.v
-!i122 743
+!i122 755
 Z5 L0 1 59
 Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1753525587.000000
+Z7 !s108 1753525765.000000
 !s107 avg_pool_unit.v|
 !s90 -reportprogress|300|-sv|avg_pool_unit.v|
 !i113 1
@@ -36,7 +36,7 @@ o-sv
 Z8 tCvgOpt 0
 vcnn_engine
 R1
-Z9 !s110 1753525723
+Z9 !s110 1753525764
 !i10b 1
 !s100 UcMUl3QM`dTKbJj3CK9ez1
 R3
@@ -47,13 +47,13 @@ R0
 w1753507523
 8cnn_engine.v
 Fcnn_engine.v
-!i122 748
+!i122 751
 L0 1 175
 R6
 r1
 !s85 0
 31
-Z10 !s108 1753525723.000000
+Z10 !s108 1753525764.000000
 !s107 cnn_engine.v|
 !s90 -reportprogress|300|-sv|cnn_engine.v|
 !i113 1
@@ -72,7 +72,7 @@ R0
 w1753525570
 8cnn_core_unit.v
 Fcnn_core_unit.v
-!i122 747
+!i122 750
 L0 1 129
 R6
 r1
@@ -88,17 +88,17 @@ vfc_layer
 R1
 R2
 !i10b 1
-!s100 X5i@4h9LMNR^KfZ`6l3z80
+!s100 gmC5VnHTBXJ?XH3=5`R^S1
 R3
-IZEZFP4ni5AbzRHIgzI=mY3
+IB9F9[5N3EMRXNNQ4YUjC@1
 R4
 S1
 R0
-w1753477339
+w1753525745
 8fc_layer.v
 Ffc_layer.v
-!i122 741
-L0 1 50
+!i122 753
+L0 1 57
 R6
 r1
 !s85 0
@@ -122,7 +122,7 @@ R0
 w1753211805
 8mac_unit.v
 Fmac_unit.v
-!i122 745
+!i122 757
 R5
 R6
 r1
@@ -136,7 +136,7 @@ o-sv
 R8
 vmulti_core
 R1
-!s110 1753525588
+R2
 !i10b 1
 !s100 ;XMcMdiXfMFaNzAh`7J0l0
 R3
@@ -147,7 +147,7 @@ R0
 w1753287356
 8multi_core.v
 Fmulti_core.v
-!i122 746
+!i122 758
 L0 1 76
 R6
 r1
@@ -161,7 +161,7 @@ o-sv
 R8
 vpool_layer
 R1
-R9
+R2
 !i10b 1
 !s100 We[F792i<FU23cChf9ljY0
 R3
@@ -172,7 +172,7 @@ R0
 w1753525037
 8pool_layer.v
 Fpool_layer.v
-!i122 749
+!i122 752
 L0 1 168
 R6
 r1
@@ -197,7 +197,7 @@ R0
 w1753477083
 8relu_unit.v
 Frelu_unit.v
-!i122 744
+!i122 756
 L0 1 7
 R6
 r1
@@ -222,7 +222,7 @@ R0
 w1753286553
 8tb_cnn_multi.v
 Ftb_cnn_multi.v
-!i122 742
+!i122 754
 L0 3 55
 R6
 r1
