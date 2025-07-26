@@ -139,7 +139,6 @@ always @ (posedge clk) begin
       end else begin
         done <= 1;
         state <= IDLE;
-        $display()
       end
     end
     state <= AVG_POOL_RESET; // or back to LOAD, depending on design
