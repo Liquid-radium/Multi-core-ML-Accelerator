@@ -76,12 +76,12 @@ always @ (posedge clk) begin
         state <= SHIFT;
       end
       fm_address <= fm_address + 1; 
-          if(fm_address == 6'b100100) begin
-            $display("End of line buffer block reached at time %t", $time);
-            fm_address <= 0; //reset fm_address for next block  
-            state <= SHIFT; // or next state if needed
-            $display("Resetting fm_address to 0 at time %t", $time);
-            $display("Pool layer done at time %t", $time);
+      if(fm_address == 6'b100011) begin
+        $display("End of line buffer block reached at time %t", $time);
+        fm_address <= 6'b000000; //reset fm_address for next block  
+        state <= SHIFT; // or next state if needed
+        $display("Resetting fm_address to 0 at time %t", $time);
+        $display("Pool layer done at time %t", $time);
         end
       end 
     SHIFT: begin
