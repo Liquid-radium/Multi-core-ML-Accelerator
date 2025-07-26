@@ -64,7 +64,7 @@ fc_layer fc_layer(
 );
 
 relu_unit relu(
-    .fc_op(fc_output[0:31]),
+    .fc_op(fc_output[31:0]),
     .relu_acc(value)
 );
 
