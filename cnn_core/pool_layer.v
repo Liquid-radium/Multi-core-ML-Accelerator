@@ -63,7 +63,7 @@ always @ (posedge clk) begin
       row <= 3'b000;
       col <= 3'b000;
       latency_counter <= 4'b0000;
-      state <= AVG_POOL_RESET;
+      state <= LOAD;
     end 
     end
     LOAD: begin
