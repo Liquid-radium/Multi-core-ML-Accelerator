@@ -121,21 +121,25 @@ always @ (posedge clk) begin
     $display("Waiting for avg_pool output at time %t", $time);
     end
     WRITE: begin
-    output_fm[(row >> 1)*(fm_width >> 1) + (col >> 1)] <= avg_pool_op;
-    $display("Writing output %d to output_fm[%0d] at time %t", 
-              avg_pool_op, (row >> 1)*(fm_width >> 1) + (col >> 1), $time);
-    state <= NEXT;
+      output_fm[(row >> 1)*(fm_width >> 1) + (col >> 1)] <= avg_pool_op;
+      $display("Writing output %d to output_fm[%0d] at time %t", 
+                avg_pool_op, (row >> 1)*(fm_width >> 1) + (col >> 1), $time);
+      state <= NEXT;
+      $display("moving to next state NEXT at time %t", $time);
     end
     NEXT: begin
     if (col + 2 < fm_width) begin
       col <= col + 2;
+      $display("Moving to next column: %d at time %t", col, $time);
     end else begin
       col <= 0;
       if (row + 2 < fm_height) begin
         row <= row + 2;
+        $display("Moving to next row: %d at time %t", row, $time);
       end else begin
         done <= 1;
         state <= IDLE;
+        $display()
       end
     end
     state <= AVG_POOL_RESET; // or back to LOAD, depending on design
