@@ -76,6 +76,7 @@ always @ (posedge clk) begin
         state <= SHIFT;
       end
       fm_address <= fm_address + 1;
+      $display("fm_address incremented to %0d at time %t", fm_address, $time);
     end
     SHIFT: begin
       row <= 0;
@@ -96,7 +97,10 @@ always @ (posedge clk) begin
     avg_pool_rst <= 0;
 
     case(avg_pool_count) 
-      2'b00: avg_pool_ip <= line_buffer[0][col];
+      2'b00: begin 
+        avg_pool_ip <= line_buffer[0][col];
+        $display("Feeding avg_pool unit with input %d at time %t", avg_pool_ip, $time);
+      end
       2'b01: avg_pool_ip <= line_buffer[0][col+1];
       2'b10: avg_pool_ip <= line_buffer[1][col];
       2'b11: avg_pool_ip <= line_buffer[1][col+1];
@@ -132,9 +136,10 @@ always @ (posedge clk) begin
       col <= col + 2;
       $display("Moving to next column: %d at time %t", col, $time);
     end else begin
-      col <= 0;
+      //col <= 0;
       if (row + 2 < fm_height) begin
         row <= row + 2;
+        col <= 0;
         $display("Moving to next row: %d at time %t", row, $time);
       end else begin
         done <= 1;
