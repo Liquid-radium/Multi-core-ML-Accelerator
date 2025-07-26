@@ -11,7 +11,7 @@ cModel Technology
 Z0 d/home/shruti_hegde/cocotb_demo/sim_build/Multi-core-ML-Accelerator/hardware_interfaces
 vbus_decoder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1753527312
+Z2 !s110 1753527489
 !i10b 1
 !s100 PdkPoA4Pn[lZGL_U3bznU0
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -22,13 +22,13 @@ R0
 w1751176124
 8bus_decoder.v
 Fbus_decoder.v
-!i122 36
+!i122 40
 L0 1 25
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1753527312.000000
+Z6 !s108 1753527489.000000
 !s107 bus_decoder.v|
 !s90 -reportprogress|300|-sv|bus_decoder.v|
 !i113 1
@@ -47,7 +47,7 @@ R0
 w1751178956
 8dual_ram.v
 Fdual_ram.v
-!i122 37
+!i122 41
 L0 1 36
 R5
 r1
@@ -61,7 +61,7 @@ o-sv
 R7
 vgpio_module
 R1
-R2
+Z8 !s110 1753527312
 !i10b 1
 !s100 Hm2DPIH8?7UOMSYA5E=h;2
 R3
@@ -78,7 +78,7 @@ R5
 r1
 !s85 0
 31
-R6
+Z9 !s108 1753527312.000000
 !s107 gpio_module.v|
 !s90 -reportprogress|300|-sv|gpio_module.v|
 !i113 1
@@ -86,7 +86,7 @@ o-sv
 R7
 vtb_gpio
 R1
-R2
+R8
 !i10b 1
 !s100 Co@VG59POjXaB;9dH0eJ^0
 R3
@@ -103,7 +103,7 @@ R5
 r1
 !s85 0
 31
-R6
+R9
 !s107 tb_gpio.v|
 !s90 -reportprogress|300|-sv|tb_gpio.v|
 !i113 1

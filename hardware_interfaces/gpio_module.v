@@ -15,7 +15,6 @@ localparam IDLE = 2'b00,
            WAIT_FOR_DONE = 2'b10,
            DONE_STATE = 2'b11;
 
-$display("GPIO module initialized at time %t", $time);
 
 always @ (posedge clk) begin
   if (rst) begin
@@ -24,6 +23,8 @@ always @ (posedge clk) begin
     led3 = 0;
     led4 = 0;
   end else begin
+    $display("GPIO module initialized at time %t", $time);
+    led1 <= 0;
     case(ctrl) 
         IDLE: begin
           led1 <= 1;

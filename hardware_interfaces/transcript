@@ -1,52 +1,31 @@
 # do compile.do
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:25:12 on Jul 26,2025
+# Start time: 16:28:09 on Jul 26,2025
 # vlog -reportprogress 300 -sv bus_decoder.v 
 # -- Compiling module bus_decoder
 # 
 # Top level modules:
 # 	bus_decoder
-# End time: 16:25:12 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 16:28:09 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:25:12 on Jul 26,2025
+# Start time: 16:28:09 on Jul 26,2025
 # vlog -reportprogress 300 -sv dual_ram.v 
 # -- Compiling module dual_ram
 # 
 # Top level modules:
 # 	dual_ram
-# End time: 16:25:12 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 16:28:09 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:25:12 on Jul 26,2025
+# Start time: 16:28:09 on Jul 26,2025
 # vlog -reportprogress 300 -sv gpio_module.v 
 # -- Compiling module gpio_module
-# 
-# Top level modules:
-# 	gpio_module
-# End time: 16:25:12 on Jul 26,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:25:12 on Jul 26,2025
-# vlog -reportprogress 300 -sv tb_gpio.v 
-# -- Compiling module tb_gpio
-# 
-# Top level modules:
-# 	tb_gpio
-# End time: 16:25:12 on Jul 26,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim tb_gpio
-# vsim tb_gpio 
-# Start time: 16:26:18 on Jul 26,2025
-# Loading sv_std.std
-# Loading work.tb_gpio
-# Loading work.gpio_module
-add wave -r *
-run 1030 ns
-# led1: 0, led2: 0, led3: 0, led4: 0
-# ** Note: $stop    : tb_gpio.v(39)
-#    Time: 1010 ns  Iteration: 0  Instance: /tb_gpio
-# Break in Module tb_gpio at tb_gpio.v line 39
-run 1010 ns
-# End time: 16:27:56 on Jul 26,2025, Elapsed time: 0:01:38
-# Errors: 0, Warnings: 0
+# ** Error: gpio_module.v(18): (vlog-13161) unexpected '$display', expecting elaboration system task $fatal/$error/$warning/$info.
+# End time: 16:28:09 on Jul 26,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /home/shruti_hegde/intelFPGA/20.1/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./compile.do line 3
+# /home/shruti_hegde/intelFPGA/20.1/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -sv gpio_module.v "
