@@ -1,31 +1,150 @@
 # do compile.do
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:28:09 on Jul 26,2025
+# Start time: 16:29:24 on Jul 26,2025
 # vlog -reportprogress 300 -sv bus_decoder.v 
 # -- Compiling module bus_decoder
 # 
 # Top level modules:
 # 	bus_decoder
-# End time: 16:28:09 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 16:29:24 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:28:09 on Jul 26,2025
+# Start time: 16:29:24 on Jul 26,2025
 # vlog -reportprogress 300 -sv dual_ram.v 
 # -- Compiling module dual_ram
 # 
 # Top level modules:
 # 	dual_ram
-# End time: 16:28:09 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 16:29:24 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:28:09 on Jul 26,2025
+# Start time: 16:29:25 on Jul 26,2025
 # vlog -reportprogress 300 -sv gpio_module.v 
 # -- Compiling module gpio_module
-# ** Error: gpio_module.v(18): (vlog-13161) unexpected '$display', expecting elaboration system task $fatal/$error/$warning/$info.
-# End time: 16:28:09 on Jul 26,2025, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: /home/shruti_hegde/intelFPGA/20.1/modelsim_ase/linuxaloem/vlog failed.
-# Error in macro ./compile.do line 3
-# /home/shruti_hegde/intelFPGA/20.1/modelsim_ase/linuxaloem/vlog failed.
-#     while executing
-# "vlog -sv gpio_module.v "
+# 
+# Top level modules:
+# 	gpio_module
+# End time: 16:29:25 on Jul 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:29:25 on Jul 26,2025
+# vlog -reportprogress 300 -sv tb_gpio.v 
+# -- Compiling module tb_gpio
+# 
+# Top level modules:
+# 	tb_gpio
+# End time: 16:29:25 on Jul 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim tb_gpio
+# vsim tb_gpio 
+# Start time: 16:29:29 on Jul 26,2025
+# Loading sv_std.std
+# Loading work.tb_gpio
+# Loading work.gpio_module
+run -all
+# GPIO module initialized at time                15000
+# GPIO module initialized at time                25000
+# GPIO module initialized at time                35000
+# GPIO module initialized at time                45000
+# GPIO module initialized at time                55000
+# GPIO module initialized at time                65000
+# GPIO module initialized at time                75000
+# GPIO module initialized at time                85000
+# GPIO module initialized at time                95000
+# GPIO module initialized at time               105000
+# GPIO module initialized at time               115000
+# GPIO module initialized at time               125000
+# GPIO module initialized at time               135000
+# GPIO module initialized at time               145000
+# GPIO module initialized at time               155000
+# GPIO module initialized at time               165000
+# GPIO module initialized at time               175000
+# GPIO module initialized at time               185000
+# GPIO module initialized at time               195000
+# GPIO module initialized at time               205000
+# GPIO module initialized at time               215000
+# GPIO module initialized at time               225000
+# GPIO module initialized at time               235000
+# GPIO module initialized at time               245000
+# GPIO module initialized at time               255000
+# GPIO module initialized at time               265000
+# GPIO module initialized at time               275000
+# GPIO module initialized at time               285000
+# GPIO module initialized at time               295000
+# GPIO module initialized at time               305000
+# GPIO module initialized at time               315000
+# GPIO module initialized at time               325000
+# GPIO module initialized at time               335000
+# GPIO module initialized at time               345000
+# GPIO module initialized at time               355000
+# GPIO module initialized at time               365000
+# GPIO module initialized at time               375000
+# GPIO module initialized at time               385000
+# GPIO module initialized at time               395000
+# GPIO module initialized at time               405000
+# GPIO module initialized at time               415000
+# GPIO module initialized at time               425000
+# GPIO module initialized at time               435000
+# GPIO module initialized at time               445000
+# GPIO module initialized at time               455000
+# GPIO module initialized at time               465000
+# GPIO module initialized at time               475000
+# GPIO module initialized at time               485000
+# GPIO module initialized at time               495000
+# GPIO module initialized at time               505000
+# GPIO module initialized at time               515000
+# GPIO module initialized at time               525000
+# GPIO module initialized at time               535000
+# GPIO module initialized at time               545000
+# GPIO module initialized at time               555000
+# GPIO module initialized at time               565000
+# GPIO module initialized at time               575000
+# GPIO module initialized at time               585000
+# GPIO module initialized at time               595000
+# GPIO module initialized at time               605000
+# GPIO module initialized at time               615000
+# GPIO module initialized at time               625000
+# GPIO module initialized at time               635000
+# GPIO module initialized at time               645000
+# GPIO module initialized at time               655000
+# GPIO module initialized at time               665000
+# GPIO module initialized at time               675000
+# GPIO module initialized at time               685000
+# GPIO module initialized at time               695000
+# GPIO module initialized at time               705000
+# GPIO module initialized at time               715000
+# GPIO module initialized at time               725000
+# GPIO module initialized at time               735000
+# GPIO module initialized at time               745000
+# GPIO module initialized at time               755000
+# GPIO module initialized at time               765000
+# GPIO module initialized at time               775000
+# GPIO module initialized at time               785000
+# GPIO module initialized at time               795000
+# GPIO module initialized at time               805000
+# GPIO module initialized at time               815000
+# GPIO module initialized at time               825000
+# GPIO module initialized at time               835000
+# GPIO module initialized at time               845000
+# GPIO module initialized at time               855000
+# GPIO module initialized at time               865000
+# GPIO module initialized at time               875000
+# GPIO module initialized at time               885000
+# GPIO module initialized at time               895000
+# GPIO module initialized at time               905000
+# GPIO module initialized at time               915000
+# GPIO module initialized at time               925000
+# GPIO module initialized at time               935000
+# GPIO module initialized at time               945000
+# GPIO module initialized at time               955000
+# GPIO module initialized at time               965000
+# GPIO module initialized at time               975000
+# GPIO module initialized at time               985000
+# GPIO module initialized at time               995000
+# GPIO module initialized at time              1005000
+# led1: 0, led2: 0, led3: 0, led4: 0
+# ** Note: $stop    : tb_gpio.v(39)
+#    Time: 1010 ns  Iteration: 0  Instance: /tb_gpio
+# Break in Module tb_gpio at tb_gpio.v line 39
+# End time: 16:33:24 on Jul 26,2025, Elapsed time: 0:03:55
+# Errors: 0, Warnings: 0

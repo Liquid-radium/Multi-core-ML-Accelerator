@@ -22,6 +22,7 @@ always @ (posedge clk) begin
     led2 = 0;
     led3 = 0;
     led4 = 0;
+    ctrl <= IDLE;
   end else begin
     $display("GPIO module initialized at time %t", $time);
     led1 <= 0;
