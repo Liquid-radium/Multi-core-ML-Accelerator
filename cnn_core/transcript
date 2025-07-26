@@ -1,89 +1,89 @@
 # do compile.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:52:50 on Jul 26,2025
+# Start time: 11:55:01 on Jul 26,2025
 # vlog -reportprogress 300 -sv cnn_core_unit.v 
 # -- Compiling module cnn_top
 # 
 # Top level modules:
 # 	cnn_top
-# End time: 11:52:50 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 11:55:01 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:52:50 on Jul 26,2025
+# Start time: 11:55:01 on Jul 26,2025
 # vlog -reportprogress 300 -sv cnn_engine.v 
 # -- Compiling module cnn_engine
 # 
 # Top level modules:
 # 	cnn_engine
-# End time: 11:52:50 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 11:55:01 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:52:50 on Jul 26,2025
+# Start time: 11:55:01 on Jul 26,2025
 # vlog -reportprogress 300 -sv pool_layer.v 
 # -- Compiling module pool_layer
 # 
 # Top level modules:
 # 	pool_layer
-# End time: 11:52:50 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 11:55:01 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:52:50 on Jul 26,2025
+# Start time: 11:55:01 on Jul 26,2025
 # vlog -reportprogress 300 -sv fc_layer.v 
 # -- Compiling module fc_layer
 # 
 # Top level modules:
 # 	fc_layer
-# End time: 11:52:50 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 11:55:01 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:52:50 on Jul 26,2025
+# Start time: 11:55:01 on Jul 26,2025
 # vlog -reportprogress 300 -sv tb_cnn_multi.v 
 # -- Compiling module tb_cnn_multi
 # 
 # Top level modules:
 # 	tb_cnn_multi
-# End time: 11:52:50 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 11:55:01 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:52:50 on Jul 26,2025
+# Start time: 11:55:01 on Jul 26,2025
 # vlog -reportprogress 300 -sv avg_pool_unit.v 
 # -- Compiling module avg_pool_unit
 # 
 # Top level modules:
 # 	avg_pool_unit
-# End time: 11:52:50 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 11:55:01 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:52:50 on Jul 26,2025
+# Start time: 11:55:02 on Jul 26,2025
 # vlog -reportprogress 300 -sv relu_unit.v 
 # -- Compiling module relu_unit
 # 
 # Top level modules:
 # 	relu_unit
-# End time: 11:52:51 on Jul 26,2025, Elapsed time: 0:00:01
+# End time: 11:55:02 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:52:51 on Jul 26,2025
+# Start time: 11:55:02 on Jul 26,2025
 # vlog -reportprogress 300 -sv mac_unit.v 
 # -- Compiling module mac_unit
 # 
 # Top level modules:
 # 	mac_unit
-# End time: 11:52:51 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 11:55:02 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:52:51 on Jul 26,2025
+# Start time: 11:55:02 on Jul 26,2025
 # vlog -reportprogress 300 -sv multi_core.v 
 # -- Compiling module multi_core
 # 
 # Top level modules:
 # 	multi_core
-# End time: 11:52:51 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 11:55:02 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vsim tb_cnn_unit
 # vsim tb_cnn_unit 
-# Start time: 11:52:55 on Jul 26,2025
+# Start time: 11:55:12 on Jul 26,2025
 # Loading sv_std.std
 # Loading work.tb_cnn_unit
 # Loading work.cnn_top
@@ -989,19 +989,91 @@ run -all
 # Moving to next column: 0 at time              8165000
 # Time:              8170000 | done: 0
 # Loading input_fm[12] =           x into line_buffer[0][0] at time              8175000
-# End of line buffer block reached at time              8175000
-# Resetting fm_address to 0 at time              8175000
-# Pool layer done at time              8175000
 # fm_address incremented to 12 at time              8175000
 # Time:              8180000 | done: 0
+# Loading input_fm[13] =           x into line_buffer[0][1] at time              8185000
+# fm_address incremented to 13 at time              8185000
 # Time:              8190000 | done: 0
-# FC Layer output:          x at time              8195000
+# Loading input_fm[14] =           x into line_buffer[0][2] at time              8195000
+# fm_address incremented to 14 at time              8195000
 # Time:              8200000 | done: 0
-# Time:              8210000 | done: 1
+# Loading input_fm[15] =           x into line_buffer[0][3] at time              8205000
+# fm_address incremented to 15 at time              8205000
+# Time:              8210000 | done: 0
+# Loading input_fm[16] =           x into line_buffer[0][4] at time              8215000
+# fm_address incremented to 16 at time              8215000
+# Time:              8220000 | done: 0
+# Loading input_fm[17] =           x into line_buffer[0][5] at time              8225000
+# fm_address incremented to 17 at time              8225000
+# Time:              8230000 | done: 0
+# Loading input_fm[18] =           1 into line_buffer[0][0] at time              8235000
+# fm_address incremented to 18 at time              8235000
+# Time:              8240000 | done: 0
+# Loading input_fm[19] =          14 into line_buffer[0][1] at time              8245000
+# fm_address incremented to 19 at time              8245000
+# Time:              8250000 | done: 0
+# Loading input_fm[20] =          27 into line_buffer[0][2] at time              8255000
+# fm_address incremented to 20 at time              8255000
+# Time:              8260000 | done: 0
+# Loading input_fm[21] =          40 into line_buffer[0][3] at time              8265000
+# fm_address incremented to 21 at time              8265000
+# Time:              8270000 | done: 0
+# Loading input_fm[22] =          53 into line_buffer[0][4] at time              8275000
+# fm_address incremented to 22 at time              8275000
+# Time:              8280000 | done: 0
+# Loading input_fm[23] =          66 into line_buffer[0][5] at time              8285000
+# fm_address incremented to 23 at time              8285000
+# Time:              8290000 | done: 0
+# Loading input_fm[24] =           1 into line_buffer[0][0] at time              8295000
+# fm_address incremented to 24 at time              8295000
+# Time:              8300000 | done: 0
+# Loading input_fm[25] =          14 into line_buffer[0][1] at time              8305000
+# fm_address incremented to 25 at time              8305000
+# Time:              8310000 | done: 0
+# Loading input_fm[26] =          27 into line_buffer[0][2] at time              8315000
+# fm_address incremented to 26 at time              8315000
+# Time:              8320000 | done: 0
+# Loading input_fm[27] =          40 into line_buffer[0][3] at time              8325000
+# fm_address incremented to 27 at time              8325000
+# Time:              8330000 | done: 0
+# Loading input_fm[28] =          53 into line_buffer[0][4] at time              8335000
+# fm_address incremented to 28 at time              8335000
+# Time:              8340000 | done: 0
+# Loading input_fm[29] =          66 into line_buffer[0][5] at time              8345000
+# fm_address incremented to 29 at time              8345000
+# Time:              8350000 | done: 0
+# Loading input_fm[30] =           1 into line_buffer[0][0] at time              8355000
+# fm_address incremented to 30 at time              8355000
+# Time:              8360000 | done: 0
+# Loading input_fm[31] =          14 into line_buffer[0][1] at time              8365000
+# fm_address incremented to 31 at time              8365000
+# Time:              8370000 | done: 0
+# Loading input_fm[32] =          27 into line_buffer[0][2] at time              8375000
+# fm_address incremented to 32 at time              8375000
+# Time:              8380000 | done: 0
+# Loading input_fm[33] =          40 into line_buffer[0][3] at time              8385000
+# fm_address incremented to 33 at time              8385000
+# Time:              8390000 | done: 0
+# Loading input_fm[34] =          53 into line_buffer[0][4] at time              8395000
+# fm_address incremented to 34 at time              8395000
+# Time:              8400000 | done: 0
+# Loading input_fm[35] =          66 into line_buffer[0][5] at time              8405000
+# fm_address incremented to 35 at time              8405000
+# Time:              8410000 | done: 0
+# Loading input_fm[36] =           x into line_buffer[0][0] at time              8415000
+# End of line buffer block reached at time              8415000
+# Resetting fm_address to 0 at time              8415000
+# Pool layer done at time              8415000
+# fm_address incremented to 36 at time              8415000
+# Time:              8420000 | done: 0
+# Time:              8430000 | done: 0
+# FC Layer output:          x at time              8435000
+# Time:              8440000 | done: 0
+# Time:              8450000 | done: 1
 # CNN prediction output:          x
 # ** Note: $finish    : tb_cnn_unit.v(78)
-#    Time: 8210 ns  Iteration: 0  Instance: /tb_cnn_unit
+#    Time: 8450 ns  Iteration: 0  Instance: /tb_cnn_unit
 # 1
 # Break in Module tb_cnn_unit at tb_cnn_unit.v line 78
-# End time: 11:54:50 on Jul 26,2025, Elapsed time: 0:01:55
+# End time: 11:56:32 on Jul 26,2025, Elapsed time: 0:01:20
 # Errors: 0, Warnings: 0

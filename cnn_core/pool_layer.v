@@ -75,17 +75,7 @@ always @ (posedge clk) begin
       if((fm_address + 1) == (fm_width * 2)) begin //if end of line buffer block
         state <= SHIFT;
       end
-      fm_address <= fm_address + 1;
-      if(fm_address == 6'b100100) begin
-        $display("End of line buffer block reached at time %t", $time);
-        fm_address <= 0; //reset fm_address for next block
-        done <= 1; //indicate completion of loading
-        state <= DONE; // or next state if needed
-        $display("Resetting fm_address to 0 at time %t", $time);
-        $display("Pool layer done at time %t", $time);
-      end
-      $display("fm_address incremented to %0d at time %t", fm_address, $time);
-    end
+      fm_address <= fm_address + 1; 
     SHIFT: begin
       row <= 0;
       col <= 0;
@@ -140,6 +130,16 @@ always @ (posedge clk) begin
       $display("moving to next state NEXT at time %t", $time);
     end
     NEXT: begin
+    if(fm_address == 6'b100100) begin
+        $display("End of line buffer block reached at time %t", $time);
+        fm_address <= 0; //reset fm_address for next block
+        done <= 1; //indicate completion of loading
+        state <= DONE; // or next state if needed
+        $display("Resetting fm_address to 0 at time %t", $time);
+        $display("Pool layer done at time %t", $time);
+      end
+      $display("fm_address incremented to %0d at time %t", fm_address, $time);
+    end
     if (col + 2 < fm_width) begin
       col <= col + 2;
       $display("Moving to next column: %d at time %t", col, $time);
