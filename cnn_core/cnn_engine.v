@@ -130,8 +130,8 @@ always@(posedge clk)begin
         latency_counter <= 4'b0000;
         state <= MAC_WAIT;
       end
-      $display("Feeding MAC with values: mac_a = %d, mac_b = %d at time %t", mac_a, mac_b, $time);
-      $display("mac output is %d at time %t", mac_acc, $time);
+      //$display("Feeding MAC with values: mac_a = %d, mac_b = %d at time %t", mac_a, mac_b, $time);
+      //$display("mac output is %d at time %t", mac_acc, $time);
     end
     MAC_WAIT: begin
       //$display("Waiting for MAC at time %t", $time);

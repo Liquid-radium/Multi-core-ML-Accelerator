@@ -68,6 +68,7 @@ always @ (posedge clk) begin
     end
     LOAD: begin
       line_buffer[0][fm_address % fm_width] <= input_fm[fm_address]; //to get the first pixel to convolve in that row
+      $display("Loading input_fm[%0d] = %d into line_buffer[0][%0d] at time %t", fm_address, input_fm[fm_address], fm_address % fm_width, $time);
       if((fm_address + 1) % fm_width == 0) begin //if end of row
         line_buffer[1] <= line_buffer[0]; //used for maintaining the order of convolution in the image
       end
@@ -100,14 +101,14 @@ always @ (posedge clk) begin
       2'b10: avg_pool_ip <= line_buffer[1][col];
       2'b11: avg_pool_ip <= line_buffer[1][col+1];
     endcase
-
+    $display("Feeding avg_pool unit with input %d at time %t", avg_pool_ip, $time);
     avg_pool_count <= avg_pool_count + 1;
-
+    $display("avg_pool_count: %d at time %t", avg_pool_count, $time);
     if (avg_pool_count == 2'b11) begin
       // Wait for next clock to send last input before disabling
       state <= AVG_POOL_WAIT;
     end
-    $display("Feeding avg_pool unit with input %d at time %t", avg_pool_ip, $time);
+
   end
     AVG_POOL_WAIT: begin
     avg_pool_en <= 0; // stop feeding after previous state sent last input
