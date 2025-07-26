@@ -76,7 +76,7 @@ always @ (posedge clk) begin
         state <= SHIFT;
       end
       fm_address <= fm_address + 1;
-      if(fm_address == (fm_width * 2)) begin
+      if(fm_address == 6'b100100) begin
         $display("End of line buffer block reached at time %t", $time);
         fm_address <= 0; //reset fm_address for next block
         done <= 1; //indicate completion of loading
