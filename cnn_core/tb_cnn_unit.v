@@ -79,6 +79,6 @@ $finish;
 #20;
 $display("CNN prediction output: %d", value);
 #20;
-$finish;
+//$finish;
 end
 endmodule
