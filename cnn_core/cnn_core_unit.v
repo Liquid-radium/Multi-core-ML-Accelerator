@@ -48,7 +48,7 @@ pool_layer pool_layer(
     .clk(clk),
     .rst(rst),
     .start(pool_start),
-    .input_fm(conv_output),
+    .input_fm(conv_output[0]),
     .done(pool_done),
     .output_fm(pool_output)
 );
@@ -100,6 +100,7 @@ always @ (posedge clk) begin
         end
       end
       POOL_START: begin
+        $display("value of input_fm at time %t is %d", $time, conv_output[0]);
         pool_start <= 0;
         state <= POOL_WAIT;
       end

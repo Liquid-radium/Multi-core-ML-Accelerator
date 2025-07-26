@@ -1,89 +1,89 @@
 # do compile.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:59:54 on Jul 26,2025
+# Start time: 11:00:59 on Jul 26,2025
 # vlog -reportprogress 300 -sv cnn_core_unit.v 
 # -- Compiling module cnn_top
 # 
 # Top level modules:
 # 	cnn_top
-# End time: 10:59:54 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 11:00:59 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:59:54 on Jul 26,2025
+# Start time: 11:00:59 on Jul 26,2025
 # vlog -reportprogress 300 -sv cnn_engine.v 
 # -- Compiling module cnn_engine
 # 
 # Top level modules:
 # 	cnn_engine
-# End time: 10:59:54 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 11:00:59 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:59:54 on Jul 26,2025
+# Start time: 11:00:59 on Jul 26,2025
 # vlog -reportprogress 300 -sv pool_layer.v 
 # -- Compiling module pool_layer
 # 
 # Top level modules:
 # 	pool_layer
-# End time: 10:59:54 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 11:00:59 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:59:54 on Jul 26,2025
+# Start time: 11:00:59 on Jul 26,2025
 # vlog -reportprogress 300 -sv fc_layer.v 
 # -- Compiling module fc_layer
 # 
 # Top level modules:
 # 	fc_layer
-# End time: 10:59:54 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 11:00:59 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:59:54 on Jul 26,2025
+# Start time: 11:00:59 on Jul 26,2025
 # vlog -reportprogress 300 -sv tb_cnn_multi.v 
 # -- Compiling module tb_cnn_multi
 # 
 # Top level modules:
 # 	tb_cnn_multi
-# End time: 10:59:54 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 11:00:59 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:59:55 on Jul 26,2025
+# Start time: 11:00:59 on Jul 26,2025
 # vlog -reportprogress 300 -sv avg_pool_unit.v 
 # -- Compiling module avg_pool_unit
 # 
 # Top level modules:
 # 	avg_pool_unit
-# End time: 10:59:55 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 11:00:59 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:59:55 on Jul 26,2025
+# Start time: 11:00:59 on Jul 26,2025
 # vlog -reportprogress 300 -sv relu_unit.v 
 # -- Compiling module relu_unit
 # 
 # Top level modules:
 # 	relu_unit
-# End time: 10:59:55 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 11:00:59 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:59:55 on Jul 26,2025
+# Start time: 11:00:59 on Jul 26,2025
 # vlog -reportprogress 300 -sv mac_unit.v 
 # -- Compiling module mac_unit
 # 
 # Top level modules:
 # 	mac_unit
-# End time: 10:59:55 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 11:00:59 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:59:55 on Jul 26,2025
+# Start time: 11:00:59 on Jul 26,2025
 # vlog -reportprogress 300 -sv multi_core.v 
 # -- Compiling module multi_core
 # 
 # Top level modules:
 # 	multi_core
-# End time: 10:59:55 on Jul 26,2025, Elapsed time: 0:00:00
+# End time: 11:00:59 on Jul 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vsim tb_cnn_unit
 # vsim tb_cnn_unit 
-# Start time: 11:00:00 on Jul 26,2025
+# Start time: 11:01:05 on Jul 26,2025
 # Loading sv_std.std
 # Loading work.tb_cnn_unit
 # Loading work.cnn_top
@@ -1712,71 +1712,66 @@ run -all
 # value of start signal at time              7915000 is 1
 # Time:              7920000 | done: 0
 # Average Pooling output:           X at time              7925000
-# Resetting avg_pool unit at time              7925000
-# Average Pooling output:           X at time              7925000
+# Loading input_fm[0] =           x into line_buffer[0][0] at time              7925000
 # Time:              7930000 | done: 0
-# Average Pooling output:           0 at time              7935000
-# Feeding avg_pool unit with input           0 at time              7935000
-# avg_pool_count: 0 at time              7935000
-# Average Pooling output:           0 at time              7935000
+# Average Pooling output:           X at time              7935000
+# Loading input_fm[1] =           x into line_buffer[0][1] at time              7935000
 # Time:              7940000 | done: 0
-# Average Pooling output:           0 at time              7945000
-# Feeding avg_pool unit with input           x at time              7945000
-# avg_pool_count: 1 at time              7945000
+# Average Pooling output:           X at time              7945000
+# Loading input_fm[2] =           x into line_buffer[0][2] at time              7945000
 # Time:              7950000 | done: 0
-# Average Pooling output:           0 at time              7955000
-# Feeding avg_pool unit with input           x at time              7955000
-# avg_pool_count: 2 at time              7955000
+# Average Pooling output:           X at time              7955000
+# Loading input_fm[3] =           x into line_buffer[0][3] at time              7955000
 # Time:              7960000 | done: 0
-# Average Pooling output:           0 at time              7965000
-# Feeding avg_pool unit with input           x at time              7965000
-# avg_pool_count: 3 at time              7965000
+# Average Pooling output:           X at time              7965000
+# Loading input_fm[4] =           x into line_buffer[0][4] at time              7965000
 # Time:              7970000 | done: 0
-# Average Pooling output:           0 at time              7975000
-# Waiting for avg_pool output at time              7975000
+# Average Pooling output:           X at time              7975000
+# Loading input_fm[5] =           x into line_buffer[0][5] at time              7975000
 # Time:              7980000 | done: 0
 # Average Pooling output:           X at time              7985000
-# Waiting for avg_pool output at time              7985000
+# Loading input_fm[6] =           x into line_buffer[0][0] at time              7985000
 # Time:              7990000 | done: 0
 # Average Pooling output:           X at time              7995000
-# Waiting for avg_pool output at time              7995000
+# Loading input_fm[7] =           x into line_buffer[0][1] at time              7995000
 # Time:              8000000 | done: 0
 # Average Pooling output:           X at time              8005000
-# Waiting for avg_pool output at time              8005000
+# Loading input_fm[8] =           x into line_buffer[0][2] at time              8005000
 # Time:              8010000 | done: 0
 # Average Pooling output:           X at time              8015000
-# Waiting for avg_pool output at time              8015000
+# Loading input_fm[9] =           x into line_buffer[0][3] at time              8015000
 # Time:              8020000 | done: 0
 # Average Pooling output:           X at time              8025000
-# Writing output           X to output_fm[0] at time              8025000
+# Loading input_fm[10] =           x into line_buffer[0][4] at time              8025000
 # Time:              8030000 | done: 0
 # Average Pooling output:           X at time              8035000
+# Loading input_fm[11] =           x into line_buffer[0][5] at time              8035000
 # Time:              8040000 | done: 0
 # Average Pooling output:           X at time              8045000
-# Resetting avg_pool unit at time              8045000
-# Average Pooling output:           X at time              8045000
+# Shifting line buffer at time              8045000
 # Time:              8050000 | done: 0
-# Average Pooling output:           0 at time              8055000
-# Feeding avg_pool unit with input           x at time              8055000
-# avg_pool_count: 0 at time              8055000
-# Average Pooling output:           0 at time              8055000
+# Average Pooling output:           X at time              8055000
+# Resetting avg_pool unit at time              8055000
+# Average Pooling output:           X at time              8055000
 # Time:              8060000 | done: 0
 # Average Pooling output:           0 at time              8065000
-# Feeding avg_pool unit with input           x at time              8065000
-# avg_pool_count: 1 at time              8065000
+# Feeding avg_pool unit with input           0 at time              8065000
+# avg_pool_count: 0 at time              8065000
+# Average Pooling output:           0 at time              8065000
 # Time:              8070000 | done: 0
 # Average Pooling output:           0 at time              8075000
 # Feeding avg_pool unit with input           x at time              8075000
-# avg_pool_count: 2 at time              8075000
+# avg_pool_count: 1 at time              8075000
 # Time:              8080000 | done: 0
 # Average Pooling output:           0 at time              8085000
 # Feeding avg_pool unit with input           x at time              8085000
-# avg_pool_count: 3 at time              8085000
+# avg_pool_count: 2 at time              8085000
 # Time:              8090000 | done: 0
 # Average Pooling output:           0 at time              8095000
-# Waiting for avg_pool output at time              8095000
+# Feeding avg_pool unit with input           x at time              8095000
+# avg_pool_count: 3 at time              8095000
 # Time:              8100000 | done: 0
-# Average Pooling output:           X at time              8105000
+# Average Pooling output:           0 at time              8105000
 # Waiting for avg_pool output at time              8105000
 # Time:              8110000 | done: 0
 # Average Pooling output:           X at time              8115000
@@ -1789,35 +1784,35 @@ run -all
 # Waiting for avg_pool output at time              8135000
 # Time:              8140000 | done: 0
 # Average Pooling output:           X at time              8145000
-# Writing output           X to output_fm[1] at time              8145000
+# Waiting for avg_pool output at time              8145000
 # Time:              8150000 | done: 0
 # Average Pooling output:           X at time              8155000
+# Writing output           X to output_fm[0] at time              8155000
 # Time:              8160000 | done: 0
 # Average Pooling output:           X at time              8165000
-# Resetting avg_pool unit at time              8165000
-# Average Pooling output:           X at time              8165000
 # Time:              8170000 | done: 0
-# Average Pooling output:           0 at time              8175000
-# Feeding avg_pool unit with input           x at time              8175000
-# avg_pool_count: 0 at time              8175000
-# Average Pooling output:           0 at time              8175000
+# Average Pooling output:           X at time              8175000
+# Resetting avg_pool unit at time              8175000
+# Average Pooling output:           X at time              8175000
 # Time:              8180000 | done: 0
 # Average Pooling output:           0 at time              8185000
 # Feeding avg_pool unit with input           x at time              8185000
-# avg_pool_count: 1 at time              8185000
+# avg_pool_count: 0 at time              8185000
+# Average Pooling output:           0 at time              8185000
 # Time:              8190000 | done: 0
 # Average Pooling output:           0 at time              8195000
 # Feeding avg_pool unit with input           x at time              8195000
-# avg_pool_count: 2 at time              8195000
+# avg_pool_count: 1 at time              8195000
 # Time:              8200000 | done: 0
 # Average Pooling output:           0 at time              8205000
 # Feeding avg_pool unit with input           x at time              8205000
-# avg_pool_count: 3 at time              8205000
+# avg_pool_count: 2 at time              8205000
 # Time:              8210000 | done: 0
 # Average Pooling output:           0 at time              8215000
-# Waiting for avg_pool output at time              8215000
+# Feeding avg_pool unit with input           x at time              8215000
+# avg_pool_count: 3 at time              8215000
 # Time:              8220000 | done: 0
-# Average Pooling output:           X at time              8225000
+# Average Pooling output:           0 at time              8225000
 # Waiting for avg_pool output at time              8225000
 # Time:              8230000 | done: 0
 # Average Pooling output:           X at time              8235000
@@ -1830,35 +1825,35 @@ run -all
 # Waiting for avg_pool output at time              8255000
 # Time:              8260000 | done: 0
 # Average Pooling output:           X at time              8265000
-# Writing output           X to output_fm[2] at time              8265000
+# Waiting for avg_pool output at time              8265000
 # Time:              8270000 | done: 0
 # Average Pooling output:           X at time              8275000
+# Writing output           X to output_fm[1] at time              8275000
 # Time:              8280000 | done: 0
 # Average Pooling output:           X at time              8285000
-# Resetting avg_pool unit at time              8285000
-# Average Pooling output:           X at time              8285000
 # Time:              8290000 | done: 0
-# Average Pooling output:           0 at time              8295000
-# Feeding avg_pool unit with input           x at time              8295000
-# avg_pool_count: 0 at time              8295000
-# Average Pooling output:           0 at time              8295000
+# Average Pooling output:           X at time              8295000
+# Resetting avg_pool unit at time              8295000
+# Average Pooling output:           X at time              8295000
 # Time:              8300000 | done: 0
 # Average Pooling output:           0 at time              8305000
 # Feeding avg_pool unit with input           x at time              8305000
-# avg_pool_count: 1 at time              8305000
+# avg_pool_count: 0 at time              8305000
+# Average Pooling output:           0 at time              8305000
 # Time:              8310000 | done: 0
 # Average Pooling output:           0 at time              8315000
 # Feeding avg_pool unit with input           x at time              8315000
-# avg_pool_count: 2 at time              8315000
+# avg_pool_count: 1 at time              8315000
 # Time:              8320000 | done: 0
 # Average Pooling output:           0 at time              8325000
 # Feeding avg_pool unit with input           x at time              8325000
-# avg_pool_count: 3 at time              8325000
+# avg_pool_count: 2 at time              8325000
 # Time:              8330000 | done: 0
 # Average Pooling output:           0 at time              8335000
-# Waiting for avg_pool output at time              8335000
+# Feeding avg_pool unit with input           x at time              8335000
+# avg_pool_count: 3 at time              8335000
 # Time:              8340000 | done: 0
-# Average Pooling output:           X at time              8345000
+# Average Pooling output:           0 at time              8345000
 # Waiting for avg_pool output at time              8345000
 # Time:              8350000 | done: 0
 # Average Pooling output:           X at time              8355000
@@ -1871,35 +1866,35 @@ run -all
 # Waiting for avg_pool output at time              8375000
 # Time:              8380000 | done: 0
 # Average Pooling output:           X at time              8385000
-# Writing output           X to output_fm[3] at time              8385000
+# Waiting for avg_pool output at time              8385000
 # Time:              8390000 | done: 0
 # Average Pooling output:           X at time              8395000
+# Writing output           X to output_fm[2] at time              8395000
 # Time:              8400000 | done: 0
 # Average Pooling output:           X at time              8405000
-# Resetting avg_pool unit at time              8405000
-# Average Pooling output:           X at time              8405000
 # Time:              8410000 | done: 0
-# Average Pooling output:           0 at time              8415000
-# Feeding avg_pool unit with input           x at time              8415000
-# avg_pool_count: 0 at time              8415000
-# Average Pooling output:           0 at time              8415000
+# Average Pooling output:           X at time              8415000
+# Resetting avg_pool unit at time              8415000
+# Average Pooling output:           X at time              8415000
 # Time:              8420000 | done: 0
 # Average Pooling output:           0 at time              8425000
 # Feeding avg_pool unit with input           x at time              8425000
-# avg_pool_count: 1 at time              8425000
+# avg_pool_count: 0 at time              8425000
+# Average Pooling output:           0 at time              8425000
 # Time:              8430000 | done: 0
 # Average Pooling output:           0 at time              8435000
 # Feeding avg_pool unit with input           x at time              8435000
-# avg_pool_count: 2 at time              8435000
+# avg_pool_count: 1 at time              8435000
 # Time:              8440000 | done: 0
 # Average Pooling output:           0 at time              8445000
 # Feeding avg_pool unit with input           x at time              8445000
-# avg_pool_count: 3 at time              8445000
+# avg_pool_count: 2 at time              8445000
 # Time:              8450000 | done: 0
 # Average Pooling output:           0 at time              8455000
-# Waiting for avg_pool output at time              8455000
+# Feeding avg_pool unit with input           x at time              8455000
+# avg_pool_count: 3 at time              8455000
 # Time:              8460000 | done: 0
-# Average Pooling output:           X at time              8465000
+# Average Pooling output:           0 at time              8465000
 # Waiting for avg_pool output at time              8465000
 # Time:              8470000 | done: 0
 # Average Pooling output:           X at time              8475000
@@ -1912,35 +1907,35 @@ run -all
 # Waiting for avg_pool output at time              8495000
 # Time:              8500000 | done: 0
 # Average Pooling output:           X at time              8505000
-# Writing output           X to output_fm[4] at time              8505000
+# Waiting for avg_pool output at time              8505000
 # Time:              8510000 | done: 0
 # Average Pooling output:           X at time              8515000
+# Writing output           X to output_fm[3] at time              8515000
 # Time:              8520000 | done: 0
 # Average Pooling output:           X at time              8525000
-# Resetting avg_pool unit at time              8525000
-# Average Pooling output:           X at time              8525000
 # Time:              8530000 | done: 0
-# Average Pooling output:           0 at time              8535000
-# Feeding avg_pool unit with input           x at time              8535000
-# avg_pool_count: 0 at time              8535000
-# Average Pooling output:           0 at time              8535000
+# Average Pooling output:           X at time              8535000
+# Resetting avg_pool unit at time              8535000
+# Average Pooling output:           X at time              8535000
 # Time:              8540000 | done: 0
 # Average Pooling output:           0 at time              8545000
 # Feeding avg_pool unit with input           x at time              8545000
-# avg_pool_count: 1 at time              8545000
+# avg_pool_count: 0 at time              8545000
+# Average Pooling output:           0 at time              8545000
 # Time:              8550000 | done: 0
 # Average Pooling output:           0 at time              8555000
 # Feeding avg_pool unit with input           x at time              8555000
-# avg_pool_count: 2 at time              8555000
+# avg_pool_count: 1 at time              8555000
 # Time:              8560000 | done: 0
 # Average Pooling output:           0 at time              8565000
 # Feeding avg_pool unit with input           x at time              8565000
-# avg_pool_count: 3 at time              8565000
+# avg_pool_count: 2 at time              8565000
 # Time:              8570000 | done: 0
 # Average Pooling output:           0 at time              8575000
-# Waiting for avg_pool output at time              8575000
+# Feeding avg_pool unit with input           x at time              8575000
+# avg_pool_count: 3 at time              8575000
 # Time:              8580000 | done: 0
-# Average Pooling output:           X at time              8585000
+# Average Pooling output:           0 at time              8585000
 # Waiting for avg_pool output at time              8585000
 # Time:              8590000 | done: 0
 # Average Pooling output:           X at time              8595000
@@ -1953,35 +1948,35 @@ run -all
 # Waiting for avg_pool output at time              8615000
 # Time:              8620000 | done: 0
 # Average Pooling output:           X at time              8625000
-# Writing output           X to output_fm[5] at time              8625000
+# Waiting for avg_pool output at time              8625000
 # Time:              8630000 | done: 0
 # Average Pooling output:           X at time              8635000
+# Writing output           X to output_fm[4] at time              8635000
 # Time:              8640000 | done: 0
 # Average Pooling output:           X at time              8645000
-# Resetting avg_pool unit at time              8645000
-# Average Pooling output:           X at time              8645000
 # Time:              8650000 | done: 0
-# Average Pooling output:           0 at time              8655000
-# Feeding avg_pool unit with input           x at time              8655000
-# avg_pool_count: 0 at time              8655000
-# Average Pooling output:           0 at time              8655000
+# Average Pooling output:           X at time              8655000
+# Resetting avg_pool unit at time              8655000
+# Average Pooling output:           X at time              8655000
 # Time:              8660000 | done: 0
 # Average Pooling output:           0 at time              8665000
 # Feeding avg_pool unit with input           x at time              8665000
-# avg_pool_count: 1 at time              8665000
+# avg_pool_count: 0 at time              8665000
+# Average Pooling output:           0 at time              8665000
 # Time:              8670000 | done: 0
 # Average Pooling output:           0 at time              8675000
 # Feeding avg_pool unit with input           x at time              8675000
-# avg_pool_count: 2 at time              8675000
+# avg_pool_count: 1 at time              8675000
 # Time:              8680000 | done: 0
 # Average Pooling output:           0 at time              8685000
 # Feeding avg_pool unit with input           x at time              8685000
-# avg_pool_count: 3 at time              8685000
+# avg_pool_count: 2 at time              8685000
 # Time:              8690000 | done: 0
 # Average Pooling output:           0 at time              8695000
-# Waiting for avg_pool output at time              8695000
+# Feeding avg_pool unit with input           x at time              8695000
+# avg_pool_count: 3 at time              8695000
 # Time:              8700000 | done: 0
-# Average Pooling output:           X at time              8705000
+# Average Pooling output:           0 at time              8705000
 # Waiting for avg_pool output at time              8705000
 # Time:              8710000 | done: 0
 # Average Pooling output:           X at time              8715000
@@ -1994,35 +1989,35 @@ run -all
 # Waiting for avg_pool output at time              8735000
 # Time:              8740000 | done: 0
 # Average Pooling output:           X at time              8745000
-# Writing output           X to output_fm[6] at time              8745000
+# Waiting for avg_pool output at time              8745000
 # Time:              8750000 | done: 0
 # Average Pooling output:           X at time              8755000
+# Writing output           X to output_fm[5] at time              8755000
 # Time:              8760000 | done: 0
 # Average Pooling output:           X at time              8765000
-# Resetting avg_pool unit at time              8765000
-# Average Pooling output:           X at time              8765000
 # Time:              8770000 | done: 0
-# Average Pooling output:           0 at time              8775000
-# Feeding avg_pool unit with input           x at time              8775000
-# avg_pool_count: 0 at time              8775000
-# Average Pooling output:           0 at time              8775000
+# Average Pooling output:           X at time              8775000
+# Resetting avg_pool unit at time              8775000
+# Average Pooling output:           X at time              8775000
 # Time:              8780000 | done: 0
 # Average Pooling output:           0 at time              8785000
 # Feeding avg_pool unit with input           x at time              8785000
-# avg_pool_count: 1 at time              8785000
+# avg_pool_count: 0 at time              8785000
+# Average Pooling output:           0 at time              8785000
 # Time:              8790000 | done: 0
 # Average Pooling output:           0 at time              8795000
 # Feeding avg_pool unit with input           x at time              8795000
-# avg_pool_count: 2 at time              8795000
+# avg_pool_count: 1 at time              8795000
 # Time:              8800000 | done: 0
 # Average Pooling output:           0 at time              8805000
 # Feeding avg_pool unit with input           x at time              8805000
-# avg_pool_count: 3 at time              8805000
+# avg_pool_count: 2 at time              8805000
 # Time:              8810000 | done: 0
 # Average Pooling output:           0 at time              8815000
-# Waiting for avg_pool output at time              8815000
+# Feeding avg_pool unit with input           x at time              8815000
+# avg_pool_count: 3 at time              8815000
 # Time:              8820000 | done: 0
-# Average Pooling output:           X at time              8825000
+# Average Pooling output:           0 at time              8825000
 # Waiting for avg_pool output at time              8825000
 # Time:              8830000 | done: 0
 # Average Pooling output:           X at time              8835000
@@ -2035,35 +2030,35 @@ run -all
 # Waiting for avg_pool output at time              8855000
 # Time:              8860000 | done: 0
 # Average Pooling output:           X at time              8865000
-# Writing output           X to output_fm[7] at time              8865000
+# Waiting for avg_pool output at time              8865000
 # Time:              8870000 | done: 0
 # Average Pooling output:           X at time              8875000
+# Writing output           X to output_fm[6] at time              8875000
 # Time:              8880000 | done: 0
 # Average Pooling output:           X at time              8885000
-# Resetting avg_pool unit at time              8885000
-# Average Pooling output:           X at time              8885000
 # Time:              8890000 | done: 0
-# Average Pooling output:           0 at time              8895000
-# Feeding avg_pool unit with input           x at time              8895000
-# avg_pool_count: 0 at time              8895000
-# Average Pooling output:           0 at time              8895000
+# Average Pooling output:           X at time              8895000
+# Resetting avg_pool unit at time              8895000
+# Average Pooling output:           X at time              8895000
 # Time:              8900000 | done: 0
 # Average Pooling output:           0 at time              8905000
 # Feeding avg_pool unit with input           x at time              8905000
-# avg_pool_count: 1 at time              8905000
+# avg_pool_count: 0 at time              8905000
+# Average Pooling output:           0 at time              8905000
 # Time:              8910000 | done: 0
 # Average Pooling output:           0 at time              8915000
 # Feeding avg_pool unit with input           x at time              8915000
-# avg_pool_count: 2 at time              8915000
+# avg_pool_count: 1 at time              8915000
 # Time:              8920000 | done: 0
 # Average Pooling output:           0 at time              8925000
 # Feeding avg_pool unit with input           x at time              8925000
-# avg_pool_count: 3 at time              8925000
+# avg_pool_count: 2 at time              8925000
 # Time:              8930000 | done: 0
 # Average Pooling output:           0 at time              8935000
-# Waiting for avg_pool output at time              8935000
+# Feeding avg_pool unit with input           x at time              8935000
+# avg_pool_count: 3 at time              8935000
 # Time:              8940000 | done: 0
-# Average Pooling output:           X at time              8945000
+# Average Pooling output:           0 at time              8945000
 # Waiting for avg_pool output at time              8945000
 # Time:              8950000 | done: 0
 # Average Pooling output:           X at time              8955000
@@ -2076,28 +2071,72 @@ run -all
 # Waiting for avg_pool output at time              8975000
 # Time:              8980000 | done: 0
 # Average Pooling output:           X at time              8985000
-# Writing output           X to output_fm[8] at time              8985000
+# Waiting for avg_pool output at time              8985000
 # Time:              8990000 | done: 0
 # Average Pooling output:           X at time              8995000
+# Writing output           X to output_fm[7] at time              8995000
 # Time:              9000000 | done: 0
 # Average Pooling output:           X at time              9005000
-# Resetting avg_pool unit at time              9005000
-# Average Pooling output:           X at time              9005000
 # Time:              9010000 | done: 0
-# Average Pooling output:           0 at time              9015000
-# Feeding avg_pool unit with input           x at time              9015000
-# avg_pool_count: 0 at time              9015000
-# FC Layer output:          x at time              9015000
-# Average Pooling output:           0 at time              9015000
+# Average Pooling output:           X at time              9015000
+# Resetting avg_pool unit at time              9015000
+# Average Pooling output:           X at time              9015000
 # Time:              9020000 | done: 0
 # Average Pooling output:           0 at time              9025000
 # Feeding avg_pool unit with input           x at time              9025000
-# avg_pool_count: 1 at time              9025000
-# Time:              9030000 | done: 1
+# avg_pool_count: 0 at time              9025000
+# Average Pooling output:           0 at time              9025000
+# Time:              9030000 | done: 0
+# Average Pooling output:           0 at time              9035000
+# Feeding avg_pool unit with input           x at time              9035000
+# avg_pool_count: 1 at time              9035000
+# Time:              9040000 | done: 0
+# Average Pooling output:           0 at time              9045000
+# Feeding avg_pool unit with input           x at time              9045000
+# avg_pool_count: 2 at time              9045000
+# Time:              9050000 | done: 0
+# Average Pooling output:           0 at time              9055000
+# Feeding avg_pool unit with input           x at time              9055000
+# avg_pool_count: 3 at time              9055000
+# Time:              9060000 | done: 0
+# Average Pooling output:           0 at time              9065000
+# Waiting for avg_pool output at time              9065000
+# Time:              9070000 | done: 0
+# Average Pooling output:           X at time              9075000
+# Waiting for avg_pool output at time              9075000
+# Time:              9080000 | done: 0
+# Average Pooling output:           X at time              9085000
+# Waiting for avg_pool output at time              9085000
+# Time:              9090000 | done: 0
+# Average Pooling output:           X at time              9095000
+# Waiting for avg_pool output at time              9095000
+# Time:              9100000 | done: 0
+# Average Pooling output:           X at time              9105000
+# Waiting for avg_pool output at time              9105000
+# Time:              9110000 | done: 0
+# Average Pooling output:           X at time              9115000
+# Writing output           X to output_fm[8] at time              9115000
+# Time:              9120000 | done: 0
+# Average Pooling output:           X at time              9125000
+# Time:              9130000 | done: 0
+# Average Pooling output:           X at time              9135000
+# Resetting avg_pool unit at time              9135000
+# Average Pooling output:           X at time              9135000
+# Time:              9140000 | done: 0
+# Average Pooling output:           0 at time              9145000
+# Feeding avg_pool unit with input           x at time              9145000
+# avg_pool_count: 0 at time              9145000
+# FC Layer output:          x at time              9145000
+# Average Pooling output:           0 at time              9145000
+# Time:              9150000 | done: 0
+# Average Pooling output:           0 at time              9155000
+# Feeding avg_pool unit with input           x at time              9155000
+# avg_pool_count: 1 at time              9155000
+# Time:              9160000 | done: 1
 # CNN prediction output:          x
 # ** Note: $finish    : tb_cnn_unit.v(78)
-#    Time: 9030 ns  Iteration: 0  Instance: /tb_cnn_unit
+#    Time: 9160 ns  Iteration: 0  Instance: /tb_cnn_unit
 # 1
 # Break in Module tb_cnn_unit at tb_cnn_unit.v line 78
-# End time: 11:00:44 on Jul 26,2025, Elapsed time: 0:00:44
+# End time: 11:01:39 on Jul 26,2025, Elapsed time: 0:00:34
 # Errors: 0, Warnings: 0

@@ -54,6 +54,6 @@ always @ (posedge clk or rst) begin
   end else begin
     avg <= stage4 >> 2;
   end
-  $display("Average Pooling output: %d at time %t", avg, $time);
+  //$display("Average Pooling output: %d at time %t", avg, $time);
 end
 endmodule
