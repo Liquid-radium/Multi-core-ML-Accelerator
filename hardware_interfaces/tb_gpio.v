@@ -36,6 +36,6 @@ initial begin
   rst = 0;
   #1000;
   $display("led1: %b, led2: %b, led3: %b, led4: %b", led1, led2, led3, led4);
-  //$stop;
+  $stop;
 end
 endmodule
