@@ -124,4 +124,5 @@ assign o_wb_ack = sel_ram ? ram_ack :
                   sel_gpio ? gpio_ack :
                   sel_cnn ? cnn_ack : 32'hDEAD_BEEF;
 
-endmodule      
+endmodule  
+#this is just to test if this stuff works     
